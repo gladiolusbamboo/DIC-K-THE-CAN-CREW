@@ -1,0 +1,2 @@
+class LyricType < ApplicationRecord
+end

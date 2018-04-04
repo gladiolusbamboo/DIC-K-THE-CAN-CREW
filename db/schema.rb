@@ -10,15 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180404082228) do
+ActiveRecord::Schema.define(version: 20180404123242) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "cd_songs", force: :cascade do |t|
+    t.bigint "cd_id"
+    t.bigint "song_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cd_id"], name: "index_cd_songs_on_cd_id"
+    t.index ["song_id"], name: "index_cd_songs_on_song_id"
+  end
+
+  create_table "cds", force: :cascade do |t|
+    t.string "name"
+    t.date "released_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lyric_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lyric_urls", force: :cascade do |t|
+    t.string "url"
+    t.bigint "lyric_website_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lyric_website_id"], name: "index_lyric_urls_on_lyric_website_id"
+  end
+
+  create_table "lyric_websites", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "lyrics", force: :cascade do |t|
-    t.integer "song_id"
-    t.integer "singer_id"
-    t.integer "lyric_type_id"
+    t.bigint "song_id"
+    t.bigint "singer_id"
+    t.bigint "lyric_type_id"
     t.integer "next_lyricid"
     t.text "lyric"
     t.text "ruby"
@@ -26,6 +62,34 @@ ActiveRecord::Schema.define(version: 20180404082228) do
     t.integer "lyric_order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["lyric_type_id"], name: "index_lyrics_on_lyric_type_id"
+    t.index ["singer_id"], name: "index_lyrics_on_singer_id"
+    t.index ["song_id"], name: "index_lyrics_on_song_id"
   end
 
+  create_table "singers", force: :cascade do |t|
+    t.string "name"
+    t.boolean "is_kick"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "songs", force: :cascade do |t|
+    t.bigint "lyric_url_id"
+    t.string "name"
+    t.string "lyricist"
+    t.string "composer"
+    t.string "arranger"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lyric_url_id"], name: "index_songs_on_lyric_url_id"
+  end
+
+  add_foreign_key "cd_songs", "cds"
+  add_foreign_key "cd_songs", "songs"
+  add_foreign_key "lyric_urls", "lyric_websites"
+  add_foreign_key "lyrics", "lyric_types"
+  add_foreign_key "lyrics", "singers"
+  add_foreign_key "lyrics", "songs"
+  add_foreign_key "songs", "lyric_urls"
 end
