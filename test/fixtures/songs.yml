@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  lyric_url: one
-  name: MyString
-  lyricist: MyString
-  composer: MyString
-  arranger: MyString
+takaoni_song:
+  lyric_url: takaoni_url
+  name: タカオニ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: UNKNOWN
 
-two:
-  lyric_url: two
-  name: MyString
-  lyricist: MyString
-  composer: MyString
-  arranger: MyString
+kankeri_song:
+  lyric_url: kankeri_url
+  name: カンケリ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: UNKNOWN

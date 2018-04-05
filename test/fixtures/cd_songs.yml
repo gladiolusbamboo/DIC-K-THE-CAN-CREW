@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  cd: one
-  song: one
+  cd: takaoni_cd
+  song: takaoni_song
 
 two:
-  cd: two
-  song: two
+  cd: takaoni_cd
+  song: kankeri_song

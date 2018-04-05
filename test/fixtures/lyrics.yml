@@ -1,21 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  song: one
-  singer: one
-  lyric_type: one
-  next_lyricid: 1
-  lyric: MyText
-  ruby: MyText
-  lyric_with_ruby: MyText
+takaoni1:
+  song: takaoni_song
+  singer: kickthecancrew
+  lyric_type: hook
+  next_lyricid: takaoni2
+  lyric: 目標定め後前見渡したならまずこの指止まれHEY行こうHEY今以上高くかくかくたかたか高く
+  ruby: もくひょうさだめうしろまえみわたしならまずこのゆびとまれへいいこうへいいまいじょうたかくかくかくたかたかたかく
+  lyric_with_ruby: \{目標,もくひょう\}\{定,さだ\}め\{後前,うしろまえ\}\{見渡,みわた\}したならまずこの\{指,ゆび\}\{止,と\}まれ\{HEY,へい\}\{行,い\}こう\{HEY,へい\}\{今,いま\}\{以上,いじょう\}\{高,たか\}くかくかくたかたか\{高,たか\}く
   lyric_order: 1
 
-two:
-  song: two
-  singer: two
-  lyric_type: two
-  next_lyricid: 1
-  lyric: MyText
-  ruby: MyText
-  lyric_with_ruby: MyText
+takaoni2:
+  song: kankeri_song
+  singer: kickthecancrew
+  lyric_type: hook
+  next_lyricid: kankeri2
+  lyric: 今日もまた沈んでく夕陽ダセイという星に住んでる住人真っ黒くくすんだ宇宙に足のばす足のばす足のばす WAOHA-
+  ruby: きょうもまたしずんでくゆうひだせいというほしにすんでるじゅうにんまっくろくくすんだうちゅうにあしのばすあしのばすあしのばすわおーあー
+  lyric_with_ruby: \{今日,きょう\}もまた\{沈,しず\}んでく\{夕陽,ゆうひ\}ダセイという\{星,ほし\}に\{住,す\}んでる\{住人,じゅうにん\}\{真っ黒,まっくろ\}くくすんだ\{宇宙,うちゅう\}に\{足,あし\}のばす\{足,あし\}のばす\{足,あし\}のばす \{WAOHA-,わおーあー\}
   lyric_order: 1

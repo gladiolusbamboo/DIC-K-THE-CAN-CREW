@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  is_kick: false
+kreva:
+  name: KREVA
+  is_kick: true
 
-two:
-  name: MyString
-  is_kick: false
+mcu:
+  name: MCU
+  is_kick: true
+
+little:
+  name: LITTLE
+  is_kick: true
+
+kickthecancrew:
+  name: KICK THE CAN CREW
+  is_kick: true
