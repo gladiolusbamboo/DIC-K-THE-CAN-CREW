@@ -1,5 +1,9 @@
 class SearchController < ApplicationController
   def index
-    @title = Song.all
+    @lyrics = Lyric.where("lyric like '%夕陽%'")
+  end
+
+  def result
+    @lyrics = Lyric.where("lyric like '%#{params[:keywd]}%'")
   end
 end
