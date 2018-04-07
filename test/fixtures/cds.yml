@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 takaoni_cd:
-  name: タカオニ
+  name: タカオニ/カンケリ
   released_at: 1999-08-20
 
 youngking_cd:

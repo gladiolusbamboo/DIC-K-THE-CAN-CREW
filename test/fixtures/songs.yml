@@ -1,14 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 takaoni_song:
-  lyric_url: takaoni_url
   name: タカオニ
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: UNKNOWN
 
 kankeri_song:
-  lyric_url: kankeri_url
   name: カンケリ
   lyricist: KICK THE CAN CREW
   composer: KREVA

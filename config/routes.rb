@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   get 'search', to: 'search#index'
   get 'search/index'
   get 'search/search'
-  post 'search/result'
+  get 'search/result'
 end
