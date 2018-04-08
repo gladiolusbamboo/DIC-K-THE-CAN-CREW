@@ -5,3 +5,6 @@ verse:
 
 hook:
   name: HOOK
+
+bridge:
+  name: BRIDGE

@@ -1,9 +1,10 @@
 <h1>「<%= params['keywd'] %>」の検索結果</h1>
+<h2><%= get_unique_songs_sum(@lyrics) %>曲<%= @lyrics.length %>パートがヒットしました</h1>
 
 <% @lyrics.each_with_index do |lyric, i| %>
   <p><%= i+1 %>.曲名：<%= lyric.song.name %></p>
   <p><%= lyric.lyric_type.name %><%= lyric.lyric_order %> by <%= lyric.singer.name %></p>
-  <p><%= lyric.lyric %></p>
+  <p><%= highlight(lyric.lyric, params['keywd']) %></p>
   <p><%= lyric.song.lyric_urls[0].lyric_website.name %>：<%= link_to lyric.song.lyric_urls[0].url, lyric.song.lyric_urls[0].url, target: :blank %></p>
   <% lyric.song.cds.each do |cd| %>
     <p><%= cd.name %>(<%= cd.released_at %>)</p>
