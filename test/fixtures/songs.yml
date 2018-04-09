@@ -5,9 +5,11 @@ takaoni_song:
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: UNKNOWN
+  cd: takaoni_cd
 
 kankeri_song:
   name: カンケリ
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: UNKNOWN
+  cd: takaoni_cd

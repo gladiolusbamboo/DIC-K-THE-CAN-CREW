@@ -3,7 +3,9 @@
 one:
   cd: takaoni_cd
   song: takaoni_song
+  is_first: true
 
 two:
   cd: takaoni_cd
   song: kankeri_song
+  is_first: true
