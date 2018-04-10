@@ -1,15 +1,18 @@
-<h1>「<%= params['searchword'] %>」の検索結果</h1>
-<h2><%= @hit_song_infos.length %>曲がヒットしました</h1>
+<h1>「<%= params['searchword'] %>」は<%= @hit_song_infos.length %>曲に含まれています</h1>
 
 <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
   <p><%= i+1 %>.曲名：<%= info_arr[0].song.name %></p>
-  <% info_arr.each do |info| %>
-    <p><%= info.lyric_type.name %><%= info.lyric_order %> by <%= info.singer.name %></p>
-    <p><%= highlight(info.lyric, params['searchword']) %></p>
-    <p><%= info.song.lyric_urls[0].lyric_website.name %>：<%= link_to info.song.lyric_urls[0].url, info.song.lyric_urls[0].url, target: :blank %></p>
-    <% info.song.cds.each do |cd| %>
-      <p><%= cd.name %>(<%= cd.released_at %>)</p>
-    <% end %>
+  <p>収録CD：</p>
+  <ul>
+  <% info_arr[0].song.cds.each do |cd| %>
+    <li><%= cd.name %>(<%= cd.released_at %>)</li>
+  <% end %>  
+  </ul>
+  <p>作詞：<%= info_arr[0].song.lyricist %></p>
+  <p>作曲：<%= info_arr[0].song.composer %></p>
+  <p>編曲：<%= info_arr[0].song.arranger %></p>
+  <%= show_searchwords_in_lyric(info_arr, params['searchword']) %> 
+  <p><%= info_arr[0].song.lyric_urls[0].lyric_website.name %>：<%= link_to info_arr[0].song.lyric_urls[0].url, info_arr[0].song.lyric_urls[0].url, target: :blank %></p>
   <hr>
-  <% end %>
 <% end %>
+<%= debug @hit_song_infos %>
