@@ -1,4 +1,9 @@
-<%= form_tag({controller: :search, action: :result}, method: :get ) do %>
+<%# 検索画面（トップページ） %>
+<%# GETメソッドで検索を行う %>
+<%= form_tag(
+      {controller: :search, action: :result}, 
+      method: :get ) do %>
   <%= text_field_tag :searchword, '', size: 30 %>
+  <%# 余計なパラメータを渡さないようにname: nil指定 %>
   <%= submit_tag '検索', name: nil %>
 <% end %>

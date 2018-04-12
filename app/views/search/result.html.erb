@@ -1,3 +1,5 @@
+<%# @hit_song_infosはsong_idを主キーにしたハッシュ。
+    値はLyricモデルの配列 %>
 <h1>「<%= params['searchword'] %>」は<%= @hit_song_infos.length %>曲に含まれています</h1>
 
 <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
@@ -12,7 +14,11 @@
   <p>作曲：<%= info_arr[0].song.composer %></p>
   <p>編曲：<%= info_arr[0].song.arranger %></p>
   <%= show_searchwords_in_lyric(info_arr, params['searchword']) %> 
-  <p><%= info_arr[0].song.lyric_urls[0].lyric_website.name %>：<%= link_to info_arr[0].song.lyric_urls[0].url, info_arr[0].song.lyric_urls[0].url, target: :blank %></p>
+  <% lyric_website_url = info_arr[0].song.lyric_urls[0].url %>
+  <p>
+    <%= info_arr[0].song.lyric_urls[0].lyric_website.name %>：
+    <%= link_to lyric_website_url, lyric_website_url, target: :blank %>
+  </p>
   <hr>
 <% end %>
 <%#= debug @hit_song_infos %>

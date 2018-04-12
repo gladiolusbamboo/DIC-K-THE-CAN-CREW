@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180409080847) do
+ActiveRecord::Schema.define(version: 20180412093640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,13 +64,13 @@ ActiveRecord::Schema.define(version: 20180409080847) do
     t.bigint "song_id"
     t.bigint "singer_id"
     t.bigint "lyric_type_id"
-    t.integer "next_lyricid"
     t.text "lyric"
     t.text "ruby"
     t.text "lyric_with_ruby"
     t.integer "lyric_order"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "part_lyric_order"
     t.index ["lyric_type_id"], name: "index_lyrics_on_lyric_type_id"
     t.index ["singer_id"], name: "index_lyrics_on_singer_id"
     t.index ["song_id"], name: "index_lyrics_on_song_id"
