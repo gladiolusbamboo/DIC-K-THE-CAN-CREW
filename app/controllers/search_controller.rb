@@ -9,7 +9,7 @@ class SearchController < ApplicationController
                           .order("cds.released_at ASC", lyric_order: :ASC)
       # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
       # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
-      hash_to_hit_song_infos(:lyric, query_results)
+      hash_to_hit_song_infos(query_results)
     else
       # 結果表示に必要な情報を取得する
       # リリース日が古い順、歌詞の順番順に表示する
@@ -18,15 +18,14 @@ class SearchController < ApplicationController
                           .order("cds.released_at ASC", lyric_order: :ASC)
       # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
       # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
-      hash_to_hit_song_infos(:lyric, query_results)
+      hash_to_hit_song_infos(query_results)
     end
   end
 
   private
   # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
   # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
-  def hash_to_hit_song_infos searchtype, query_results
-    pp searchtype
+  def hash_to_hit_song_infos query_results
 
     @hit_song_infos = {}
 
