@@ -1,5 +1,9 @@
 <%# @hit_song_infosはsong_idを主キーにしたハッシュ。
     値はLyricモデルの配列 %>
+    <%#= debug(@hit_song_infos) %>
+<% if params['searchtype'] == 'ルビ検索' %>
+<h2>(ふりがな検索)</h2>
+<% end %>
 <h1>「<%= params['searchword'] %>」は<%= @hit_song_infos.length %>曲に含まれています</h1>
 
 <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
@@ -13,7 +17,11 @@
   <p>作詞：<%= info_arr[0].song.lyricist %></p>
   <p>作曲：<%= info_arr[0].song.composer %></p>
   <p>編曲：<%= info_arr[0].song.arranger %></p>
+  <% if params['searchtype'] != 'ルビ検索' %>
   <%= show_searchwords_in_lyric(info_arr, params['searchword']) %> 
+  <% else %>
+  <%= show_searchwords_in_ruby(info_arr, params['searchword']) %> 
+  <% end %>
   <% lyric_website_url = info_arr[0].song.lyric_urls[0].url %>
   <p>
     <%= info_arr[0].song.lyric_urls[0].lyric_website.name %>：

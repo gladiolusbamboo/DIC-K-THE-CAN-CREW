@@ -5,5 +5,6 @@
       method: :get ) do %>
   <%= text_field_tag :searchword, '', size: 30 %>
   <%# 余計なパラメータを渡さないようにname: nil指定 %>
-  <%= submit_tag '検索', name: nil %>
+  <%= submit_tag '', name: :searchtype, value: '表記検索' %>
+  <%= submit_tag '', name: :searchtype, value: 'ルビ検索' %>
 <% end %>
