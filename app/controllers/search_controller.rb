@@ -26,7 +26,6 @@ class SearchController < ApplicationController
   # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
   # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
   def hash_to_hit_song_infos query_results
-
     @hit_song_infos = {}
 
     query_results.each do |result|

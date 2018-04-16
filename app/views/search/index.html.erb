@@ -1,10 +1,7 @@
 <%# 検索画面（トップページ） %>
 <%# GETメソッドで検索を行う %>
-<%= form_tag(
-      {controller: :search, action: :result}, 
-      method: :get ) do %>
+<%= form_tag({controller: :search, action: :result}, method: :get ) do %>
   <%= text_field_tag :searchword, '', size: 30 %>
-  <%# 余計なパラメータを渡さないようにname: nil指定 %>
   <%= submit_tag '', name: :searchtype, value: '表記検索' %>
   <%= submit_tag '', name: :searchtype, value: 'ルビ検索' %>
 <% end %>
