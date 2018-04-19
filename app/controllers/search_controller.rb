@@ -1,6 +1,6 @@
 class SearchController < ApplicationController
   def result
-    pp params
+    # pp params
     if (params[:searchtype] != 'ルビ検索')
       # 結果表示に必要な情報を取得する
       # リリース日が古い順、歌詞の順番順に表示する

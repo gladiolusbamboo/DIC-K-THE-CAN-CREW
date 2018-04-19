@@ -5,7 +5,7 @@ module SearchHelper
       info_arr.each do |info|
         lyric_with_ruby = info.lyric_with_ruby
         # {漢字,かんじ}表記から表示用文字列に戻す
-        lyric_decoded = decodeLyricWithRuby(:Lyric, lyric_with_ruby)
+        lyric_decoded = decodeLyricWithRuby(lyric_with_ruby)
 
         if(searchtype != 'ルビ検索')
           lyric_original = info.lyric
@@ -13,83 +13,26 @@ module SearchHelper
           lyric_original = info.ruby
         end
 
-        index_arr = []
+        # 出現場所indexを格納した配列
+        index_array = get_index_array(lyric_original, searchword)
 
-        # 正規表現だとマッチングが重なる部分が
-        # うまくいかないのでindex()を使う
-        offset = 0
-        while (index = lyric_original.index(searchword, offset)) do
-          index_arr << index
-          offset = index + 1
-        end
-
-        if(searchtype != 'ルビ検索')
-          # index_arrにはsearchwordの出現位置が格納されている
-          index_arr.each do |index|
-            # pp "index = #{index}"
-            # 半角スペース分index位置をずらす
-            index_modified = modifyIndex(index, lyric_decoded, false)
-            # pp "index+searchword.length = #{index+searchword.length}"
-            # searchword直後の５文字をどこから切り取るかを設定
-            latter_index_modified = modifyIndex(index+searchword.length, lyric_decoded, true)
-            # pp "latter_index_modified = #{latter_index_modified}"
-            # pp "lyric_original = #{lyric_original}"
-            # logger.info "lyric_original = #{lyric_original}"
-            concat(
-              content_tag(:li) do
-                # lyricの先頭付近にsearchwordがあった場合の対策
-                start_index = index_modified - 5
-                if start_index < 0 
-                  start_index = 0
-                end
-                length = index_modified - start_index
-                # pp "lyric_original = #{lyric_original}"
-                # pp "start_index = #{start_index}"
-                # pp "length = #{length}"
-                
-                # searchword直前の５文字切り出し
-                concat lyric_decoded.slice(start_index,length)
-                # searchwordを切り出して強調
-                length = latter_index_modified - index_modified
-                concat content_tag(:b, lyric_decoded.slice(index_modified, length))
-                # searchword直後の５文字切り出し
-                concat lyric_decoded.slice(latter_index_modified, 5)
-                concat "(#{info.lyric_type.name}#{info.part_lyric_order} by #{info.singer.name})"
-              end
-            )
+        # "ルビ検索"が指定されている場合以外は表記検索をする
+        unless(searchtype == 'ルビ検索')
+          # index_arrayにはsearchwordの出現位置が格納されている
+          index_array.each do |index|
+            # searchwordの出現位置と直後の位置インデックスを設定
+            index_modified_array = get_index_modified_array_lyric(lyric_decoded, index, searchword)
+            # ひとつの検索結果を表示
+            concat_result_li(index_modified_array, lyric_decoded, info)
           end
+        # ルビ検索を行う場合の処理
         else
-          logger.info 'RUBY'
-          # index_arrにはsearchwordの出現位置が格納されている
-          index_arr.each do |index|
-            index_modified_array = get_index_modified_array(lyric_with_ruby, index, searchword)
-            index_modified = index_modified_array[0]
-            latter_index_modified = index_modified_array[1]
-
-            concat(
-              content_tag(:li) do
-                # lyricの先頭付近にsearchwordがあった場合の対策
-                start_index = index_modified - 5
-                if start_index < 0 
-                  start_index = 0
-                end
-                length = index_modified - start_index
-                # pp "lyric_original = #{lyric_original}"
-                # pp "start_index = #{start_index}"
-                # pp "length = #{length}"
-                
-                # searchword直前の５文字切り出し
-                concat lyric_decoded.slice(start_index,length)
-                # searchwordを切り出して強調
-                length = latter_index_modified - index_modified
-                concat content_tag(:b, lyric_decoded.slice(index_modified, length))
-                # searchword直後の５文字切り出し
-                concat lyric_decoded.slice(latter_index_modified, 5)
-                concat "(#{info.lyric_type.name}#{info.part_lyric_order} by #{info.singer.name})"
-              end
-            )
+          index_array.each do |index|
+            # searchwordの出現位置と直後の位置インデックスを設定
+            index_modified_array = get_index_modified_array_ruby(lyric_with_ruby, index, searchword)
+            # ひとつの検索結果を表示
+            concat_result_li(index_modified_array, lyric_decoded, info)
           end
-
         end
       end
     end
@@ -97,135 +40,140 @@ module SearchHelper
 
   private
     # {漢字,かんじ}表記から表示用文字列に戻す
-    def decodeLyricWithRuby type, lyric_with_ruby
-      # pp "type = #{type}"
+    def decodeLyricWithRuby lyric_with_ruby
       regex = /\\{(.*?),(.*?)\\}/
       # match結果を格納する配列
       matches = []
-      # 漢字混じり表記に戻す
-      if type == :Lyric
-        # logger.info "lyric_with_ruby = #{lyric_with_ruby}"
-        
-        lyric_tmp = lyric_with_ruby.clone
-        lyric_return = lyric_with_ruby.clone
 
-        # マッチしなくなるまで繰り返す
-        while (match = regex.match(lyric_tmp)) do
-          matches << match
-          # ＄’でマッチ部以降の文字列が取得できるらしい
-          lyric_tmp = $'
-          # match[0]:{漢字,かんじ}
-          # match[1]:漢字
-          # match[2]:かんじ
-          # なので、match[0]をmatch[1]に置き換えてやる
-          # 同じ感じに別のルビがあっても正しく動く
-          lyric_return.gsub!(match[0],match[1])
-        end
+      lyric_tmp = lyric_with_ruby.clone
+      lyric_return = lyric_with_ruby.clone
 
-        # トリムしてreturnする
-        lyric_return.strip!
+      # マッチしなくなるまで繰り返す
+      while (match = regex.match(lyric_tmp)) do
+        matches << match
+        # ＄’でマッチ部以降の文字列が取得できるらしい
+        lyric_tmp = $'
+        # match[0]:{漢字,かんじ}
+        # match[1]:漢字
+        # match[2]:かんじ
+        # なので、match[0]をmatch[1]に置き換えてやる
+        # 同じ漢字に別のルビがあっても正しく動く
+        lyric_return.gsub!(match[0], match[1])
       end
+
+      # トリムしてreturnする
+      lyric_return.strip!
+    end
+
+    # seachwordの出現場所と直後の文字の開始位置を配列として取得する
+    def get_index_modified_array_lyric(lyric_decoded, index, searchword)
+      index_modified_array = []
+      # 半角スペース分index位置をずらす
+      index_modified_array << modifyIndex(index, lyric_decoded, false)
+      # searchword直後の５文字をどこから切り取るかを設定
+      index_modified_array << modifyIndex(index+searchword.length, lyric_decoded, true)
     end
 
     # 半角スペース分のindex位置を修正する
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
-    def modifyIndex index, decodeLyricWithRuby, is_space_ok
+    def modifyIndex index, decodedLyricWithRuby, is_space_ok
       index_return = index
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける
-      while((next_space_count = decodeLyricWithRuby[0, index_return].count(' ')) > space_count)
+      while((next_space_count = decodedLyricWithRuby[0, index_return].count(' ')) > space_count)
         space_count = next_space_count
+        # 見つかった半角スペースの分だけindex位置を修正する
         index_return = index + space_count
       end
 
       # index_return位置の文字が半角スペースを許容するか
       # 許容しない場合１文字ずつずらして半角スペースじゃない場所を探す
       if !is_space_ok
-        # logger.info('space check')
-        # logger.info(decodeLyricWithRuby[index_return])          
-        while(decodeLyricWithRuby[index_return] == ' ')
+        while(decodedLyricWithRuby[index_return] == ' ')
           index_return += 1
         end
       end
 
-      # logger.info("index = #{index}")
-      # logger.info("space_sum = #{space_count}")
-      # logger.info("index_return = #{index_return}")
-
       index_return
     end
 
-    def get_index_modified_array lyric_with_ruby, index, searchword
-      logger.info("lyric_with_ruby = #{lyric_with_ruby}")
+    # seachword（ルビ）の出現場所と直後の文字の開始位置を配列として取得する
+    def get_index_modified_array_ruby lyric_with_ruby, index, searchword
+      # ふりがなの文字数の配列を得る
       lyric_length_array = convert_lyric_to_length_array(lyric_with_ruby)
-      logger.info("lyric_length_array = #{lyric_length_array}")
 
-      logger.info("index = #{index}")
-      logger.info("searchword = #{searchword}")
-
+      # searchword(ルビ)の終了直後の文字の開始位置
       index_end = index + searchword.length
-      logger.info("index_end = #{index_end}")
 
       index_modified_array = []
 
+      # length_sumに文字数を数えていく
       length_sum = 0
-      is_over = false
+
+      # length_sumと検索対象indexの位置関係
       state = -1
+
       lyric_length_array.each_with_index do |length, i|
-        logger.info "====NEXT===="
-        logger.info "i = #{i}" 
+        # length_sumがindex_endを超えた状態でふりがなが１文字以上の文字を見つければ終了
         if state == 1 && length > 0
-          logger.info "end_index設定 = #{i}" 
           index_modified_array << i
           break
         end
+
         length_sum += length
-        logger.info "length_sum = #{length_sum}" 
-        logger.info "index_end = #{index_end}" 
+
+        # 初めてlength_sumがindexを超えた箇所が表示開始位置
         if length_sum > index && index_modified_array.length == 0
-          logger.info "start_index設定 = #{i}" 
           index_modified_array << i
         end
+
+        # length_sumがindex_endと等しくなったらフラグをたてる
         if length_sum == index_end && index_modified_array.length == 1
           state = 0
-          logger.info "ぴったりになったよ"
         end
+
         if length_sum > index_end && index_modified_array.length == 1
+          # length_sumとindex_endと等しくなる場所があれば、
+          # length_sumがindex_endを超えた位置が終了直後の文字の開始位置になる
           if state == 0
-            logger.info "end_index設定 = #{i}" 
             index_modified_array << i
             break
+          # length_sumとindex_endと等しくなる場所がなければ、フラグを立てて
+          # 次にふりがなが０文字でない位置を探す
           else
             state = 1
-            logger.info "いきなりこえたよ"
           end
         end
       end
+
+      # 終了位置が見つからなかった場合は、lyric_length_arrayの配列長+1を
+      # 終了直後の文字の開始位置とする
       if index_modified_array.length < 2
         index_modified_array << lyric_length_array.length+1
       end
 
-      logger.info("index_modified_array = #{index_modified_array}")
-
       index_modified_array
-
     end
 
+    # ふりがなの文字数の配列を得る
     def convert_lyric_to_length_array(lyric_with_ruby)
       lyric_length_array = []
-      # logger.info "文字列長配列に変換"
+
+      # "{漢字,かんじ}とひらがな…"みたいな形式に文字列を変換する
       lyric_with_ruby_clone = lyric_with_ruby.clone
       lyric_with_ruby_clone.gsub!('\{','{')
       lyric_with_ruby_clone.gsub!('\}','}')
 
+      # 括弧内を走査している時のフラグ
       is_inner_parenthesis = false
+      # 括弧内のカンマ以降を走査している時のフラグ
       is_pass_separator = false
 
       display_characters = ""
       ruby_characters = ""
 
       lyric_with_ruby_clone.chars do |character|
-        logger.info character
+        # logger.info character
         if !is_inner_parenthesis
           if character == '{'
             # logger.info '括弧に入ったよ'
@@ -253,14 +201,39 @@ module SearchHelper
                   lyric_length_array << 1
                 end
               else
+                ruby_length = ruby_characters.length
+                ruby_length_array = []
                 display_characters.chars do |display_character|
                   if index_tmp == 0
-                    lyric_length_array << ruby_characters.length
+                    ruby_length_array << ruby_characters.length
                   else
-                    lyric_length_array << 0
+                    ruby_length_array << 0
                   end
                   index_tmp += 1
                 end
+                # logger.info "前ruby_length_array = #{ruby_length_array}"
+
+                if true
+
+                display_characters.length.times{|n|
+                  ch = display_characters[display_characters.length-1-n]
+                  # logger.info "ch = #{ch}"
+                  if(ch =~ /\A[\p{hiragana}\p{katakana}]\z/)
+                    # logger.info "ひらがな"
+                    ruby_length_array[display_characters.length-1-n] = 1
+                    ruby_length_array[0] -= 1
+                  else 
+                    break
+                  end
+                }
+
+                end
+                # logger.info "後ruby_length_array = #{ruby_length_array}"
+
+                ruby_length_array.each do |len|
+                  lyric_length_array << len
+                end
+
               end
 
               is_inner_parenthesis = false
@@ -279,5 +252,41 @@ module SearchHelper
         end
       end
       lyric_length_array
+    end
+
+    def get_index_array(lyric_original, searchword)
+      index_array = []
+      # 正規表現だとマッチングが重なる部分が
+      # うまくいかないのでindex()を使う
+      offset = 0
+      while (index = lyric_original.index(searchword, offset)) do
+        index_array << index
+        offset = index + 1
+      end
+      index_array
+    end
+
+    def concat_result_li(index_modified_array, lyric_decoded, info)
+      index_modified = index_modified_array[0]
+      latter_index_modified = index_modified_array[1]
+      concat(
+        content_tag(:li) do
+          # lyricの先頭付近にsearchwordがあった場合の対策
+          start_index = index_modified - 5
+          if start_index < 0 
+            start_index = 0
+          end
+          length = index_modified - start_index
+          
+          # searchword直前の５文字切り出し
+          concat lyric_decoded.slice(start_index,length)
+          # searchwordを切り出して強調
+          length = latter_index_modified - index_modified
+          concat content_tag(:b, lyric_decoded.slice(index_modified, length))
+          # searchword直後の５文字切り出し
+          concat lyric_decoded.slice(latter_index_modified, 5)
+          concat "(#{info.lyric_type.name}#{info.part_lyric_order} by #{info.singer.name})"
+        end
+      )
     end
 end
