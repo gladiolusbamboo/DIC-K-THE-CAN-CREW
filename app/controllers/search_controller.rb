@@ -29,7 +29,6 @@ class SearchController < ApplicationController
     @hit_song_infos = {}
 
     query_results.each do |result|
-      # pp result.song.inspect
       song_id = result.song_id
       if !@hit_song_infos.has_key? song_id
         @hit_song_infos[song_id] = []

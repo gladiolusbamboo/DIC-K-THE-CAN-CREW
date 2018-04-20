@@ -7,3 +7,7 @@ one:
 two:
   cd: takaoni_cd
   song: kankeri_song
+
+three:
+  cd: kyoukaraashita_cd
+  song: kyoukaraashita_song

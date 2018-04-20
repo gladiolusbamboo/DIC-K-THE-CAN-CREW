@@ -17,10 +17,12 @@
   <p>作曲：<%= info_arr[0].song.composer %></p>
   <p>編曲：<%= info_arr[0].song.arranger %></p>
   <%= show_searchwords(params[:searchtype], info_arr, params['searchword']) %> 
-  <% lyric_website_url = info_arr[0].song.lyric_urls[0].url %>
+  <% if info_arr[0].song.lyric_urls[0] %>
+    <% lyric_website_url = info_arr[0].song.lyric_urls[0].url %>
   <p>
     <%= info_arr[0].song.lyric_urls[0].lyric_website.name %>：
     <%= link_to lyric_website_url, lyric_website_url, target: :blank %>
   </p>
+  <% end %>
   <hr>
 <% end %>

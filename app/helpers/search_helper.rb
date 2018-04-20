@@ -173,80 +173,76 @@ module SearchHelper
       ruby_characters = ""
 
       lyric_with_ruby_clone.chars do |character|
-        # logger.info character
-        if !is_inner_parenthesis
+        # 括弧外処理
+        unless is_inner_parenthesis
           if character == '{'
-            # logger.info '括弧に入ったよ'
             is_inner_parenthesis = true
           else
-            # logger.info '平がな発見'
             lyric_length_array << 1
           end
+        # 括弧内処理
         else
-          if !is_pass_separator
+          # 括弧内カンマ前処理
+          unless is_pass_separator
             if character == ','
-              # logger.info 'カンマを見つけたよ'
               is_pass_separator = true
             else
+              # 文字を連結して表示用文字列を作成しておく
               display_characters << character
-              # logger.info "display_characters = #{display_characters}"
             end
+          # 括弧内カンマ後処理
           else
+            # 括弧終了時点でふりがなの文字数を割り振る処理を行う
             if character == '}'
-              # logger.info '括弧が終わったよ'
               index_tmp = 0
-
+              # 表示用文字列がすべてカタカナであれば
               if display_characters =~ /\A[\p{katakana}]+\z/
+                # 各文字にふりがな文字数１をセットする
                 display_characters.chars do |display_character|
                   lyric_length_array << 1
                 end
               else
+                # 送り仮名の処理
+                # Ex.「届ける」の場合
                 ruby_length = ruby_characters.length
                 ruby_length_array = []
+                # 一旦、頭文字にすべての文字数を与える
+                # Ex.届ける　display_characters => [3,0,0]
                 display_characters.chars do |display_character|
                   if index_tmp == 0
-                    ruby_length_array << ruby_characters.length
+                    ruby_length_array << ruby_length
                   else
                     ruby_length_array << 0
                   end
                   index_tmp += 1
                 end
-                # logger.info "前ruby_length_array = #{ruby_length_array}"
 
-                if true
-
+                # 文字列を逆順に走査して送り仮名を判定する
                 display_characters.length.times{|n|
                   ch = display_characters[display_characters.length-1-n]
-                  # logger.info "ch = #{ch}"
+                  # 走査対象の文字列がひらがな、もしくはカタカナであれば
                   if(ch =~ /\A[\p{hiragana}\p{katakana}]\z/)
-                    # logger.info "ひらがな"
-                    ruby_length_array[display_characters.length-1-n] = 1
+                    # 頭文字に与えたふりがな文字数を１減らして、
                     ruby_length_array[0] -= 1
+                    # 走査対象文字のふりがな文字数に移動する
+                    ruby_length_array[display_characters.length-1-n] = 1
                   else 
+                    # ひらがなかカタカナでない文字を発見したら終了
                     break
                   end
                 }
 
-                end
-                # logger.info "後ruby_length_array = #{ruby_length_array}"
-
-                ruby_length_array.each do |len|
-                  lyric_length_array << len
-                end
-
+                # 完成した配列を元の配列に結合する
+                lyric_length_array.concat(ruby_length_array)
               end
 
               is_inner_parenthesis = false
               is_pass_separator = false
               display_characters = ''
               ruby_characters = ''
-
-              # logger.info "（括弧終了）display_characters = #{display_characters}"
-              # logger.info "（括弧終了）ruby_characters = #{ruby_characters}"
-              # logger.info "（括弧終了）lyric_length_array = #{lyric_length_array}"
             else
+              # 文字を連結してルビ用文字列を作成しておく
               ruby_characters << character
-              # logger.info "ruby_characters = #{ruby_characters}"
             end
           end
         end
@@ -266,8 +262,11 @@ module SearchHelper
       index_array
     end
 
+    # 検索結果を<li>タグで返す
     def concat_result_li(index_modified_array, lyric_decoded, info)
+      # 検索文字列の登場位置
       index_modified = index_modified_array[0]
+      # 検索文字列直後の位置
       latter_index_modified = index_modified_array[1]
       concat(
         content_tag(:li) do
