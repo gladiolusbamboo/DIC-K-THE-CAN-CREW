@@ -1,13 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+takaoni_cd_takaoni_song:
   cd: takaoni_cd
   song: takaoni_song
 
-two:
+takaoni_cd_kankeri_song:
   cd: takaoni_cd
   song: kankeri_song
 
-three:
+kyoukaraashita_cd_kyoukaraashita_song:
   cd: kyoukaraashita_cd
   song: kyoukaraashita_song
+
+kyoukaraashita_cd_kyoukaraashita_kana_song:
+  cd: kyoukaraashita_cd
+  song: kyoukaraashita_kana_song
+
+superoriginal_cd_superoriginal_song:
+  cd: superoriginal_cd
+  song: superoriginal_song
+
+younganimal_cd_downbylow_song:
+  cd: younganimal_cd
+  song: downbylow_song
+
+itsunarouba_cd_itsunarouba_song:
+  cd: itsunarouba_cd
+  song: itsunarouba_song
+
+goodtime_cd_goodtime_song:
+  cd: goodtime_cd
+  song: goodtime_song

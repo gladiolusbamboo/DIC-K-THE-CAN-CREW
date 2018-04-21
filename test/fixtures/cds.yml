@@ -7,3 +7,19 @@ takaoni_cd:
 kyoukaraashita_cd:
   name: 今日から明日
   released_at: 2001-02-21
+
+superoriginal_cd:
+  name: スーパーオリジナル
+  released_at: 2001-05-23
+
+younganimal_cd:
+  name: young animal e.p.
+  released_at: 2000-07-05
+
+itsunarouba_cd:
+  name: イツナロウバ
+  released_at: 2001-07-11
+
+goodtime_cd:
+  name: GOOD TIME!
+  released_at: 2000-08-18

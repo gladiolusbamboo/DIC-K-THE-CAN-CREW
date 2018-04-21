@@ -11,3 +11,7 @@ kankeri_url:
 kyoukaraashita_url:
   url: http://www.utamap.com/showkasi.php?surl=B16235
   lyric_website: utamap
+
+kyoukaraashita_kana_url:
+  url: http://www.utamap.com/showkasi.php?surl=B16235
+  lyric_website: utamap

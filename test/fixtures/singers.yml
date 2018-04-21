@@ -15,3 +15,7 @@ little:
 kickthecancrew:
   name: KICK THE CAN CREW
   is_kick: true
+
+crazy-a:
+  name: CRAZY-A
+  is_kick: false

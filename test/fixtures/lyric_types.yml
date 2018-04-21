@@ -8,3 +8,6 @@ hook:
 
 bridge:
   name: BRIDGE
+
+other:
+  name: OTHER

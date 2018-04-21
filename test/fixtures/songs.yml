@@ -20,5 +20,44 @@ kyoukaraashita_song:
   composer: KICK THE CAN CREW
   arranger: UNKNOWN
   cd: kyoukaraashita_cd
+  note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ
 
+kyoukaraashita_kana_song:
+  name: 今日カラ明日
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: UNKNOWN
+  cd: kyoukaraashita_cd
+  note: 「今日から明日」の別バージョンで歌詞は同じ
 
+superoriginal_song:
+  name: スーパーオリジナル
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: superoriginal_cd
+  note: 
+
+downbylow_song:
+  name: Down by Low(feat.CRAZY-A)
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 「ダウン バイ ロー」表記の場合あり
+
+itsunarouba_song:
+  name: イツナロウバ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: itsunarouba_cd
+  note: 
+
+goodtime_song:
+  name: GOOD TIME!
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: goodtime_cd
+  note: 

@@ -2,6 +2,8 @@ const songTitle = process.argv[2];
 const fs = require('fs');
 const readline = require("readline");
 
+// console.log(songTitle)
+
 const lyricFileName = `./${songTitle}_lyric.txt`;
 const rubyFileName = `./${songTitle}_ruby.txt`;
 const lyricWithRubyFileName = `./${songTitle}_lyric_with_ruby.txt`;
