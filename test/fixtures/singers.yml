@@ -19,3 +19,19 @@ kickthecancrew:
 crazy-a:
   name: CRAZY-A
   is_kick: false
+
+kickthecancrewcasettevision:
+  name: KICK THE CAN CREW & CASSETTE VISION
+  is_kick: true
+
+sohjin:
+  name: SOHJIN
+  is_kick: false
+
+channel:
+  name: CHANNEL
+  is_kick: false
+
+cuezero:
+  name: CUEZERO
+  is_kick: false

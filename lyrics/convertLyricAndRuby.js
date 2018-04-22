@@ -38,7 +38,7 @@ reader.on("line", (data) => {
     });
     // console.log(lyric);
     // console.log(ruby);
-    fs.appendFileSync(lyricFileName, `${lyric}\n`);
+    fs.appendFileSync(lyricFileName, `${lyric.replace(/ /g, '')}\n`);
     fs.appendFileSync(rubyFileName, `${ruby}\n`);
   }
 });

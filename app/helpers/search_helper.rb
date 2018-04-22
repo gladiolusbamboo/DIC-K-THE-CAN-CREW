@@ -281,7 +281,7 @@ module SearchHelper
           concat lyric_decoded.slice(start_index,length)
           # searchwordを切り出して強調
           length = latter_index_modified - index_modified
-          concat content_tag(:b, lyric_decoded.slice(index_modified, length))
+          concat content_tag(:b, lyric_decoded.slice(index_modified, length), style: 'color:red')
           # searchword直後の５文字切り出し
           concat lyric_decoded.slice(latter_index_modified, 5)
           concat "(#{info.lyric_type.name}#{info.part_lyric_order} by #{info.singer.name})"
