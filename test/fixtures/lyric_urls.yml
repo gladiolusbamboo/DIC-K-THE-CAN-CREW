@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+takaoni_url:
+  url: http://www.utamap.com/showkasi.php?surl=B16234
+  lyric_website: utamap
+
+kankeri_url:
+  url: http://www.utamap.com/showkasi.php?surl=B16235
+  lyric_website: utamap
+
+kyoukaraashita_url:
+  url: http://www.utamap.com/showkasi.php?surl=B16235
+  lyric_website: utamap
+
+kyoukaraashita_kana_url:
+  url: http://www.utamap.com/showkasi.php?surl=B16235
+  lyric_website: utamap

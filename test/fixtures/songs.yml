@@ -1,0 +1,199 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+takaoni_song:
+  name: タカオニ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: UNKNOWN
+  cd: takaoni_cd
+
+kankeri_song:
+  name: カンケリ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: UNKNOWN
+  cd: takaoni_cd
+
+kyoukaraashita_song:
+  name: 今日から明日
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: UNKNOWN
+  cd: kyoukaraashita_cd
+  note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ
+
+kyoukaraashita_kana_song:
+  name: 今日カラ明日
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: UNKNOWN
+  cd: kyoukaraashita_cd
+  note: 「今日から明日」の別バージョンで歌詞は同じ
+
+superoriginal_song:
+  name: スーパーオリジナル
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: superoriginal_cd
+  note: 
+
+downbylow_song:
+  name: Down by Low(feat.CRAZY-A)
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 「ダウン バイ ロー」表記の場合あり
+
+itsunarouba_song:
+  name: イツナロウバ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: itsunarouba_cd
+  note: 
+
+goodtime_song:
+  name: GOOD TIME!
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: goodtime_cd
+  note: 
+
+kankeri01_song:
+  name: カンケリ01
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kankeri01_cd
+  note: 
+
+lifeline_song:
+  name: LIFELINE
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kankeri01_cd
+  note: 
+
+christmaseverap_song:
+  name: クリスマス・イブRap
+  lyricist: 山下達郎 / KICK THE CAN CREW
+  composer: 山下達郎
+  arranger: UNKNOWN
+  cd: christmaseverap_cd
+  note: 
+
+marche_song:
+  name: マルシェ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: marche_cd
+  note: 
+
+oneway_song:
+  name: ONEWAY
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: oneway_cd
+  note: 
+
+sayonarasayonara_song:
+  name: sayonara sayonara
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: sayonarasayonara_cd
+  note: 
+
+unbalance_song:
+  name: アンバランス
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: unbalance_cd
+  note: 
+
+chikyuublues337_song:
+  name: 地球ブルース～337～
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: chikyuublues337_cd
+  note: 
+
+djdjforradio_song:
+  name: DJDJ [for RADIO]
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: chikyuublues337_cd
+  note: 
+
+toriiiiiico_song:
+  name: TORIIIIIICO!
+  lyricist: KICK THE CAN CREW feat. CASSETTE VISION
+  composer: KICK THE CAN CREW feat. CASSETTE VISION
+  arranger: KREVA
+  cd: toriiiiiico_cd
+  note: KICK THE CAN CREW feat. CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
+
+sagacontinue_song:
+  name: 性コンティニュー
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: KREVA
+  cd: sagacontinue_cd
+  note:
+
+goodmusic_song:
+  name: GOOD MUSIC
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: KREVA
+  cd: goodmusic_sg_cd
+  note: 同一タイトルのSgとAlがリリースされている。
+
+puncsunzennofunk_song:
+  name: パンク寸前のFUNK
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: 顔PASSブラザーズ
+  cd: puncsunzennofunk_cd
+  note: 
+
+navi_song:
+  name: ナビ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: 顔PASSブラザーズ
+  cd: navi_cd
+  note: 
+
+yure_song:
+  name: 揺れ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: navi_cd
+  note: 
+
+nounaivacation_song:
+  name: 脳内VACATION
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: nounaivacation_cd
+  note: 
+
+senpercent_song:
+  name: 千％
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & 柿崎洋一郎
+  arranger: KREVA & 柿崎洋一郎
+  cd: kick_cd
+  note: 
