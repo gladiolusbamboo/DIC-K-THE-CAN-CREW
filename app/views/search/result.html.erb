@@ -3,7 +3,7 @@
 <% if params['searchtype'] == 'ルビ検索' %>
 <h3>(ふりがな検索)</h3>
 <% end %>
-<h1>「<%= params['searchword'] %>」は<%= @hit_song_infos.length %>曲に含まれています</h1>
+<h1>「<%= @trimmed_search_word %>」は<%= @hit_song_infos.length %>曲に含まれています</h1>
 <%= link_to 'トップに戻る', action: :index %>
 <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
   <h2><%= i+1 %>.<%= info_arr[0].song.name %></h2>
@@ -16,7 +16,7 @@
   <p>作詞：<%= info_arr[0].song.lyricist %></p>
   <p>作曲：<%= info_arr[0].song.composer %></p>
   <p>編曲：<%= info_arr[0].song.arranger %></p>
-  <%= show_searchwords(params[:searchtype], info_arr, params['searchword']) %> 
+  <%= show_searchwords(params[:searchtype], info_arr, @trimmed_search_word) %> 
   <% if info_arr[0].song.lyric_urls[0] %>
     <% lyric_website_url = info_arr[0].song.lyric_urls[0].url %>
   <p>

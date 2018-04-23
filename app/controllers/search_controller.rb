@@ -1,11 +1,11 @@
 class SearchController < ApplicationController
   def result
-    # pp params
+    @trimmed_search_word = params[:searchword].gsub(" ","").gsub("　","")
     if (params[:searchtype] != 'ルビ検索')
       # 結果表示に必要な情報を取得する
       # リリース日が古い順、歌詞の順番順に表示する
       query_results = Lyric.includes(song: :cd)
-                          .where("lyric like '%#{params[:searchword]}%'")
+                          .where("lyric like '%#{@trimmed_search_word}%'")
                           .order("cds.released_at ASC", lyric_order: :ASC)
       # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
       # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
@@ -14,7 +14,7 @@ class SearchController < ApplicationController
       # 結果表示に必要な情報を取得する
       # リリース日が古い順、歌詞の順番順に表示する
       query_results = Lyric.includes(song: :cd)
-                          .where("ruby like '%#{params[:searchword]}%'")
+                          .where("ruby like '%#{@trimmed_search_word}%'")
                           .order("cds.released_at ASC", lyric_order: :ASC)
       # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
       # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある

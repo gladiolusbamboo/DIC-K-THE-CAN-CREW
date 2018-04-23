@@ -78,6 +78,8 @@ module SearchHelper
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
     def modifyIndex index, decodedLyricWithRuby, is_space_ok
       index_return = index
+      pp "decodedLyricWithRuby = #{decodedLyricWithRuby}"
+      pp "index_return = #{index_return}"
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける
       while((next_space_count = decodedLyricWithRuby[0, index_return].count(' ')) > space_count)
@@ -85,6 +87,7 @@ module SearchHelper
         # 見つかった半角スペースの分だけindex位置を修正する
         index_return = index + space_count
       end
+      pp "index_return = #{index_return}"
 
       # index_return位置の文字が半角スペースを許容するか
       # 許容しない場合１文字ずつずらして半角スペースじゃない場所を探す
@@ -196,7 +199,7 @@ module SearchHelper
             if character == '}'
               index_tmp = 0
               # 表示用文字列がすべてカタカナであれば
-              if display_characters =~ /\A[\p{katakana}]+\z/
+              if display_characters =~ /\A[\p{katakana}ー]+\z/
                 # 各文字にふりがな文字数１をセットする
                 display_characters.chars do |display_character|
                   lyric_length_array << 1
@@ -221,7 +224,7 @@ module SearchHelper
                 display_characters.length.times{|n|
                   ch = display_characters[display_characters.length-1-n]
                   # 走査対象の文字列がひらがな、もしくはカタカナであれば
-                  if(ch =~ /\A[\p{hiragana}\p{katakana}]\z/)
+                  if(ch =~ /\A[\p{hiragana}\p{katakana}]ー\z/)
                     # 頭文字に与えたふりがな文字数を１減らして、
                     ruby_length_array[0] -= 1
                     # 走査対象文字のふりがな文字数に移動する
@@ -255,6 +258,7 @@ module SearchHelper
       # 正規表現だとマッチングが重なる部分が
       # うまくいかないのでindex()を使う
       offset = 0
+      logger.debug("searchword = #{searchword}")
       while (index = lyric_original.index(searchword, offset)) do
         index_array << index
         offset = index + 1
@@ -284,7 +288,9 @@ module SearchHelper
           concat content_tag(:b, lyric_decoded.slice(index_modified, length), style: 'color:red')
           # searchword直後の５文字切り出し
           concat lyric_decoded.slice(latter_index_modified, 5)
-          concat "(#{info.lyric_type.name}#{info.part_lyric_order} by #{info.singer.name})"
+          concat "　(#{info.lyric_type.name}#{info.part_lyric_order} by "
+          concat content_tag(:b, info.singer.name, style: 'color:green')
+          concat ")"
         end
       )
     end
