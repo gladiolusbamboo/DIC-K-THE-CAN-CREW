@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180421081606) do
+ActiveRecord::Schema.define(version: 20180424125115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -74,6 +74,13 @@ ActiveRecord::Schema.define(version: 20180421081606) do
     t.index ["lyric_type_id"], name: "index_lyrics_on_lyric_type_id"
     t.index ["singer_id"], name: "index_lyrics_on_singer_id"
     t.index ["song_id"], name: "index_lyrics_on_song_id"
+  end
+
+  create_table "search_logs", force: :cascade do |t|
+    t.string "searchword"
+    t.string "searchtype"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "singers", force: :cascade do |t|

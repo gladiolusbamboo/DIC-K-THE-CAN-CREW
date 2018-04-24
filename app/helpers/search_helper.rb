@@ -275,8 +275,10 @@ module SearchHelper
         content_tag(:li) do
           # lyricの先頭付近にsearchwordがあった場合の対策
           start_index = index_modified - 5
-          if start_index < 0 
+          if start_index <= 0 
             start_index = 0
+          else
+            concat "…"            
           end
           length = index_modified - start_index
           
@@ -287,6 +289,10 @@ module SearchHelper
           concat content_tag(:b, lyric_decoded.slice(index_modified, length), style: 'color:red')
           # searchword直後の５文字切り出し
           concat lyric_decoded.slice(latter_index_modified, 5)
+          if lyric_decoded.length - latter_index_modified > 5
+            concat "…"            
+          end
+
           concat "　(#{info.lyric_type.name}#{info.part_lyric_order} by "
           concat content_tag(:b, info.singer.name, style: 'color:green')
           concat ")"
