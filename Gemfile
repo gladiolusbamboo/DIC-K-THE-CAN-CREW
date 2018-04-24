@@ -58,3 +58,4 @@ gem 'pg'
 
 #jQuery
 gem 'jquery-rails'
+gem 'jquery-turbolinks'

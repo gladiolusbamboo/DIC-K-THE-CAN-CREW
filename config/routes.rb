@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'search/index'
   get 'search/search'
   get 'search/result'
+
+  get 'result', to: 'result#index'
+  get 'result/index'
 end
