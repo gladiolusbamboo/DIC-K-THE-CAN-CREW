@@ -1,33 +1,36 @@
+// ページの読み込みが終了したら発火 
 $(document).ready(function () {
-  if (document.getElementById('searchword')) {
-    checkTextBox();
+  // id='searchword'の有無で表示中のページを判定している
+  // かるかに正しい方法があるような気がする
+  if (document.getElementById('search_log_searchword')) {
+    // テキストボックスの入力値がすべてひらがなorカタカナであるか判定
+    checkTextBoxAllKana();
   }
 });
 
-function checkTextBox() {
-  // alert ('check')
-  const txt = document.getElementById('searchword').value.replace(' ', '').replace('　', '')
-  // alert(txt);
+// テキストボックスの入力値がすべてひらがなorカタカナであるか判定
+function checkTextBoxAllKana() {
+  // alert('cec');
+  // 空白文字は位置を問わず削除
+  const txt = document.getElementById('search_log_searchword').value.replace(' ', '').replace('　', '')
   if (txt) {
-    // alert ("OK00");
-    // console.log("TRUE");
-    // $('#lyric_search')[0].disabled = false;
-    // document.getElementById('lyric_search').disabled = false;
+    // すべてひらがなかカタカナであればルビ検索を可能にする
+    // 表記検索の方はValidateで対応する
     if (isAllKana(txt)) {
       $('#ruby_search')[0].disabled = false;
     } else {
-      document.getElementById('ruby_search').disabled = true;
+      $('#ruby_search')[0].disabled = true;
     }
   } else {
-    document.getElementById('ruby_search').disabled = true;
-    // $('#lyric_search')[0].disabled = true;
-    // document.getElementById('lyric_search').disabled = true;    
+    // 何も入力されてない時は検索させない
+    $('#ruby_search')[0].disabled = true;
   }
 }
 
+// 文字列がすべてひらがなかカタカナであるかを判定する
 function isAllKana(str) {
   str = (str == null) ? "" : str;
-  if (str.match(/^[ぁ-んァ-ヶー 　]*$/)) {    //"ー"の後ろの文字は全角スペースです。
+  if (str.match(/^[ぁ-んァ-ヶー]*$/)) {
     return true;
   } else {
     return false;

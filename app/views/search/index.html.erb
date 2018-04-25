@@ -2,8 +2,17 @@
 <%# GETメソッドで検索を行う %>
 <h1>DIC THE CAN CREW(仮)<br>- 缶蹴り関係検索アプリ -</h1>
 <h4>KICK THE CAN CREWのメンバーが関わっている曲を<br />歌詞（フレーズ）から検索することができるよ</h4>
+<p><%= flash[:error_message] %></p>
+<%= form_for(@search_log, url: search_result_path, method: :get) do |form| %>
+  <%= form.text_field :searchword, size: 25, onkeyup: 'checkTextBoxAllKana();' %>
+  <%= form.submit '表記検索', name: :searchtype, value: '表記検索', id: 'lyric_search' %>
+  <%= form.submit 'ルビ検索', name: :searchtype, value: 'ルビ検索', id: 'ruby_search', disabled: true %>
+<% end %>
+<hr>
+<% if false %>
 <%= form_tag({controller: :search, action: :result}, method: :get ) do %>
-  <%= text_field_tag :searchword, '', size: 30, onkeyup: 'checkTextBox();' %>
+  <%= text_field_tag :searchword, '', size: 30, onkeyup: 'checkTextBoxAllKana();' %>
   <%= submit_tag '', name: :searchtype, value: '表記検索', id: 'lyric_search' %>
   <%= submit_tag '', name: :searchtype, value: 'ルビ検索', id: 'ruby_search', disabled: true %>
+<% end %>
 <% end %>

@@ -78,8 +78,6 @@ module SearchHelper
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
     def modifyIndex index, decodedLyricWithRuby, is_space_ok
       index_return = index
-      pp "decodedLyricWithRuby = #{decodedLyricWithRuby}"
-      pp "index_return = #{index_return}"
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける
       while((next_space_count = decodedLyricWithRuby[0, index_return].count(' ')) > space_count)
@@ -87,7 +85,6 @@ module SearchHelper
         # 見つかった半角スペースの分だけindex位置を修正する
         index_return = index + space_count
       end
-      pp "index_return = #{index_return}"
 
       # index_return位置の文字が半角スペースを許容するか
       # 許容しない場合１文字ずつずらして半角スペースじゃない場所を探す
