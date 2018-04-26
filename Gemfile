@@ -56,6 +56,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # postgreSQL
 gem 'pg'
 
-#jQuery
+# jQuery
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+
+# エラーメッセージの日本語化
+gem 'rails-i18n'

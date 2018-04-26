@@ -1,0 +1,7 @@
+ja:
+  activerecord:
+    models:
+      search_log: サーチログ
+    attributes:
+      search_log:
+        searchword: 検索フレーズ
