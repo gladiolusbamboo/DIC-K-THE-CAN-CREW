@@ -1,7 +1,9 @@
 ja:
   activerecord:
     models:
-      search_log: サーチログ
+      search_log: 
     attributes:
       search_log:
-        searchword: 検索フレーズ
+        # エラーの表示形式が気に入らないので空白文字にする
+        searchword: ''
+        searchtype: ''

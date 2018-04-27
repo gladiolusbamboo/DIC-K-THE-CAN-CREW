@@ -7,7 +7,7 @@ module SearchHelper
         # {漢字,かんじ}表記から表示用文字列に戻す
         lyric_decoded = decodeLyricWithRuby(lyric_with_ruby)
 
-        if(searchtype != 'ルビ検索')
+        unless(searchtype == 'ルビ検索')
           lyric_original = info.lyric
         else
           lyric_original = info.ruby
@@ -89,7 +89,9 @@ module SearchHelper
       # index_return位置の文字が半角スペースを許容するか
       # 許容しない場合１文字ずつずらして半角スペースじゃない場所を探す
       if !is_space_ok
-        while(decodedLyricWithRuby[index_return] == ' ')
+        # decodedLyricWithRuby.length = 10 であれば
+        # index_return[9]は走査する必要がない
+        while(decodedLyricWithRuby.length[index_return+1] && decodedLyricWithRuby[index_return] == ' ')
           index_return += 1
         end
       end
@@ -221,7 +223,7 @@ module SearchHelper
                 display_characters.length.times{|n|
                   ch = display_characters[display_characters.length-1-n]
                   # 走査対象の文字列がひらがな、もしくはカタカナであれば
-                  if(ch =~ /\A[\p{hiragana}\p{katakana}]ー\z/)
+                  if(ch =~ /\A[\p{hiragana}\p{katakana}ー]\z/)
                     # 頭文字に与えたふりがな文字数を１減らして、
                     ruby_length_array[0] -= 1
                     # 走査対象文字のふりがな文字数に移動する
