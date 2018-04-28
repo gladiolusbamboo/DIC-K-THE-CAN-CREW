@@ -1,7 +1,7 @@
 // ページの読み込みが終了したら発火 
 $(document).ready(function () {
   // id='search_log_searchword'の有無で表示中のページを判定している
-  // かるかに正しい方法があるような気がする
+  // はるかに正しい方法があるような気がする
   if ($('#search_log_searchword')) {
     // テキストボックスの入力値がすべてひらがなorカタカナであるか判定
     checkTextBoxAllKana();
@@ -23,10 +23,10 @@ function checkTextBoxAllKana() {
   }
 }
 
-// 文字列がすべてひらがなかカタカナであるかを判定する
+// テキストボックスに入力された文字列がすべてひらがなかカタカナであるかを判定する
 function isAllKana(str) {
   str = (str == null) ? "" : str;
-  if (str.match(/^[ぁ-んァ-ヶー]*$/)) {
+  if (str.match(/^[ぁ-んァ-ヶー　 ]*$/)) {
     return true;
   } else {
     return false;

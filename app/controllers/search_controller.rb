@@ -10,8 +10,15 @@ class SearchController < ApplicationController
   def result
     # 入力された文字列から空白文字を削除
     @trimmed_search_word = params[:search_log][:searchword].gsub(" ","").gsub("　","")
-
-    # SearchLogの登録に必要なパラメータ（検索タイプ・IPアドレス）を追加
+    if params[:searchtype] == '表記検索'
+      # 表記検索ならアルファベット小文字は全て大文字にする
+      @trimmed_search_word.upcase!      
+    else
+      # ルビ検索ならカタカナをひらがなに変換する
+      @trimmed_search_word = NKF.nkf('-w --hiragana', @trimmed_search_word)
+    end
+    # SearchLogの登録に必要なパラメータ（検索語・検索タイプ・IPアドレス）を追加する
+    params[:search_log][:searchword] = @trimmed_search_word
     params[:search_log][:searchtype] = params[:searchtype]
     params[:search_log][:ip_address] = request.remote_ip
 
@@ -30,12 +37,11 @@ class SearchController < ApplicationController
       unless (params[:search_log][:searchtype] == 'ルビ検索')     
         # 結果表示に必要な情報を取得する
         # リリース日が古い順、歌詞の順番順に表示する
+        # 大文字小文字の違いは無視する
         query_results = Lyric.includes(song: :cd)
-                            .where("lyric like ?", "%#{escape_like(@trimmed_search_word)}%")
+                            .where("UPPER(lyric) like ?", "%#{escape_like(@trimmed_search_word)}%")
                             .order("cds.released_at ASC", lyric_order: :ASC)
       else
-        # カタカナをひらがなに変換する
-        @trimmed_search_word = NKF.nkf('-w --hiragana', @trimmed_search_word)
         # 結果表示に必要な情報を取得する
         # リリース日が古い順、歌詞の順番順に表示する
         query_results = Lyric.includes(song: :cd)

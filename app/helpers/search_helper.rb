@@ -257,7 +257,7 @@ module SearchHelper
       # 正規表現だとマッチングが重なる部分が
       # うまくいかないのでindex()を使う
       offset = 0
-      while (index = lyric_original.index(searchword, offset)) do
+      while (index = lyric_original.upcase.index(searchword, offset)) do
         index_array << index
         offset = index + 1
       end
