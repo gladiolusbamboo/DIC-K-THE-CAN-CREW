@@ -3,8 +3,27 @@ class SearchController < ApplicationController
   require 'nkf'
 
   def index
-    # form_forでフォームを描画するためにからのインスタンスが必要
+    # form_forでフォームを描画するために空のインスタンスが必要
     @search_log = SearchLog.new
+    @recent_search_logs = SearchLog.where('hit_song_count > 0')
+                                  .order(created_at: :desc)
+                                  .limit(20)
+    @popular_search_logs = SearchLog.group(:searchtype, :searchword)
+                                    .order('count_all desc')
+                                    .limit(100)
+                                    .count
+    popular_search_logs_clone = []
+    @popular_search_logs.each do |log|
+      hit_count  = SearchLog.find_by(searchtype: log[0][0], searchword: log[0][1]).hit_song_count
+      if hit_count > 0
+        log << hit_count
+        popular_search_logs_clone << log
+        if popular_search_logs_clone.count >= 20
+          break
+        end
+      end
+    end
+    @popular_search_logs = popular_search_logs_clone
   end
 
   def result

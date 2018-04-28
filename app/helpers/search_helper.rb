@@ -56,7 +56,7 @@ module SearchHelper
         # match[0]:{漢字,かんじ}
         # match[1]:漢字
         # match[2]:かんじ
-        # なので、match[0]をmatch[1]に置き換えてやる
+        # なので、match[0]をmatch[1]に置き換えてやるとうまくいく
         # 同じ漢字に別のルビがあっても正しく動く
         lyric_return.gsub!(match[0], match[1])
       end
@@ -257,6 +257,7 @@ module SearchHelper
       # 正規表現だとマッチングが重なる部分が
       # うまくいかないのでindex()を使う
       offset = 0
+      # lyric_originalがアルファベット大文字／小文字混じりなので大文字に統一してやる
       while (index = lyric_original.upcase.index(searchword, offset)) do
         index_array << index
         offset = index + 1

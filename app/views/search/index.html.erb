@@ -15,6 +15,43 @@
   <%= form.submit 'ルビ検索', name: :searchtype, value: 'ルビ検索', id: 'ruby_search', disabled: true %>
 <% end %>
 <hr>
+
+<h2>最近の検索履歴</h2>
+<table>
+  <tr>
+    <th>検索タイプ</th>
+    <th>検索語</th>
+    <th>ヒット曲数</th>
+  </tr>
+  <% @recent_search_logs.each do |log| %>
+    <tr>
+      <td><%= log.searchtype %></td>
+      <td><%= log.searchword %></td>
+      <td><%= log.hit_song_count %></td>
+    </tr>
+  <% end %>
+</table>
+
+<hr>
+
+<h2>人気の検索履歴</h2>
+<table>
+  <tr>
+    <th>検索タイプ</th>
+    <th>検索語</th>
+    <th>検索回数</th>
+    <th>ヒット曲数</th>
+  </tr>
+  <% @popular_search_logs.each do |log| %>
+    <tr>
+      <td><%= log[0][0] %></td>
+      <td><%= log[0][1] %></td>
+      <td><%= log[1] %></td>
+      <td><%= log[2] %></td>
+    </tr>
+  <% end %>
+</table>
+
 <% if false %>
 <%= form_tag({controller: :search, action: :result}, method: :get ) do %>
   <%= text_field_tag :searchword, '', size: 30, onkeyup: 'checkTextBoxAllKana();' %>
