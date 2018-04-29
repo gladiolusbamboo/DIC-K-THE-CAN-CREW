@@ -5,13 +5,40 @@ class SearchController < ApplicationController
   def index
     # form_forでフォームを描画するために空のインスタンスが必要
     @search_log = SearchLog.new
-    @recent_search_logs = SearchLog.where('hit_song_count > 0')
-                                  .order(created_at: :desc)
-                                  .limit(20)
+    # @recent_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count)
+    #                               .distinct
+    #                               .select(:created_at)
+    #                               .where('hit_song_count > 0')
+    #                               .order(created_at: :desc)
+    #                               .limit(20)
+     @recent_search_logs = SearchLog.find_by_sql('
+      SELECT
+        id,
+        searchword,
+        searchtype,
+        hit_song_count,
+        created_at
+      FROM	search_logs
+      AS 	a
+      WHERE NOT EXISTS
+      (
+        SELECT	id
+        FROM	search_logs
+        AS B
+        WHERE A.created_at < B.created_at
+        AND A.searchword = B.searchword 
+        AND B.searchtype = B.searchtype
+      )
+      ORDER BY created_at DESC LIMIT 20')
     @popular_search_logs = SearchLog.group(:searchtype, :searchword)
                                     .order('count_all desc')
                                     .limit(100)
                                     .count
+    @highscore_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
+                                      .order('score DESC')
+                                      .distinct
+                                      .limit(20)
+    logger.debug "@highscore_search_logs = #{@highscore_search_logs.inspect}"
     popular_search_logs_clone = []
     @popular_search_logs.each do |log|
       hit_count  = SearchLog.find_by(searchtype: log[0][0], searchword: log[0][1]).hit_song_count
@@ -29,6 +56,7 @@ class SearchController < ApplicationController
   def result
     # 入力された文字列から空白文字を削除
     @trimmed_search_word = params[:search_log][:searchword].gsub(" ","").gsub("　","")
+    @trimmed_search_word = full_to_half @trimmed_search_word
     if params[:searchtype] == '表記検索'
       # 表記検索ならアルファベット小文字は全て大文字にする
       @trimmed_search_word.upcase!      
@@ -105,5 +133,9 @@ class SearchController < ApplicationController
 
   def escape_like(string)
     string.gsub(/[\\%_]/){|m| "\\#{m}"}
+  end
+
+  def full_to_half(txt)
+    txt.tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z')
   end
 end

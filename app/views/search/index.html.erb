@@ -26,7 +26,7 @@
   <% @recent_search_logs.each do |log| %>
     <tr>
       <td><%= log.searchtype %></td>
-      <td><%= log.searchword %></td>
+      <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
       <td><%= log.hit_song_count %></td>
     </tr>
   <% end %>
@@ -45,17 +45,29 @@
   <% @popular_search_logs.each do |log| %>
     <tr>
       <td><%= log[0][0] %></td>
-      <td><%= log[0][1] %></td>
+      <td><%= link_to log[0][1], action: :result, 'search_log[searchword]': log[0][1], searchtype: log[0][0] %></td>
       <td><%= log[1] %></td>
       <td><%= log[2] %></td>
     </tr>
   <% end %>
 </table>
 
-<% if false %>
-<%= form_tag({controller: :search, action: :result}, method: :get ) do %>
-  <%= text_field_tag :searchword, '', size: 30, onkeyup: 'checkTextBoxAllKana();' %>
-  <%= submit_tag '', name: :searchtype, value: '表記検索', id: 'lyric_search' %>
-  <%= submit_tag '', name: :searchtype, value: 'ルビ検索', id: 'ruby_search', disabled: true %>
-<% end %>
-<% end %>
+<hr>
+
+<h2>高得点の検索履歴</h2>
+<table>
+  <tr>
+    <th>検索タイプ</th>
+    <th>検索語</th>
+    <th>ヒット曲数</th>
+    <th>スコア</th>
+  </tr>
+  <% @highscore_search_logs.each do |log| %>
+    <tr>
+      <td><%= log.searchtype %></td>
+      <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
+      <td><%= log.hit_song_count %></td>
+      <td><%= log.score %></td>
+    </tr>
+  <% end %>
+</table>
