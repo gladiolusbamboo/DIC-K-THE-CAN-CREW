@@ -5,52 +5,29 @@ class SearchController < ApplicationController
   def index
     # form_forでフォームを描画するために空のインスタンスが必要
     @search_log = SearchLog.new
-    # @recent_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count)
-    #                               .distinct
-    #                               .select(:created_at)
-    #                               .where('hit_song_count > 0')
-    #                               .order(created_at: :desc)
-    #                               .limit(20)
-     @recent_search_logs = SearchLog.find_by_sql('
-      SELECT
-        id,
-        searchword,
-        searchtype,
-        hit_song_count,
-        created_at
-      FROM	search_logs
-      AS 	a
-      WHERE NOT EXISTS
-      (
-        SELECT	id
-        FROM	search_logs
-        AS B
-        WHERE A.created_at < B.created_at
-        AND A.searchword = B.searchword 
-        AND B.searchtype = B.searchtype
-      )
-      ORDER BY created_at DESC LIMIT 20')
-    @popular_search_logs = SearchLog.group(:searchtype, :searchword)
-                                    .order('count_all desc')
-                                    .limit(100)
-                                    .count
+    # 重複排除のSQLが複雑なため関数化
+    @recent_search_logs = getRecentSearchLogs
+
+    # @popular_search_logsは以下のような構造
+    # search_log[0][0][0] = "表記検索"
+    # search_log[0][0][1] = "KREVA"
+    # search_log[0][1] = 10(検索回数)
+    # search_log[0][2] = 25(ヒット曲数)
+    # search_log[1][0][0] = "ルビ検索"
+    # search_log[1][0][1] = "くれば"
+    # search_log[1][1] = 9(検索回数)
+    # search_log[1][2] = 20(ヒット曲数)
+    # ︙
+    # データ追加のタイミングで結果が異なってい可能性があるので２回にわけて検索する。
+    # 処理が長くなるので関数化
+    @popular_search_logs = getPopularSearchLogs
+
+    # ヒット曲数×文字列長を得点として得点順に取得する
     @highscore_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
-                                      .order('score DESC')
-                                      .distinct
-                                      .limit(20)
-    logger.debug "@highscore_search_logs = #{@highscore_search_logs.inspect}"
-    popular_search_logs_clone = []
-    @popular_search_logs.each do |log|
-      hit_count  = SearchLog.find_by(searchtype: log[0][0], searchword: log[0][1]).hit_song_count
-      if hit_count > 0
-        log << hit_count
-        popular_search_logs_clone << log
-        if popular_search_logs_clone.count >= 20
-          break
-        end
-      end
-    end
-    @popular_search_logs = popular_search_logs_clone
+        .order('score DESC')
+        .distinct
+        .limit(20)
+
   end
 
   def result
@@ -131,11 +108,62 @@ class SearchController < ApplicationController
     params.require(:search_log).permit(:searchtype, :searchword, :hit_song_count, :ip_address)
   end
 
+  # LIKE検索のSQLインジェクション対策
   def escape_like(string)
     string.gsub(/[\\%_]/){|m| "\\#{m}"}
   end
 
+  # 全角→半角変換処理
   def full_to_half(txt)
     txt.tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z')
+  end
+
+  def getRecentSearchLogs()
+    # 検索内容の重複排除のためサブクエリを使用している
+    SearchLog.find_by_sql('
+      SELECT
+        id,
+        searchword,
+        searchtype,
+        hit_song_count,
+        created_at
+      FROM	search_logs
+      AS 	a
+      WHERE 
+        a.hit_song_count > 0
+        AND NOT EXISTS
+        (
+          SELECT	id
+          FROM	search_logs
+          AS B
+          WHERE A.created_at < B.created_at
+          AND A.searchword = B.searchword 
+          AND B.searchtype = B.searchtype
+        )
+      ORDER BY created_at DESC
+      LIMIT 20'
+    )
+  end
+
+  # データ追加のタイミングで結果が異なってい可能性があるので
+  # ２回にわけて検索している
+  def getPopularSearchLogs()
+    popular_search_logs = SearchLog.group(:searchtype, :searchword)
+                                    .where('hit_song_count > 0')
+                                    .order('count_all desc')
+                                    .limit(20)
+                                    .count
+
+    popular_search_logs_clone = []
+    popular_search_logs.each do |log|
+      # 指定の条件での最新レコードから結果を取得する
+      latest_search_log = SearchLog.where(searchtype: log[0][0], searchword: log[0][1])
+                            .order(created_at: :desc)
+                            .limit(1)[0]
+      hit_count = latest_search_log.hit_song_count
+      log << hit_count
+      popular_search_logs_clone << log
+    end
+    popular_search_logs_clone
   end
 end

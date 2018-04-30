@@ -2,6 +2,7 @@
 <%# GETメソッドで検索を行う %>
 <h1>DIC THE CAN CREW(仮)<br>- 缶蹴り関係検索アプリ -</h1>
 <h4>KICK THE CAN CREWのメンバーが関わっている曲を<br />歌詞（フレーズ）から検索することができるよ</h4>
+<%# リダイレクトでエラーが送られてきた時の処理 %>
 <% if flash[:errors] %>
   <ul>
     <% flash[:errors].each do |message| %>
