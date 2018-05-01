@@ -76,14 +76,62 @@ class SearchController < ApplicationController
       # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
       # ハッシュの中身は配列になっているので表示のときには二重にeachしてやる必要がある
       hash_to_hit_song_infos(query_results)
+
       # ヒット件数情報をparamsに追加して改めてSearchLogを生成する
       params[:search_log][:hit_song_count] = @hit_song_infos.length
+
+      song_id_array = []
+      phrase_count_hash = {}
+
+      # @hiot_song_infosを走査して、searchwordが含まれるsong_idを抽出する
+      @hit_song_infos.each do |key_value|
+        # key_value[0] がハッシュキー(song_id)
+        # key_value[1] がハッシュの値
+        hash_key = key_value[0]
+        hash_value = key_value[1]
+
+        song_id_array << hash_key
+        # searchwordの総出現回数
+        phrase_count = 0
+        # 1パートでsearchwordが複数出現する可能性があるので走査する
+        hash_value.each do |inf|
+          unless (params[:search_log][:searchtype] == 'ルビ検索')     
+            search_target_text = inf.lyric
+          else
+            search_target_text = inf.ruby
+          end
+          # ヘルパーメソッドを呼び出して出現回数をカウントする
+          phrase_count += view_context.get_index_array(search_target_text, @trimmed_search_word).length
+        end
+        # 曲ごとのsearchwordの出現回数を登録
+        phrase_count_hash[hash_value[0].song_id] = phrase_count
+      end
+
+      # SearchLogに出現曲のデータを配列で登録する
+      params[:search_log][:song_ids] = song_id_array
+
+      # SearchLogを生成して
       @search_log = SearchLog.new(search_log_params)
 
-      # DBに保存する
-      unless @search_log.save
+      SearchLog.transaction do
+        # DBに保存する
+        @search_log.save!
+
+        # 中間テーブルにデータを追加する方法がわからないので、
+        # 一旦データを追加してから、更新することにした
+
+        # 中間テーブルのモデルを取得する（複数ある）
+        search_log_songs = SearchLogSong.where(search_log_id: @search_log.id)
+
+        # SearchLogとSongの中間テーブルに出現回数のデータをもたせる      
+        search_log_songs.each do |search_log_song|
+          search_log_song.phrase_hit_count = phrase_count_hash[search_log_song.song_id]
+          search_log_song.save!
+        end
+      # end
+      rescue => e
         # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
-        redirect_to ({action: :index}), flash: {errors: @search_log.errors.full_messages}
+        redirect_to ({action: :index}), flash: {errors: e.message}
       end
     end
   end
@@ -105,7 +153,7 @@ class SearchController < ApplicationController
 
   def search_log_params
     # Modelの編集を許可している
-    params.require(:search_log).permit(:searchtype, :searchword, :hit_song_count, :ip_address)
+    params.require(:search_log).permit(:searchtype, :searchword, :hit_song_count, :ip_address, {:song_ids => []})
   end
 
   # LIKE検索のSQLインジェクション対策

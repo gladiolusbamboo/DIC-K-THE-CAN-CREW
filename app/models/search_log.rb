@@ -1,4 +1,7 @@
 class SearchLog < ApplicationRecord
+  has_many :search_log_songs
+  has_many :songs, through: :search_log_songs
+
   # searchwordは1-20文字の範囲
   validates :searchword,
     length: {

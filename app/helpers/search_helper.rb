@@ -38,6 +38,34 @@ module SearchHelper
     end
   end
 
+  # SearchLogからsearchwordの最頻出曲を得る処理
+  def get_most_appear_song_name_from_search_log log
+    max = 0
+    most_appear_song_id = ''
+    # 中間テーブルを走査して各曲のsearchwordの出現回数を得る
+    log.search_log_songs.each do |search_log_song|
+      if search_log_song.phrase_hit_count > max
+        max = search_log_song.phrase_hit_count
+        most_appear_song_id = search_log_song.song_id
+      end
+    end
+    log.songs.find(most_appear_song_id).name
+  end
+
+  # コントローラーからも呼ばれるのでpublicにする
+  def get_index_array(lyric_original, searchword)
+    index_array = []
+    # 正規表現だとマッチングが重なる部分が
+    # うまくいかないのでindex()を使う
+    offset = 0
+    # lyric_originalがアルファベット大文字／小文字混じりなので大文字に統一してやる
+    while (index = lyric_original.upcase.index(searchword, offset)) do
+      index_array << index
+      offset = index + 1
+    end
+    index_array
+  end
+
   private
     # {漢字,かんじ}表記から表示用文字列に戻す
     def decodeLyricWithRuby lyric_with_ruby
@@ -250,19 +278,6 @@ module SearchHelper
         end
       end
       lyric_length_array
-    end
-
-    def get_index_array(lyric_original, searchword)
-      index_array = []
-      # 正規表現だとマッチングが重なる部分が
-      # うまくいかないのでindex()を使う
-      offset = 0
-      # lyric_originalがアルファベット大文字／小文字混じりなので大文字に統一してやる
-      while (index = lyric_original.upcase.index(searchword, offset)) do
-        index_array << index
-        offset = index + 1
-      end
-      index_array
     end
 
     # 検索結果を<li>タグで返す

@@ -23,12 +23,14 @@
     <th>検索タイプ</th>
     <th>検索語</th>
     <th>ヒット曲数</th>
+    <th>曲名</th>
   </tr>
   <% @recent_search_logs.each do |log| %>
     <tr>
       <td><%= log.searchtype %></td>
       <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
       <td><%= log.hit_song_count %></td>
+      <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
     </tr>
   <% end %>
 </table>
