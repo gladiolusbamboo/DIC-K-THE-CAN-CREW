@@ -113,7 +113,7 @@ class SearchController < ApplicationController
       # SearchLogを生成して
       @search_log = SearchLog.new(search_log_params)
 
-      SearchLog.transaction do
+      # SearchLog.transaction do
         # DBに保存する
         @search_log.save!
 
@@ -129,10 +129,10 @@ class SearchController < ApplicationController
           search_log_song.save!
         end
       # end
-      rescue => e
+      # rescue => e
         # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
-        redirect_to ({action: :index}), flash: {errors: e.message}
-      end
+      #   redirect_to ({action: :index}), flash: {errors: e.message}
+      # end
     end
   end
 
