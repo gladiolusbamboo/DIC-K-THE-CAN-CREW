@@ -60,6 +60,9 @@
 
     function getYouTubeID() {
       youtubeIDLength = [
+        // KICK THE CAN CREW
+        'wFKvOPQyVL0', // 千％
+
         // KREVA
         '7-HEkkTSI6k', // 希望の炎
         '7FJZWjGjEBc', // イッサイガッサイ
@@ -87,10 +90,23 @@
         'EFlhX5gaa-A', // BESHI
         '9Z4dkqUmL3E', // トランキライザー
         'B9kV2qFpDEc', // 全速力
-        'x0Pcn_OoKzs' // Under The Moon
+        'x0Pcn_OoKzs', // Under The Moon
+
+        // LITTLE
+        'SMnCLqst-Ao', // 愛はある
+        'DyyshApgQp8', // Beach Sun Girl feat. Una
+        '80ps2jHpmME', // and you...
+        '_HYjzw-fpvg', // FUNKY ウーロンハイ
+
+        // UL
+        'rZGu3a6Vz4o', // 「Boys&Gentlemen」Trailer
+        '_m_gEbQkk-0', // 馬ッ鹿者 feat. 増子直純(怒髪天)
+        'fsPH4S4Ylw4', // 「One Mic / アリとキリギリス」【LIVE映像】
+        '6pVI56OjA1M', // La La Like a Love Song
+        '3hebZ8jMKh8', // アルバム「ULTRAP」ダイジェストMV【4曲mix】
       ];
 
-      const randomInteger = Math.floor(Math.random(youtubeIDLength.length));
+      const randomInteger = Math.floor(Math.random() * youtubeIDLength.length);
 
       return youtubeIDLength[randomInteger];
     }
