@@ -39,6 +39,7 @@
       // var ytID = 'cX-X_UFUyYE'; //'wFKvOPQyVL0'; // https://youtu.be/〇〇〇の〇〇〇
       // プレイヤーの埋め込み
       function onYouTubeIframeAPIReady() {
+        ytID = getYouTubeID();
         ytPlayer = new YT.Player(ytArea, {
           videoId: ytID,
           playerVars: {
@@ -54,6 +55,10 @@
             'onStateChange': onPlayerStateChange
           }
         });
+      }
+
+      function getYouTubeID(){
+        return 'wFKvOPQyVL0';
       }
       // 動画の準備完了後の動作
       function onPlayerReady(e) {
