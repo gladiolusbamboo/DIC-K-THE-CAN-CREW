@@ -2,7 +2,7 @@
 $(document).ready(function () {
   // id='search_log_searchword'の有無で表示中のページを判定している
   // はるかに正しい方法があるような気がする
-  if ($('#search_log_searchword')) {
+  if ($('#search_log_searchword').length > 0) {
     // テキストボックスの入力値がすべてひらがなorカタカナであるか判定
     checkTextBoxAllKana();
   }
@@ -10,6 +10,13 @@ $(document).ready(function () {
 
 // テキストボックスの入力値がすべてひらがなorカタカナであるか判定
 function checkTextBoxAllKana() {
+  alert('AAAAA');
+  if ($('#search_log_searchword').length == 0){
+    alert('BBBBB');
+    return;
+  }
+  alert('CCCCC');
+  
   // 空白文字は位置を問わず削除
   const txt = $('#search_log_searchword')[0].value.replace(' ', '').replace('　', '')
 
