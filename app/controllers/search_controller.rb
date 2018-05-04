@@ -217,6 +217,5 @@ class SearchController < ApplicationController
     rescue ActiveRecord::RecordInvalid
       # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
       redirect_to ({action: :index}), flash: {errors: e.message}      
-    # end
   end
 end
