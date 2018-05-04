@@ -6,7 +6,7 @@ class SearchController < ApplicationController
     # form_forでフォームを描画するために空のインスタンスが必要
     @search_log = SearchLog.new
     # 重複排除のSQLが複雑なため関数化
-    @recent_search_logs = getRecentSearchLogs
+    @recent_search_logs = get_recent_search_logs
 
     # @popular_search_logsは以下のような構造
     # search_log[0][0][0] = "表記検索"
@@ -20,7 +20,7 @@ class SearchController < ApplicationController
     # ︙
     # データ追加のタイミングで結果が異なってい可能性があるので２回にわけて検索する。
     # 処理が長くなるので関数化
-    @popular_search_logs = getPopularSearchLogs
+    @popular_search_logs = get_popular_search_logs
 
     # ヒット曲数×文字列長を得点として得点順に取得する
     @highscore_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
@@ -110,29 +110,8 @@ class SearchController < ApplicationController
       # SearchLogに出現曲のデータを配列で登録する
       params[:search_log][:song_ids] = song_id_array
 
-      # SearchLogを生成して
-      @search_log = SearchLog.new(search_log_params)
-
-      # SearchLog.transaction do
-        # DBに保存する
-        @search_log.save!
-
-        # 中間テーブルにデータを追加する方法がわからないので、
-        # 一旦データを追加してから、更新することにした
-
-        # 中間テーブルのモデルを取得する（複数ある）
-        search_log_songs = SearchLogSong.where(search_log_id: @search_log.id)
-
-        # SearchLogとSongの中間テーブルに出現回数のデータをもたせる      
-        search_log_songs.each do |search_log_song|
-          search_log_song.phrase_hit_count = phrase_count_hash[search_log_song.song_id]
-          search_log_song.save!
-        end
-      # end
-      # rescue => e
-        # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
-      #   redirect_to ({action: :index}), flash: {errors: e.message}
-      # end
+      # SearchLogおよび中間テーブルのSearchLongSongを保存する
+      save_search_log(phrase_count_hash)
     end
   end
 
@@ -166,7 +145,7 @@ class SearchController < ApplicationController
     txt.tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z')
   end
 
-  def getRecentSearchLogs()
+  def get_recent_search_logs()
     # 検索内容の重複排除のためサブクエリを使用している
     SearchLog.find_by_sql('
       SELECT
@@ -195,7 +174,7 @@ class SearchController < ApplicationController
 
   # データ追加のタイミングで結果が異なってい可能性があるので
   # ２回にわけて検索している
-  def getPopularSearchLogs()
+  def get_popular_search_logs()
     popular_search_logs = SearchLog.group(:searchtype, :searchword)
                                     .where('hit_song_count > 0')
                                     .order('count_all desc')
@@ -213,5 +192,30 @@ class SearchController < ApplicationController
       popular_search_logs_clone << log
     end
     popular_search_logs_clone
+  end
+
+  def save_search_log(phrase_count_hash)
+    ActiveRecord::Base.transaction do
+      # SearchLogを生成して
+      @search_log = SearchLog.new(search_log_params)
+
+      # DBに保存する
+      @search_log.save!
+
+      # 中間テーブルにデータを追加する方法がわからないので、
+      # 一旦データを追加してから、更新することにした
+
+      # 中間テーブルのモデルを取得する（複数ある）
+      search_log_songs = SearchLogSong.where(search_log_id: @search_log.id)
+
+      # SearchLogとSongの中間テーブルに出現回数のデータをもたせる      
+      search_log_songs.each do |search_log_song|
+        search_log_song.phrase_hit_count = phrase_count_hash[search_log_song.song_id]
+        search_log_song.save!
+      end
+    rescue ActiveRecord::RecordInvalid
+      # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
+      redirect_to ({action: :index}), flash: {errors: e.message}      
+    end
   end
 end
