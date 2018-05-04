@@ -213,9 +213,10 @@ class SearchController < ApplicationController
         search_log_song.phrase_hit_count = phrase_count_hash[search_log_song.song_id]
         search_log_song.save!
       end
+    end
     rescue ActiveRecord::RecordInvalid
       # 保存に失敗したらエラー情報を渡してトップページにリダイレクトする
       redirect_to ({action: :index}), flash: {errors: e.message}      
-    end
+    # end
   end
 end

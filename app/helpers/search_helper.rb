@@ -5,7 +5,7 @@ module SearchHelper
       info_arr.each do |info|
         lyric_with_ruby = info.lyric_with_ruby
         # {漢字,かんじ}表記から表示用文字列に戻す
-        lyric_decoded = decodeLyricWithRuby(lyric_with_ruby)
+        lyric_decoded = decode_lyric_with_ruby(lyric_with_ruby)
 
         unless(searchtype == 'ルビ検索')
           lyric_original = info.lyric
@@ -68,7 +68,7 @@ module SearchHelper
 
   private
     # {漢字,かんじ}表記から表示用文字列に戻す
-    def decodeLyricWithRuby lyric_with_ruby
+    def decode_lyric_with_ruby lyric_with_ruby
       regex = /\\{(.*?),(.*?)\\}/
       # match結果を格納する配列
       matches = []
@@ -97,14 +97,14 @@ module SearchHelper
     def get_index_modified_array_lyric(lyric_decoded, index, searchword)
       index_modified_array = []
       # 半角スペース分index位置をずらす
-      index_modified_array << modifyIndex(index, lyric_decoded, false)
+      index_modified_array << modify_index(index, lyric_decoded, false)
       # searchword直後の５文字をどこから切り取るかを設定
-      index_modified_array << modifyIndex(index+searchword.length, lyric_decoded, true)
+      index_modified_array << modify_index(index+searchword.length, lyric_decoded, true)
     end
 
     # 半角スペース分のindex位置を修正する
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
-    def modifyIndex index, decodedLyricWithRuby, is_space_ok
+    def modify_index index, decodedLyricWithRuby, is_space_ok
       index_return = index
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける
