@@ -89,11 +89,9 @@ function onPlayerReady(e) {
     ytPlayer.mute();
     ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
   } else {
-    $("#notice").html('smapho'+navigator.userAgent.toLowerCase());
     ytPlayer.mute();
-    ytPlayer.playVideo();
     ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
-
+    ytPlayer.playVideo();
   }
 }
 // 動画再生中と再生後の動作
