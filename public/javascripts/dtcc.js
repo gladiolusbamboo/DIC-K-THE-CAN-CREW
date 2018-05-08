@@ -82,17 +82,9 @@ function getYouTubeID() {
 }
 // 動画の準備完了後の動作
 function onPlayerReady(e) {
-  if (navigator.userAgent.toLowerCase().indexOf('iphone') < 0
-      && navigator.userAgent.toLowerCase().indexOf('android') < 0) {
-    $("#notice").html('PC'+navigator.userAgent.toLowerCase());
-    ytPlayer.playVideo();
-    ytPlayer.mute();
-    ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
-  } else {
-    ytPlayer.mute();
-    ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
-    ytPlayer.playVideo();
-  }
+  ytPlayer.playVideo();
+  ytPlayer.mute();
+  ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
 }
 // 動画再生中と再生後の動作
 function onPlayerStateChange(e) {
