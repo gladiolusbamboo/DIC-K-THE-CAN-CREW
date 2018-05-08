@@ -90,9 +90,9 @@ function onPlayerReady(e) {
     ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
   } else {
     $("#notice").html('smapho'+navigator.userAgent.toLowerCase());
-    // ytPlayer.playVideo();
-    // ytPlayer.mute();
-    // ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
+    ytPlayer.mute();
+    ytPlayer.playVideo();
+    ytPlayer.setPlaybackQuality('default'); // 画質(small・medium・large・hd720・hd1080・highres・default)
 
   }
 }
