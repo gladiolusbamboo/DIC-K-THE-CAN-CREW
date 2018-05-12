@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'search', to: 'search#index'
   get 'search/index'
   get 'search/result'
+
+  get 'search/out'
 end
