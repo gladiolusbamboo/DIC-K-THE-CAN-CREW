@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>DICK THE CAN CREW - 缶蹴り関係検索アプリ -</title>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <%= stylesheet_link_tag 'bootstrap.min', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'hipster_cards', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display|Raleway:700,100,400|Roboto:400,700|Playfair+Display+SC:400,700'
+      rel='stylesheet' type='text/css'>
+    <style>
+      .card {
+        margin-bottom: 70px;
+      }
+    </style>
+
   </head>
 
   <body>
     <%= yield %>
   </body>
+
+  <%= javascript_include_tag 'jquery-1.10.2', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'bootstrap.min', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'hipster-cards', 'data-turbolinks-track': 'reload' %>
+
+  <!--  Just for demo	 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+  <script>
+
+    $().ready(function () {
+
+      var $container = $('.masonry-container');
+
+      doc_width = $(document).width();
+
+      if (doc_width >= 768) {
+        $container.masonry({
+          itemSelector: '.card-box',
+          columnWidth: '.card-box',
+          transitionDuration: 0
+        });
+      } else {
+        $('.mas-container').removeClass('mas-container').addClass('row');
+      }
+    });
+  </script>
 </html>
