@@ -14,3 +14,12 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
 Rails.application.config.assets.precompile += %w( search.js )
+Rails.application.config.assets.precompile += %w( hipster-cards.js )
+Rails.application.config.assets.precompile += %w( jquery-1.10.2.js )
+Rails.application.config.assets.precompile += %w( bootstrap.min.js )
+
+Rails.application.config.assets.precompile += %w( search.css )
+Rails.application.config.assets.precompile += %w( bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( hipster_cards.css )
+Rails.application.config.assets.precompile += %w( pe-icon-7-stroke.css )
+
