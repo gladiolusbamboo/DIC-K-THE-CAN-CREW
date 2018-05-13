@@ -68,10 +68,16 @@
   color: #EE2D20 !important;
 }
 
+.card ul{
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
 /*     General overwrite     */
 body {
   font-family: "Helvetica Neue","Open Sans",Arial,sans-serif;
-  background-color: #cccccc;
+  background-color: #cccccc !important;
 }
 
 a {
@@ -1024,7 +1030,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   padding: 15px 15px 5px 15px;
 }
 .card .content .title {
-  margin: 10px 0 20px 0;
+  margin: 10px 0 10px 0;
 }
 .card .content .category ~ .title {
   margin-top: 0px;
