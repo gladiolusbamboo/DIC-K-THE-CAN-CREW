@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'search/result'
 
   get 'search/out'
+  get 'search/cards'
 end
