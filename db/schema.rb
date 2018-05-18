@@ -10,10 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180505020617) do
+ActiveRecord::Schema.define(version: 20180518095114) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artists", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "cd_songs", force: :cascade do |t|
     t.bigint "cd_id"
@@ -113,6 +119,8 @@ ActiveRecord::Schema.define(version: 20180505020617) do
     t.bigint "cd_id"
     t.text "note"
     t.bigint "search_log_song_id"
+    t.bigint "artist_id"
+    t.index ["artist_id"], name: "index_songs_on_artist_id"
     t.index ["cd_id"], name: "index_songs_on_cd_id"
     t.index ["lyric_url_id"], name: "index_songs_on_lyric_url_id"
     t.index ["search_log_song_id"], name: "index_songs_on_search_log_song_id"
@@ -128,6 +136,7 @@ ActiveRecord::Schema.define(version: 20180505020617) do
   add_foreign_key "lyrics", "songs"
   add_foreign_key "search_log_songs", "search_logs"
   add_foreign_key "search_log_songs", "songs"
+  add_foreign_key "songs", "artists"
   add_foreign_key "songs", "cds"
   add_foreign_key "songs", "lyric_urls"
   add_foreign_key "songs", "search_log_songs"

@@ -301,17 +301,74 @@ module SearchHelper
           concat lyric_decoded.slice(start_index,length)
           # searchwordを切り出して強調
           length = latter_index_modified - index_modified
-          concat content_tag(:b, lyric_decoded.slice(index_modified, length), style: 'color:red')
+          concat content_tag(:span, lyric_decoded.slice(index_modified, length), class: 'word-hit')
           # searchword直後の５文字切り出し
           concat lyric_decoded.slice(latter_index_modified, 5)
           if lyric_decoded.length - latter_index_modified > 5
             concat "…"            
           end
 
-          concat "　(#{info.lyric_type.name}#{info.part_lyric_order} by "
-          concat content_tag(:b, info.singer.name, style: 'color:green')
+          concat tag(:br)
+          concat "(#{info.lyric_type.name}#{info.part_lyric_order} by "
+          concat content_tag(:span, info.singer.name, class: 'artist-hit')
           concat ")"
         end
       )
+    end
+
+    def generate_card_1(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card') do
+          concat(
+            content_tag(:div, class: 'header') do
+              tag(:img, src: '../../assets/img/lifestyle-8.jpg')
+            end
+          )
+          concat(
+            content_tag(:div, class: 'content') do
+              concat(
+                content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
+              )
+              concat(
+                content_tag(:h4, info_arr[0].song.name, class: 'title')
+              )
+              concat(
+                content_tag(:ul) do
+                  concat(
+                    content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                  )
+                  concat(
+                    content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                  )
+                  concat(
+                    content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                  )
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                content_tag(:h5, '収録CD')
+              )
+              concat(
+                content_tag(:ul) do
+                  info_arr[0].song.cds.each do |cd|
+                    concat(
+                      content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                    )
+                  end
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+              )
+            end
+          )
+        end
+      end
     end
 end

@@ -2,12 +2,14 @@
 
 takaoni_song:
   name: タカオニ
+  artist: kickthecancrew_artist
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: UNKNOWN
   cd: takaoni_cd
 
 kankeri_song:
+  artist: kickthecancrew_artist
   name: カンケリ
   lyricist: KICK THE CAN CREW
   composer: KREVA
@@ -15,6 +17,7 @@ kankeri_song:
   cd: takaoni_cd
 
 kyoukaraashita_song:
+  artist: kickthecancrew_artist
   name: 今日から明日
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -23,6 +26,7 @@ kyoukaraashita_song:
   note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ
 
 kyoukaraashita_kana_song:
+  artist: kickthecancrew_artist
   name: 今日カラ明日
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -31,6 +35,7 @@ kyoukaraashita_kana_song:
   note: 「今日から明日」の別バージョンで歌詞は同じ
 
 superoriginal_song:
+  artist: kickthecancrew_artist
   name: スーパーオリジナル
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -39,6 +44,7 @@ superoriginal_song:
   note: 
 
 downbylow_song:
+  artist: kickthecancrew_artist
   name: Down by Low(feat.CRAZY-A)
   lyricist: KICK THE CAN CREW
   composer: KREVA
@@ -47,6 +53,7 @@ downbylow_song:
   note: 「ダウン バイ ロー」表記の場合あり
 
 itsunarouba_song:
+  artist: kickthecancrew_artist
   name: イツナロウバ
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -55,6 +62,7 @@ itsunarouba_song:
   note: 
 
 goodtime_song:
+  artist: kickthecancrew_artist
   name: GOOD TIME!
   lyricist: KICK THE CAN CREW
   composer: KREVA
@@ -63,6 +71,7 @@ goodtime_song:
   note: 
 
 kankeri01_song:
+  artist: kickthecancrew_artist
   name: カンケリ01
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -71,6 +80,7 @@ kankeri01_song:
   note: 
 
 lifeline_song:
+  artist: kickthecancrew_artist
   name: LIFELINE
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -79,6 +89,7 @@ lifeline_song:
   note: 
 
 christmaseverap_song:
+  artist: kickthecancrew_artist
   name: クリスマス・イブRap
   lyricist: 山下達郎 / KICK THE CAN CREW
   composer: 山下達郎
@@ -87,6 +98,7 @@ christmaseverap_song:
   note: 
 
 marche_song:
+  artist: kickthecancrew_artist
   name: マルシェ
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -95,6 +107,7 @@ marche_song:
   note: 
 
 oneway_song:
+  artist: kickthecancrew_artist
   name: ONEWAY
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -103,6 +116,7 @@ oneway_song:
   note: 
 
 sayonarasayonara_song:
+  artist: kickthecancrew_artist
   name: sayonara sayonara
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -111,6 +125,7 @@ sayonarasayonara_song:
   note: 
 
 unbalance_song:
+  artist: kickthecancrew_artist
   name: アンバランス
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -119,6 +134,7 @@ unbalance_song:
   note: 
 
 chikyuublues337_song:
+  artist: kickthecancrew_artist
   name: 地球ブルース～337～
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -127,6 +143,7 @@ chikyuublues337_song:
   note: 
 
 djdjforradio_song:
+  artist: kickthecancrew_artist
   name: DJDJ [for RADIO]
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -135,6 +152,7 @@ djdjforradio_song:
   note: 
 
 toriiiiiico_song:
+  artist: kickthecancrew_artist
   name: TORIIIIIICO!
   lyricist: KICK THE CAN CREW feat. CASSETTE VISION
   composer: KICK THE CAN CREW feat. CASSETTE VISION
@@ -143,6 +161,7 @@ toriiiiiico_song:
   note: KICK THE CAN CREW feat. CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
 
 sagacontinue_song:
+  artist: kickthecancrew_artist
   name: 性コンティニュー
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
@@ -151,6 +170,7 @@ sagacontinue_song:
   note:
 
 goodmusic_song:
+  artist: kickthecancrew_artist
   name: GOOD MUSIC
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
@@ -159,6 +179,7 @@ goodmusic_song:
   note: 同一タイトルのSgとAlがリリースされている。
 
 puncsunzennofunk_song:
+  artist: kickthecancrew_artist
   name: パンク寸前のFUNK
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
@@ -167,6 +188,7 @@ puncsunzennofunk_song:
   note: 
 
 navi_song:
+  artist: kickthecancrew_artist
   name: ナビ
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
@@ -175,6 +197,7 @@ navi_song:
   note: 
 
 yure_song:
+  artist: kickthecancrew_artist
   name: 揺れ
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -183,6 +206,7 @@ yure_song:
   note: 
 
 nounaivacation_song:
+  artist: kickthecancrew_artist
   name: 脳内VACATION
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
@@ -191,6 +215,7 @@ nounaivacation_song:
   note: 
 
 senpercent_song:
+  artist: kickthecancrew_artist
   name: 千％
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & 柿崎洋一郎

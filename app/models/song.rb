@@ -6,4 +6,5 @@ class Song < ApplicationRecord
   belongs_to :cd
   has_many :search_log_songs
   has_many :search_logs, through: :search_log_songs
+  belongs_to :artist
 end
