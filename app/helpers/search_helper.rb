@@ -317,6 +317,7 @@ module SearchHelper
     end
 
     def generate_card_1(info_arr)
+      return 'generate_card_1'
       content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
         content_tag(:div, class: 'card') do
           concat(
