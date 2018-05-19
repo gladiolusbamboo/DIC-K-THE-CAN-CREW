@@ -566,26 +566,28 @@ module SearchHelper
         content_tag(:div, class: 'card', 'data-background': 'image', 'data-src': '../../assets/img/lifestyle-2.jpg', 'background-position': 'center center', 'background-size': 'cover') do
           concat(
             content_tag(:div, class: 'header') do
-              content_tag(:div, class: 'category') do
-                content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-warning')
-              end
-            end
-          )
-          concat(
-            content_tag(:div, class: 'social-line', 'data-buttons': '3') do
               concat(
-                content_tag(:button, class: 'btn btn-social btn-facebook') do
-                  content_tag(:i, '', class:'fab fa-facebook-square')
+                content_tag(:div, class: 'category') do
+                  content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-warning')
                 end
               )
               concat(
-                content_tag(:button, class: 'btn btn-social btn-twitter') do
-                  content_tag(:i, '', class:'fab fa-twitter')
-                end
-              )
-              concat(
-                content_tag(:button, class: 'btn btn-social btn-pinterest') do
-                  content_tag(:i, '', class:'fab fa-pinterest')
+                content_tag(:div, class: 'social-line', 'data-buttons': '3') do
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-facebook') do
+                      content_tag(:i, '', class:'fab fa-facebook-square')
+                    end
+                  )
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-twitter') do
+                      content_tag(:i, '', class:'fab fa-twitter')
+                    end
+                  )
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-pinterest') do
+                      content_tag(:i, '', class:'fab fa-pinterest')
+                    end
+                  )
                 end
               )
             end
