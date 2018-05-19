@@ -371,4 +371,817 @@ module SearchHelper
         end
       end
     end
-end
+
+    def generate_card_2(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card', 'data-background': 'image', 'data-src': '../../assets/img/lifestyle-1.jpg') do
+          concat(
+            content_tag(:div, class: 'header') do
+              content_tag(:div, class: 'category') do
+                content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-danger')
+              end
+            end
+          )
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+        end
+      end
+    end
+
+    def generate_card_3(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card') do
+          concat(
+            content_tag(:div, class: 'content') do
+              concat(
+                content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
+              )
+              concat(
+                content_tag(:h4, info_arr[0].song.name, class: 'title')
+              )
+              concat(
+                content_tag(:ul) do
+                  concat(
+                    content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                  )
+                  concat(
+                    content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                  )
+                  concat(
+                    content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                  )
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                content_tag(:h5, '収録CD')
+              )
+              concat(
+                content_tag(:ul) do
+                  info_arr[0].song.cds.each do |cd|
+                    concat(
+                      content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                    )
+                  end
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+              )
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_4(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card') do
+          concat(
+            content_tag(:div, class: 'header', style: "background-image: url(\"../../assets/img/beard-1.jpg\"); background-position: center center; background-size: cover;") do
+              tag(:img, src: '../../assets/img/beard-1.jpg')
+            end
+          )
+          concat(
+            content_tag(:div, class: 'social-line social-line-visible', 'data-buttons': '4') do
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-facebook') do
+                  content_tag(:i, '', class:'fab fa-facebook-square fa-lg')
+                end
+              )
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-twitter') do
+                  content_tag(:i, '', class:'fab fa-twitter fa-lg')
+                end
+              )
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-pinterest') do
+                  content_tag(:i, '', class:'fab fa-pinterest fa-lg')
+                end
+              )
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-google') do
+                  content_tag(:i, '', class:'fab fa-google fa-lg')
+                end
+              )
+            end
+          )
+          concat(
+            content_tag(:div, class: 'content') do
+              concat(
+                content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
+              )
+              concat(
+                content_tag(:h4, info_arr[0].song.name, class: 'title')
+              )
+              concat(
+                content_tag(:ul) do
+                  concat(
+                    content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                  )
+                  concat(
+                    content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                  )
+                  concat(
+                    content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                  )
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                content_tag(:h5, '収録CD')
+              )
+              concat(
+                content_tag(:ul) do
+                  info_arr[0].song.cds.each do |cd|
+                    concat(
+                      content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                    )
+                  end
+                end
+              )
+              concat(
+                tag(:hr, class: 'fade-2')
+              )
+              concat(
+                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+              )
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_5(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card', 'data-background': 'image', 'data-src': '../../assets/img/lifestyle-2.jpg', 'background-position': 'center center', 'background-size': 'cover') do
+          concat(
+            content_tag(:div, class: 'header') do
+              content_tag(:div, class: 'category') do
+                content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-warning')
+              end
+            end
+          )
+          concat(
+            content_tag(:div, class: 'social-line', 'data-buttons': '3') do
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-facebook') do
+                  content_tag(:i, '', class:'fab fa-facebook-square')
+                end
+              )
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-twitter') do
+                  content_tag(:i, '', class:'fab fa-twitter')
+                end
+              )
+              concat(
+                content_tag(:button, class: 'btn btn-social btn-pinterest') do
+                  content_tag(:i, '', class:'fab fa-pinterest')
+                end
+              )
+            end
+          )
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+        end
+      end
+    end
+
+    def generate_card_6(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card', 'data-background': 'image', 'data-src': '../../assets/img/fashion-1.jpg', style: "background-image: url('../../assets/img/fashion-1.jpg')") do
+          concat(
+            content_tag(:div, '', class: 'header')
+          )
+          concat(
+              content_tag(:div, class: 'content  text-center') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, class: 'footer text-center') do
+              content_tag(:div, 'KICK THE CAN CREW', class: 'btn btn-danger btn-fill btn-round')
+            end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+        end
+      end
+    end
+
+    def generate_card_7(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': '../../assets/img/lifestyle-9.jpg', style: "background-image: url('../../assets/img/lifestyle-9.jpg')", 'background-position': 'center center', 'background-size': 'cover') do
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                )
+                concat(
+                  content_tag(:p, 'KICK THE CAN CREW', class: 'description')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+        end
+      end
+    end
+
+    def generate_card_8(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': 'azure') do
+          concat(
+            content_tag(:div, class: 'header') do
+              content_tag(:div, class: 'icon') do
+                content_tag(:i, '', class: 'pe-7s-radio')
+              end
+            end
+          )
+          concat(
+              content_tag(:div, class: 'content  text-center') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, class: 'footer text-center') do
+              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-fill btn-modern')
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_9(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': 'orange') do
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
+                )
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+        end
+      end
+    end
+
+    def generate_card_10(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card text-center', 'data-background': 'image', 'data-src': '../../assets/img/city-2.png', style: "background-image: url('../../assets/img/city-2.png')", 'background-position': 'center center', 'background-size': 'cover') do
+          concat(
+            content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+          )
+          concat(
+              content_tag(:div, class: 'content  text-center') do
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+          concat(
+            content_tag(:div, class: 'footer text-center') do
+              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-fill btn-modern')
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_11(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-with-border') do
+          concat(
+            content_tag(:div, class: 'header') do
+              content_tag(:div, class: 'icon') do
+                content_tag(:i, '', class: 'pe-7s-glasses')
+              end
+            end
+          )
+          concat(
+              content_tag(:div, class: 'content text-center') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-center')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, class: 'footer btn-center') do
+              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-default btn-round btn-fill btn-info btn-modern')
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_12(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': '../../assets/img/music-3.jpg', style: "background-image: url('../../assets/img/music-3.jpg')", 'background-position': 'center center', 'background-size': 'cover') do
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:div, '', class: 'filter filter-red')
+                )
+                concat(
+                  content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
+                )
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, '', class: :filter)
+          )
+        end
+      end
+    end
+
+    def generate_card_13(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': 'green') do
+          concat(
+            content_tag(:div, class: 'header') do
+              concat(
+                content_tag(:div, class: 'icon') do
+                  content_tag(:i, '', class: 'pe-7s-gift')
+                end
+              )
+              concat(
+                content_tag(:div, class: 'social-line', 'data-buttons': '3') do
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-facebook') do
+                      content_tag(:i, '', class:'fab fa-facebook-square fa-lg')
+                    end
+                  )
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-twitter') do
+                      content_tag(:i, '', class:'fab fa-twitter fa-lg')
+                    end
+                  )
+                  concat(
+                    content_tag(:button, class: 'btn btn-social btn-pinterest') do
+                      content_tag(:i, '', class:'fab fa-pinterest fa-lg')
+                    end
+                  )
+                end
+              )
+            end
+          )
+
+          concat(
+              content_tag(:div, class: 'content text-center') do
+                concat(
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                )
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, class: 'footer text-center') do
+              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-fill btn-modern')
+            end
+          )
+        end
+      end
+    end
+
+    def generate_card_14(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card text-center', 'data-background': 'image', 'data-src': '../../assets/img/city-1.jpg', style: "background-image: url('../../assets/img/city-1.jpg')", 'background-position': 'center center', 'background-size': 'cover' ) do
+          concat(
+            content_tag(:div, class: 'header') do
+              concat(
+                content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+              )
+              concat(
+                content_tag(:div, class: 'icon') do
+                  content_tag(:i, '', class: 'pe-7s-gift')
+                end
+              )
+            end
+          )
+
+          concat(
+              content_tag(:div, class: 'content') do
+                concat(
+                  content_tag(:ul) do
+                    concat(
+                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
+                    )
+                    concat(
+                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
+                    )
+                    concat(
+                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
+                    )
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  content_tag(:h5, '収録CD')
+                )
+                concat(
+                  content_tag(:ul) do
+                    info_arr[0].song.cds.each do |cd|
+                      concat(
+                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
+                      )
+                    end
+                  end
+                )
+                concat(
+                  tag(:hr, class: 'fade-2')
+                )
+                concat(
+                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                )
+              end
+          )
+          concat(
+            content_tag(:div, class: 'footer text-center') do
+              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-modern')
+            end
+          )
+          concat(
+            content_tag(:div, '', class: 'filter filter-blue')
+          )
+        end
+      end
+    end
+
+
+  end
