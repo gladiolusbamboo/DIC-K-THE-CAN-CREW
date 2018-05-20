@@ -18,36 +18,7 @@
         </div>
 
         <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
-          <% case i % 14  %>
-          <% when 0 then %>
-            <%= generate_card_1(info_arr) %>
-          <% when 1 then %>
-            <%= generate_card_2(info_arr) %>
-          <% when 2 then %>
-            <%= generate_card_3(info_arr) %>
-          <% when 3 then %>
-            <%= generate_card_4(info_arr) %>
-          <% when 4 then %>
-          <%= generate_card_5(info_arr) %>
-          <% when 5 then %>
-          <%= generate_card_6(info_arr) %>
-          <% when 6 then %>
-          <%= generate_card_7(info_arr) %>
-          <% when 7 then %>
-          <%= generate_card_8(info_arr) %>
-          <% when 8 then %>
-          <%= generate_card_9(info_arr) %>
-          <% when 9 then %>
-          <%= generate_card_10(info_arr) %>
-          <% when 10 then %>
-          <%= generate_card_11(info_arr) %>
-          <% when 11 then %>
-          <%= generate_card_12(info_arr) %>
-          <% when 12 then %>
-          <%= generate_card_13(info_arr) %>
-          <% when 13 then %>
-          <%= generate_card_14(info_arr) %>
-          <% end %>
+          <%= generate_card_random(info_arr, Time.now.usec+i) %>
         <% end %>
           <% if false %>
           <div class="card-box col-md-4 col-sm-6">

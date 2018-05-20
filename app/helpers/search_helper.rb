@@ -64,7 +64,7 @@ module SearchHelper
       offset = index + 1
     end
     index_array
-  end
+  end  
 
   private
     # {漢字,かんじ}表記から表示用文字列に戻す
@@ -314,6 +314,19 @@ module SearchHelper
           concat ")"
         end
       )
+    end
+
+    def generate_card_random(info_arr, seed)
+      srand(seed)
+      card_index =  rand(12)
+      case card_index
+      when 0 then
+        generate_card_7(info_arr)
+      when 1 then
+        generate_card_9(info_arr)
+      else
+        generate_card_3(info_arr)
+      end
     end
 
     def generate_card_1(info_arr)
@@ -700,15 +713,17 @@ module SearchHelper
     end
 
     def generate_card_7(info_arr)
+      image_url = get_random_image_url()
+
       content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
-        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': '../../assets/img/lifestyle-9.jpg', style: "background-image: url('../../assets/img/lifestyle-9.jpg')", 'background-position': 'center center', 'background-size': 'cover') do
+        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': image_url , style: "background-image: url('#{image_url}')", 'background-position': 'center center', 'background-size': 'cover') do
           concat(
               content_tag(:div, class: 'content') do
                 concat(
-                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
+                  content_tag(:p, 'KICK THE CAN CREW', class: 'description')
                 )
                 concat(
-                  content_tag(:p, 'KICK THE CAN CREW', class: 'description')
+                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
                 )
                 concat(
                   content_tag(:ul) do
@@ -814,8 +829,10 @@ module SearchHelper
     end
 
     def generate_card_9(info_arr)
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
-        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': 'orange') do
+      card_color = get_random_color
+
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do        
+        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': card_color) do
           concat(
               content_tag(:div, class: 'content') do
                 concat(
@@ -1185,5 +1202,42 @@ module SearchHelper
       end
     end
 
+    private
+      def get_random_color
+        card_index =  rand(3)
+        case card_index
+        when 0 then
+          return 'orange'
+        when 1 then
+          return 'azure'
+        when 2 then
+          return 'green'
+        end
+        return 'orange'
+      end
 
+      def get_random_image_url
+        # image_name
+        image_index =  rand(8)
+        case image_index
+        when 0 then
+          image_name = 'lifestyle-1'
+        when 1 then
+          image_name = 'lifestyle-2'
+        when 2 then
+          image_name = 'lifestyle-3'
+        when 3 then
+          image_name = 'lifestyle-5'
+        when 4 then
+          image_name = 'lifestyle-6'
+        when 5 then
+          image_name = 'lifestyle-7'
+        when 6 then
+          image_name = 'lifestyle-8'
+        when 7 then
+          image_name = 'lifestyle-9'
+        end
+
+        return "../../assets/img/#{image_name}.jpg"
+      end
   end
