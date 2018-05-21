@@ -66,6 +66,26 @@ module SearchHelper
     index_array
   end  
 
+  # ランダムでカード種を表示する
+  # 1/12で背景付きカード
+  # 1/12で色付きカードを表示し
+  # 10/12で白いデフォルトのカードを表示する
+  def generate_card_random(info_arr, seed)
+    srand(seed)    
+    card_index =  rand(12)
+    case card_index
+    when 0 then
+      # 背景画像付きカード
+      generate_card_with_background_image(info_arr)
+    when 1 then
+      # 背景色付きカード
+      generate_card_with_background_color(info_arr)
+    else
+      # デフォルト白カード
+      generate_card_default(info_arr)
+    end
+  end
+
   private
     # {漢字,かんじ}表記から表示用文字列に戻す
     def decode_lyric_with_ruby lyric_with_ruby
@@ -316,19 +336,159 @@ module SearchHelper
       )
     end
 
-    def generate_card_random(info_arr, seed)
-      srand(seed)
-      card_index =  rand(12)
-      case card_index
-      when 0 then
-        generate_card_7(info_arr)
-      when 1 then
-        generate_card_9(info_arr)
-      else
-        generate_card_3(info_arr)
+    # 背景画像付きカード生成
+    def generate_card_with_background_image(info_arr)
+      # ランダムに背景画像のURLを取得する
+      image_url = get_random_image_url()
+
+      # カード部分のHTMLを表示する
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': image_url , style: "background-image: url('#{image_url}')", 'background-position': 'center center', 'background-size': 'cover') do
+          concat(content_tag(:div, class: 'content') do
+
+            concat_html_with_tag("p", info_arr[0].song.artist.name, "description")
+            concat_html_with_tag("h4", info_arr[0].song.name, "title title-modern")
+
+            concat_song_credit_info(info_arr[0].song)
+
+            concat_fade_hr()
+
+            concat_recorded_cd_info(info_arr[0].song.cds)
+
+            concat_fade_hr()
+
+            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+
+          end)
+          concat_html_with_tag("div", '', "filter")
+        end
+      end
+    end
+   
+    # 背景色付きカード生成
+    def generate_card_with_background_color(info_arr)
+      # ランダムに背景色を取得する
+      card_color = get_random_color()
+
+      # カード部分のHTMLを表示する
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do        
+        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': card_color) do
+          concat(content_tag(:div, class: 'content') do
+            concat_html_with_tag("h6", info_arr[0].song.artist.name, "category")
+            concat_html_with_tag("h4", info_arr[0].song.name, "title title-modern")
+
+            concat_song_credit_info(info_arr[0].song)
+
+            concat_fade_hr()
+
+            concat_recorded_cd_info(info_arr[0].song.cds)
+
+            concat_fade_hr()
+
+            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+          end)
+        end
+      end
+    end
+    
+    # デフォルト白カード生成
+    def generate_card_default(info_arr)
+      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+        content_tag(:div, class: 'card') do
+          concat(content_tag(:div, class: 'content') do
+
+            concat_html_with_tag("h6", info_arr[0].song.artist.name, "category")
+            concat_html_with_tag("h4", info_arr[0].song.name, "title")
+
+            concat_song_credit_info(info_arr[0].song)
+
+            concat_fade_hr()
+
+            concat_recorded_cd_info(info_arr[0].song.cds)
+
+            concat_fade_hr()
+
+            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+          end)
+        end
       end
     end
 
+    # ランダムにカード背景色を取得する
+    def get_random_color
+      card_index =  rand(3)
+      case card_index
+      when 0 then
+        return 'orange'
+      when 1 then
+        return 'azure'
+      when 2 then
+        return 'green'
+      end
+      return 'orange'
+    end
+
+    # ランダムにカード背景画像URLを取得する
+    def get_random_image_url
+      # image_name
+      image_index =  rand(8)
+      case image_index
+      when 0 then
+        image_name = 'lifestyle-1'
+      when 1 then
+        image_name = 'lifestyle-2'
+      when 2 then
+        image_name = 'lifestyle-3'
+      when 3 then
+        image_name = 'lifestyle-5'
+      when 4 then
+        image_name = 'lifestyle-6'
+      when 5 then
+        image_name = 'lifestyle-7'
+      when 6 then
+        image_name = 'lifestyle-8'
+      when 7 then
+        image_name = 'lifestyle-9'
+      end
+
+      return "../../assets/img/#{image_name}.jpg"
+    end
+
+    # 曲のクレジット情報をconcatする
+    def concat_song_credit_info(song_info)
+      concat(content_tag(:ul) do
+        concat(content_tag(:li, '作詞：' + song_info.lyricist))
+        concat(content_tag(:li, '作曲：' + song_info.composer))
+        concat(content_tag(:li, '編曲：' + song_info.arranger))
+      end)
+    end
+    
+    # 収録されているCDの情報をconcatする
+    def concat_recorded_cd_info(cds_info)
+      concat(content_tag(:h5, '収録CD'))
+      concat(content_tag(:ul) do
+        cds_info.each do |cd|
+          concat(content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')'))
+        end
+      end)
+    end
+
+    # classを設定したHTMLを生成してconcatする
+    def concat_html_with_tag(tag_name, text, class_name)
+      concat(content_tag(tag_name.to_sym, text, class: class_name))
+    end
+
+    # フェードアウトする区切り横棒を表示する
+    def concat_fade_hr
+      concat(tag(:hr, class: 'fade-2'))
+    end
+    
+    
+
+    ####################################
+    # これ以降のgenerate_cardは使わない  #
+    # かも                             #
+    ####################################
     def generate_card_1(info_arr)
       content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
         content_tag(:div, class: 'card') do
@@ -391,7 +551,7 @@ module SearchHelper
           concat(
             content_tag(:div, class: 'header') do
               content_tag(:div, class: 'category') do
-                content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-danger')
+                content_tag(:h6, info_arr[0].song.artist.name, class: 'label label-danger')
               end
             end
           )
@@ -438,57 +598,6 @@ module SearchHelper
           )
           concat(
             content_tag(:div, '', class: :filter)
-          )
-        end
-      end
-    end
-
-    def generate_card_3(info_arr)
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
-        content_tag(:div, class: 'card') do
-          concat(
-            content_tag(:div, class: 'content') do
-              concat(
-                content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
-              )
-              concat(
-                content_tag(:h4, info_arr[0].song.name, class: 'title')
-              )
-              concat(
-                content_tag(:ul) do
-                  concat(
-                    content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
-                  )
-                  concat(
-                    content_tag(:li, '作曲：' + info_arr[0].song.composer)
-                  )
-                  concat(
-                    content_tag(:li, '編曲：' + info_arr[0].song.arranger)
-                  )
-                end
-              )
-              concat(
-                tag(:hr, class: 'fade-2')
-              )
-              concat(
-                content_tag(:h5, '収録CD')
-              )
-              concat(
-                content_tag(:ul) do
-                  info_arr[0].song.cds.each do |cd|
-                    concat(
-                      content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
-                    )
-                  end
-                end
-              )
-              concat(
-                tag(:hr, class: 'fade-2')
-              )
-              concat(
-                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
-              )
-            end
           )
         end
       end
@@ -581,7 +690,7 @@ module SearchHelper
             content_tag(:div, class: 'header') do
               concat(
                 content_tag(:div, class: 'category') do
-                  content_tag(:h6, 'KICK THE CAN CREW', class: 'label label-warning')
+                  content_tag(:h6, info_arr[0].song.artist.name, class: 'label label-warning')
                 end
               )
               concat(
@@ -702,64 +811,8 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer text-center') do
-              content_tag(:div, 'KICK THE CAN CREW', class: 'btn btn-danger btn-fill btn-round')
+              content_tag(:div, info_arr[0].song.artist.name, class: 'btn btn-danger btn-fill btn-round')
             end
-          )
-          concat(
-            content_tag(:div, '', class: :filter)
-          )
-        end
-      end
-    end
-
-    def generate_card_7(info_arr)
-      image_url = get_random_image_url()
-
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
-        content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': image_url , style: "background-image: url('#{image_url}')", 'background-position': 'center center', 'background-size': 'cover') do
-          concat(
-              content_tag(:div, class: 'content') do
-                concat(
-                  content_tag(:p, 'KICK THE CAN CREW', class: 'description')
-                )
-                concat(
-                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
-                )
-                concat(
-                  content_tag(:ul) do
-                    concat(
-                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
-                    )
-                    concat(
-                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
-                    )
-                    concat(
-                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
-                    )
-                  end
-                )
-                concat(
-                  tag(:hr, class: 'fade-2')
-                )
-                concat(
-                  content_tag(:h5, '収録CD')
-                )
-                concat(
-                  content_tag(:ul) do
-                    info_arr[0].song.cds.each do |cd|
-                      concat(
-                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
-                      )
-                    end
-                  end
-                )
-                concat(
-                  tag(:hr, class: 'fade-2')
-                )
-                concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
-                )
-              end
           )
           concat(
             content_tag(:div, '', class: :filter)
@@ -821,61 +874,8 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer text-center') do
-              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-fill btn-modern')
+              content_tag(:button, info_arr[0].song.artist.name, class: 'btn btn-neutral btn-round btn-fill btn-modern')
             end
-          )
-        end
-      end
-    end
-
-    def generate_card_9(info_arr)
-      card_color = get_random_color
-
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do        
-        content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': card_color) do
-          concat(
-              content_tag(:div, class: 'content') do
-                concat(
-                  content_tag(:h6, info_arr[0].song.artist.name, class: 'category')
-                )
-                concat(
-                  content_tag(:h4, info_arr[0].song.name, class: 'title title-modern')
-                )
-                concat(
-                  content_tag(:ul) do
-                    concat(
-                      content_tag(:li, '作詞：' + info_arr[0].song.lyricist)
-                    )
-                    concat(
-                      content_tag(:li, '作曲：' + info_arr[0].song.composer)
-                    )
-                    concat(
-                      content_tag(:li, '編曲：' + info_arr[0].song.arranger)
-                    )
-                  end
-                )
-                concat(
-                  tag(:hr, class: 'fade-2')
-                )
-                concat(
-                  content_tag(:h5, '収録CD')
-                )
-                concat(
-                  content_tag(:ul) do
-                    info_arr[0].song.cds.each do |cd|
-                      concat(
-                        content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')')
-                      )
-                    end
-                  end
-                )
-                concat(
-                  tag(:hr, class: 'fade-2')
-                )
-                concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
-                )
-              end
           )
         end
       end
@@ -930,7 +930,7 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer text-center') do
-              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-fill btn-modern')
+              content_tag(:button, info_arr[0].song.artist.name, class: 'btn btn-neutral btn-round btn-fill btn-modern')
             end
           )
         end
@@ -990,7 +990,7 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer btn-center') do
-              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-default btn-round btn-fill btn-info btn-modern')
+              content_tag(:button, info_arr[0].song.artist.name, class: 'btn btn-default btn-round btn-fill btn-info btn-modern')
             end
           )
         end
@@ -1129,7 +1129,7 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer text-center') do
-              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-fill btn-modern')
+              content_tag(:button, info_arr[0].song.artist.name, class: 'btn btn-neutral btn-fill btn-modern')
             end
           )
         end
@@ -1192,7 +1192,7 @@ module SearchHelper
           )
           concat(
             content_tag(:div, class: 'footer text-center') do
-              content_tag(:button, 'KICK THE CAN CREW', class: 'btn btn-neutral btn-round btn-modern')
+              content_tag(:button, info_arr[0].song.artist.name, class: 'btn btn-neutral btn-round btn-modern')
             end
           )
           concat(
@@ -1202,42 +1202,4 @@ module SearchHelper
       end
     end
 
-    private
-      def get_random_color
-        card_index =  rand(3)
-        case card_index
-        when 0 then
-          return 'orange'
-        when 1 then
-          return 'azure'
-        when 2 then
-          return 'green'
-        end
-        return 'orange'
-      end
-
-      def get_random_image_url
-        # image_name
-        image_index =  rand(8)
-        case image_index
-        when 0 then
-          image_name = 'lifestyle-1'
-        when 1 then
-          image_name = 'lifestyle-2'
-        when 2 then
-          image_name = 'lifestyle-3'
-        when 3 then
-          image_name = 'lifestyle-5'
-        when 4 then
-          image_name = 'lifestyle-6'
-        when 5 then
-          image_name = 'lifestyle-7'
-        when 6 then
-          image_name = 'lifestyle-8'
-        when 7 then
-          image_name = 'lifestyle-9'
-        end
-
-        return "../../assets/img/#{image_name}.jpg"
-      end
   end
