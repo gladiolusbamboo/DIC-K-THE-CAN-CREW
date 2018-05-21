@@ -307,7 +307,7 @@ module SearchHelper
       # 検索文字列直後の位置
       latter_index_modified = index_modified_array[1]
       concat(
-        content_tag(:li) do
+        content_tag(:li, class: 'hit-part-info') do
           # lyricの先頭付近にsearchwordがあった場合の対策
           start_index = index_modified - 5
           if start_index <= 0 
@@ -328,10 +328,11 @@ module SearchHelper
             concat "…"            
           end
 
-          concat tag(:br)
-          concat "(#{info.lyric_type.name}#{info.part_lyric_order} by "
-          concat content_tag(:span, info.singer.name, class: 'artist-hit')
-          concat ")"
+          concat(content_tag(:div) do
+            concat "(#{info.lyric_type.name}#{info.part_lyric_order} by "
+            concat content_tag(:span, info.singer.name, class: 'artist-hit')
+            concat ")"
+          end)
         end
       )
     end
