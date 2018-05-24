@@ -12,7 +12,7 @@ class SearchLog < ApplicationRecord
     format: { 
       with: /\A[\p{hiragana}\p{katakana}ー 　]*\z/, 
       if: :is_ruby_search?,
-      message: 'ひらがな、カタカナ以外でのルビ検索はできません'
+      message: 'ひらがな、カタカナ以外でのふりがな検索はできません'
     }
 
     def is_ruby_search?

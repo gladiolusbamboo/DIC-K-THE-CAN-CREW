@@ -1,5 +1,5 @@
 module SearchHelper
-  def show_searchwords searchtype, info_arr, searchword
+  def show_searchwords is_ruby_search, info_arr, searchword
     content_tag(:ul) do
       # info_arrはLyricモデルの配列
       info_arr.each do |info|
@@ -7,7 +7,7 @@ module SearchHelper
         # {漢字,かんじ}表記から表示用文字列に戻す
         lyric_decoded = decode_lyric_with_ruby(lyric_with_ruby)
 
-        unless(searchtype == 'ルビ検索')
+        unless(is_ruby_search)
           lyric_original = info.lyric
         else
           lyric_original = info.ruby
@@ -17,7 +17,7 @@ module SearchHelper
         index_array = get_index_array(lyric_original, searchword)
 
         # "ルビ検索"が指定されている場合以外は表記検索をする
-        unless(searchtype == 'ルビ検索')
+        unless(is_ruby_search)
           # index_arrayにはsearchwordの出現位置が格納されている
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
@@ -358,7 +358,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+            concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
 
           end)
           concat_html_with_tag("div", '', "filter")
@@ -386,7 +386,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+            concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
           end)
         end
       end
@@ -409,7 +409,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat(show_searchwords(params[:searchtype], info_arr, @trimmed_search_word))
+            concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
           end)
         end
       end
@@ -538,7 +538,7 @@ module SearchHelper
                 tag(:hr, class: 'fade-2')
               )
               concat(
-                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
               )
             end
           )
@@ -593,7 +593,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -676,7 +676,7 @@ module SearchHelper
                 tag(:hr, class: 'fade-2')
               )
               concat(
-                show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
               )
             end
           )
@@ -752,7 +752,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -806,7 +806,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -869,7 +869,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -922,7 +922,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -985,7 +985,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -1044,7 +1044,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -1124,7 +1124,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )
@@ -1187,7 +1187,7 @@ module SearchHelper
                   tag(:hr, class: 'fade-2')
                 )
                 concat(
-                  show_searchwords(params[:searchtype], info_arr, @trimmed_search_word)
+                  show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word)
                 )
               end
           )

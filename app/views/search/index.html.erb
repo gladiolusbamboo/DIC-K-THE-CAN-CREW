@@ -1,3 +1,81 @@
+        <div class="main">
+            <div class="section section-download" id="#download-section">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="text-center col-md-12 col-lg-8">
+                            <h3 class="title">DIC THE CAN CREW</h3>
+                            <h5 class="title">- 缶蹴り関係検索アプリ -</h3>
+                            <h5 class="description">KICK THE CAN CREWおよび各メンバー(LITTLE、KREVA、MCU)が参加している曲の歌詞を対象に全文検索ができます</h5>
+                        </div>
+                        <div class="text-center col-md-12 col-lg-8">
+                            <%# リダイレクトでエラーが送られてきた時の処理 %>
+                            <% if flash[:errors] %>
+                              <ul class="error">
+                                <% flash[:errors].each do |message| %>
+                                  <li><%= message %></li>
+                                <% end %>
+                              </ul>
+                            <% end %>
+                            <%= form_for(@search_log, url: search_result_path, method: :get) do |form| %>
+                              <div class="form-group">
+                              <%= form.text_field :searchword, class: 'form-control', placeholder: "put search phrase" %>
+                              </div>
+                              <%= form.submit '表記検索', name: :character_search, value: '表記検索', id: 'lyric_search', class: "btn btn-primary btn-lg btn-round normal-search" %>
+                              <%= form.submit 'ルビ検索', name: :ruby_search, value: 'ルビ検索', id: 'ruby_search', class: "btn btn-primary btn-lg btn-simple btn-round ruby-search" %>
+                            <% end %>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!-- Sart Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            <i class="now-ui-icons ui-1_simple-remove"></i>
+                        </button>
+                        <h4 class="title title-up">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Nice Button</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End Modal -->
+        <!-- Mini Modal -->
+        <div class="modal fade modal-mini modal-primary" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <div class="modal-profile">
+                            <i class="now-ui-icons users_circle-08"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <p>Always have an access to your profile</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-link btn-neutral">Back</button>
+                        <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End Modal -->
+
 <div class="container">
 <div class="search-index">
 

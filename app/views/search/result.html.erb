@@ -7,7 +7,7 @@
             <br>is contained in
             <br><%= @hit_song_infos.length %> kick songs.
           </h4>
-          <% if params['searchtype'] == '表記検索' %>
+          <% unless params[:ruby_search] %>
           <p class="description">Score : <%= @trimmed_search_word.length * @hit_song_infos.length %></p>
           <% else %>
           <p class="description">(ふりがな検索)</p>
@@ -18,6 +18,7 @@
     </div>
 
     <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
+      <% pp "info_arr = #{info_arr}" %>
       <%= generate_card_random(info_arr, Time.now.usec+i) %>
     <% end %>
   </div>

@@ -1615,6 +1615,22 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
     box-shadow: none;
 }
 
+.normal-search:active,
+.normal-search.active
+{
+  background-color: #fa7a50 !important;
+  color: #FFFFFF !important;
+  box-shadow: none;
+}
+
+.ruby-search:active,
+.ruby-search.active{
+  background-color: transparent !important;
+  color: #fa7a50 !important;
+  border-color: #fa7a50 !important;
+  box-shadow: none;
+}
+
 .btn-primary:hover {
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.17);
 }
@@ -7547,4 +7563,9 @@ Created using IcoMoon - icomoon.io
         top: 50%;
         transform: translateY(-50%);
     }
+}
+
+
+ul {
+  list-style-type: none;
 }

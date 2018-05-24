@@ -34,16 +34,21 @@ class SearchController < ApplicationController
     # 入力された文字列から空白文字を削除
     @trimmed_search_word = params[:search_log][:searchword].gsub(" ","").gsub("　","")
     @trimmed_search_word = full_to_half @trimmed_search_word
-    if params[:searchtype] == '表記検索'
+
+    unless params[:ruby_search]
+      pp '表記検索です'
       # 表記検索ならアルファベット小文字は全て大文字にする
       @trimmed_search_word.upcase!      
+      params[:search_log][:searchtype] = '表記検索'
     else
+      pp 'ルビ検索です'
       # ルビ検索ならカタカナをひらがなに変換する
       @trimmed_search_word = NKF.nkf('-w --hiragana', @trimmed_search_word)
+      params[:search_log][:searchtype] = 'ルビ検索'
     end
-    # SearchLogの登録に必要なパラメータ（検索語・検索タイプ・IPアドレス）を追加する
+
+    # SearchLogの登録に必要なパラメータ（検索語・IPアドレス）を追加する
     params[:search_log][:searchword] = @trimmed_search_word
-    params[:search_log][:searchtype] = params[:searchtype]
     params[:search_log][:ip_address] = request.remote_ip
 
     # 検証用SearchLog生成
@@ -119,6 +124,7 @@ class SearchController < ApplicationController
   # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
   # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
   def hash_to_hit_song_infos query_results
+    pp "query_results = #{query_results.inspect}"
     @hit_song_infos = {}
 
     query_results.each do |result|
