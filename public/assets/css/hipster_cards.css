@@ -87,17 +87,9 @@ span.word-hit{
   color: red;
 }
 span.artist-hit{
-  color: green;
-}
-
-hr.fade-2 {
-  border-width: 0 0 1px;
-  border-image: linear-gradient(
-    90deg,
-    hsla(0, 0%, 50%, 0),
-    hsla(0, 0%, 50%, 0.5) 50%,
-    hsla(0, 0%, 50%, 0) 100%) 0 0 100%;
-  border-style: solid;
+  font-style: italic;
+  /* font-weight: bold; */
+  /* color: green; */
 }
 
 /*     General overwrite     */

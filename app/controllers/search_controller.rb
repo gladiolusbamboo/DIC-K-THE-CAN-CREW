@@ -6,7 +6,10 @@ class SearchController < ApplicationController
     # form_forでフォームを描画するために空のインスタンスが必要
     @search_log = SearchLog.new
     # 重複排除のSQLが複雑なため関数化
-    @recent_search_logs = get_recent_search_logs
+    @recent_search_logs_character = get_recent_search_logs(:character)
+    @recent_search_logs_ruby = get_recent_search_logs(:ruby)
+
+    pp "@recent_search_logs_character = #{@recent_search_logs_character}"
 
     # @popular_search_logsは以下のような構造
     # search_log[0][0][0] = "表記検索"
@@ -20,14 +23,21 @@ class SearchController < ApplicationController
     # ︙
     # データ追加のタイミングで結果が異なってい可能性があるので２回にわけて検索する。
     # 処理が長くなるので関数化
-    @popular_search_logs = get_popular_search_logs
+    @popular_search_logs_character = get_popular_search_logs(:character)
+    @popular_search_logs_ruby = get_popular_search_logs(:ruby)
 
     # ヒット曲数×文字列長を得点として得点順に取得する
-    @highscore_search_logs = SearchLog.select(:searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
-        .order('score DESC')
-        .distinct
-        .limit(20)
-
+    @highscore_search_logs_character = get_high_score_search_logs(:character)
+    @highscore_search_logs_ruby = get_high_score_search_logs(:ruby)
+    
+    if false
+      pp "@highscore_search_logs_character = #{@highscore_search_logs_character.inspect}"
+      @highscore_search_logs_ruby = SearchLog.select(:id, :searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
+          .where(searchtype: 'ルビ検索')
+          .order('score DESC')
+          .distinct
+          .limit(10)
+    end
   end
 
   def result
@@ -151,9 +161,14 @@ class SearchController < ApplicationController
     txt.tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z')
   end
 
-  def get_recent_search_logs()
+  def get_recent_search_logs(searchtype_sym)
+    if searchtype_sym != :ruby
+      searchtype = '表記検索'
+    else
+      searchtype = 'ルビ検索'
+    end
     # 検索内容の重複排除のためサブクエリを使用している
-    SearchLog.find_by_sql('
+    SearchLog.find_by_sql("
       SELECT
         id,
         searchword,
@@ -163,7 +178,8 @@ class SearchController < ApplicationController
       FROM	search_logs
       AS 	a
       WHERE 
-        a.hit_song_count > 0
+        a.searchtype = '#{searchtype}'
+        AND a.hit_song_count > 0
         AND NOT EXISTS
         (
           SELECT	id
@@ -171,20 +187,62 @@ class SearchController < ApplicationController
           AS B
           WHERE A.created_at < B.created_at
           AND A.searchword = B.searchword 
-          AND B.searchtype = B.searchtype
+          AND B.searchtype = '#{searchtype}'
         )
       ORDER BY created_at DESC
-      LIMIT 20'
+      LIMIT 10"
+    )
+  end
+
+  def get_high_score_search_logs(searchtype_sym)
+    if searchtype_sym != :ruby
+      searchtype = '表記検索'
+    else
+      searchtype = 'ルビ検索'
+    end
+
+    # 検索内容の重複排除のためサブクエリを使用している
+    SearchLog.find_by_sql("
+      SELECT
+        id,
+        searchword,
+        searchtype,
+        hit_song_count,
+        hit_song_count * LENGTH(searchword) as score,
+        created_at
+      FROM	search_logs
+      AS 	a
+      WHERE 
+        a.searchtype = '#{searchtype}'
+        AND a.hit_song_count > 0
+        AND NOT EXISTS
+        (
+          SELECT	id
+          FROM	search_logs
+          AS B
+          WHERE A.created_at < B.created_at
+          AND A.searchword = B.searchword 
+          AND B.searchtype = '#{searchtype}'
+        )
+      ORDER BY score DESC
+      LIMIT 10"
     )
   end
 
   # データ追加のタイミングで結果が異なってい可能性があるので
   # ２回にわけて検索している
-  def get_popular_search_logs()
+  def get_popular_search_logs(searchtype_sym)
+    if searchtype_sym != :ruby
+      searchtype = '表記検索'
+    else
+      searchtype = 'ルビ検索'
+    end
+
     popular_search_logs = SearchLog.group(:searchtype, :searchword)
+                                    .where(searchtype: searchtype)
                                     .where('hit_song_count > 0')
                                     .order('count_all desc')
-                                    .limit(20)
+                                    .limit(10)
                                     .count
 
     popular_search_logs_clone = []
@@ -197,6 +255,7 @@ class SearchController < ApplicationController
       log << hit_count
       popular_search_logs_clone << log
     end
+    pp "popular_search_logs_clone.inspect = #{popular_search_logs_clone.inspect}"
     popular_search_logs_clone
   end
 

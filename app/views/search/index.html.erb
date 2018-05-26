@@ -1,5 +1,5 @@
         <div class="main">
-            <div class="section section-download" id="#download-section">
+            <div class="section section-download section-first" id="#download-section">
                 <div class="container">
                     <div class="row justify-content-md-center">
                         <div class="text-center col-md-12 col-lg-8">
@@ -20,16 +20,181 @@
                               <div class="form-group">
                               <%= form.text_field :searchword, class: 'form-control', placeholder: "put search phrase" %>
                               </div>
-                              <%= form.submit '表記検索', name: :character_search, value: '表記検索', id: 'lyric_search', class: "btn btn-primary btn-lg btn-round normal-search" %>
-                              <%= form.submit 'ルビ検索', name: :ruby_search, value: 'ルビ検索', id: 'ruby_search', class: "btn btn-primary btn-lg btn-simple btn-round ruby-search" %>
+                              <%= form.submit '通常検索（表記検索）', name: :character_search, value: '通常検索（表記検索）', id: 'lyric_search', class: "btn btn-primary btn-lg btn-round normal-search" %>
+                              <%= form.submit 'ふりがな検索', name: :ruby_search, value: 'ふりがな検索', id: 'ruby_search', class: "btn btn-primary btn-lg btn-simple btn-round ruby-search" %>
                             <% end %>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                </div>
+            </div>
+            <hr class="fade-2">
+            <div class="section section-tabs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8 col-xl-6 ml-auto mr-auto">
+                            <p class="category">通常検索履歴</p>
+                            <!-- Tabs with Background on Card -->
+                            <div class="card">
+                                <ul class="nav nav-tabs nav-tabs-neutral justify-content-center" role="tablist" data-background-color="orange">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home1" role="tab" aria-expanded="false">最近の検索</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile1" role="tab" aria-expanded="false">人気の検索</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages1" role="tab" aria-expanded="false">スコアの高い検索</a>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content text-center">
+                                        <div class="tab-pane active" id="home1" role="tabpanel" aria-expanded="false">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @recent_search_logs_character.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to(log.searchword, action: :result, 'search_log[searchword]': log.searchword, character_search: '通常検索（表記検索）') %></td>
+                                                  <td><%= log.hit_song_count %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="profile1" role="tabpanel" aria-expanded="true">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @popular_search_logs_character.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to(log[0][1], action: :result, 'search_log[searchword]': log[0][1], character_search: '通常検索（表記検索）') %></td>
+                                                  <td><%= log[2] %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_condition(log[0][1], :character) %><%= log[2] > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane" id="messages1" role="tabpanel" aria-expanded="false">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>スコア<br>（文字数×曲数）</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @highscore_search_logs_character.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to(log.searchword, action: :result, 'search_log[searchword]': log.searchword, character_search: '通常検索（表記検索）') %></td>
+                                                  <td><%= log.hit_song_count %></td>
+                                                  <td><%= log.score %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Tabs on plain Card -->
+                        </div>
+                        <div class="col-md-10 col-lg-8 col-xl-6 ml-auto mr-auto">
+                            <p class="category">ふりがな検索履歴</p>
+                            <!-- Nav tabs -->
+                            <div class="card">
+                                <ul class="nav nav-tabs nav-tabs-white justify-content-center" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab" aria-expanded="false">
+                                            最近の検索
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#profile" role="tab" aria-expanded="false">
+                                            人気の検索
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#messages" role="tab" aria-expanded="false">
+                                            スコアの高い検索
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                    <!-- Tab panes -->
+                                    <div class="tab-content text-center">
+                                        <div class="tab-pane  tab-pane-white active" id="home" role="tabpanel" aria-expanded="false">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @recent_search_logs_ruby.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, ruby_search: 'ふりがな検索' %></td>
+                                                  <td><%= log.hit_song_count %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane tab-pane-white" id="profile" role="tabpanel" aria-expanded="false">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @popular_search_logs_ruby.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to log[0][1], action: :result, 'search_log[searchword]': log[0][1], ruby_search: 'ふりがな検索' %></td>
+                                                  <td><%= log[2] %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_condition(log[0][1], :ruby) %><%= log[2] > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                        <div class="tab-pane tab-pane-white" id="messages" role="tabpanel" aria-expanded="false">
+                                            <table>
+                                              <tr>
+                                                <th></th>
+                                                <th>検索フレーズ</th>
+                                                <th>ヒット曲数</th>
+                                                <th>スコア<br>（文字数×曲数）</th>
+                                                <th>曲名</th>
+                                              </tr>
+                                              <% @highscore_search_logs_ruby.each_with_index do |log, i| %>
+                                                <tr>
+                                                  <td><%= (i+1).to_s %>.</td>
+                                                  <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
+                                                  <td><%= log.hit_song_count %></td>
+                                                  <td><%= log.score %></td>
+                                                  <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
+                                                </tr>
+                                              <% end %>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -76,87 +241,3 @@
         </div>
         <!--  End Modal -->
 
-<div class="container">
-<div class="search-index">
-
-
-
-
-<%# 検索画面（トップページ） %>
-<%# GETメソッドで検索を行う %>
-<h1>DIC THE CAN CREW(仮)<br>- 缶蹴り関係検索アプリ -</h1>
-<h4>KICK THE CAN CREWのメンバーが関わっている曲を<br />歌詞（フレーズ）から検索することができるよ</h4>
-<%# リダイレクトでエラーが送られてきた時の処理 %>
-<% if flash[:errors] %>
-  <ul>
-    <% flash[:errors].each do |message| %>
-      <li><%= message %></li>
-    <% end %>
-  </ul>
-<% end %>
-<%= form_for(@search_log, url: search_result_path, method: :get) do |form| %>
-  <%= form.text_field :searchword, size: 25, onkeyup: 'checkTextBoxAllKana();' %>
-  <%= form.submit '表記検索', name: :searchtype, value: '表記検索', id: 'lyric_search' %>
-  <%= form.submit 'ルビ検索', name: :searchtype, value: 'ルビ検索', id: 'ruby_search', disabled: true %>
-<% end %>
-<hr>
-
-<h2>最近の検索履歴</h2>
-<table>
-  <tr>
-    <th>検索タイプ</th>
-    <th>検索語</th>
-    <th>ヒット曲数</th>
-    <th>曲名</th>
-  </tr>
-  <% @recent_search_logs.each do |log| %>
-    <tr>
-      <td><%= log.searchtype %></td>
-      <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
-      <td><%= log.hit_song_count %></td>
-      <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
-    </tr>
-  <% end %>
-</table>
-
-<hr>
-
-<h2>人気の検索履歴</h2>
-<table>
-  <tr>
-    <th>検索タイプ</th>
-    <th>検索語</th>
-    <th>検索回数</th>
-    <th>ヒット曲数</th>
-  </tr>
-  <% @popular_search_logs.each do |log| %>
-    <tr>
-      <td><%= log[0][0] %></td>
-      <td><%= link_to log[0][1], action: :result, 'search_log[searchword]': log[0][1], searchtype: log[0][0] %></td>
-      <td><%= log[1] %></td>
-      <td><%= log[2] %></td>
-    </tr>
-  <% end %>
-</table>
-
-<hr>
-
-<h2>高得点の検索履歴</h2>
-<table>
-  <tr>
-    <th>検索タイプ</th>
-    <th>検索語</th>
-    <th>ヒット曲数</th>
-    <th>スコア</th>
-  </tr>
-  <% @highscore_search_logs.each do |log| %>
-    <tr>
-      <td><%= log.searchtype %></td>
-      <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
-      <td><%= log.hit_song_count %></td>
-      <td><%= log.score %></td>
-    </tr>
-  <% end %>
-</table>
-</div>
-</div>

@@ -52,6 +52,30 @@ module SearchHelper
     log.songs.find(most_appear_song_id).name
   end
 
+  # 検索条件からsearchwordの最頻出曲を得る処理
+  def get_most_appear_song_name_from_search_condition(searchword, searchtype_sym) 
+    if searchtype_sym != :ruby
+      searchtype = '表記検索'
+    else
+      searchtype = 'ルビ検索'
+    end
+
+    search_log = SearchLog.where(searchword: searchword, searchtype: searchtype)
+      .order(created_at: :desc)
+      .first
+    
+    max = 0
+    most_appear_song_id = ''
+    # 中間テーブルを走査して各曲のsearchwordの出現回数を得る
+    search_log.search_log_songs.each do |search_log_song|
+      if search_log_song.phrase_hit_count > max
+        max = search_log_song.phrase_hit_count
+        most_appear_song_id = search_log_song.song_id
+      end
+    end
+    search_log.songs.find(most_appear_song_id).name
+  end
+
   # コントローラーからも呼ばれるのでpublicにする
   def get_index_array(lyric_original, searchword)
     index_array = []
@@ -67,12 +91,12 @@ module SearchHelper
   end  
 
   # ランダムでカード種を表示する
-  # 1/12で背景付きカード
-  # 1/12で色付きカードを表示し
-  # 10/12で白いデフォルトのカードを表示する
+  # 1/10で背景付きカード
+  # 1/10で色付きカードを表示し
+  # 8/10で白いデフォルトのカードを表示する
   def generate_card_random(info_arr, seed)
     srand(seed)    
-    card_index =  rand(12)
+    card_index =  rand(10)
     case card_index
     when 0 then
       # 背景画像付きカード

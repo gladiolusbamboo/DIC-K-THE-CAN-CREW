@@ -3238,7 +3238,8 @@ p.description {
 .category {
     text-transform: uppercase;
     font-weight: 700;
-    color: #9A9A9A;
+    color: #d5d5d5;
+    /* text-align: center; */
 }
 
 .text-primary {
@@ -3529,8 +3530,12 @@ body {
     padding: 15px 0.7rem;
 }
 
+.nav-tabs.nav-tabs-white{
+  border-bottom: 1px solid #E50011; 
+}
+
 .nav-tabs>.nav-item>.nav-link {
-    color: #888;
+    color: #E50011;
     margin: 0;
     margin-right: 5px;
     background-color: transparent;
@@ -3546,7 +3551,7 @@ body {
 }
 
 .nav-tabs>.nav-item>.nav-link.active {
-    border: 1px solid #888;
+    border: 1px solid #E50011;
     border-radius: 30px;
 }
 
@@ -5032,7 +5037,7 @@ Created using IcoMoon - icomoon.io
 
 .card {
     border: 0;
-    border-radius: 0.1875rem;
+    border-radius: 1.1875rem;
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -5520,7 +5525,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .section {
-    padding: 100px 0;
+    padding: 50px 0;
     position: relative;
     /* background: #FFFFFF; */
 }
@@ -5818,7 +5823,7 @@ Created using IcoMoon - icomoon.io
 }
 
 [data-background-color="orange"] {
-    background-color: #e95e38;
+    background-color: #E50011;
 }
 
 [data-background-color="black"] {
@@ -7568,4 +7573,41 @@ Created using IcoMoon - icomoon.io
 
 ul {
   list-style-type: none;
+}
+
+hr.fade-2 {
+  border-width: 0 0 1px;
+  border-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 50%, 0),
+    hsla(0, 0%, 50%, 0.5) 50%,
+    hsla(0, 0%, 50%, 0) 100%) 0 0 100%;
+  border-style: solid;
+}
+
+.tab-pane{
+  color: #2c2c2c;
+}
+
+.tab-pane table{
+  margin: 0 auto;
+  border-collapse:collapse;
+}
+
+.tab-pane table th{
+  font-weight: normal;
+  border-bottom:2px solid #2c2c2c;
+}
+
+.tab-pane-white table th{
+  font-weight: normal;
+  border-bottom:1px solid #E50011;
+}
+
+.tab-pane td, .tab-pane th{
+  padding:10px;
+}
+
+.section-first{
+  margin-top: 50px;
 }
