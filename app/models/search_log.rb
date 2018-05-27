@@ -18,6 +18,7 @@ class SearchLog < ApplicationRecord
     def is_ruby_search?
       searchtype == 'ルビ検索'
     end
+    
   # searchtypeは'表記検索''ルビ検索'のみ許容する
   validates :searchtype,
     inclusion:{ 

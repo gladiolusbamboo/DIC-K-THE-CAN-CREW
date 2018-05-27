@@ -18,7 +18,6 @@
     </div>
 
     <% @hit_song_infos.each_with_index do |(key, info_arr), i| %>
-      <% pp "info_arr = #{info_arr}" %>
       <%= generate_card_random(info_arr, Time.now.usec+i) %>
     <% end %>
   </div>

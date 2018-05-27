@@ -1,121 +1,104 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta property="fb:app_id" content="1132186820239640" />
+    <meta property="og:title" content="DIC THE CAN CREW - 缶蹴り関係検索アプリ -" />
+    <meta property="og:description" content="KICK THE CAN CREWおよび各メンバーが参加している楽曲を歌詞から検索できるWebアプリ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://dtcc.kankeli.net/" />
+    <meta property="og:image" content="http://gladiolus.egoism.jp/image/dtcc_thumbnail.png" />
+    <meta property="og:locale" content="ja_JP" />
 
-  <meta property="fb:app_id" content="1132186820239640" />
-  <meta property="og:title" content="DIC THE CAN CREW - 缶蹴り関係検索アプリ -" />
-  <meta property="og:description" content="KICK THE CAN CREWおよび各メンバーが参加している楽曲を歌詞から検索できるWebアプリ" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://dtcc.kankeli.net/" />
-  <meta property="og:image" content="http://gladiolus.egoism.jp/image/dtcc_thumbnail.png" />
-  <meta property="og:locale" content="ja_JP" />
+    <title>DIC THE CAN CREW - 缶蹴り関係検索アプリ -</title>
 
-  <title>DIC THE CAN CREW</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-  <!-- <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!-- <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="assets/css/coming-soon.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="assets/css/coming-soon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
 
-  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascripts/dtcc.js"></script>
+  </head>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="assets/javascripts/dtcc.js"></script>
-</head>
+  <body>
 
-<body>
+    <div id="video-background"></div>
+    <div id="video-overlay"></div>
+    <div class="overlay"></div>
 
-  <div id="video-background"></div>
-  <div id="video-overlay"></div>
-  <div class="overlay"></div>
-
-  <div class="masthead">
-    <div class="masthead-bg"></div>
-    <div class="container h-100">
-      <div class="row h-100">
-        <div class="col-12 my-auto">
-          <div class="masthead-content text-white py-5 py-md-0">
-            <div id="notice"></div>
-            <h1 class="mb-3">DIC THE CAN CREW</h1>
-            <p class="mb-5">- 缶蹴り関係検索Webアプリ -</p>
-            <form action="./search/result" method="get">
-              <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="put search phrase &amp; ...KICK!" aria-label="put search phrase &amp; ...KICK!"
-                  aria-describedby="basic-addon" name="search_log[searchword]">
-                <input type="hidden" name="character_search" value="表記検索">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="submit">KICK!</button>
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <div id="notice"></div>
+              <h1 class="mb-3">DIC THE CAN CREW</h1>
+              <p class="mb-5">- 缶蹴り関係検索Webアプリ -</p>
+              <form action="./search/result" method="get">
+                <div class="input-group input-group-newsletter">
+                  <input type="text" class="form-control" placeholder="put search phrase &amp; ...KICK!" aria-label="put search phrase &amp; ...KICK!"
+                    aria-describedby="basic-addon" name="search_log[searchword]">
+                  <input type="hidden" name="character_search" value="表記検索">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="submit">KICK!</button>
+                  </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="https://twitter.com/share?text=DIC THE CAN CREW - 缶蹴り関係検索アプリ -&url=http://dtcc.kankeli.net/&hashtags=dtcc" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;"
-          rel="nofollow" class="twitter-link">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="http://www.facebook.com/share.php?u=http://dtcc.kankeli.net/" onclick="window.open(encodeURI(decodeURI(this.href)), 'FBwindow', 'width=554, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;"
-          rel="nofollow">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="javascript:void(0);" onclick="openWin()">
-          <i class="lsf-icon fa hatenabookmark"></i>
-        </a>
-        <script type="text/javascript" charset="utf-8" async="async"></script>
-      </li>
-      <script language="JavaScript" type="text/javascript">
-        function openWin() {
-          window.open("http://b.hatena.ne.jp/add?mode=confirm&url=http://dtcc.kankeli.net&title=DIC THE CAN CREW", "はてなブックマーク", "width=554, height=470,scrollbars=no,status=no,toolbar=no,location=no,menubar=no,directories=no,resizable=yes").focus();
-        }
-      </script>
+    <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="https://twitter.com/share?text=DIC THE CAN CREW - 缶蹴り関係検索アプリ -&url=http://dtcc.kankeli.net/&hashtags=dtcc" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;"
+            rel="nofollow" class="twitter-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="http://www.facebook.com/share.php?u=http://dtcc.kankeli.net/" onclick="window.open(encodeURI(decodeURI(this.href)), 'FBwindow', 'width=554, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+            rel="nofollow">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="javascript:void(0);" onclick="openWin()">
+            <i class="lsf-icon fa hatenabookmark"></i>
+          </a>
+          <script type="text/javascript" charset="utf-8" async="async"></script>
+        </li>
+        <script language="JavaScript" type="text/javascript">
+          function openWin() {
+            window.open("http://b.hatena.ne.jp/add?mode=confirm&url=http://dtcc.kankeli.net&title=DIC THE CAN CREW", "はてなブックマーク", "width=554, height=470,scrollbars=no,status=no,toolbar=no,location=no,menubar=no,directories=no,resizable=yes").focus();
+          }
+        </script>
+      </ul>
+    </div>
 
-      <!-- <li class="list-unstyled-item">
-          <a href="http://b.hatena.ne.jp/add?mode=confirm&url=http://dtcc.kankeli.net&title=DIC THE CAN CREW" target="_top">
-          <i class="lsf-icon fa hatenabookmark"></i>
-        </a>
-        <script type="text/javascript" charset="utf-8" async="async"></script>
-      </li> -->
-    </ul>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <!-- <script src="jquery/jquery.min.js"></script> -->
-
-  <!-- <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>

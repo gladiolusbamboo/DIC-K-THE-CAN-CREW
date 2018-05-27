@@ -1,4 +1,7 @@
 module SearchHelper
+  include Utility
+
+  # 検索結果の部分を表示する関数
   def show_searchwords is_ruby_search, info_arr, searchword
     content_tag(:ul) do
       # info_arrはLyricモデルの配列
@@ -13,7 +16,7 @@ module SearchHelper
           lyric_original = info.ruby
         end
 
-        # 出現場所indexを格納した配列
+        # 出現場所indexを格納した配列を取得する
         index_array = get_index_array(lyric_original, searchword)
 
         # "ルビ検索"が指定されている場合以外は表記検索をする
@@ -22,7 +25,7 @@ module SearchHelper
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
             index_modified_array = get_index_modified_array_lyric(lyric_decoded, index, searchword)
-            # ひとつの検索結果を表示
+            # ひとつずつ検索結果をconcatする
             concat_result_li(index_modified_array, lyric_decoded, info)
           end
         # ルビ検索を行う場合の処理
@@ -30,7 +33,7 @@ module SearchHelper
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
             index_modified_array = get_index_modified_array_ruby(lyric_with_ruby, index, searchword)
-            # ひとつの検索結果を表示
+            # ひとつずつ検索結果をconcatする
             concat_result_li(index_modified_array, lyric_decoded, info)
           end
         end
@@ -38,32 +41,8 @@ module SearchHelper
     end
   end
 
-  # SearchLogからsearchwordの最頻出曲を得る処理
-  def get_most_appear_song_name_from_search_log log
-    max = 0
-    most_appear_song_id = ''
-    # 中間テーブルを走査して各曲のsearchwordの出現回数を得る
-    log.search_log_songs.each do |search_log_song|
-      if search_log_song.phrase_hit_count > max
-        max = search_log_song.phrase_hit_count
-        most_appear_song_id = search_log_song.song_id
-      end
-    end
-    log.songs.find(most_appear_song_id).name
-  end
-
-  # 検索条件からsearchwordの最頻出曲を得る処理
-  def get_most_appear_song_name_from_search_condition(searchword, searchtype_sym) 
-    if searchtype_sym != :ruby
-      searchtype = '表記検索'
-    else
-      searchtype = 'ルビ検索'
-    end
-
-    search_log = SearchLog.where(searchword: searchword, searchtype: searchtype)
-      .order(created_at: :desc)
-      .first
-    
+  # SearchLogからsearchwordの最頻出曲を得る関数
+  def get_most_appear_song_name_from_search_log search_log
     max = 0
     most_appear_song_id = ''
     # 中間テーブルを走査して各曲のsearchwordの出現回数を得る
@@ -73,22 +52,21 @@ module SearchHelper
         most_appear_song_id = search_log_song.song_id
       end
     end
+    # もっとも出現回数が多い曲の曲名を返す
     search_log.songs.find(most_appear_song_id).name
   end
 
-  # コントローラーからも呼ばれるのでpublicにする
-  def get_index_array(lyric_original, searchword)
-    index_array = []
-    # 正規表現だとマッチングが重なる部分が
-    # うまくいかないのでindex()を使う
-    offset = 0
-    # lyric_originalがアルファベット大文字／小文字混じりなので大文字に統一してやる
-    while (index = lyric_original.upcase.index(searchword, offset)) do
-      index_array << index
-      offset = index + 1
-    end
-    index_array
-  end  
+  # 検索条件からsearchwordの最頻出曲を得る処理
+  def get_most_appear_song_name_from_search_condition(searchword, searchtype_sym) 
+    searchtype = get_search_type(searchtype_sym);
+
+    # 検索条件からその条件での最新の検索履歴を取得
+    search_log = SearchLog.where(searchword: searchword, searchtype: searchtype)
+      .order(created_at: :desc)
+      .first
+
+    get_most_appear_song_name_from_search_log(search_log)   
+  end
 
   # ランダムでカード種を表示する
   # 1/10で背景付きカード
@@ -143,7 +121,7 @@ module SearchHelper
       # 半角スペース分index位置をずらす
       index_modified_array << modify_index(index, lyric_decoded, false)
       # searchword直後の５文字をどこから切り取るかを設定
-      index_modified_array << modify_index(index+searchword.length, lyric_decoded, true)
+      index_modified_array << modify_index(index + searchword.length, lyric_decoded, true)
     end
 
     # 半角スペース分のindex位置を修正する
@@ -476,7 +454,7 @@ module SearchHelper
         image_name = 'lifestyle-9'
       end
 
-      return "../../assets/img/#{image_name}.jpg"
+      "../../assets/img/#{image_name}.jpg"
     end
 
     # 曲のクレジット情報をconcatする
@@ -1226,5 +1204,4 @@ module SearchHelper
         end
       end
     end
-
   end

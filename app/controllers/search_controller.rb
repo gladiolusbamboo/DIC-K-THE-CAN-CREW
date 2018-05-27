@@ -1,4 +1,6 @@
 class SearchController < ApplicationController
+  include Utility
+
   # カタカタ←→ひらがな変換のためのライブラリ
   require 'nkf'
 
@@ -9,8 +11,8 @@ class SearchController < ApplicationController
     @recent_search_logs_character = get_recent_search_logs(:character)
     @recent_search_logs_ruby = get_recent_search_logs(:ruby)
 
-    pp "@recent_search_logs_character = #{@recent_search_logs_character}"
-
+    # データ追加のタイミングで結果が異なってい可能性があるので２回にわけて検索する。
+    # 処理が長くなるので関数化
     # @popular_search_logsは以下のような構造
     # search_log[0][0][0] = "表記検索"
     # search_log[0][0][1] = "KREVA"
@@ -21,37 +23,26 @@ class SearchController < ApplicationController
     # search_log[1][1] = 9(検索回数)
     # search_log[1][2] = 20(ヒット曲数)
     # ︙
-    # データ追加のタイミングで結果が異なってい可能性があるので２回にわけて検索する。
-    # 処理が長くなるので関数化
     @popular_search_logs_character = get_popular_search_logs(:character)
     @popular_search_logs_ruby = get_popular_search_logs(:ruby)
 
     # ヒット曲数×文字列長を得点として得点順に取得する
+    # 重複排除のSQLが複雑なため関数化
     @highscore_search_logs_character = get_high_score_search_logs(:character)
-    @highscore_search_logs_ruby = get_high_score_search_logs(:ruby)
-    
-    if false
-      pp "@highscore_search_logs_character = #{@highscore_search_logs_character.inspect}"
-      @highscore_search_logs_ruby = SearchLog.select(:id, :searchword, :searchtype, :hit_song_count, 'hit_song_count * LENGTH(searchword) as score')
-          .where(searchtype: 'ルビ検索')
-          .order('score DESC')
-          .distinct
-          .limit(10)
-    end
+    @highscore_search_logs_ruby = get_high_score_search_logs(:ruby)   
   end
 
   def result
-    # 入力された文字列から空白文字を削除
+    # 入力された文字列から空白文字を削除し、全角を半角に変換
     @trimmed_search_word = params[:search_log][:searchword].gsub(" ","").gsub("　","")
     @trimmed_search_word = full_to_half @trimmed_search_word
 
+    # ruby_searchというパラメータがなければ表記検索と判断する
     unless params[:ruby_search]
-      pp '表記検索です'
       # 表記検索ならアルファベット小文字は全て大文字にする
       @trimmed_search_word.upcase!      
       params[:search_log][:searchtype] = '表記検索'
     else
-      pp 'ルビ検索です'
       # ルビ検索ならカタカナをひらがなに変換する
       @trimmed_search_word = NKF.nkf('-w --hiragana', @trimmed_search_word)
       params[:search_log][:searchtype] = 'ルビ検索'
@@ -108,7 +99,7 @@ class SearchController < ApplicationController
         song_id_array << hash_key
         # searchwordの総出現回数
         phrase_count = 0
-        # 1パートでsearchwordが複数出現する可能性があるので走査する
+        # 1パートでsearchwordが複数出現する場合があるのでさらに走査する
         hash_value.each do |inf|
           unless (params[:search_log][:searchtype] == 'ルビ検索')     
             search_target_text = inf.lyric
@@ -116,7 +107,7 @@ class SearchController < ApplicationController
             search_target_text = inf.ruby
           end
           # ヘルパーメソッドを呼び出して出現回数をカウントする
-          phrase_count += view_context.get_index_array(search_target_text, @trimmed_search_word).length
+          phrase_count += get_index_array(search_target_text, @trimmed_search_word).length
         end
         # 曲ごとのsearchwordの出現回数を登録
         phrase_count_hash[hash_value[0].song_id] = phrase_count
@@ -134,7 +125,6 @@ class SearchController < ApplicationController
   # 曲ごとに結果を表示するため、song_idを主キーとするハッシュにまとめる
   # ハッシュの中身は配列になっているので表示のときには二重にeach_withしてやる必要がある
   def hash_to_hit_song_infos query_results
-    pp "query_results = #{query_results.inspect}"
     @hit_song_infos = {}
 
     query_results.each do |result|
@@ -161,12 +151,10 @@ class SearchController < ApplicationController
     txt.tr('０-９ａ-ｚＡ-Ｚ', '0-9a-zA-Z')
   end
 
+  # 最近の検索データを取得する
   def get_recent_search_logs(searchtype_sym)
-    if searchtype_sym != :ruby
-      searchtype = '表記検索'
-    else
-      searchtype = 'ルビ検索'
-    end
+    searchtype = get_search_type(searchtype_sym)
+
     # 検索内容の重複排除のためサブクエリを使用している
     SearchLog.find_by_sql("
       SELECT
@@ -194,12 +182,9 @@ class SearchController < ApplicationController
     )
   end
 
+  # スコアの高い検索データを取得する
   def get_high_score_search_logs(searchtype_sym)
-    if searchtype_sym != :ruby
-      searchtype = '表記検索'
-    else
-      searchtype = 'ルビ検索'
-    end
+    searchtype = get_search_type(searchtype_sym)
 
     # 検索内容の重複排除のためサブクエリを使用している
     SearchLog.find_by_sql("
@@ -229,14 +214,11 @@ class SearchController < ApplicationController
     )
   end
 
-  # データ追加のタイミングで結果が異なってい可能性があるので
+  # 人気の検索履歴を取得する
+  # データ追加のタイミングで結果（ヒットする曲数）が異なってい可能性があるので
   # ２回にわけて検索している
   def get_popular_search_logs(searchtype_sym)
-    if searchtype_sym != :ruby
-      searchtype = '表記検索'
-    else
-      searchtype = 'ルビ検索'
-    end
+    searchtype = get_search_type(searchtype_sym)
 
     popular_search_logs = SearchLog.group(:searchtype, :searchword)
                                     .where(searchtype: searchtype)
@@ -255,11 +237,11 @@ class SearchController < ApplicationController
       log << hit_count
       popular_search_logs_clone << log
     end
-    pp "popular_search_logs_clone.inspect = #{popular_search_logs_clone.inspect}"
     popular_search_logs_clone
   end
 
   def save_search_log(phrase_count_hash)
+    # トランザクション処理
     ActiveRecord::Base.transaction do
       # SearchLogを生成して
       @search_log = SearchLog.new(search_log_params)
@@ -273,7 +255,7 @@ class SearchController < ApplicationController
       # 中間テーブルのモデルを取得する（複数ある）
       search_log_songs = SearchLogSong.where(search_log_id: @search_log.id)
 
-      # SearchLogとSongの中間テーブルに出現回数のデータをもたせる      
+      # SearchLogとSongの間の中間テーブルに出現回数のデータをもたせる      
       search_log_songs.each do |search_log_song|
         search_log_song.phrase_hit_count = phrase_count_hash[search_log_song.song_id]
         search_log_song.save!
