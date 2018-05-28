@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   get 'search', to: 'search#index'
   get 'search/index'
   get 'search/result'
-
-  get 'search/out'
-  get 'search/cards'
-  get 'search/test'
+  get 'search/about'
+  get 'search/want'
 end

@@ -6,9 +6,17 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <meta property="fb:app_id" content="1132186820239640" />
+  <meta property="og:title" content="DIC THE CAN CREW - 缶蹴り関係検索アプリ -" />
+  <meta property="og:description" content="KICK THE CAN CREWおよび各メンバーが参加している楽曲を歌詞から検索できるWebアプリ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://dtcc.kankeli.net/" />
+  <meta property="og:image" content="http://gladiolus.egoism.jp/image/dtcc_thumbnail.png" />
+  <meta property="og:locale" content="ja_JP" />
+
   <title>DIC THE CAN CREW - 缶蹴り関係検索アプリ -</title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'
-  />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <!-- Google font -->
   <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Montserrat:400,700,200" %>
@@ -50,43 +58,45 @@
             <% end %>
           </li>
           <li class="nav-item">
-            <%= link_to('/search', class: 'nav-link') do %>
+            <%= link_to({controller: :search}, class: 'nav-link') do %>
               <i class="fas fa-search fa-lg"></i>
               <p>SEARCH</p>
             <% end %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./documentation/tutorial-components.html" target="_blank">
+            <%= link_to({controller: :search, action: :about}, class: 'nav-link') do %>
               <i class="fas fa-question fa-lg"></i>
               <p>ABOUT THIS SITE</p>
-            </a>
+            <% end %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./documentation/tutorial-components.html" target="_blank">
+            <%= link_to({controller: :search, action: :want}, class: 'nav-link') do %>
               <i class="far fa-comment-alt fa-lg"></i>
               <p>WANT LYRICS</p>
-            </a>
+            <% end %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim"
-              target="_blank">
+            <a href="https://twitter.com/share?text=DIC THE CAN CREW - 缶蹴り関係検索アプリ -&url=http://dtcc.kankeli.net/&hashtags=dtcc" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link nav-link">
               <i class="fab fa-twitter fa-2x"></i>
               <p class="d-lg-none d-xl-none">Twitter</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim"
-              target="_blank">
+            <a href="http://www.facebook.com/share.php?u=http://dtcc.kankeli.net/" onclick="window.open(encodeURI(decodeURI(this.href)), 'FBwindow', 'width=554, height=470, menubar=no, toolbar=no, scrollbars=yes'); return false;" rel="nofollow" class="nav-link" target="_blank">
               <i class="fab fa-facebook-square fa-2x"></i>
               <p class="d-lg-none d-xl-none">Facebook</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial"
-              target="_blank">
-              <i class="fab fa-instagram fa-2x"></i>
-              <p class="d-lg-none d-xl-none">Instagram</p>
+            <a href="javascript:void(0);" onclick="openWin()" class="nav-link">
+              <i class="lsf-icon fa hatenabookmark"></i>
             </a>
+            <script type="text/javascript" charset="utf-8" async="async"></script>
+            <script language="JavaScript" type="text/javascript">
+              function openWin() {
+                window.open("http://b.hatena.ne.jp/add?mode=confirm&url=http://dtcc.kankeli.net&title=DIC THE CAN CREW", "はてなブックマーク", "width=554, height=470,scrollbars=no,status=no,toolbar=no,location=no,menubar=no,directories=no,resizable=yes").focus();
+              }
+            </script>
           </li>
         </ul>
       </div>
