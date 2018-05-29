@@ -1607,10 +1607,21 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 .btn-circle.btn-primary:active:hover,
 .btn-circle.btn-primary.active:focus,
 .btn-circle.btn-primary.active:hover,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
 .show>.btn-circle.btn-primary.dropdown-toggle,
 .show>.btn-circle.btn-primary.dropdown-toggle:focus,
-.show>.btn-circle.btn-primary.dropdown-toggle:hover {
-    background-color: #fa7a50;
+.show>.btn-circle.btn-primary.dropdown-toggle:hover,
+.show>.btn-primary.dropdown-toggle,
+.show>.btn-primary.dropdown-toggle:focus,
+.show>.btn-primary.dropdown-toggle:hover {
+      background-color: #fa7a50;
     color: #FFFFFF;
     box-shadow: none;
 }
