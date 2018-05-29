@@ -1577,9 +1577,9 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
 }
 
 .btn.btn-icon:not(.btn-footer) i.now-ui-icons,
-.btn.btn-icon:not(.btn-footer) i.fa,
+.btn.btn-icon:not(.btn-footer) i.fab,
 .navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.now-ui-icons,
-.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.fa {
+.navbar .navbar-nav>a.btn.btn-icon:not(.btn-footer) i.fab {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1599,17 +1599,17 @@ fieldset[disabled] .navbar .navbar-nav>a.btn.active {
     color: #FFFFFF;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.btn-primary:active:focus,
-.btn-primary:active:hover,
-.btn-primary.active:focus,
-.btn-primary.active:hover,
-.show>.btn-primary.dropdown-toggle,
-.show>.btn-primary.dropdown-toggle:focus,
-.show>.btn-primary.dropdown-toggle:hover {
+.btn-circle.btn-primary:hover,
+.btn-circle.btn-primary:focus,
+.btn-circle.btn-primary:active,
+.btn-circle.btn-primary.active,
+.btn-circle.btn-primary:active:focus,
+.btn-circle.btn-primary:active:hover,
+.btn-circle.btn-primary.active:focus,
+.btn-circle.btn-primary.active:hover,
+.show>.btn-circle.btn-primary.dropdown-toggle,
+.show>.btn-circle.btn-primary.dropdown-toggle:focus,
+.show>.btn-circle.btn-primary.dropdown-toggle:hover {
     background-color: #fa7a50;
     color: #FFFFFF;
     box-shadow: none;
@@ -5187,7 +5187,7 @@ Created using IcoMoon - icomoon.io
 }
 
 .index-page .page-header .container>.content-center {
-    top: 37%;
+    top: 58%;
 }
 
 .index-page .page-header .category-absolute {
@@ -7654,3 +7654,9 @@ hr.fade-2 {
   .fa.hatenabookmark {
     margin-top: -40px;
   }
+
+  /* はてぶ位置調整 */
+  .btn-circle .hatenabookmark {
+    margin-top: 7px;
+  }
+
