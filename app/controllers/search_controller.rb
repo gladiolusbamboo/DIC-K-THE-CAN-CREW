@@ -178,7 +178,7 @@ class SearchController < ApplicationController
           AND B.searchtype = '#{searchtype}'
         )
       ORDER BY created_at DESC
-      LIMIT 10"
+      LIMIT 15"
     )
   end
 
@@ -210,7 +210,7 @@ class SearchController < ApplicationController
           AND B.searchtype = '#{searchtype}'
         )
       ORDER BY score DESC
-      LIMIT 10"
+      LIMIT 15"
     )
   end
 
@@ -224,7 +224,7 @@ class SearchController < ApplicationController
                                     .where(searchtype: searchtype)
                                     .where('hit_song_count > 0')
                                     .order('count_all desc')
-                                    .limit(10)
+                                    .limit(15)
                                     .count
 
     popular_search_logs_clone = []

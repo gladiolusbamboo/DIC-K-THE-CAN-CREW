@@ -345,7 +345,7 @@ module SearchHelper
       image_url = get_random_image_url()
 
       # カード部分のHTMLを表示する
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+      content_tag(:div, class: "card-box col-md-4 col-sm-6 animated #{get_random_animation()}") do
         content_tag(:div, class: 'card card-just-text card-with-border', 'data-background': 'image', 'data-src': image_url , style: "background-image: url('#{image_url}')", 'background-position': 'center center', 'background-size': 'cover') do
           concat(content_tag(:div, class: 'content') do
 
@@ -374,7 +374,7 @@ module SearchHelper
       card_color = get_random_color()
 
       # カード部分のHTMLを表示する
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do        
+      content_tag(:div, class: "card-box col-md-4 col-sm-6 animated #{get_random_animation()}") do        
         content_tag(:div, class: 'card card-with-border', 'data-background': 'color', 'data-color': card_color) do
           concat(content_tag(:div, class: 'content') do
             concat_html_with_tag("h6", info_arr[0].song.artist.name, "category")
@@ -396,7 +396,7 @@ module SearchHelper
     
     # デフォルト白カード生成
     def generate_card_default(info_arr)
-      content_tag(:div, class: 'card-box col-md-4 col-sm-6') do
+      content_tag(:div, class: "card-box col-md-4 col-sm-6 animated #{get_random_animation()}") do
         content_tag(:div, class: 'card') do
           concat(content_tag(:div, class: 'content') do
 
@@ -414,6 +414,20 @@ module SearchHelper
             concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
           end)
         end
+      end
+    end
+
+    def get_random_animation()
+      animation_index =  rand(4)
+      case animation_index
+      when 0 then
+        return 'fadeInDown'
+      when 1 then
+        return 'fadeInLeft'
+      when 2 then
+        return 'fadeInRight'
+      when 3 then
+        return 'fadeInUp'
       end
     end
 
