@@ -7674,3 +7674,17 @@ hr.fade-2 {
   .sns-buttons{
     margin-bottom: 30px;
   }
+
+  .artists-link{
+    color: red;
+  }
+
+  a.artist-section-link {
+    padding: 0 0.5em;
+    color: white;
+  }
+  .artist-section-link:focus,
+  .artist-section-link:hover{
+    color: #fa7a50;
+    text-decoration: none;
+  }
