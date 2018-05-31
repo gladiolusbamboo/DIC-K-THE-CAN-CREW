@@ -7688,3 +7688,7 @@ hr.fade-2 {
     color: #fa7a50;
     text-decoration: none;
   }
+
+  ul{
+    padding: 0;
+  }
