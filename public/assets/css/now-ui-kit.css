@@ -7692,3 +7692,8 @@ hr.fade-2 {
   ul{
     padding: 0;
   }
+
+input#ruby_search,
+input#lyric_search {
+    width: 17em;
+}

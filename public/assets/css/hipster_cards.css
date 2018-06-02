@@ -89,7 +89,7 @@ span.word-hit{
 span.artist-hit{
   font-style: italic;
   /* font-weight: bold; */
-  /* color: green; */
+  color: green;
 }
 
 /*     General overwrite     */
