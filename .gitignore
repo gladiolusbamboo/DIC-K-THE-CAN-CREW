@@ -25,7 +25,11 @@
 /config/database.yml
 /lyrics/*.txt
 /lyrics/*.yml
+<<<<<<< HEAD
 /lyrics/node_modules/*.js
+=======
+/lyrics/node_modules/
+>>>>>>> 4abd9742d01f2b881d38a739142a888e756bb795
 
 /test/fixtures/lyrics.yml
 
