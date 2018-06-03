@@ -27,7 +27,8 @@
 /lyrics/*.yml
 
 
-/lyrics/
+/lyrics/node_modules/
+
 
 /test/fixtures/lyrics.yml
 
