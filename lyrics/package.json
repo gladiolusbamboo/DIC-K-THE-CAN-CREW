@@ -2,21 +2,10 @@
   "name": "lyrics",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
   "main": "",
-=======
-  "main": "conv.js",
->>>>>>> a6862a78a517ecbac130653db0103a4f29689321
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-<<<<<<< HEAD
   "license": "ISC"
-=======
-  "license": "ISC",
-  "dependencies": {
-    "iconv-lite": "^0.4.21"
-  }
->>>>>>> a6862a78a517ecbac130653db0103a4f29689321
 }
