@@ -331,7 +331,6 @@ module SearchHelper
           end
 
           concat(content_tag(:div) do
-            pp 'info.inspct() = ' + info.inspect()
             concat "(#{info.lyric_type.name}#{info.part_lyric_order} by "
             concat content_tag(:span, info.singer.name, class: 'artist-hit')
             concat ")"
