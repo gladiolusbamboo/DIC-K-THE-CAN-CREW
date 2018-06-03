@@ -212,6 +212,7 @@ class SearchController < ApplicationController
       ORDER BY score DESC
       LIMIT 15"
     )
+    
   end
 
   # 人気の検索履歴を取得する
