@@ -1,3 +1,4 @@
+
 const songTitle = process.argv[2];
 const fs = require('fs');
 const readline = require("readline");
@@ -22,6 +23,7 @@ var WORD_TYPE = {
 fs.writeFileSync(lyricWithRubyFileName, "");
 
 var isFirst = true;
+
 reader.on("line", (data) => {
   // console.log(data);
   const strArr = data.split('\t');

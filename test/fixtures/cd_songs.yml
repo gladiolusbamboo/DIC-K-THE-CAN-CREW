@@ -99,3 +99,8 @@ nounaivacation_cd_nounaivacation_song:
 kick_cd_senpercent_song:
   cd: kick_cd
   song: senpercent_song
+
+uraomote_cd_uraomote_song:
+  cd: uraomote_cd
+  song: uraomote_song
+
