@@ -16,6 +16,69 @@ kankeri_song:
   arranger: UNKNOWN
   cd: takaoni_cd
 
+downbylow_song:
+  artist: kickthecancrew_artist
+  name: Down by Low(feat.CRAZY-A)
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 「ダウン バイ ロー」表記の場合あり
+
+takaoni2000_song:
+  artist: kickthecancrew_artist
+  name: タカオニ2000
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 
+
+oneforthewhattwoforthewhopart2_song:
+  artist: kickthecancrew_artist
+  name: one for the what, two for the who_Part2
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 
+
+shakunetsubutoukai_song:
+  artist: kickthecancrew_artist
+  name: 灼熱舞踏会
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: younganimal_cd
+  note: 
+
+goodtime_song:
+  artist: kickthecancrew_artist
+  name: GOOD TIME!
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: goodtime_cd
+  note: 
+
+updownbicycle_song:
+  artist: kickthecancrew_artist
+  name: UP DOWN BICYCLE
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: goodtime_cd
+  note: 
+
+utopia_song:
+  artist: kickthecancrew_artist
+  name: ユートピア
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: goodtime_cd
+  note: 
+
 kyoukaraashita_song:
   artist: kickthecancrew_artist
   name: 今日から明日
@@ -43,15 +106,6 @@ superoriginal_song:
   cd: superoriginal_cd
   note: 
 
-downbylow_song:
-  artist: kickthecancrew_artist
-  name: Down by Low(feat.CRAZY-A)
-  lyricist: KICK THE CAN CREW
-  composer: KREVA
-  arranger: KREVA
-  cd: younganimal_cd
-  note: 「ダウン バイ ロー」表記の場合あり
-
 itsunarouba_song:
   artist: kickthecancrew_artist
   name: イツナロウバ
@@ -59,15 +113,6 @@ itsunarouba_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: itsunarouba_cd
-  note: 
-
-goodtime_song:
-  artist: kickthecancrew_artist
-  name: GOOD TIME!
-  lyricist: KICK THE CAN CREW
-  composer: KREVA
-  arranger: KREVA
-  cd: goodtime_cd
   note: 
 
 kankeri01_song:
@@ -215,15 +260,6 @@ nounaivacation_song:
   note: 
 
 senpercent_song:
-  artist: kickthecancrew_artist
-  name: 千％
-  lyricist: KICK THE CAN CREW
-  composer: KICK THE CAN CREW & 柿崎洋一郎
-  arranger: KREVA & 柿崎洋一郎
-  cd: kick_cd
-  note: 
-
-uraomote_song:
   artist: kickthecancrew_artist
   name: 千％
   lyricist: KICK THE CAN CREW

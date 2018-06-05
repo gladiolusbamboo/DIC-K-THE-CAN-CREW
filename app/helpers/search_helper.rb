@@ -24,6 +24,8 @@ module SearchHelper
           # index_arrayにはsearchwordの出現位置が格納されている
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
+            pp "lyric_decoded = #{lyric_decoded}"
+            pp "searchword = #{searchword}"
             index_modified_array = get_index_modified_array_lyric(lyric_decoded, index, searchword)
             # ひとつずつ検索結果をconcatする
             concat_result_li(index_modified_array, lyric_decoded, info)
@@ -127,6 +129,8 @@ module SearchHelper
     # 半角スペース分のindex位置を修正する
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
     def modify_index index, decodedLyricWithRuby, is_space_ok
+      pp "index = #{index}"
+      pp "decodedLyricWithRuby = #{decodedLyricWithRuby}"
       index_return = index
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける

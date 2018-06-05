@@ -8,6 +8,34 @@ takaoni_cd_kankeri_song:
   cd: takaoni_cd
   song: kankeri_song
 
+younganimal_cd_downbylow_song:
+  cd: younganimal_cd
+  song: downbylow_song
+
+younganimal_cd_takaoni2000_song:
+  cd: younganimal_cd
+  song: takaoni2000_song
+
+younganimal_cd_oneforthewhattwoforthewhopart2_song:
+  cd: younganimal_cd
+  song: oneforthewhattwoforthewhopart2_song
+  
+younganimal_cd_shakunetsubutoukai_song:
+  cd: younganimal_cd
+  song: shakunetsubutoukai_song
+
+goodtime_cd_goodtime_song:
+  cd: goodtime_cd
+  song: goodtime_song
+
+goodtime_cd_updownbicycle_song:
+  cd: goodtime_cd
+  song: updownbicycle_song
+
+goodtime_cd_utopia_song:
+  cd: goodtime_cd
+  song: utopia_song
+
 kyoukaraashita_cd_kyoukaraashita_song:
   cd: kyoukaraashita_cd
   song: kyoukaraashita_song
@@ -20,17 +48,10 @@ superoriginal_cd_superoriginal_song:
   cd: superoriginal_cd
   song: superoriginal_song
 
-younganimal_cd_downbylow_song:
-  cd: younganimal_cd
-  song: downbylow_song
-
 itsunarouba_cd_itsunarouba_song:
   cd: itsunarouba_cd
   song: itsunarouba_song
 
-goodtime_cd_goodtime_song:
-  cd: goodtime_cd
-  song: goodtime_song
 
 kankeri01_cd_kankeri01_song:
   cd: kankeri01_cd
@@ -99,8 +120,4 @@ nounaivacation_cd_nounaivacation_song:
 kick_cd_senpercent_song:
   cd: kick_cd
   song: senpercent_song
-
-uraomote_cd_uraomote_song:
-  cd: uraomote_cd
-  song: uraomote_song
 

@@ -4,6 +4,17 @@ const fs = require('fs');
 const readline = require("readline");
 const iconv = require('iconv-lite');
 
+const dictionaryFileName = `./dictionary.txt`;
+const dictionaryStream = fs.createReadStream(dictionaryFileName, 'utf8');
+const dictionaryReader = readline.createInterface({ input: dictionaryStream });
+const regDictionary = /([A-Za-z'\d]+?),(.*)/
+let dictionary = {};
+dictionaryReader.on("line", (data) => {
+  let myArray = regDictionary.exec(data);
+  dictionary[myArray[1]] = myArray[2];
+});
+
+
 const mecabFileName = `./${songTitle}_mecab.txt`;
 const lyricWithRubyFileName = `./${songTitle}_lyric_with_ruby.txt`;
 
@@ -67,7 +78,11 @@ reader.on("line", (data) => {
           else
             fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},}`);
         } else {
-          fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},}`);
+          if (dictionary[strArr[0].toUpperCase()]) {
+            fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},${dictionary[strArr[0].toUpperCase()]}}`);
+          } else {
+            fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},}`);
+          }
         }
       }
     } else {
