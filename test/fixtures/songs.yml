@@ -79,6 +79,60 @@ utopia_song:
   cd: goodtime_cd
   note: 
 
+kickoff_song:
+  artist: kickthecancrew_artist
+  name: KICK OFF
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+whydidi_song:
+  artist: kickthecancrew_artist
+  name: Why did I?
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+partyover_song:
+  artist: kickthecancrew_artist
+  name: PARTYOVER
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+xamount_song:
+  artist: kickthecancrew_artist
+  name: X-amount
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+elnino_song:
+  artist: kickthecancrew_artist
+  name: エルニーニョ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+unitedrivers_song:
+  artist: kickthecancrew_artist
+  name: united rivers
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
 kyoukaraashita_song:
   artist: kickthecancrew_artist
   name: 今日から明日

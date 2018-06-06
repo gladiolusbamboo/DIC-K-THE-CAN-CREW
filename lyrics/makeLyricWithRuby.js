@@ -36,7 +36,7 @@ fs.writeFileSync(lyricWithRubyFileName, "");
 var isFirst = true;
 
 reader.on("line", (data) => {
-  // console.log(data);
+  // console.log(dictionary);
   const strArr = data.split('\t');
   wordType = WORD_TYPE.OTHER;
   // console.log(strArr);
@@ -79,8 +79,10 @@ reader.on("line", (data) => {
             fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},}`);
         } else {
           if (dictionary[strArr[0].toUpperCase()]) {
+            // console.log('hakken');
             fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},${dictionary[strArr[0].toUpperCase()]}}`);
           } else {
+            // console.log('mihakken');
             fs.appendFileSync(lyricWithRubyFileName, `{${strArr[0]},}`);
           }
         }

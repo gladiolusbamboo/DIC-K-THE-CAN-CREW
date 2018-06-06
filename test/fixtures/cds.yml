@@ -4,6 +4,18 @@ takaoni_cd:
   name: タカオニ/カンケリ
   released_at: 1999-08-20
 
+younganimal_cd:
+  name: young animal e.p.
+  released_at: 2000-07-05
+
+goodtime_cd:
+  name: GOOD TIME!
+  released_at: 2000-08-18
+
+youngking_cd:
+  name: YOUNG KING
+  released_at: 2000-09-13
+
 kyoukaraashita_cd:
   name: 今日から明日
   released_at: 2001-02-21
@@ -12,17 +24,9 @@ superoriginal_cd:
   name: スーパーオリジナル
   released_at: 2001-05-23
 
-younganimal_cd:
-  name: young animal e.p.
-  released_at: 2000-07-05
-
 itsunarouba_cd:
   name: イツナロウバ
   released_at: 2001-07-11
-
-goodtime_cd:
-  name: GOOD TIME!
-  released_at: 2000-08-18
 
 kankeri01_cd:
   name: カンケリ01/LIFELINE

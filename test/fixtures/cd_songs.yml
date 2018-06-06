@@ -36,6 +36,38 @@ goodtime_cd_utopia_song:
   cd: goodtime_cd
   song: utopia_song
 
+youngking_cd_kickoff_song:
+  cd: youngking_cd
+  song: kickoff_song
+
+youngking_cd_whydidi_song:
+  cd: youngking_cd
+  song: whydidi_song
+
+youngking_cd_goodtime_song:
+  cd: youngking_cd
+  song: goodtime_song
+
+youngking_cd_partyover_song:
+  cd: youngking_cd
+  song: partyover_song
+
+youngking_cd_utopia_song:
+  cd: youngking_cd
+  song: utopia_song
+
+youngking_cd_xamount_song:
+  cd: youngking_cd
+  song: xamount_song
+
+youngking_cd_elnino_song:
+  cd: youngking_cd
+  song: elnino_song
+
+youngking_cd_unitedrivers_song:
+  cd: youngking_cd
+  song: unitedrivers_song
+
 kyoukaraashita_cd_kyoukaraashita_song:
   cd: kyoukaraashita_cd
   song: kyoukaraashita_song
