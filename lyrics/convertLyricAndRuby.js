@@ -11,8 +11,8 @@ const dictionaryFileName = `./dictionary.txt`;
 const yamlFileName = `./${songTitle}.yml`;
 
 const reg = /{(.*?),(.*?)}/g;
-const regDictionary = /([A-Za-z'\d]+?),(.*)/
-const engRegex = /^[A-Za-z\d]+$/g;
+const regDictionary = /([A-Za-z&'\d]+?),(.*)/
+const engRegex = /^[A-Za-z&\d]+$/g;
 
 const dictionaryStream = fs.createReadStream(dictionaryFileName, 'utf8');
 const dictionaryReader = readline.createInterface({ input: dictionaryStream });
@@ -118,5 +118,5 @@ reader.on('close', function () {
   
 
 
-  console.log('処理終了')
+  console.log('処睆終了')
 });

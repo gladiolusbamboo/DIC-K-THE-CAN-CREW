@@ -32,6 +32,10 @@ kankeri01_cd:
   name: カンケリ01/LIFELINE
   released_at: 2001-09-27
 
+greatesthits_cd:
+  name: GREATEST HITS
+  released_at: 2001-10-17
+
 christmaseverap_cd:
   name: クリスマス・イブRap
   released_at: 2001-11-07

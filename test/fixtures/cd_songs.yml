@@ -8,9 +8,9 @@ takaoni_cd_kankeri_song:
   cd: takaoni_cd
   song: kankeri_song
 
-younganimal_cd_downbylow_song:
+younganimal_cd_downbylaw_song:
   cd: younganimal_cd
-  song: downbylow_song
+  song: downbylaw_song
 
 younganimal_cd_takaoni2000_song:
   cd: younganimal_cd
@@ -36,9 +36,17 @@ goodtime_cd_utopia_song:
   cd: goodtime_cd
   song: utopia_song
 
+youngking_cd_call_song:
+  cd: youngking_cd
+  song: call_song
+
 youngking_cd_kickoff_song:
   cd: youngking_cd
   song: kickoff_song
+
+youngking_cd_megacityrunning_song:
+  cd: youngking_cd
+  song: megacityrunning_song
 
 youngking_cd_whydidi_song:
   cd: youngking_cd
@@ -60,6 +68,10 @@ youngking_cd_xamount_song:
   cd: youngking_cd
   song: xamount_song
 
+youngking_cd_tabibito_song:
+  cd: youngking_cd
+  song: tabibito_song
+
 youngking_cd_elnino_song:
   cd: youngking_cd
   song: elnino_song
@@ -67,6 +79,14 @@ youngking_cd_elnino_song:
 youngking_cd_unitedrivers_song:
   cd: youngking_cd
   song: unitedrivers_song
+
+youngking_cd_kawatoumigaawasarutokoro_song:
+  cd: youngking_cd
+  song: kawatoumigaawasarutokoro_song
+
+youngking_cd_takaoni2000_song:
+  cd: youngking_cd
+  song: takaoni2000_song
 
 kyoukaraashita_cd_kyoukaraashita_song:
   cd: kyoukaraashita_cd
@@ -80,10 +100,17 @@ superoriginal_cd_superoriginal_song:
   cd: superoriginal_cd
   song: superoriginal_song
 
+superoriginal_cd_firereconstructionofsuperoriginal_song:
+  cd: superoriginal_cd
+  song: firereconstructionofsuperoriginal_song
+
 itsunarouba_cd_itsunarouba_song:
   cd: itsunarouba_cd
   song: itsunarouba_song
 
+itsunarouba_cd_karukufiction_song:
+  cd: itsunarouba_cd
+  song: karukufiction_song
 
 kankeri01_cd_kankeri01_song:
   cd: kankeri01_cd
@@ -92,6 +119,74 @@ kankeri01_cd_kankeri01_song:
 kankeri01_cd_lifeline_song:
   cd: kankeri01_cd
   song: lifeline_song
+
+greatesthits_cd_downbylaw_song:
+  cd: greatesthits_cd
+  song: downbylaw_song
+
+greatesthits_cd_goodtime_song:
+  cd: greatesthits_cd
+  song: goodtime_song
+
+greatesthits_cd_3mcs1dj_song:
+  cd: greatesthits_cd
+  song: 3mcs1dj_song
+
+greatesthits_cd_colorvariation_song:
+  cd: greatesthits_cd
+  song: colorvariation_song
+
+greatesthits_cd_microphonenotheme_song:
+  cd: greatesthits_cd
+  song: microphonenotheme_song
+
+greatesthits_cd_oneforthewhattwoforthewho_song:
+  cd: greatesthits_cd
+  song: oneforthewhattwoforthewho_song
+
+greatesthits_cd_oneforthewhattwoforthewhopart2_song:
+  cd: greatesthits_cd
+  song: oneforthewhattwoforthewhopart2_song
+
+greatesthits_cd_utopia_song:
+  cd: greatesthits_cd
+  song: utopia_song
+
+greatesthits_cd_xamount_song:
+  cd: greatesthits_cd
+  song: xamount_song
+
+greatesthits_cd_kyoukaraashita_kana_song:
+  cd: greatesthits_cd
+  song: kyoukaraashita_kana_song
+
+greatesthits_cd_shakunetsubutoukai_song:
+  cd: greatesthits_cd
+  song: shakunetsubutoukai_song
+
+greatesthits_cd_whydidi_song:
+  cd: greatesthits_cd
+  song: whydidi_song
+
+greatesthits_cd_elnino_song:
+  cd: greatesthits_cd
+  song: elnino_song
+
+greatesthits_cd_kyoukaraashita_song:
+  cd: greatesthits_cd
+  song: kyoukaraashita_song
+
+greatesthits_cd_takaoni2000_song:
+  cd: greatesthits_cd
+  song: takaoni2000_song
+
+greatesthits_cd_takaoni_song:
+  cd: greatesthits_cd
+  song: takaoni_song
+
+greatesthits_cd_kankeri_song:
+  cd: greatesthits_cd
+  song: kankeri_song
 
 christmaseverap_cd_christmaseverap_song:
   cd: christmaseverap_cd

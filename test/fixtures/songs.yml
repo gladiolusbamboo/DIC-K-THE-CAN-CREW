@@ -16,9 +16,9 @@ kankeri_song:
   arranger: UNKNOWN
   cd: takaoni_cd
 
-downbylow_song:
+downbylaw_song:
   artist: kickthecancrew_artist
-  name: Down by Low(feat.CRAZY-A)
+  name: Down by Law(feat.CRAZY-A)
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: KREVA
@@ -79,9 +79,27 @@ utopia_song:
   cd: goodtime_cd
   note: 
 
+call_song:
+  artist: kickthecancrew_artist
+  name: Call & …
+  lyricist: (Instrumental)
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
 kickoff_song:
   artist: kickthecancrew_artist
   name: KICK OFF
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
+megacityrunning_song:
+  artist: kickthecancrew_artist
+  name: Megacityrunning
   lyricist: KICK THE CAN CREW
   composer: KREVA
   arranger: KREVA
@@ -115,6 +133,15 @@ xamount_song:
   cd: youngking_cd
   note: 
 
+tabibito_song:
+  artist: kickthecancrew_artist
+  name: X-amount
+  lyricist: (Instrumental)
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
 elnino_song:
   artist: kickthecancrew_artist
   name: エルニーニョ
@@ -133,12 +160,21 @@ unitedrivers_song:
   cd: youngking_cd
   note: 
 
+kawatoumigaawasarutokoro_song:
+  artist: kickthecancrew_artist
+  name: 河と海が合わさるところ
+  lyricist: KICK THE CAN CREW
+  composer: KREVA
+  arranger: KREVA
+  cd: youngking_cd
+  note: 
+
 kyoukaraashita_song:
   artist: kickthecancrew_artist
   name: 今日から明日
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
-  arranger: UNKNOWN
+  arranger: KREVA
   cd: kyoukaraashita_cd
   note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ
 
@@ -160,9 +196,27 @@ superoriginal_song:
   cd: superoriginal_cd
   note: 
 
+firereconstructionofsuperoriginal_song:
+  artist: kickthecancrew_artist
+  name: Fire!(re-construction of スーパーオリジナル)
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: UNKNOWN
+  cd: superoriginal_cd
+  note: 
+
 itsunarouba_song:
   artist: kickthecancrew_artist
   name: イツナロウバ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: itsunarouba_cd
+  note: 
+
+karukufiction_song:
+  artist: kickthecancrew_artist
+  name: KA・RU・KU・ FICTION
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
   arranger: KREVA
@@ -185,6 +239,42 @@ lifeline_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: kankeri01_cd
+  note: 
+
+3mcs1dj_song:
+  artist: kickthecancrew_artist
+  name: 3MCs + 1DJ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: greatesthits_cd
+  note: 
+
+colorvariation_song:
+  artist: kickthecancrew_artist
+  name: Color variation
+  lyricist: CMJK & KICK THE CAN CREW
+  composer: CMJK & KICK THE CAN CREW
+  arranger: CMJK
+  cd: greatesthits_cd
+  note: 
+
+microphonenotheme_song:
+  artist: kickthecancrew_artist
+  name: マイクロフォンのテーマ
+  lyricist: CMJK & KICK THE CAN CREW
+  composer: CMJK & KICK THE CAN CREW
+  arranger: CMJK
+  cd: greatesthits_cd
+  note: 
+
+oneforthewhattwoforthewho_song:
+  artist: kickthecancrew_artist
+  name: one for the what,two for the who
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: greatesthits_cd
   note: 
 
 christmaseverap_song:
