@@ -295,13 +295,86 @@ marche_song:
   cd: marche_cd
   note: 
 
+cmoneverybody_song:
+  artist: kickthecancrew_artist
+  name: C'MON EVERYBODY
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: marche_cd
+  note: 
+
+thethemeofkick_song:
+  artist: kickthecancrew_artist
+  name: THE THEME OF "KICK"
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
 oneway_song:
   artist: kickthecancrew_artist
   name: ONEWAY
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
   arranger: KREVA
-  cd: oneway_cd
+  cd: vitalizer_cd
+  note: 
+
+kickoff_kana_song:
+  artist: kickthecancrew_artist
+  name: キックOFF
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
+vitalizer_song:
+  artist: kickthecancrew_artist
+  name: VITALIZER
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
+oneforthewhattwoforthewhopartiii_song:
+  artist: kickthecancrew_artist
+  name: ONE FOR THE WHAT, TWO FOR THE WHO PART.III
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
+
+whatchaname_song:
+  artist: kickthecancrew_artist
+  name: ?WHATCHANAME?
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
+mikoshirockers_song:
+  artist: kickthecancrew_artist
+  name: 神輿ロッカーズ feat. RHYMESTER
+  lyricist: KICK THE CAN CREW & RHYMESTER
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
+  note: 
+
+hands_song:
+  artist: kickthecancrew_artist
+  name: HANDS
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: vitalizer_cd
   note: 
 
 sayonarasayonara_song:

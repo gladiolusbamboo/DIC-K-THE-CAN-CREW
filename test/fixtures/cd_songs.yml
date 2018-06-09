@@ -196,6 +196,62 @@ marche_cd_marche_song:
   cd: marche_cd
   song: marche_song
 
+marche_cd_cmoneverybody_song:
+  cd: marche_cd
+  song: cmoneverybody_song
+
+vitalizer_cd_thethemeofkick_song:
+  cd: vitalizer_cd
+  song: thethemeofkick_song
+
+vitalizer_cd_superoriginal_song:
+  cd: vitalizer_cd
+  song: superoriginal_song
+
+vitalizer_cd_marche_song:
+  cd: vitalizer_cd
+  song: marche_song
+
+vitalizer_cd_oneway_song:
+  cd: vitalizer_cd
+  song: oneway_song
+
+vitalizer_cd_kankeri01_song:
+  cd: vitalizer_cd
+  song: kankeri01_song
+
+vitalizer_cd_kickoff_kana_song:
+  cd: vitalizer_cd
+  song: kickoff_kana_song
+
+vitalizer_cd_itsunarouba_song:
+  cd: vitalizer_cd
+  song: itsunarouba_song
+
+vitalizer_cd_cmoneverybody_song:
+  cd: vitalizer_cd
+  song: cmoneverybody_song
+
+vitalizer_cd_vitalizer_song:
+  cd: vitalizer_cd
+  song: vitalizer_song
+
+vitalizer_cd_oneforthewhattwoforthewhopartiii_song:
+  cd: vitalizer_cd
+  song: oneforthewhattwoforthewhopartiii_song
+
+vitalizer_cd_whatchaname_song:
+  cd: vitalizer_cd
+  song: whatchaname_song
+
+vitalizer_cd_mikoshirockers_song:
+  cd: vitalizer_cd
+  song: mikoshirockers_song
+
+vitalizer_cd_hands_song:
+  cd: vitalizer_cd
+  song: hands_song
+
 oneway_cd_oneway_song:
   cd: oneway_cd
   song: oneway_song

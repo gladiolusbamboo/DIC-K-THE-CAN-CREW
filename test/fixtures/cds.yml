@@ -44,6 +44,10 @@ marche_cd:
   name: マルシェ
   released_at: 2002-01-23
 
+vitalizer_cd:
+  name: VITALIZER
+  released_at: 2002-02-14
+
 oneway_cd:
   name: ONEWAY
   released_at: 2002-03-13

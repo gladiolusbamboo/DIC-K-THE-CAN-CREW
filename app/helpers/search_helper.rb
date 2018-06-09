@@ -9,28 +9,22 @@ module SearchHelper
         lyric_with_ruby = info.lyric_with_ruby
         # {漢字,かんじ}表記から表示用文字列に戻す
 
-        pp "lyric_with_ruby = #{lyric_with_ruby}"
         lyric_decoded = decode_lyric_with_ruby(lyric_with_ruby)
-        pp "lyric_decoded = #{lyric_decoded}"
 
         unless(is_ruby_search)
           lyric_original = info.lyric
         else
           lyric_original = info.ruby
         end
-        pp "lyric_original = #{lyric_original}"
 
         # 出現場所indexを格納した配列を取得する
         index_array = get_index_array(lyric_original, searchword)
-        pp "index_array = #{index_array}"
 
         # "ルビ検索"が指定されている場合以外は表記検索をする
         unless(is_ruby_search)
           # index_arrayにはsearchwordの出現位置が格納されている
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
-            pp "lyric_decoded = #{lyric_decoded}"
-            pp "searchword = #{searchword}"
             index_modified_array = get_index_modified_array_lyric(lyric_decoded, index, searchword)
             # ひとつずつ検索結果をconcatする
             concat_result_li(index_modified_array, lyric_decoded, info)
@@ -40,7 +34,6 @@ module SearchHelper
           index_array.each do |index|
             # searchwordの出現位置と直後の位置インデックスを設定
             index_modified_array = get_index_modified_array_ruby(lyric_with_ruby, index, searchword)
-            pp "index_modified_array = #{index_modified_array}"
             # ひとつずつ検索結果をconcatする
             concat_result_li(index_modified_array, lyric_decoded, info)
           end
@@ -135,8 +128,6 @@ module SearchHelper
     # 半角スペース分のindex位置を修正する
     # is_space_okはindex_returnの部分の文字が半角スペースでも許容するか
     def modify_index index, decodedLyricWithRuby, is_space_ok
-      pp "index = #{index}"
-      pp "decodedLyricWithRuby = #{decodedLyricWithRuby}"
       index_return = index
       space_count = 0
       # 新しい半角スペースが見つからなくなるまで処理を続ける
@@ -163,8 +154,6 @@ module SearchHelper
     def get_index_modified_array_ruby lyric_with_ruby, index, searchword
       # ふりがなの文字数の配列を得る
       lyric_length_array = convert_lyric_to_length_array(lyric_with_ruby)
-      pp "lyric_length_array = #{lyric_length_array}"
-
 
       # searchword(ルビ)の終了直後の文字の開始位置
       index_end = index + searchword.length
@@ -228,8 +217,7 @@ module SearchHelper
       lyric_with_ruby_clone.gsub!('\{','{')
       lyric_with_ruby_clone.gsub!('\}','}')
       # 最初に出てくるカンマを区切り文字と認識させないように'*'に置き換える
-      lyric_with_ruby_clone.gsub!('{,,}','{*,}}')
-      pp "lyric_with_ruby_clone = #{lyric_with_ruby_clone}"
+      lyric_with_ruby_clone.gsub!('{,,}','{*,}')
 
       # 括弧内を走査している時のフラグ
       is_inner_parenthesis = false
@@ -346,7 +334,6 @@ module SearchHelper
           end
 
           concat(content_tag(:div) do
-            pp info.inspect
             concat "(#{info.lyric_type.name}#{info.part_lyric_order} by "
             concat content_tag(:span, info.singer.name, class: 'artist-hit')
             concat ")"
