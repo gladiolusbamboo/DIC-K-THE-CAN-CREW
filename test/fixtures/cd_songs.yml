@@ -248,6 +248,10 @@ vitalizer_cd_mikoshirockers_song:
   cd: vitalizer_cd
   song: mikoshirockers_song
 
+vitalizer_cd_lifeline_song:
+  cd: vitalizer_cd
+  song: lifeline_song
+
 vitalizer_cd_hands_song:
   cd: vitalizer_cd
   song: hands_song
@@ -256,9 +260,21 @@ oneway_cd_oneway_song:
   cd: oneway_cd
   song: oneway_song
 
+oneway_cd_hands_song:
+  cd: oneway_cd
+  song: hands_song
+
+oneway_cd_marche_song:
+  cd: oneway_cd
+  song: marche_song
+
 sayonarasayonara_cd_sayonarasayonara_song:
   cd: sayonarasayonara_cd
   song: sayonarasayonara_song
+
+sayonarasayonara_cd_bed_song:
+  cd: sayonarasayonara_cd
+  song: bed_song
 
 unbalance_cd_unbalance_song:
   cd: unbalance_cd
@@ -276,21 +292,153 @@ toriiiiiico_cd_toriiiiiico_song:
   cd: toriiiiiico_cd
   song: toriiiiiico_song
 
+magicnumber_cd_toujou_song:
+  cd: magicnumber_cd
+  song: toujou_song
+
+magicnumber_cd_refresh_song:
+  cd: magicnumber_cd
+  song: refresh_song
+
+magicnumber_cd_chikyuublues337_song:
+  cd: magicnumber_cd
+  song: chikyuublues337_song
+
+magicnumber_cd_stress_song:
+  cd: magicnumber_cd
+  song: stress_song
+
+magicnumber_cd_mamasaid_song:
+  cd: magicnumber_cd
+  song: mamasaid_song
+
+magicnumber_cd_unbalance_song:
+  cd: magicnumber_cd
+  song:  unbalance_song
+
+magicnumber_cd_nanika_song:
+  cd: magicnumber_cd
+  song: nanika_song
+
+magicnumber_cd_movingman_song:
+  cd: magicnumber_cd
+  song: movingman_song
+
+magicnumber_cd_djdjforradio_song:
+  cd: magicnumber_cd
+  song: djdjforradio_song
+
+magicnumber_cd_cancan_song:
+  cd: magicnumber_cd
+  song: cancan_song
+
+magicnumber_cd_toriiiiiico_song:
+  cd: magicnumber_cd
+  song: toriiiiiico_song
+
+magicnumber_cd_elements_song:
+  cd: magicnumber_cd
+  song: elements_song
+
+magicnumber_cd_lonelyone_song:
+  cd: magicnumber_cd
+  song: lonelyone_song
+
+magicnumber_cd_sayonarasayonara_song:
+  cd: magicnumber_cd
+  song: sayonarasayonara_song
+
+magicnumber_cd_magicnumber_song:
+  cd: magicnumber_cd
+  song: magicnumber_song
+
 sagacontinue_cd_sagacontinue_song:
   cd: sagacontinue_cd
   song: sagacontinue_song
+
+sagacontinue_cd_break3_song:
+  cd: sagacontinue_cd
+  song: break3_song
 
 goodmusic_sg_cd_goodmusic_song:
   cd: goodmusic_sg_cd
   song: goodmusic_song
 
+goodmusic_sg_cd_jiyuutime_song:
+  cd: goodmusic_sg_cd
+  song: jiyuutime_song
+
 puncsunzennofunk_cd_puncsunzennofunk_song:
   cd: puncsunzennofunk_cd
   song: puncsunzennofunk_song
 
+puncsunzennofunk_cd_doita_song:
+  cd: puncsunzennofunk_cd
+  song: doita_song
+
 navi_cd_navi_song:
   cd: navi_cd
   song: navi_song
+
+bestalbum20012003_cd_stepintheday_song:
+  cd: bestalbum20012003_cd
+  song: stepintheday_song
+
+bestalbum20012003_cd_superoriginal_song:
+  cd: bestalbum20012003_cd
+  song: superoriginal_song
+
+bestalbum20012003_cd_itsunarouba_song:
+  cd: bestalbum20012003_cd
+  song: itsunarouba_song
+
+bestalbum20012003_cd_kankeri01_song:
+  cd: bestalbum20012003_cd
+  song: kankeri01_song
+
+bestalbum20012003_cd_lifeline_song:
+  cd: bestalbum20012003_cd
+  song: lifeline_song
+
+bestalbum20012003_cd_christmaseverap_song:
+  cd: bestalbum20012003_cd
+  song: christmaseverap_song
+
+bestalbum20012003_cd_marche_song:
+  cd: bestalbum20012003_cd
+  song: marche_song
+
+bestalbum20012003_cd_oneway_song:
+  cd: bestalbum20012003_cd
+  song: oneway_song
+
+bestalbum20012003_cd_vitalizer_song:
+  cd: bestalbum20012003_cd
+  song: vitalizer_song
+
+bestalbum20012003_cd_sayonarasayonara_song:
+  cd: bestalbum20012003_cd
+  song: sayonarasayonara_song
+
+bestalbum20012003_cd_unbalance_song:
+  cd: bestalbum20012003_cd
+  song: unbalance_song
+
+bestalbum20012003_cd_chikyuublues337_song:
+  cd: bestalbum20012003_cd
+  song: chikyuublues337_song
+
+bestalbum20012003_cd_djdjforradio_song:
+  cd: bestalbum20012003_cd
+  song: djdjforradio_song
+
+bestalbum20012003_cd_toriiiiiico_song:
+  cd: bestalbum20012003_cd
+  song: toriiiiiico_song
+
+bestalbum20012003_cd_magicnumber_song:
+  cd: bestalbum20012003_cd
+  song: magicnumber_song
 
 navi_cd_yure_song:
   cd: navi_cd

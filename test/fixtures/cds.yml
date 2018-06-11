@@ -68,12 +68,16 @@ toriiiiiico_cd:
   name: TORIIIIIICO!
   released_at: 2002-12-11
 
+magicnumber_cd:
+  name: magic number
+  released_at: 2003-01-01
+
 sagacontinue_cd:
   name: 性コンティニュー
   released_at: 2003-08-06
 
 goodmusic_sg_cd:
-  name: GOOD MUSIC
+  name: GOOD MUSIC(シングル盤)
   released_at: 2003-09-10
 
 puncsunzennofunk_cd:
@@ -83,6 +87,10 @@ puncsunzennofunk_cd:
 navi_cd:
   name: ナビ/揺れ
   released_at: 2003-11-12
+
+bestalbum20012003_cd:
+  name: BEST ALBUM 2001-2003
+  released_at: 2003-11-19
 
 nounaivacation_cd:
   name: 脳内VACATION

@@ -386,6 +386,15 @@ sayonarasayonara_song:
   cd: sayonarasayonara_cd
   note: 
 
+bed_song:
+  artist: kickthecancrew_artist
+  name: bed
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: sayonarasayonara_cd
+  note: 
+
 unbalance_song:
   artist: kickthecancrew_artist
   name: アンバランス
@@ -422,12 +431,111 @@ toriiiiiico_song:
   cd: toriiiiiico_cd
   note: KICK THE CAN CREW feat. CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
 
+toujou_song:
+  artist: kickthecancrew_artist
+  name: 登場
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+refresh_song:
+  artist: kickthecancrew_artist
+  name: RE-FRESH
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+stress_song:
+  artist: kickthecancrew_artist
+  name: ストレス
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+mamasaid_song:
+  artist: kickthecancrew_artist
+  name: mama said ～ハタラキッパ～
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+nanika_song:
+  artist: kickthecancrew_artist
+  name: ナニカ
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+movingman_song:
+  artist: kickthecancrew_artist
+  name: movingman
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+cancan_song:
+  artist: kickthecancrew_artist
+  name: CAN-CAN
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+elements_song:
+  artist: kickthecancrew_artist
+  name: E.L.E.M.E.N.T.S
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+lonelyone_song:
+  artist: kickthecancrew_artist
+  name: LONELY ONE
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
+magicnumber_song:
+  artist: kickthecancrew_artist
+  name: magic number
+  lyricist: KICK THE CAN CREW
+  composer: UNKNOWN
+  arranger: KREVA
+  cd: magicnumber_cd
+  note:
+
 sagacontinue_song:
   artist: kickthecancrew_artist
   name: 性コンティニュー
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
-  arranger: KREVA
+  arranger: 顔PASSブラザーズ
+  cd: sagacontinue_cd
+  note:
+
+break3_song:
+  artist: kickthecancrew_artist
+  name: BREAK3
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: 顔PASSブラザーズ
   cd: sagacontinue_cd
   note:
 
@@ -440,9 +548,27 @@ goodmusic_song:
   cd: goodmusic_sg_cd
   note: 同一タイトルのSgとAlがリリースされている。
 
+jiyuutime_song:
+  artist: kickthecancrew_artist
+  name: 自由TIME
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_sg_cd
+  note: 
+
 puncsunzennofunk_song:
   artist: kickthecancrew_artist
   name: パンク寸前のFUNK
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: 顔PASSブラザーズ
+  cd: puncsunzennofunk_cd
+  note: 
+
+doita_song:
+  artist: kickthecancrew_artist
+  name: D.O.I.T.A.
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW & DJ TATSUTA
   arranger: 顔PASSブラザーズ
@@ -465,6 +591,15 @@ yure_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: navi_cd
+  note: 
+
+stepintheday_song:
+  artist: kickthecancrew_artist
+  name: STEP IN THE DAY
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: bestalbum20012003_cd
   note: 
 
 nounaivacation_song:
