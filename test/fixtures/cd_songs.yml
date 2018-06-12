@@ -448,7 +448,83 @@ nounaivacation_cd_nounaivacation_song:
   cd: nounaivacation_cd
   song: nounaivacation_song
 
+goodmusic_al_cd_opening_song:
+  cd: goodmusic_al_cd
+  song: opening_song
+
+goodmusic_al_cd_sagacontinue_song:
+  cd: goodmusic_al_cd
+  song: sagacontinue_song
+
+goodmusic_al_cd_parade_song:
+  cd: goodmusic_al_cd
+  song: parade_song
+
+goodmusic_al_cd_mission1_song:
+  cd: goodmusic_al_cd
+  song: mission1_song
+
+goodmusic_al_cd_nounaivacation_song:
+  cd: goodmusic_al_cd
+  song: nounaivacation_song
+
+goodmusic_al_cd_allnightlong_song:
+  cd: goodmusic_al_cd
+  song: allnightlong_song
+
+goodmusic_al_cd_uraomote_song:
+  cd: goodmusic_al_cd
+  song: uraomote_song
+
+goodmusic_al_cd_yure_song:
+  cd: goodmusic_al_cd
+  song: yure_song
+
+goodmusic_al_cd_mission2_song:
+  cd: goodmusic_al_cd
+  song: mission2_song
+
+goodmusic_al_cd_jiyuutime_song:
+  cd: goodmusic_al_cd
+  song: jiyuutime_song
+
+goodmusic_al_cd_navi_song:
+  cd: goodmusic_al_cd
+  song: navi_song
+
+goodmusic_al_cd_likethisgood_song:
+  cd: goodmusic_al_cd
+  song: likethisgood_song
+
+goodmusic_al_cd_goodmusic_song:
+  cd: goodmusic_al_cd
+  song: goodmusic_song
+
+goodmusic_al_cd_mission3_song:
+  cd: goodmusic_al_cd
+  song: mission3_song
+
+goodmusic_al_cd_puncsunzennofunk_song:
+  cd: goodmusic_al_cd
+  song: puncsunzennofunk_song
+
+goodmusic_al_cd_moshimo_song:
+  cd: goodmusic_al_cd
+  song: moshimo_song
+
+kick_cd_zeninshuugou_song:
+  cd: kick_cd
+  song: zeninshuugou_song
+
 kick_cd_senpercent_song:
   cd: kick_cd
   song: senpercent_song
+
+kick_cd_imamosingalong_song:
+  cd: kick_cd
+  song: imamosingalong_song
+
+kick_cd_summerspot_song:
+  cd: kick_cd
+  song: summerspot_song
 

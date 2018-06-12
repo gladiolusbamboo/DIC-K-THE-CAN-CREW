@@ -611,6 +611,96 @@ nounaivacation_song:
   cd: nounaivacation_cd
   note: 
 
+opening_song:
+  artist: kickthecancrew_artist
+  name: OPENING
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+parade_song:
+  artist: kickthecancrew_artist
+  name: パレード
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+mission1_song:
+  artist: kickthecancrew_artist
+  name: MISSION1
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+allnightlong_song:
+  artist: kickthecancrew_artist
+  name: ALL NIGHT LONG
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: goodmusic_al_cd
+  note: 
+
+uraomote_song:
+  artist: kickthecancrew_artist
+  name: 裏表
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+mission2_song:
+  artist: kickthecancrew_artist
+  name: MISSION2
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+likethisgood_song:
+  artist: kickthecancrew_artist
+  name: LIKE THIS (GOOD!)
+  lyricist: UNKNOWN
+  composer: KREVA
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+mission3_song:
+  artist: kickthecancrew_artist
+  name: MISSION3
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: goodmusic_al_cd
+  note: 
+
+moshimo_song:
+  artist: kickthecancrew_artist
+  name: もしも
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW & DJ TATSUTA
+  arranger: 顔PASSブラザーズ
+  cd: goodmusic_al_cd
+  note: 
+
+zeninshuugou_song:
+  artist: kickthecancrew_artist
+  name: 全員集合
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
 senpercent_song:
   artist: kickthecancrew_artist
   name: 千％
@@ -620,3 +710,20 @@ senpercent_song:
   cd: kick_cd
   note: 
 
+imamosingalong_song:
+  artist: kickthecancrew_artist
+  name: 今もSing-along
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+summerspot_song:
+  artist: kickthecancrew_artist
+  name: SummerSpot
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
