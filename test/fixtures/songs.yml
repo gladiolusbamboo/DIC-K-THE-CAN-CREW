@@ -727,3 +727,57 @@ summerspot_song:
   arranger: KREVA
   cd: kick_cd
   note: 
+
+nandemonaidays_song:
+  artist: kickthecancrew_artist
+  name: なんでもないDays
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+kanzenchangetheworld_song:
+  artist: kickthecancrew_artist
+  name: 完全チェンジTHEワールド
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+matamodotteoide_song:
+  artist: kickthecancrew_artist
+  name: また戻っておいで
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+matanamiwomiteru_song:
+  artist: kickthecancrew_artist
+  name: また波を見てる
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+ihopeyoumissmealittle_song:
+  artist: kickthecancrew_artist
+  name: I Hope You Miss Me a Little
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 
+
+takoage_song:
+  artist: kickthecancrew_artist
+  name: タコアゲ
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
+  arranger: KREVA
+  cd: kick_cd
+  note: 

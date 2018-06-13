@@ -528,3 +528,27 @@ kick_cd_summerspot_song:
   cd: kick_cd
   song: summerspot_song
 
+kick_cd_nandemonaidays_song:
+  cd: kick_cd
+  song: nandemonaidays_song
+
+kick_cd_kanzenchangetheworld_song:
+  cd: kick_cd
+  song: kanzenchangetheworld_song
+
+kick_cd_matamodotteoide_song:
+  cd: kick_cd
+  song: matamodotteoide_song
+
+kick_cd_matanamiwomiteru_song:
+  cd: kick_cd
+  song: matanamiwomiteru_song
+
+kick_cd_ihopeyoumissmealittle_song:
+  cd: kick_cd
+  song: ihopeyoumissmealittle_song
+
+kick_cd_takoage_song:
+  cd: kick_cd
+  song: takoage_song
+
