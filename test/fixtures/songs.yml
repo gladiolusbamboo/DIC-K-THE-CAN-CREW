@@ -781,3 +781,174 @@ takoage_song:
   arranger: KREVA
   cd: kick_cd
   note: 
+
+roots_song:
+  artist: shimanomomoe_artist
+  name: Roots feat. Kick the Can Crew & INNOSENCE
+  lyricist: SOHJIN, CHANNEL, LITTLE, MCU, KREVA & 嶋野百恵
+  composer: KREVA & 嶋野百恵
+  arranger: KREVA
+  cd: roots_cd
+  note: 
+
+u_song:
+  artist: double_artist
+  name: U～KREVA REMIX～
+  lyricist: Edward "Eddie F" Ferell, Darren Lighty, TAKAKO, Belewa Muhammad, Clifton Lighty, KICK THE CAN CREW
+  composer: Edward "Eddie F" Ferell, Darren Lighty, TAKAKO, Belewa Muhammad, Clifton Lighty, KICK THE CAN CREW
+  arranger: Edward "Eddie F" Ferell, Darren Lighty, TAKAKO, Belewa Muhammad, Clifton Lighty, KICK THE CAN CREW
+  cd: angel_cd
+  note: 
+
+10balls2_song:
+  artist: rhymester_artist
+  name: 10 Balls + 2 featuring Kick The Can Crew
+  lyricist: UNKNOWN
+  composer: UNKNOWN
+  arranger: UNKNOWN
+  cd: uwasanoshinsou_cd
+  note: 
+
+iianbee_song:
+  artist: theboom_artist
+  name: いいあんべえ(monoaural mix) featuring KICK THE CAN CREW
+  lyricist: 宮沢和史 + KICK THE CAN CREW
+  composer: 宮沢和史 + KICK THE CAN CREW
+  arranger: Monoaural
+  cd: konomachinodokokani_cd
+  note: 
+
+fgspot_song:
+  artist: eastend_artist
+  name: FGスポット feat. KICK THE CAN CREW
+  lyricist: UNKNOWN
+  composer: UNKNOWN
+  arranger: EAST END
+  cd: beginningoftheendless_cd
+  note: 
+
+strongstyle_song:
+  artist: kreva_artist
+  name: ストロングスタイル
+  lyricist: KREVA
+  composer: KREVA & 千晴
+  arranger: ストレスFREE
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+theshow_song:
+  artist: kreva_artist
+  name: THE SHOW
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+youdontstop_song:
+  artist: kreva_artist
+  name: You don't stop!!
+  lyricist: KREVA
+  composer: KREVA & 千晴
+  arranger: ストレスFREE
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+yusaburublue_song:
+  artist: kreva_artist
+  name: 揺さぶるブルー
+  lyricist: KREVA
+  composer: 千晴 & KREVA
+  arranger: 千晴
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+because_song:
+  artist: kreva_artist
+  name: ビコーズ
+  lyricist: KREVA
+  composer: 千晴 & KREVA
+  arranger: 千晴
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+youaremysunshine_song:
+  artist: kreva_artist
+  name: You are my sunshine feat.千晴
+  lyricist: KREVA & 千晴
+  composer: KREVA & 熊井吾郎
+  arranger: KREVA & 熊井吾郎
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+kyoudakedeii_song:
+  artist: kreva_artist
+  name: 今日だけでいい feat.SONOMI & ALI-KICK
+  lyricist: KREVA & SONOMI
+  composer: ALI-KICK & KREVA & SONOMI
+  arranger: ALI-KICK
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+tameikihaco2_song:
+  artist: kreva_artist
+  name: ため息はCO2
+  lyricist: KREVA & Leo Graham
+  composer: KREVA & Leo Graham
+  arranger: KREVA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+kurebaiinoni_song:
+  artist: kreva_artist
+  name: くればいいのに feat.草野マサムネ from SPITZ
+  lyricist: KREVA & 草野マサムネ
+  composer: KREVA
+  arranger: KREVA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+touzainanbokunounaikaisouroku_song:
+  artist: kreva_artist
+  name: 東西南北脳内回想録
+  lyricist: KREVA
+  composer: DJ TATSUTA & KREVA
+  arranger: DJ TATSUTA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+sweetsweetmemories_song:
+  artist: kreva_artist
+  name: SWEET SWEET メモリーズ feat.SONOMI
+  lyricist: KREVA & SONOMI
+  composer: KREVA & SONOMI & Barry Norman Leng & May Simon
+  arranger: KREVA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+aggressibu_song:
+  artist: kreva_artist
+  name: アグレッシ部
+  lyricist: KREVA & Smith Michael Larry
+  composer: KREVA & Smith Michael Larry
+  arranger: KREVA
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+owaritakunaiohwhatanight_song:
+  artist: kreva_artist
+  name: 終わりたくないオーワラナイ
+  lyricist: KREVA
+  composer: 熊井吾郎 & KREVA
+  arranger: 熊井吾郎
+  cd: yoroshikuonegaishimasu_cd
+  note: 
+
+haveaniceday_song:
+  artist: kreva_artist
+  name: Have a nice day!
+  lyricist: KREVA
+  composer: KREVA & 千晴
+  arranger: ストレスFREE
+  cd: yoroshikuonegaishimasu_cd
+  note: 

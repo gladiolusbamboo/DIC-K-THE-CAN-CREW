@@ -4,8 +4,8 @@ var path = require('path');
 
 const iconv = require('iconv-lite');
 
-const artistId = '1000430_2';
-
+// const artistId = '1000430_2';
+const artistId = '1000405_1';
 const startPageNum = 0;
 
 

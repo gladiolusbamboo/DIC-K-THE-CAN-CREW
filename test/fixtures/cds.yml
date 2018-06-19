@@ -104,3 +104,26 @@ kick_cd:
   name: KICK!
   released_at: 2017-08-30
 
+roots_cd:
+  name: Roots
+  released_at: 2000-06-21
+
+angel_cd:
+  name: Angel
+  released_at: 2000-11-22
+
+uwasanoshinsou_cd:
+  name: ウワサの真相
+  released_at: 2001-12-19
+
+konomachinodokokani_cd:
+  name: この街のどこかに/さとうきび畑
+  released_at: 2002-06-05
+
+beginningoftheendless_cd:
+  name: Beginning of the Endless
+  released_at: 2003-09-24
+
+yoroshikuonegaishimasu_cd:
+  name: よろしくお願いします
+  released_at: 2007-09-05

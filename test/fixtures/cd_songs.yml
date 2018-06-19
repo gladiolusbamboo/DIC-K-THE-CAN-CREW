@@ -552,3 +552,79 @@ kick_cd_takoage_song:
   cd: kick_cd
   song: takoage_song
 
+roots_cd_roots_song:
+  cd: roots_cd
+  song: roots_song
+
+angel_cd_u_song:
+  cd: angel_cd
+  song: u_song
+
+uwasanoshinsou_cd_10balls2_song:
+  cd: uwasanoshinsou_cd
+  song: 10balls2_song
+
+konomachinodokokani_cd_iianbee_song:
+  cd: konomachinodokokani_cd
+  song: iianbee_song
+
+beginningoftheendless_cd_fgspot_song:
+  cd: beginningoftheendless_cd
+  song: fgspot_song
+
+yoroshikuonegaishimasu_cd_strongstyle_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: strongstyle_song
+
+yoroshikuonegaishimasu_cd_theshow_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: theshow_song
+
+yoroshikuonegaishimasu_cd_youdontstop_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: youdontstop_song
+
+yoroshikuonegaishimasu_cd_yusaburublue_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: yusaburublue_song
+
+yoroshikuonegaishimasu_cd_because_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: because_song
+
+yoroshikuonegaishimasu_cd_youaremysunshine_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: youaremysunshine_song
+
+yoroshikuonegaishimasu_cd_kyoudakedeii_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: kyoudakedeii_song
+
+yoroshikuonegaishimasu_cd_tameikihaco2_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: tameikihaco2_song
+
+yoroshikuonegaishimasu_cd_kurebaiinoni_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: kurebaiinoni_song
+
+yoroshikuonegaishimasu_cd_touzainanbokunounaikaisouroku_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: touzainanbokunounaikaisouroku_song
+
+yoroshikuonegaishimasu_cd_sweetsweetmemories_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: sweetsweetmemories_song
+
+yoroshikuonegaishimasu_cd_aggressibu_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: aggressibu_song
+
+yoroshikuonegaishimasu_cd_owaritakunaiohwhatanight_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: owaritakunaiohwhatanight_song
+
+yoroshikuonegaishimasu_cd_haveaniceday_song:
+  cd: yoroshikuonegaishimasu_cd
+  song: haveaniceday_song
+
