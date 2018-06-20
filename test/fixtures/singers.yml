@@ -49,7 +49,8 @@ kickthecancrewrhymester:
   name: KICK THE CAN CREW & RHYMESTER
 
 mummy-d:
-  name: MUMMY-D(RHYMESTER)
+  name: Mummy
+  -D(RHYMESTER)
 
 utamaru:
   name: 宇多丸(RHYMESTER)
@@ -89,3 +90,9 @@ ooyakana:
 
 kusanomasamune:
   name: 草野マサムネ(スピッツ)
+
+krevamummy-d:
+  name: KREVA & Mummy-D
+
+unknown:
+  name: ？？？

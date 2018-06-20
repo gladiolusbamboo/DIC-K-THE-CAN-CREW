@@ -827,6 +827,55 @@ fgspot_song:
   cd: beginningoftheendless_cd
   note: 
 
+dandadan_song:
+  artist: kreva_artist
+  name: DAN DA DAN feat.CUEZERO
+  lyricist: KREVA & CUEZERO
+  composer: KREVA & CUEZERO
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+neiro_song:
+  artist: kreva_artist
+  name: 音色
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+araratakeyouhome_song:
+  artist: kreva_artist
+  name: あ・ら・ら TAKE YOU HOME
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+omatsurikreva_song:
+  artist: kreva_artist
+  name: お祭りクレバ
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+funkyglamorous_song:
+  artist: kreva_artist
+  name: ファンキーグラマラス feat.Mummy-D from Rhymester
+  lyricist: KREVA & Mummy-D
+  composer: KREVA & Mummy-D
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+
+
+
+
 strongstyle_song:
   artist: kreva_artist
   name: ストロングスタイル

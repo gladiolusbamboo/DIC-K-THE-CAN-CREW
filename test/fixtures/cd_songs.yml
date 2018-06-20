@@ -572,6 +572,40 @@ beginningoftheendless_cd_fgspot_song:
   cd: beginningoftheendless_cd
   song: fgspot_song
 
+shinjinkreva_cd_dandadan_song:
+  cd: shinjinkreva_cd
+  song: dandadan_song
+
+shinjinkreva_cd_neiro_song:
+  cd: shinjinkreva_cd
+  song: neiro_song
+
+shinjinkreva_cd_araratakeyouhome_song:
+  cd: shinjinkreva_cd
+  song: araratakeyouhome_song
+
+shinjinkreva_cd_omatsurikreva_song:
+  cd: shinjinkreva_cd
+  song: omatsurikreva_song
+
+shinjinkreva_cd_funkyglamorous_song:
+  cd: shinjinkreva_cd
+  song: funkyglamorous_song
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 yoroshikuonegaishimasu_cd_strongstyle_song:
   cd: yoroshikuonegaishimasu_cd
   song: strongstyle_song
