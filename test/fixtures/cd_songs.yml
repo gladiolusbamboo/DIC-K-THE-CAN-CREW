@@ -592,6 +592,33 @@ shinjinkreva_cd_funkyglamorous_song:
   cd: shinjinkreva_cd
   song: funkyglamorous_song
 
+shinjinkreva_cd_standbyme_song:
+  cd: shinjinkreva_cd
+  song: standbyme_song
+
+shinjinkreva_cd_warwarzone_song:
+  cd: shinjinkreva_cd
+  song: warwarzone_song
+
+shinjinkreva_cd_youaretheno1heydj_song:
+  cd: shinjinkreva_cd
+  song: youaretheno1heydj_song
+
+shinjinkreva_cd_youknowwerule_song:
+  cd: shinjinkreva_cd
+  song: youknowwerule_song
+
+shinjinkreva_cd_kibounohonoo_song:
+  cd: shinjinkreva_cd
+  song: kibounohonoo_song
+
+shinjinkreva_cd_hitorijanainoyo_song:
+  cd: shinjinkreva_cd
+  song: hitorijanainoyo_song
+
+shinjinkreva_cd_babydancer_song:
+  cd: shinjinkreva_cd
+  song: babydancer_song
 
 
 

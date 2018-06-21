@@ -872,6 +872,69 @@ funkyglamorous_song:
   cd: shinjinkreva_cd
   note: 
 
+standbyme_song:
+  artist: kreva_artist
+  name: スタンドバイミー feat.KANA from THC!!
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+warwarzone_song:
+  artist: kreva_artist
+  name: WAR WAR ZONE feat.CUEZERO
+  lyricist: KREVA & CUEZERO
+  composer: KREVA & CUEZERO
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+youaretheno1heydj_song:
+  artist: kreva_artist
+  name: You are the No.1(Hey,DJ)feat.BONNIE PINK
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+youknowwerule_song:
+  artist: kreva_artist
+  name: YOU KNOW WE RULE feat.NG HEAD
+  lyricist: KREVA & NG-HEAD
+  composer: KREVA & NG-HEAD
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+kibounohonoo_song:
+  artist: kreva_artist
+  name: 希望の炎
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+hitorijanainoyo_song:
+  artist: kreva_artist
+  name: ひとりじゃないのよ
+  lyricist: KREVA & SONOMI
+  composer: KREVA & SONOMI
+  arranger: KREVA
+  cd: shinjinkreva_cd
+  note: 
+
+babydancer_song:
+  artist: kreva_artist
+  name: BABY DANCER
+  lyricist: KREVA
+  composer: K.Kamishiro & KREVA
+  arranger: UNKNOWN
+  cd: shinjinkreva_cd
+  note: 
+
 
 
 

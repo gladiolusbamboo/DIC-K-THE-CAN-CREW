@@ -49,8 +49,7 @@ kickthecancrewrhymester:
   name: KICK THE CAN CREW & RHYMESTER
 
 mummy-d:
-  name: Mummy
-  -D(RHYMESTER)
+  name: Mummy-D(RHYMESTER)
 
 utamaru:
   name: 宇多丸(RHYMESTER)
@@ -93,6 +92,18 @@ kusanomasamune:
 
 krevamummy-d:
   name: KREVA & Mummy-D
+
+kana:
+  name: KANA(THC!!)
+
+krevacuezero:
+  name: KREVA & CUEZERO
+
+bonniepink:
+  name: BONNIE PINK
+
+ng-head:
+  name: NG-HEAD
 
 unknown:
   name: ？？？
