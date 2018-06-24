@@ -620,6 +620,110 @@ shinjinkreva_cd_babydancer_song:
   cd: shinjinkreva_cd
   song: babydancer_song
 
+aijibunhaku_cd_happy_song:
+  cd: aijibunhaku_cd
+  song: happy_song
+
+aijibunhaku_cd_kokumintekigyouji_song:
+  cd: aijibunhaku_cd
+  song: kokumintekigyouji_song
+
+aijibunhaku_cd_itsforyou_song:
+  cd: aijibunhaku_cd
+  song: itsforyou_song
+
+aijibunhaku_cd_iitoomou_song:
+  cd: aijibunhaku_cd
+  song: iitoomou_song
+
+aijibunhaku_cd_islandlife_song:
+  cd: aijibunhaku_cd
+  song: islandlife_song
+
+aijibunhaku_cd_issaigassai_song:
+  cd: aijibunhaku_cd
+  song: issaigassai_song
+
+aijibunhaku_cd_namidatomareyo_song:
+  cd: aijibunhaku_cd
+  song: namidatomareyo_song
+
+aijibunhaku_cd_edogawarockon_song:
+  cd: aijibunhaku_cd
+  song: edogawarockon_song
+
+aijibunhaku_cd_kurayaminonavigator_song:
+  cd: aijibunhaku_cd
+  song: kurayaminonavigator_song
+
+aijibunhaku_cd_treatment_song:
+  cd: aijibunhaku_cd
+  song: treatment_song
+
+aijibunhaku_cd_start_song:
+  cd: aijibunhaku_cd
+  song: start_song
+
+aijibunhaku_cd_mylife_song:
+  cd: aijibunhaku_cd
+  song: mylife_song
+
+shinzou_cd_synchro_song:
+  cd: shinzou_cd
+  song: synchro_song
+
+shinzou_cd_tonight_song:
+  cd: shinzou_cd
+  song: tonight_song
+
+shinzou_cd_seikou_song:
+  cd: shinzou_cd
+  song: seikou_song
+
+shinzou_cd_chuubansen_song:
+  cd: shinzou_cd
+  song: chuubansen_song
+
+shinzou_cd_iwannaknowyou_song:
+  cd: shinzou_cd
+  song: iwannaknowyou_song
+
+shinzou_cd_caramelpopcorn_song:
+  cd: shinzou_cd
+  song: caramelpopcorn_song
+
+shinzou_cd_kiss_song:
+  cd: shinzou_cd
+  song: kiss_song
+
+shinzou_cd_shunkanspeechless_song:
+  cd: shinzou_cd
+  song: shunkanspeechless_song
+
+shinzou_cd_koregafallinlove_song:
+  cd: shinzou_cd
+  song: koregafallinlove_song
+
+shinzou_cd_tearsinmyeyes_song:
+  cd: shinzou_cd
+  song: tearsinmyeyes_song
+
+shinzou_cd_rhythm_song:
+  cd: shinzou_cd
+  song: rhythm_song
+
+shinzou_cd_ace_song:
+  cd: shinzou_cd
+  song: ace_song
+
+shinzou_cd_umaretekitearigatou_song:
+  cd: shinzou_cd
+  song: umaretekitearigatou_song
+
+
+
+
+
 
 
 
@@ -688,4 +792,8 @@ yoroshikuonegaishimasu_cd_owaritakunaiohwhatanight_song:
 yoroshikuonegaishimasu_cd_haveaniceday_song:
   cd: yoroshikuonegaishimasu_cd
   song: haveaniceday_song
+
+shinzou_cd_konosakidounaru_song:
+  cd: shinzou_cd
+  song: konosakidounaru_song
 

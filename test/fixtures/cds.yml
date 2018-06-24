@@ -128,6 +128,14 @@ shinjinkreva_cd:
   name: 新人クレバ
   released_at: 2004-11-03
 
+aijibunhaku_cd:
+  name: 愛・自分博
+  released_at: 2006-02-01
+
 yoroshikuonegaishimasu_cd:
   name: よろしくお願いします
   released_at: 2007-09-05
+
+shinzou_cd:
+  name: 心臓
+  released_at: 2009-09-08
