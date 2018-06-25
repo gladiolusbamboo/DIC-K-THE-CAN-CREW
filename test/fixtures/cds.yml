@@ -139,3 +139,7 @@ yoroshikuonegaishimasu_cd:
 shinzou_cd:
   name: 心臓
   released_at: 2009-09-08
+
+oasys_cd:
+  name: OASYS
+  released_at: 2010-09-15

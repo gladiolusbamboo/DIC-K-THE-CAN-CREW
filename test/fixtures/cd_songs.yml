@@ -797,3 +797,27 @@ shinzou_cd_konosakidounaru_song:
   cd: shinzou_cd
   song: konosakidounaru_song
 
+oasys_cd_michinakimichi_song:
+  cd: oasys_cd
+  song: michinakimichi_song
+
+oasys_cd_kamo_song:
+  cd: oasys_cd
+  song: kamo_song
+
+oasys_cd_tarareba_song:
+  cd: oasys_cd
+  song: tarareba_song
+
+oasys_cd_saishuukai_song:
+  cd: oasys_cd
+  song: saishuukai_song
+
+oasys_cd_electroearthtracks_song:
+  cd: oasys_cd
+  song: electroearthtracks_song
+
+oasys_cd_changingsame_song:
+  cd: oasys_cd
+  song: changingsame_song
+

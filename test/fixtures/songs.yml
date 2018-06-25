@@ -1294,3 +1294,57 @@ konosakidounaru_song:
   arranger: KREVA
   cd: shinzou_cd
   note: 
+
+michinakimichi_song:
+  artist: kreva_artist
+  name: 道なき道
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
+
+kamo_song:
+  artist: kreva_artist
+  name: かも
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
+
+tarareba_song:
+  artist: kreva_artist
+  name: たられば feat. SONOMI
+  lyricist: KREVA & SONOMI
+  composer: KREVA
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
+
+saishuukai_song:
+  artist: kreva_artist
+  name: 最終回
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
+
+electroearthtracks_song:
+  artist: kreva_artist
+  name: エレクトロ・アース・トラックス
+  lyricist: 福井隆史
+  composer: 福井隆史
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
+
+changingsame_song:
+  artist: kreva_artist
+  name: Changing Same
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: oasys_cd
+  note: 
