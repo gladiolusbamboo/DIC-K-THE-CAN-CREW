@@ -1348,3 +1348,111 @@ changingsame_song:
   arranger: KREVA
   cd: oasys_cd
   note: 
+
+kijun_song:
+  artist: kreva_artist
+  name: 基準
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+idome_song:
+  artist: kreva_artist
+  name: 挑め
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+kilakila_song:
+  artist: kreva_artist
+  name: KILA KILA
+  lyricist: KREVA
+  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+shinkirou_song:
+  artist: kreva_artist
+  name: 蜃気楼 feat. 三浦大知
+  lyricist: KREVA & 三浦大知
+  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+jumon_song:
+  artist: kreva_artist
+  name: 呪文
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+runninrunnin_song:
+  artist: kreva_artist
+  name: runnin' runnin'
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+hotsummerdays_song:
+  artist: kreva_artist
+  name: HOT SUMMER DAYS
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+bitansansyndrome_song:
+  artist: kreva_artist
+  name: 微炭酸シンドローム feat. 阿部真央
+  lyricist: KREVA & 阿部真央
+  composer: 熊井吾郎 & KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+partyhaizuko_song:
+  artist: kreva_artist
+  name: パーティーはIZUKO?
+  lyricist: KREVA
+  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+cmonletsgo_song:
+  artist: kreva_artist
+  name: C'mon, Let's go
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+egao_song:
+  artist: kreva_artist
+  name: EGAO
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+tankyuushin_song:
+  artist: kreva_artist
+  name: 探究心
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 

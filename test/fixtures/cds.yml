@@ -143,3 +143,7 @@ shinzou_cd:
 oasys_cd:
   name: OASYS
   released_at: 2010-09-15
+
+go_cd:
+  name: GO
+  released_at: 2011-09-08

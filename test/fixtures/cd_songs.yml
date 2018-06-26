@@ -668,75 +668,6 @@ aijibunhaku_cd_mylife_song:
   cd: aijibunhaku_cd
   song: mylife_song
 
-shinzou_cd_synchro_song:
-  cd: shinzou_cd
-  song: synchro_song
-
-shinzou_cd_tonight_song:
-  cd: shinzou_cd
-  song: tonight_song
-
-shinzou_cd_seikou_song:
-  cd: shinzou_cd
-  song: seikou_song
-
-shinzou_cd_chuubansen_song:
-  cd: shinzou_cd
-  song: chuubansen_song
-
-shinzou_cd_iwannaknowyou_song:
-  cd: shinzou_cd
-  song: iwannaknowyou_song
-
-shinzou_cd_caramelpopcorn_song:
-  cd: shinzou_cd
-  song: caramelpopcorn_song
-
-shinzou_cd_kiss_song:
-  cd: shinzou_cd
-  song: kiss_song
-
-shinzou_cd_shunkanspeechless_song:
-  cd: shinzou_cd
-  song: shunkanspeechless_song
-
-shinzou_cd_koregafallinlove_song:
-  cd: shinzou_cd
-  song: koregafallinlove_song
-
-shinzou_cd_tearsinmyeyes_song:
-  cd: shinzou_cd
-  song: tearsinmyeyes_song
-
-shinzou_cd_rhythm_song:
-  cd: shinzou_cd
-  song: rhythm_song
-
-shinzou_cd_ace_song:
-  cd: shinzou_cd
-  song: ace_song
-
-shinzou_cd_umaretekitearigatou_song:
-  cd: shinzou_cd
-  song: umaretekitearigatou_song
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 yoroshikuonegaishimasu_cd_strongstyle_song:
   cd: yoroshikuonegaishimasu_cd
   song: strongstyle_song
@@ -793,6 +724,59 @@ yoroshikuonegaishimasu_cd_haveaniceday_song:
   cd: yoroshikuonegaishimasu_cd
   song: haveaniceday_song
 
+shinzou_cd_kiss_song:
+  cd: shinzou_cd
+  song: kiss_song
+
+shinzou_cd_koregafallinlove_song:
+  cd: shinzou_cd
+  song: koregafallinlove_song
+
+shinzou_cd_tearsinmyeyes_song:
+  cd: shinzou_cd
+  song: tearsinmyeyes_song
+
+shinzou_cd_rhythm_song:
+  cd: shinzou_cd
+  song: rhythm_song
+
+shinzou_cd_synchro_song:
+  cd: shinzou_cd
+  song: synchro_song
+
+shinzou_cd_tonight_song:
+  cd: shinzou_cd
+  song: tonight_song
+
+shinzou_cd_ace_song:
+  cd: shinzou_cd
+  song: ace_song
+
+shinzou_cd_chuubansen_song:
+  cd: shinzou_cd
+  song: chuubansen_song
+
+
+shinzou_cd_seikou_song:
+  cd: shinzou_cd
+  song: seikou_song
+
+shinzou_cd_iwannaknowyou_song:
+  cd: shinzou_cd
+  song: iwannaknowyou_song
+
+shinzou_cd_caramelpopcorn_song:
+  cd: shinzou_cd
+  song: caramelpopcorn_song
+
+shinzou_cd_shunkanspeechless_song:
+  cd: shinzou_cd
+  song: shunkanspeechless_song
+
+shinzou_cd_umaretekitearigatou_song:
+  cd: shinzou_cd
+  song: umaretekitearigatou_song
+
 shinzou_cd_konosakidounaru_song:
   cd: shinzou_cd
   song: konosakidounaru_song
@@ -820,4 +804,53 @@ oasys_cd_electroearthtracks_song:
 oasys_cd_changingsame_song:
   cd: oasys_cd
   song: changingsame_song
+
+go_cd_kijun_song:
+  cd: go_cd
+  song: kijun_song
+
+go_cd_idome_song:
+  cd: go_cd
+  song: idome_song
+
+go_cd_kilakila_song:
+  cd: go_cd
+  song: kilakila_song
+
+go_cd_shinkirou_song:
+  cd: go_cd
+  song: shinkirou_song
+
+go_cd_jumon_song:
+  cd: go_cd
+  song: jumon_song
+
+go_cd_runninrunnin_song:
+  cd: go_cd
+  song: runninrunnin_song
+
+go_cd_hotsummerdays_song:
+  cd: go_cd
+  song: hotsummerdays_song
+
+go_cd_bitansansyndrome_song:
+  cd: go_cd
+  song: bitansansyndrome_song
+
+go_cd_partyhaizuko_song:
+  cd: go_cd
+  song: partyhaizuko_song
+
+go_cd_cmonletsgo_song:
+  cd: go_cd
+  song: cmonletsgo_song
+
+go_cd_egao_song:
+  cd: go_cd
+  song: egao_song
+
+go_cd_tankyuushin_song:
+  cd: go_cd
+  song: tankyuushin_song
+
 
