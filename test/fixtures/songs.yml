@@ -1456,3 +1456,129 @@ tankyuushin_song:
   arranger: KREVA
   cd: go_cd
   note: 
+
+space_song:
+  artist: kreva_artist
+  name: SPACE
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+feelitintheair_song:
+  artist: kreva_artist
+  name: Feel It In The Air
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+macherie_song:
+  artist: kreva_artist
+  name: ma chérie
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+oujanokyuujitsu_song:
+  artist: kreva_artist
+  name: 王者の休日
+  lyricist: KREVA
+  composer: BACHLOGIC & KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+orehadoitlikethis_song:
+  artist: kreva_artist
+  name: 俺はDo It Like This
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+chouriba_song:
+  artist: kreva_artist
+  name: 調理場
+  lyricist: KREVA
+  composer: 熊井吾郎 & KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+ittenakattakana_song:
+  artist: kreva_artist
+  name: 言ってナカッタカナ?
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+ohyeah_song:
+  artist: kreva_artist
+  name: OH YEAH
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+spacedancer_song:
+  artist: kreva_artist
+  name: Space Dancer
+  lyricist: KREVA
+  composer: 熊井吾郎 & KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+link_song:
+  artist: kreva_artist
+  name: Link
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: go_cd
+  note: 
+
+usotobonnou_song:
+  artist: kreva_artist
+  name: 嘘と煩悩
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+kaminoryouiki_song:
+  artist: kreva_artist
+  name: 神の領域
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+ibasho_song:
+  artist: kreva_artist
+  name: 居場所
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+omoidenomukougawa_song:
+  artist: kreva_artist
+  name: 想い出の向こう側 feat. AKLO
+  lyricist: KREVA & AKLO
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 

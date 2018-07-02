@@ -147,3 +147,12 @@ oasys_cd:
 go_cd:
   name: GO
   released_at: 2011-09-08
+
+space_cd:
+  name: SPACE
+  released_at: 2013-02-27
+
+usotobonnou_cd:
+  name: 嘘と煩悩
+  released_at: 2017-02-01
+

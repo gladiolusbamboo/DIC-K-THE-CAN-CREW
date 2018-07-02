@@ -853,4 +853,61 @@ go_cd_tankyuushin_song:
   cd: go_cd
   song: tankyuushin_song
 
+space_cd_space_song:
+  cd: space_cd
+  song: space_song
+
+space_cd_feelitintheair_song:
+  cd: space_cd
+  song: feelitintheair_song
+
+space_cd_macherie_song:
+  cd: space_cd
+  song: macherie_song
+
+space_cd_oujanokyuujitsu_song:
+  cd: space_cd
+  song: oujanokyuujitsu_song
+
+space_cd_orehadoitlikethis_song:
+  cd: space_cd
+  song: orehadoitlikethis_song
+
+space_cd_chouriba_song:
+  cd: space_cd
+  song: chouriba_song
+
+space_cd_ittenakattakana_song:
+  cd: space_cd
+  song: ittenakattakana_song
+
+space_cd_ohyeah_song:
+  cd: space_cd
+  song: ohyeah_song
+
+space_cd_spacedancer_song:
+  cd: space_cd
+  song: spacedancer_song
+
+space_cd_link_song:
+  cd: space_cd
+  song: link_song
+
+usotobonnou_cd_usotobonnou_song:
+  cd: usotobonnou_cd
+  song: usotobonnou_song
+
+usotobonnou_cd_kaminoryouiki_song:
+  cd: usotobonnou_cd
+  song: kaminoryouiki_song
+
+usotobonnou_cd_ibasho_song:
+  cd: usotobonnou_cd
+  song: ibasho_song
+
+usotobonnou_cd_omoidenomukougawa_song:
+  cd: usotobonnou_cd
+  song: omoidenomukougawa_song
+
+
 
