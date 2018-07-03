@@ -909,5 +909,9 @@ usotobonnou_cd_omoidenomukougawa_song:
   cd: usotobonnou_cd
   song: omoidenomukougawa_song
 
+usotobonnou_cd_freshmode_song:
+  cd: usotobonnou_cd
+  song: freshmode_song
+
 
 
