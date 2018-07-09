@@ -1591,3 +1591,12 @@ freshmode_song:
   arranger: KREVA
   cd: usotobonnou_cd
   note: 
+
+sanzan_song:
+  artist: kreva_artist
+  name: Sanzan feat. 増田有華
+  lyricist: KREVA & 増田有華
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 

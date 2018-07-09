@@ -913,5 +913,8 @@ usotobonnou_cd_freshmode_song:
   cd: usotobonnou_cd
   song: freshmode_song
 
+usotobonnou_cd_sanzan_song:
+  cd: usotobonnou_cd
+  song: sanzan_song
 
 
