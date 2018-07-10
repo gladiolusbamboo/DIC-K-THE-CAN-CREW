@@ -1600,3 +1600,12 @@ sanzan_song:
   arranger: KREVA
   cd: usotobonnou_cd
   note: 
+
+ttekamou_song:
+  artist: kreva_artist
+  name: ってかもう
+  lyricist: KREVA
+  composer: 熊井吾郎 & KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 

@@ -62,3 +62,6 @@ gem 'jquery-turbolinks'
 
 # エラーメッセージの日本語化
 gem 'rails-i18n'
+
+# Windows用
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?

@@ -31,3 +31,6 @@
 
 *.dump
 *.log
+
+/font-awesome/*
+/web-design-sample/*

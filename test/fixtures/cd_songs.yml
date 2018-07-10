@@ -917,4 +917,8 @@ usotobonnou_cd_sanzan_song:
   cd: usotobonnou_cd
   song: sanzan_song
 
+usotobonnou_cd_ttekamou_song:
+  cd: usotobonnou_cd
+  song: ttekamou_song
+
 
