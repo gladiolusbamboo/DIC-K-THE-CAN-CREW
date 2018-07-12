@@ -1609,3 +1609,21 @@ ttekamou_song:
   arranger: KREVA
   cd: usotobonnou_cd
   note: 
+
+aetesokosemekomu_song:
+  artist: kreva_artist
+  name: あえてそこ(攻め込む)
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+tabikasanaru_song:
+  artist: kreva_artist
+  name: タビカサナル
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 

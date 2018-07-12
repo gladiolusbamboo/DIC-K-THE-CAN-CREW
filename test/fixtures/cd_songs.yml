@@ -921,4 +921,12 @@ usotobonnou_cd_ttekamou_song:
   cd: usotobonnou_cd
   song: ttekamou_song
 
+usotobonnou_cd_aetesokosemekomu_song:
+  cd: usotobonnou_cd
+  song: aetesokosemekomu_song
+
+usotobonnou_cd_tabikasanaru_song:
+  cd: usotobonnou_cd
+  song: tabikasanaru_song
+
 
