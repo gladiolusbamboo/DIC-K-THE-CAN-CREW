@@ -1547,6 +1547,16 @@ link_song:
   cd: go_cd
   note: 
 
+underthemoon_song:
+  artist: kreva_artist
+  name: Under The Moon
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: underthemoon_cd
+  note: 
+
+
 usotobonnou_song:
   artist: kreva_artist
   name: 嘘と煩悩
@@ -1622,6 +1632,24 @@ aetesokosemekomu_song:
 tabikasanaru_song:
   artist: kreva_artist
   name: タビカサナル
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+mouaitakute_song:
+  artist: kreva_artist
+  name: もう逢いたくて
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: usotobonnou_cd
+  note: 
+
+kiminimuchuu_song:
+  artist: kreva_artist
+  name: 君に夢中
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA

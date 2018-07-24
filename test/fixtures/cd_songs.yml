@@ -893,6 +893,10 @@ space_cd_link_song:
   cd: space_cd
   song: link_song
 
+underthemoon_cd_underthemoon_song:
+  cd: underthemoon_cd
+  song: underthemoon_song
+
 usotobonnou_cd_usotobonnou_song:
   cd: usotobonnou_cd
   song: usotobonnou_song
@@ -929,4 +933,11 @@ usotobonnou_cd_tabikasanaru_song:
   cd: usotobonnou_cd
   song: tabikasanaru_song
 
+mouaitakute_song:
+  cd: usotobonnou_cd
+  song: mouaitakute_song
+
+kiminimuchuu_song:
+  cd: usotobonnou_cd
+  song: kiminimuchuu_song
 

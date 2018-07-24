@@ -152,6 +152,10 @@ space_cd:
   name: SPACE
   released_at: 2013-02-27
 
+underthemoon_cd:
+  name: Under The Moon
+  released_at: 2015-02-25
+
 usotobonnou_cd:
   name: 嘘と煩悩
   released_at: 2017-02-01
