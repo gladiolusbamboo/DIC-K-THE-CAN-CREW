@@ -897,6 +897,12 @@ underthemoon_cd_underthemoon_song:
   cd: underthemoon_cd
   song: underthemoon_song
 
+underthemoon_cd_koredeyokerebaikurademo_song:
+  cd: underthemoon_cd
+  song: koredeyokerebaikurademo_song
+
+
+
 usotobonnou_cd_usotobonnou_song:
   cd: usotobonnou_cd
   song: usotobonnou_song

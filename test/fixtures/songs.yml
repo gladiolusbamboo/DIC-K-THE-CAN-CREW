@@ -1556,6 +1556,14 @@ underthemoon_song:
   cd: underthemoon_cd
   note: 
 
+koredeyokerebaikurademo_song:
+  artist: kreva_artist
+  name: これでよければいくらでも
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: underthemoon_cd
+  note: 
 
 usotobonnou_song:
   artist: kreva_artist
