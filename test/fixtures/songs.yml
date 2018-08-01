@@ -827,13 +827,13 @@ fgspot_song:
   cd: beginningoftheendless_cd
   note: 
 
-dandadan_song:
+kibounohonoo_song:
   artist: kreva_artist
-  name: DAN DA DAN feat.CUEZERO
-  lyricist: KREVA & CUEZERO
-  composer: KREVA & CUEZERO
+  name: 希望の炎
+  lyricist: KREVA
+  composer: KREVA
   arranger: KREVA
-  cd: shinjinkreva_cd
+  cd: kibounohonoo_cd
   note: 
 
 neiro_song:
@@ -841,6 +841,24 @@ neiro_song:
   name: 音色
   lyricist: KREVA
   composer: KREVA
+  arranger: KREVA
+  cd: neiro_cd
+  note: 
+
+control_song:
+  artist: kreva_artist
+  name: コントロール
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: neiro_cd
+  note: 
+
+dandadan_song:
+  artist: kreva_artist
+  name: DAN DA DAN feat.CUEZERO
+  lyricist: KREVA & CUEZERO
+  composer: KREVA & CUEZERO
   arranger: KREVA
   cd: shinjinkreva_cd
   note: 
@@ -904,15 +922,6 @@ youknowwerule_song:
   name: YOU KNOW WE RULE feat.NG HEAD
   lyricist: KREVA & NG-HEAD
   composer: KREVA & NG-HEAD
-  arranger: KREVA
-  cd: shinjinkreva_cd
-  note: 
-
-kibounohonoo_song:
-  artist: kreva_artist
-  name: 希望の炎
-  lyricist: KREVA
-  composer: KREVA
   arranger: KREVA
   cd: shinjinkreva_cd
   note: 
@@ -1573,7 +1582,6 @@ koredeyokerebaikurademo_song:
   arranger: KREVA
   cd: underthemoon_cd
   note: 
-
 
 usotobonnou_song:
   artist: kreva_artist

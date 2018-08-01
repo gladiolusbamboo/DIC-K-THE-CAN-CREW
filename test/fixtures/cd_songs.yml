@@ -572,6 +572,18 @@ beginningoftheendless_cd_fgspot_song:
   cd: beginningoftheendless_cd
   song: fgspot_song
 
+kibounohonoo_cd_kibounohonoo_song:
+  cd: kibounohonoo_cd
+  song: kibounohonoo_song
+
+neiro_cd_neiro_song:
+  cd: neiro_cd
+  song: neiro_song
+
+neiro_cd_control_song:
+  cd: neiro_cd
+  song: control_song
+
 shinjinkreva_cd_dandadan_song:
   cd: shinjinkreva_cd
   song: dandadan_song
