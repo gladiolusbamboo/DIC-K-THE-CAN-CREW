@@ -584,6 +584,14 @@ neiro_cd_control_song:
   cd: neiro_cd
   song: control_song
 
+hitorijanainoyo_cd_hitorijanainoyo_song:
+  cd: hitorijanainoyo_cd
+  song: hitorijanainoyo_song
+
+hitorijanainoyo_cd_kotobanidekinai_song:
+  cd: hitorijanainoyo_cd
+  song: kotobanidekinai_song
+
 shinjinkreva_cd_dandadan_song:
   cd: shinjinkreva_cd
   song: dandadan_song

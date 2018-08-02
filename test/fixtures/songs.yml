@@ -854,6 +854,24 @@ control_song:
   cd: neiro_cd
   note: 
 
+hitorijanainoyo_song:
+  artist: kreva_artist
+  name: ひとりじゃないのよ Single Version
+  lyricist: KREVA & SONOMI
+  composer: KREVA & SONOMI
+  arranger: KREVA
+  cd: hitorijanainoyo_cd
+  note: 
+
+kotobanidekinai_song:
+  artist: kreva_artist
+  name: コトバにできない
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: hitorijanainoyo_cd
+  note: 
+
 dandadan_song:
   artist: kreva_artist
   name: DAN DA DAN feat.CUEZERO
@@ -922,15 +940,6 @@ youknowwerule_song:
   name: YOU KNOW WE RULE feat.NG HEAD
   lyricist: KREVA & NG-HEAD
   composer: KREVA & NG-HEAD
-  arranger: KREVA
-  cd: shinjinkreva_cd
-  note: 
-
-hitorijanainoyo_song:
-  artist: kreva_artist
-  name: ひとりじゃないのよ
-  lyricist: KREVA & SONOMI
-  composer: KREVA & SONOMI
   arranger: KREVA
   cd: shinjinkreva_cd
   note: 
