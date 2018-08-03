@@ -953,6 +953,33 @@ babydancer_song:
   cd: shinjinkreva_cd
   note: 
 
+issaigassai_song:
+  artist: kreva_artist
+  name: イッサイガッサイ
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: issaigassai_cd
+  note: 
+
+krazyboykrazygirl_song:
+  artist: kreva_artist
+  name: KRAZY BOY, KRAZY GIRL
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: issaigassai_cd
+  note: 
+
+alldayallnight_song:
+  artist: kreva_artist
+  name: all day, all night
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: issaigassai_cd
+  note: 
+
 happy_song:
   artist: kreva_artist
   name: H.A.P.P.Y
@@ -998,14 +1025,6 @@ islandlife_song:
   cd: aijibunhaku_cd
   note: 
 
-issaigassai_song:
-  artist: kreva_artist
-  name: イッサイガッサイ
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: aijibunhaku_cd
-  note: 
 
 namidatomareyo_song:
   artist: kreva_artist

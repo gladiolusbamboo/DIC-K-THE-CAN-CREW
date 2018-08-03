@@ -640,6 +640,18 @@ shinjinkreva_cd_babydancer_song:
   cd: shinjinkreva_cd
   song: babydancer_song
 
+issaigassai_cd_issaigassai_song:
+  cd: issaigassai_cd
+  song: issaigassai_song
+
+issaigassai_cd_krazyboykrazygirl_song:
+  cd: issaigassai_cd
+  song: krazyboykrazygirl_song
+
+issaigassai_cd_alldayallnight_song:
+  cd: issaigassai_cd
+  song: alldayallnight_song
+
 aijibunhaku_cd_happy_song:
   cd: aijibunhaku_cd
   song: happy_song
