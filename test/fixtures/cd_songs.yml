@@ -660,6 +660,18 @@ aijibunhaku_cd_kokumintekigyouji_song:
   cd: aijibunhaku_cd
   song: kokumintekigyouji_song
 
+start_cd_start_song:
+  cd: start_cd
+  song: start_song
+
+start_cd_imasara2step_song:
+  cd: start_cd
+  song: imasara2step_song
+
+start_cd_iwasafool_song:
+  cd: start_cd
+  song: iwasafool_song 
+
 aijibunhaku_cd_itsforyou_song:
   cd: aijibunhaku_cd
   song: itsforyou_song

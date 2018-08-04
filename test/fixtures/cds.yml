@@ -144,6 +144,10 @@ issaigassai_cd:
   name: イッサイガッサイ
   released_at: 2005-06-15
 
+start_cd:
+  name: スタート
+  released_at: 2005-09-08
+
 aijibunhaku_cd:
   name: 愛・自分博
   released_at: 2006-02-01

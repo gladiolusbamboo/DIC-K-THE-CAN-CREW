@@ -980,6 +980,33 @@ alldayallnight_song:
   cd: issaigassai_cd
   note: 
 
+start_song:
+  artist: kreva_artist
+  name: スタート
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: start_cd
+  note: 
+
+imasara2step_song:
+  artist: kreva_artist
+  name: いまさら2step
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: start_cd
+  note: 
+
+iwasafool_song:
+  artist: kreva_artist
+  name: I was a fool
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: start_cd
+  note: 
+
 happy_song:
   artist: kreva_artist
   name: H.A.P.P.Y
@@ -1057,15 +1084,6 @@ treatment_song:
   artist: kreva_artist
   name: トリートメント feat.DABO, CUEZERO
   lyricist: KREVA & DABO & CUEZERO
-  composer: KREVA
-  arranger: KREVA
-  cd: aijibunhaku_cd
-  note: 
-
-start_song:
-  artist: kreva_artist
-  name: スタート
-  lyricist: KREVA
   composer: KREVA
   arranger: KREVA
   cd: aijibunhaku_cd
