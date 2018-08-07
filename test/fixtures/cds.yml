@@ -148,9 +148,25 @@ start_cd:
   name: スタート
   released_at: 2005-09-08
 
+kokumintekigyouji_cd:
+  name: 国民的行事
+  released_at: 2005-12-07
+
 aijibunhaku_cd:
   name: 愛・自分博
   released_at: 2006-02-01
+
+haveaniceday_cd:
+  name: Have a nice day!
+  released_at: 2006-08-02
+
+theshow_cd:
+  name: THE SHOW
+  released_at: 2006-11-01
+
+aggressibu_cd:
+  name: アグレッシ部
+  released_at: 2007-03-14
 
 yoroshikuonegaishimasu_cd:
   name: よろしくお願いします

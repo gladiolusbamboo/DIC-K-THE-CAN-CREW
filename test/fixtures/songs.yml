@@ -1007,20 +1007,20 @@ iwasafool_song:
   cd: start_cd
   note: 
 
-happy_song:
-  artist: kreva_artist
-  name: H.A.P.P.Y
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: aijibunhaku_cd
-  note: 
-
 kokumintekigyouji_song:
   artist: kreva_artist
   name: 国民的行事
   lyricist: KREVA
   composer: EVIS BEATS
+  arranger: KREVA
+  cd: kokumintekigyouji_cd
+  note: 
+
+happy_song:
+  artist: kreva_artist
+  name: H.A.P.P.Y
+  lyricist: KREVA
+  composer: KREVA
   arranger: KREVA
   cd: aijibunhaku_cd
   note: 
@@ -1098,13 +1098,13 @@ mylife_song:
   cd: aijibunhaku_cd
   note: 
 
-strongstyle_song:
+haveaniceday_song:
   artist: kreva_artist
-  name: ストロングスタイル
+  name: Have a nice day!
   lyricist: KREVA
   composer: KREVA & 千晴
   arranger: ストレスFREE
-  cd: yoroshikuonegaishimasu_cd
+  cd: haveaniceday_cd
   note: 
 
 theshow_song:
@@ -1113,6 +1113,33 @@ theshow_song:
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
+  cd: theshow_cd
+  note: 
+
+aggressibu_song:
+  artist: kreva_artist
+  name: アグレッシ部
+  lyricist: KREVA & Smith Michael Larry
+  composer: KREVA & Smith Michael Larry
+  arranger: KREVA
+  cd: aggressibu_cd
+  note: 
+
+kuchimotoniemi_song:
+  artist: kreva_artist
+  name: 口元に笑み
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: aggressibu_cd
+  note: 
+
+strongstyle_song:
+  artist: kreva_artist
+  name: ストロングスタイル
+  lyricist: KREVA
+  composer: KREVA & 千晴
+  arranger: ストレスFREE
   cd: yoroshikuonegaishimasu_cd
   note: 
 
@@ -1197,30 +1224,12 @@ sweetsweetmemories_song:
   cd: yoroshikuonegaishimasu_cd
   note: 
 
-aggressibu_song:
-  artist: kreva_artist
-  name: アグレッシ部
-  lyricist: KREVA & Smith Michael Larry
-  composer: KREVA & Smith Michael Larry
-  arranger: KREVA
-  cd: yoroshikuonegaishimasu_cd
-  note: 
-
 owaritakunaiohwhatanight_song:
   artist: kreva_artist
   name: 終わりたくないオーワラナイ
   lyricist: KREVA
   composer: 熊井吾郎 & KREVA
   arranger: 熊井吾郎
-  cd: yoroshikuonegaishimasu_cd
-  note: 
-
-haveaniceday_song:
-  artist: kreva_artist
-  name: Have a nice day!
-  lyricist: KREVA
-  composer: KREVA & 千晴
-  arranger: ストレスFREE
   cd: yoroshikuonegaishimasu_cd
   note: 
 
