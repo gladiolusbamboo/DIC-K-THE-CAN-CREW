@@ -1134,6 +1134,24 @@ kuchimotoniemi_song:
   cd: aggressibu_cd
   note: 
 
+kurebaiinoni_song:
+  artist: kreva_artist
+  name: くればいいのに feat. 草野マサムネ from SPITZ[Single Edit]
+  lyricist: KREVA & 草野マサムネ
+  composer: KREVA
+  arranger: KREVA
+  cd: kurebaiinoni_cd
+  note: 
+
+jumponit_song:
+  artist: kreva_artist
+  name: JUMP ON IT
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: kurebaiinoni_cd
+  note: 
+
 strongstyle_song:
   artist: kreva_artist
   name: ストロングスタイル
@@ -1193,15 +1211,6 @@ tameikihaco2_song:
   name: ため息はCO2
   lyricist: KREVA & Leo Graham
   composer: KREVA & Leo Graham
-  arranger: KREVA
-  cd: yoroshikuonegaishimasu_cd
-  note: 
-
-kurebaiinoni_song:
-  artist: kreva_artist
-  name: くればいいのに feat.草野マサムネ from SPITZ
-  lyricist: KREVA & 草野マサムネ
-  composer: KREVA
   arranger: KREVA
   cd: yoroshikuonegaishimasu_cd
   note: 

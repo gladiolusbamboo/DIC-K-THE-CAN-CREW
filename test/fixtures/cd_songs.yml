@@ -732,6 +732,14 @@ aggressibu_cd_kuchimotoniemi_song:
   cd: aggressibu_cd
   song: kuchimotoniemi_song
 
+kurebaiinoni_cd_kurebaiinoni_song:
+  cd: kurebaiinoni_cd
+  song: kurebaiinoni_song
+
+kurebaiinoni_cd_jumponit_song:
+  cd: kurebaiinoni_cd
+  song: jumponit_song
+
 yoroshikuonegaishimasu_cd_strongstyle_song:
   cd: yoroshikuonegaishimasu_cd
   song: strongstyle_song
