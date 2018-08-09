@@ -1161,6 +1161,15 @@ strongstyle_song:
   cd: yoroshikuonegaishimasu_cd
   note: 
 
+akasatanahamayarawawon_song:
+  artist: kreva_artist
+  name: あかさたなはまやらわをん
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: krevanobestban_cd
+  note: 
+
 youdontstop_song:
   artist: kreva_artist
   name: You don't stop!!

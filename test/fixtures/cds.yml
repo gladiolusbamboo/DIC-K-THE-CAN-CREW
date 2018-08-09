@@ -176,6 +176,14 @@ yoroshikuonegaishimasu_cd:
   name: よろしくお願いします
   released_at: 2007-09-05
 
+strongstyle_cd:
+  name: ストロングスタイル
+  released_at: 2007-10-03
+
+krevanobestban_cd:
+  name: クレバのベスト盤
+  released_at: 2008-03-19
+
 shinzou_cd:
   name: 心臓
   released_at: 2009-09-08

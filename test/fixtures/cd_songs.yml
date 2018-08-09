@@ -796,6 +796,78 @@ yoroshikuonegaishimasu_cd_haveaniceday_song:
   cd: yoroshikuonegaishimasu_cd
   song: haveaniceday_song
 
+strongstyle_cd_strongstyle_song:
+  cd: strongstyle_cd
+  song: strongstyle_song
+
+strongstyle_cd_because_song:
+  cd: strongstyle_cd
+  song: because_song
+
+krevanobestban_cd_strongstyle_song:
+  cd: krevanobestban_cd
+  song: strongstyle_song
+
+krevanobestban_cd_because_song:
+  cd: krevanobestban_cd
+  song: because_song
+
+krevanobestban_cd_kurebaiinoni_song:
+  cd: krevanobestban_cd
+  song: kurebaiinoni_song
+
+krevanobestban_cd_aggressibu_song:
+  cd: krevanobestban_cd
+  song: aggressibu_song
+
+krevanobestban_cd_theshow_song:
+  cd: krevanobestban_cd
+  song: theshow_song
+
+krevanobestban_cd_haveaniceday_song:
+  cd: krevanobestban_cd
+  song: haveaniceday_song
+
+krevanobestban_cd_happy_song:
+  cd: krevanobestban_cd
+  song: happy_song
+
+krevanobestban_cd_itsforyou_song:
+  cd: krevanobestban_cd
+  song: itsforyou_song
+
+krevanobestban_cd_kokumintekigyouji_song:
+  cd: krevanobestban_cd
+  song: kokumintekigyouji_song
+
+krevanobestban_cd_start_song:
+  cd: krevanobestban_cd
+  song: start_song
+
+krevanobestban_cd_issaigassai_song:
+  cd: krevanobestban_cd
+  song: issaigassai_song
+
+krevanobestban_cd_funkyglamorous_song:
+  cd: krevanobestban_cd
+  song: funkyglamorous_song
+
+krevanobestban_cd_hitorijanainoyo_song:
+  cd: krevanobestban_cd
+  song: hitorijanainoyo_song
+
+krevanobestban_cd_neiro_song:
+  cd: krevanobestban_cd
+  song: neiro_song
+
+krevanobestban_cd_kibounohonoo_song:
+  cd: krevanobestban_cd
+  song: kibounohonoo_song
+
+krevanobestban_cd_akasatanahamayarawawon_song:
+  cd: krevanobestban_cd
+  song: akasatanahamayarawawon_song
+
 shinzou_cd_kiss_song:
   cd: shinzou_cd
   song: kiss_song
