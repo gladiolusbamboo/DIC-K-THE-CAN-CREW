@@ -1161,15 +1161,6 @@ strongstyle_song:
   cd: yoroshikuonegaishimasu_cd
   note: 
 
-akasatanahamayarawawon_song:
-  artist: kreva_artist
-  name: あかさたなはまやらわをん
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: krevanobestban_cd
-  note: 
-
 youdontstop_song:
   artist: kreva_artist
   name: You don't stop!!
@@ -1251,6 +1242,51 @@ owaritakunaiohwhatanight_song:
   cd: yoroshikuonegaishimasu_cd
   note: 
 
+akasatanahamayarawawon_song:
+  artist: kreva_artist
+  name: あかさたなはまやらわをん
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: krevanobestban_cd
+  note: 
+
+seikou_song:
+  artist: kreva_artist
+  name: 成功
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA & さかいゆう
+  cd: ao_cd
+  note: 
+
+iwannaknowyou_song:
+  artist: kreva_artist
+  name: I Wanna Know You
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: ao_cd
+  note: 
+
+umaretekitearigatou_song:
+  artist: kreva_artist
+  name: 生まれてきてありがとう feat.さかいゆう
+  lyricist: さかいゆう & KREVA
+  composer: さかいゆう & KREVA
+  arranger: さかいゆう & KREVA
+  cd: ao_cd
+  note: 
+
+sosexy_song:
+  artist: kreva_artist
+  name: So Sexy
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: ao_cd
+  note: 
+
 kiss_song:
   artist: kreva_artist
   name: K.I.S.S.
@@ -1323,28 +1359,10 @@ ace_song:
   cd: shinzou_cd
   note: 
 
-seikou_song:
-  artist: kreva_artist
-  name: 成功
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA & さかいゆう
-  cd: shinzou_cd
-  note: 
-
 chuubansen_song:
   artist: kreva_artist
   name: 中盤戦 feat. Mummy-D
   lyricist: KREVA & Mummy-D
-  composer: KREVA
-  arranger: KREVA
-  cd: shinzou_cd
-  note: 
-
-iwannaknowyou_song:
-  artist: kreva_artist
-  name: I Wanna Know You
-  lyricist: KREVA
   composer: KREVA
   arranger: KREVA
   cd: shinzou_cd
@@ -1356,15 +1374,6 @@ caramelpopcorn_song:
   lyricist: KREVA & 将絢
   composer: KREVA
   arranger: KREVA
-  cd: shinzou_cd
-  note: 
-
-umaretekitearigatou_song:
-  artist: kreva_artist
-  name: 生まれてきてありがとう feat.さかいゆう
-  lyricist: さかいゆう & KREVA
-  composer: さかいゆう & KREVA
-  arranger: さかいゆう & KREVA
   cd: shinzou_cd
   note: 
 

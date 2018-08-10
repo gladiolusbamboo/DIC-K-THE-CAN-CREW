@@ -184,6 +184,10 @@ krevanobestban_cd:
   name: クレバのベスト盤
   released_at: 2008-03-19
 
+ao_cd:
+  name: 青
+  released_at: 2009-03-18
+
 shinzou_cd:
   name: 心臓
   released_at: 2009-09-08

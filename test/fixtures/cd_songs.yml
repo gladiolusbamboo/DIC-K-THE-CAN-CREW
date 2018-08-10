@@ -868,6 +868,22 @@ krevanobestban_cd_akasatanahamayarawawon_song:
   cd: krevanobestban_cd
   song: akasatanahamayarawawon_song
 
+ao_cd_seikou_song:
+  cd: ao_cd
+  song: seikou_song
+
+ao_cd_iwannaknowyou_song:
+  cd: ao_cd
+  song: iwannaknowyou_song
+
+ao_cd_umaretekitearigatou_song:
+  cd: ao_cd
+  song: umaretekitearigatou_song
+
+ao_cd_sosexy_song:
+  cd: ao_cd
+  song: sosexy_song
+
 shinzou_cd_kiss_song:
   cd: shinzou_cd
   song: kiss_song
