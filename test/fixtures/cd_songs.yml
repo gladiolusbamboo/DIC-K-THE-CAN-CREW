@@ -884,6 +884,14 @@ ao_cd_sosexy_song:
   cd: ao_cd
   song: sosexy_song
 
+aka_cd_shunkanspeechless_song:
+  cd: aka_cd
+  song: shunkanspeechless_song
+
+aka_cd_kiminimunekyunuwakinavacance_song:
+  cd: aka_cd
+  song: kiminimunekyunuwakinavacance_song
+
 shinzou_cd_kiss_song:
   cd: shinzou_cd
   song: kiss_song

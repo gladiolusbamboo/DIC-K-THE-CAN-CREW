@@ -1287,18 +1287,27 @@ sosexy_song:
   cd: ao_cd
   note: 
 
-kiss_song:
-  artist: kreva_artist
-  name: K.I.S.S.
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: shinzou_cd
-  note: 
-
 shunkanspeechless_song:
   artist: kreva_artist
   name: 瞬間speechless
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: aka_cd
+  note: 
+
+kiminimunekyunuwakinavacance_song:
+  artist: kreva_artist
+  name: 君に、胸キュン。-浮気なヴァカンス-
+  lyricist: 松本隆
+  composer: 細野晴臣 & 高橋幸宏 & 坂本龍一
+  arranger: KREVA
+  cd: aka_cd
+  note: 
+
+kiss_song:
+  artist: kreva_artist
+  name: K.I.S.S.
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
