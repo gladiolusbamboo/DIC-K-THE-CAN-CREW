@@ -1449,18 +1449,27 @@ changingsame_song:
   cd: oasys_cd
   note: 
 
-kijun_song:
-  artist: kreva_artist
-  name: 基準
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: go_cd
-  note: 
-
 idome_song:
   artist: kreva_artist
   name: 挑め
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: idome_cd
+  note: 
+
+bestendank_song:
+  artist: kreva_artist
+  name: ベステンダンク
+  lyricist: 高野寛
+  composer: 高野寛
+  arranger: KREVA
+  cd: idome_cd
+  note: 
+
+kijun_song:
+  artist: kreva_artist
+  name: 基準
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
