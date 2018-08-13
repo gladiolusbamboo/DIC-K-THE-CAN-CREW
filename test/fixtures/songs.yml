@@ -1467,6 +1467,24 @@ bestendank_song:
   cd: idome_cd
   note: 
 
+cmonletsgo_song:
+  artist: kreva_artist
+  name: C'mon, Let's go
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: cmonletsgo_cd
+  note: 
+
+macar_song:
+  artist: kreva_artist
+  name: マカー GB-mix feat. AKLO, L-VOKAL(BETTER HALVES)
+  lyricist: KREVA & AKLO & L-VOKAL
+  composer: KREVA & AKLO & L-VOKAL
+  arranger: KREVA
+  cd: cmonletsgo_cd
+  note: 
+
 kijun_song:
   artist: kreva_artist
   name: 基準
@@ -1535,15 +1553,6 @@ partyhaizuko_song:
   name: パーティーはIZUKO?
   lyricist: KREVA
   composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
-  arranger: KREVA
-  cd: go_cd
-  note: 
-
-cmonletsgo_song:
-  artist: kreva_artist
-  name: C'mon, Let's go
-  lyricist: KREVA
-  composer: KREVA
   arranger: KREVA
   cd: go_cd
   note: 
