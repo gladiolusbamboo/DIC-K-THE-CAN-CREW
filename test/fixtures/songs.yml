@@ -1485,20 +1485,38 @@ macar_song:
   cd: cmonletsgo_cd
   note: 
 
-kijun_song:
-  artist: kreva_artist
-  name: 基準
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: go_cd
-  note: 
-
 kilakila_song:
   artist: kreva_artist
   name: KILA KILA
   lyricist: KREVA
   composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  arranger: KREVA
+  cd: kilakila_cd
+  note: 
+
+tankyushin_song:
+  artist: kreva_artist
+  name: Tan-Kyu-Shin
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: kilakila_cd
+  note: 
+
+hahiheho_song:
+  artist: kreva_artist
+  name: ハヒヘホ feat. SHINGO★西成
+  lyricist: KREVA & SHINGO★西成
+  composer: KREVA & SHINGO★西成
+  arranger: KREVA
+  cd: kilakila_cd
+  note: 
+
+kijun_song:
+  artist: kreva_artist
+  name: 基準
+  lyricist: KREVA
+  composer: KREVA
   arranger: KREVA
   cd: go_cd
   note: 
@@ -1560,15 +1578,6 @@ partyhaizuko_song:
 egao_song:
   artist: kreva_artist
   name: EGAO
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: go_cd
-  note: 
-
-tankyuushin_song:
-  artist: kreva_artist
-  name: 探究心
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA

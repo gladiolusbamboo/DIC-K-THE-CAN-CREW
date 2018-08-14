@@ -208,6 +208,10 @@ cmonletsgo_cd:
   name: C'mon, Let's go
   released_at: 2011-05-11
 
+kilakila_cd:
+  name: KILA KILA / Tan-Kyu-Shin
+  released_at: 2011-07-20
+
 go_cd:
   name: GO
   released_at: 2011-09-08

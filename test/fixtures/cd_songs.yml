@@ -989,6 +989,18 @@ cmonletsgo_cd_macar_song:
   cd: cmonletsgo_cd
   song: macar_song
 
+kilakila_cd_kilakila_song:
+  cd: kilakila_cd
+  song: kilakila_song
+
+kilakila_cd_tankyushin_song:
+  cd: kilakila_cd
+  song: tankyushin_song
+
+kilakila_cd_hahiheho_song:
+  cd: kilakila_cd
+  song: hahiheho_song
+
 go_cd_kijun_song:
   cd: go_cd
   song: kijun_song
@@ -1033,9 +1045,9 @@ go_cd_egao_song:
   cd: go_cd
   song: egao_song
 
-go_cd_tankyuushin_song:
+go_cd_tankyushin_song:
   cd: go_cd
-  song: tankyuushin_song
+  song: tankyushin_song
 
 space_cd_space_song:
   cd: space_cd
