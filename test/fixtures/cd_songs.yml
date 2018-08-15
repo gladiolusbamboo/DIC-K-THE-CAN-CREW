@@ -1049,6 +1049,14 @@ go_cd_tankyushin_song:
   cd: go_cd
   song: tankyushin_song
 
+ohyeah_cd_ohyeah_song:
+  cd: ohyeah_cd
+  song: ohyeah_song
+
+ohyeah_cd_nonono_song:
+  cd: ohyeah_cd
+  song: nonono_song
+
 space_cd_space_song:
   cd: space_cd
   song: space_song

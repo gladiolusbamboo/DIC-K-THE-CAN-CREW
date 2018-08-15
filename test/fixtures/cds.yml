@@ -216,6 +216,10 @@ go_cd:
   name: GO
   released_at: 2011-09-08
 
+ohyeah_cd:
+  name: OH YEAH
+  released_at: 2012-06-20
+
 space_cd:
   name: SPACE
   released_at: 2013-02-27
