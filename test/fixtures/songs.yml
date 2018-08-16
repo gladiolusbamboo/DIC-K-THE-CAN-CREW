@@ -1530,6 +1530,24 @@ nonono_song:
   cd: ohyeah_cd
   note: 
 
+nanana_song:
+  artist: kreva_artist
+  name: Na Na Na
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: nanana_cd
+  note: 
+
+nomoremrniceguy_song:
+  artist: kreva_artist
+  name: No More Mr. NiceGuy
+  lyricist: KREVA & KEN THE 390 & AKLO
+  composer: 熊井吾郎 & KREVA & KEN THE 390 & AKLO
+  arranger: KREVA
+  cd: nanana_cd
+  note: 
+
 kijun_song:
   artist: kreva_artist
   name: 基準

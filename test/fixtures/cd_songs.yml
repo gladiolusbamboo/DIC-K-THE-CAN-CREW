@@ -1057,6 +1057,14 @@ ohyeah_cd_nonono_song:
   cd: ohyeah_cd
   song: nonono_song
 
+nanana_cd_nanana_song:
+  cd: nanana_cd
+  song: nanana_song
+
+nanana_cd_nomoremrniceguy_song:
+  cd: nanana_cd
+  song: nomoremrniceguy_song
+
 space_cd_space_song:
   cd: space_cd
   song: space_song
@@ -1096,6 +1104,10 @@ space_cd_spacedancer_song:
 space_cd_link_song:
   cd: space_cd
   song: link_song
+
+space_cd_nanana_song:
+  cd: space_cd
+  song: nanana_song
 
 underthemoon_cd_underthemoon_song:
   cd: underthemoon_cd
