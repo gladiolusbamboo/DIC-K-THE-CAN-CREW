@@ -1065,6 +1065,14 @@ nanana_cd_nomoremrniceguy_song:
   cd: nanana_cd
   song: nomoremrniceguy_song
 
+oujanokyuujitsu_cd_oujanokyuujitsu_song:
+  cd: oujanokyuujitsu_cd
+  song: oujanokyuujitsu_song
+
+oujanokyuujitsu_cd_nomoremrniceguy_song:
+  cd: oujanokyuujitsu_cd
+  song: nomoremrniceguy_song
+
 space_cd_space_song:
   cd: space_cd
   song: space_song
