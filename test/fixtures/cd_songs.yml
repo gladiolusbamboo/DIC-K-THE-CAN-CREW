@@ -1117,6 +1117,14 @@ space_cd_nanana_song:
   cd: space_cd
   song: nanana_song
 
+beshi_cd_beshi_song:
+  cd: beshi_cd
+  song: beshi_song
+
+beshi_cd_sekainochuushin_song:
+  cd: beshi_cd
+  song: sekainochuushin_song
+
 underthemoon_cd_underthemoon_song:
   cd: underthemoon_cd
   song: underthemoon_song

@@ -1701,6 +1701,24 @@ link_song:
   cd: go_cd
   note: 
 
+beshi_song:
+  artist: kreva_artist
+  name: BESHI
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: beshi_cd
+  note: 
+
+sekainochuushin_song:
+  artist: kreva_artist
+  name: 世界の中心
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: beshi_cd
+  note: 
+
 underthemoon_song:
   artist: kreva_artist
   name: Under The Moon

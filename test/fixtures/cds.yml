@@ -232,6 +232,10 @@ space_cd:
   name: SPACE
   released_at: 2013-02-27
 
+beshi_cd:
+  name: BESHI
+  released_at: 2013-08-28
+
 underthemoon_cd:
   name: Under The Moon
   released_at: 2015-02-25
