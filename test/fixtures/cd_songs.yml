@@ -1125,6 +1125,15 @@ beshi_cd_sekainochuushin_song:
   cd: beshi_cd
   song: sekainochuushin_song
 
+tranquilizer_cd_tranquilizer_song:
+  cd: tranquilizer_cd
+  song: tranquilizer_song
+
+tranquilizer_cd_inabikari_song:
+  cd: tranquilizer_cd
+  song: inabikari_song
+
+
 underthemoon_cd_underthemoon_song:
   cd: underthemoon_cd
   song: underthemoon_song

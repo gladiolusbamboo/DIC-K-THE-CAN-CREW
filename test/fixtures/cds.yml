@@ -236,6 +236,10 @@ beshi_cd:
   name: BESHI
   released_at: 2013-08-28
 
+tranquilizer_cd:
+  name: トランキライザー
+  released_at: 2014-02-05
+
 underthemoon_cd:
   name: Under The Moon
   released_at: 2015-02-25

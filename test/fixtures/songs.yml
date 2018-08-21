@@ -1719,6 +1719,24 @@ sekainochuushin_song:
   cd: beshi_cd
   note: 
 
+tranquilizer_song:
+  artist: kreva_artist
+  name: トランキライザー
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: tranquilizer_cd
+  note: 
+
+inabikari_song:
+  artist: kreva_artist
+  name: 稲光
+  lyricist: KREVA
+  composer: 熊井吾郎 & KREVA
+  arranger: UNKNOWN
+  cd: tranquilizer_cd
+  note: 
+
 underthemoon_song:
   artist: kreva_artist
   name: Under The Moon
