@@ -782,6 +782,24 @@ takoage_song:
   cd: kick_cd
   note: 
 
+juusho_song:
+  artist: kickthecancrew_artist
+  name: 住所 feat. 岡村靖幸
+  lyricist: MCU & LITTLE & KREVA & 岡村靖幸
+  composer: MCU & LITTLE & KREVA
+  arranger: KREVA
+  cd: juusho_cd
+  note: 
+
+keepitup_song:
+  artist: kickthecancrew_artist
+  name: Leep It Up
+  lyricist: MCU & LITTLE & KREVA
+  composer: MCU & LITTLE & KREVA
+  arranger: KREVA
+  cd: juusho_cd
+  note: 
+
 roots_song:
   artist: shimanomomoe_artist
   name: Roots feat. Kick the Can Crew & INNOSENCE

@@ -552,6 +552,14 @@ kick_cd_takoage_song:
   cd: kick_cd
   song: takoage_song
 
+juusho_cd_juusho_song:
+  cd: juusho_cd
+  song: juusho_song
+
+juusho_cd_keepitup_song:
+  cd: juusho_cd
+  song: keepitup_song
+
 roots_cd_roots_song:
   cd: roots_cd
   song: roots_song
