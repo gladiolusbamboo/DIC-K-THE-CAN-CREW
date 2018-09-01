@@ -793,7 +793,7 @@ juusho_song:
 
 keepitup_song:
   artist: kickthecancrew_artist
-  name: Leep It Up
+  name: Keep It Up
   lyricist: MCU & LITTLE & KREVA
   composer: MCU & LITTLE & KREVA
   arranger: KREVA
@@ -1879,4 +1879,40 @@ kiminimuchuu_song:
   composer: KREVA
   arranger: KREVA
   cd: usotobonnou_cd
+  note: 
+
+sonzaikan_song:
+  artist: kreva_artist
+  name: 存在感
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: sonzaikan_cd
+  note: 
+
+orenosukihasemai_song:
+  artist: kreva_artist
+  name: 俺の好きは狭い
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: sonzaikan_cd
+  note: 
+
+kenkou_song:
+  artist: kreva_artist
+  name: 健康
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: sonzaikan_cd
+  note: 
+
+hyakuninisshun_song:
+  artist: kreva_artist
+  name: 百人一瞬
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: sonzaikan_cd
   note: 
