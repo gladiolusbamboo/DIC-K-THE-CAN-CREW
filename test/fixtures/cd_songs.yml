@@ -1213,4 +1213,13 @@ sonzaikan_cd_hyakuninisshun_song:
   cd: sonzaikan_cd
   song: hyakuninisshun_song
 
+# LITTLE
+# いいの
+iino_cd_iino_song:
+  cd: iino_cd
+  song: iino_song
+
+iino_cd_gigolomen_song:
+  cd: iino_cd
+  song: gigolomen_song
 

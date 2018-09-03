@@ -1916,3 +1916,24 @@ hyakuninisshun_song:
   arranger: KREVA
   cd: sonzaikan_cd
   note: 
+
+# LITTLE
+# いいの
+iino_song:
+  artist: little_artist
+  name: いいの
+  lyricist: LITTLE
+  composer: ROCK TEE, KREVA
+  arranger: ROCK TEE, KREVA
+  cd: iino_cd
+  note: 
+
+# ジゴロメン
+gigolomen_song:
+  artist: little_artist
+  name: ジゴロメン
+  lyricist: LITTLE
+  composer: ROCK TEE
+  arranger: ROCK TEE
+  cd: iino_cd
+  note: VERSE1に誤植あり。×抜け出せる→○抜けられる
