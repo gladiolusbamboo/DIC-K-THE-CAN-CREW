@@ -1937,3 +1937,13 @@ gigolomen_song:
   arranger: ROCK TEE
   cd: iino_cd
   note: VERSE1に誤植あり。×抜け出せる→○抜けられる
+
+# レスキュー
+rescue_song:
+  artist: little_artist
+  name: レスキュー(featuring DOHZI-T)
+  lyricist: LITTLE & DOHZI-T
+  composer: DJ BASS
+  arranger: DJ BASS
+  cd: iino_cd
+  note:

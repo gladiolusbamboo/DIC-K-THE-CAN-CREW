@@ -1223,3 +1223,7 @@ iino_cd_gigolomen_song:
   cd: iino_cd
   song: gigolomen_song
 
+iino_cd_rescue_song:
+  cd: iino_cd
+  song: rescue_song
+

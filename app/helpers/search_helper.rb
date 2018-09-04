@@ -8,7 +8,6 @@ module SearchHelper
       info_arr.each do |info|
         lyric_with_ruby = info.lyric_with_ruby
         # {漢字,かんじ}表記から表示用文字列に戻す
-
         lyric_decoded = decode_lyric_with_ruby(lyric_with_ruby)
 
         unless(is_ruby_search)
