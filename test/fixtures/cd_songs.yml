@@ -1227,3 +1227,7 @@ iino_cd_rescue_song:
   cd: iino_cd
   song: rescue_song
 
+iino_cd_huntingworld_song:
+  cd: iino_cd
+  song: huntingworld_song
+

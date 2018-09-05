@@ -150,5 +150,11 @@ okamurayasuyuki:
 dohzi-t:
   name: 童子-T
 
+voice:
+  name: VOICE
+
+littlekrevacuezeromcuvoicesohjinchannel:
+  name: LITTLE, KREVA, MCU, CUEZERO, SOHJIN, CHANNEL & VOICE ?
+
 unknown:
   name: ？？？

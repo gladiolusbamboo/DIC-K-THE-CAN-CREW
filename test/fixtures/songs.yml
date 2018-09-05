@@ -1947,3 +1947,13 @@ rescue_song:
   arranger: DJ BASS
   cd: iino_cd
   note:
+
+# ハンティングワールド
+huntingworld_song:
+  artist: little_artist
+  name: ハンティング・ワールド(featuring CASSETE VISION)
+  lyricist: LITTLE, KREVA, CUE, MCU, VOICE, SOHJIN, CHANNEL
+  composer: KREVA
+  arranger: KREVA
+  cd: iino_cd
+  note: タイトルママ。CASSETTE VISIONの誤植？CUEZEROはCUE名義。
