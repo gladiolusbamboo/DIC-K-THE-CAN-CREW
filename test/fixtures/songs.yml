@@ -1957,3 +1957,23 @@ huntingworld_song:
   arranger: KREVA
   cd: iino_cd
   note: タイトルママ。CASSETTE VISIONの誤植？CUEZEROはCUE名義。
+
+# CHILDPLAY
+childplay_song:
+  artist: little_artist
+  name: CHILD PLAY
+  lyricist: LITTLE
+  composer: Mr.Drunk(Rhymester)
+  arranger: Mr.Drunk(Rhymester)
+  cd: childplay_cd
+  note: 歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。
+
+# DOGFOOD
+dogfood_song:
+  artist: little_artist
+  name: DOG FOOD
+  lyricist: LITTLE
+  composer: DJ BASS
+  arranger: DJ BASS
+  cd: childplay_cd
+  note: HOOKは童子-T?歌詞カードに未クレジットのため、不明。　歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。

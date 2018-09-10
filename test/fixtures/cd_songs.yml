@@ -1231,3 +1231,11 @@ iino_cd_huntingworld_song:
   cd: iino_cd
   song: huntingworld_song
 
+# CHILDPLAY
+childplay_cd_childplay_song:
+  cd: childplay_cd
+  song: childplay_song
+
+childplay_cd_dogfood_song:
+  cd: childplay_cd
+  song: dogfood_song

@@ -260,3 +260,7 @@ sonzaikan_cd:
 iino_cd:
   name: いいの
   released_at: 1998-11-15
+
+childplay_cd:
+  name: CHILD PLAY
+  released_at: 2000-03-29

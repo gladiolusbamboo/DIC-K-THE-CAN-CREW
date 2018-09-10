@@ -156,5 +156,11 @@ voice:
 littlekrevacuezeromcuvoicesohjinchannel:
   name: LITTLE, KREVA, MCU, CUEZERO, SOHJIN, CHANNEL & VOICE ?
 
+dohzi-t?little:
+  name: 童子-T? & LITTLE
+
+dohzi-t?:
+  name: 童子-T?
+
 unknown:
   name: ？？？
