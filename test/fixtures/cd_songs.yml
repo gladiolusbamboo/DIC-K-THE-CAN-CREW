@@ -1239,3 +1239,8 @@ childplay_cd_childplay_song:
 childplay_cd_dogfood_song:
   cd: childplay_cd
   song: dogfood_song
+
+# Mr.Compact
+mrcompact_cd_mrcompact_song:
+  cd: mrcompact_cd
+  song: mrcompact_song

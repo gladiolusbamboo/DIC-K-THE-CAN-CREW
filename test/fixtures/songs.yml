@@ -1977,3 +1977,13 @@ dogfood_song:
   arranger: DJ BASS
   cd: childplay_cd
   note: HOOKは童子-T?歌詞カードに未クレジットのため、不明。　歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。
+
+# Mr.Compact
+mrcompact_song:
+  artist: little_artist
+  name: Mr.Compact
+  lyricist: LITTLE
+  composer: KREVA
+  arranger: KREVA
+  cd: mrcompact_cd
+  note: 曲名はMr.Compact、アルバム名はMr.COMPACTと表記

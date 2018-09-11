@@ -264,3 +264,7 @@ iino_cd:
 childplay_cd:
   name: CHILD PLAY
   released_at: 2000-03-29
+
+mrcompact_cd:
+  name: Mr.COMPACT
+  released_at: 2001-12-05
