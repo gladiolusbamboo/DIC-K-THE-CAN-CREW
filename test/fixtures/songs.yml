@@ -1987,3 +1987,13 @@ mrcompact_song:
   arranger: KREVA
   cd: mrcompact_cd
   note: 曲名はMr.Compact、アルバム名はMr.COMPACTと表記
+
+# ワックマン
+wackman_song:
+  artist: little_artist
+  name: ワックマン feat. Mummy-D
+  lyricist: Mummy-D & LITTLE
+  composer: DJ OASIS
+  arranger: DJ OASIS
+  cd: mrcompact_cd
+  note: 

@@ -1244,3 +1244,8 @@ childplay_cd_dogfood_song:
 mrcompact_cd_mrcompact_song:
   cd: mrcompact_cd
   song: mrcompact_song
+
+# ワックマン
+mrcompact_cd_mrcompact_song:
+  cd: mrcompact_cd
+  song: wackman_song
