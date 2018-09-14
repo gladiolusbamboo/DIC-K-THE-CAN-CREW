@@ -1997,3 +1997,13 @@ wackman_song:
   arranger: DJ OASIS
   cd: mrcompact_cd
   note: 
+
+# ライムライト
+rhymelight_song:
+  artist: little_artist
+  name: ライムライト
+  lyricist: LITTLE
+  composer: DJ SEIJI
+  arranger: DJ SEIJI
+  cd: mrcompact_cd
+  note: 

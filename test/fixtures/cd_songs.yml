@@ -1249,3 +1249,10 @@ mrcompact_cd_mrcompact_song:
 mrcompact_cd_mrcompact_song:
   cd: mrcompact_cd
   song: wackman_song
+
+# ライムライト
+mrcompact_cd_mrcompact_song:
+  cd: mrcompact_cd
+  song: rhymelight_song
+
+
