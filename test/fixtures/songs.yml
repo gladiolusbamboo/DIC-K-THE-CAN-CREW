@@ -2007,3 +2007,23 @@ rhymelight_song:
   arranger: DJ SEIJI
   cd: mrcompact_cd
   note: 
+
+# 不純異性交遊
+fujuniseikouyuu_song:
+  artist: little_artist
+  name: 不純異性交遊
+  lyricist: LITTLE
+  composer: DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: mrcompact_cd
+  note: 
+
+# 不純異性交遊Part2
+fujuniseikouyuupart2_song:
+  artist: little_artist
+  name: 不純異性交遊Part.2 feat. INNOSENCE
+  lyricist: LITTLE & INNOSENCE
+  composer: DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: mrcompact_cd
+  note: 

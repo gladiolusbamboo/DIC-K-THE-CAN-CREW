@@ -1255,4 +1255,13 @@ mrcompact_cd_mrcompact_song:
   cd: mrcompact_cd
   song: rhymelight_song
 
+# 不純異性交遊
+mrcompact_cd_fujuniseikouyuu_song:
+  cd: mrcompact_cd
+  song: fujuniseikouyuu_song
+
+# 不純異性交遊Part2
+mrcompact_cd_fujuniseikouyuupart2_song:
+  cd: mrcompact_cd
+  song: fujuniseikouyuupart2_song
 
