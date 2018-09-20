@@ -1265,3 +1265,13 @@ mrcompact_cd_fujuniseikouyuupart2_song:
   cd: mrcompact_cd
   song: fujuniseikouyuupart2_song
 
+# WAR ZONE
+mrcompact_cd_warzone_song:
+  cd: mrcompact_cd
+  song: warzone_song
+
+# 西TOKYO TRIBE
+mrcompact_cd_warzone_song:
+  cd: mrcompact_cd
+  song: nishitokyotribe_song
+

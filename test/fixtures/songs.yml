@@ -361,7 +361,7 @@ whatchaname_song:
 
 mikoshirockers_song:
   artist: kickthecancrew_artist
-  name: 神輿ロッカーズ feat. RHYMESTER
+  name: 神輿ロッカーズ feat.RHYMESTER
   lyricist: KICK THE CAN CREW & RHYMESTER
   composer: UNKNOWN
   arranger: KREVA
@@ -425,11 +425,11 @@ djdjforradio_song:
 toriiiiiico_song:
   artist: kickthecancrew_artist
   name: TORIIIIIICO!
-  lyricist: KICK THE CAN CREW feat. CASSETTE VISION
-  composer: KICK THE CAN CREW feat. CASSETTE VISION
+  lyricist: KICK THE CAN CREW feat.CASSETTE VISION
+  composer: KICK THE CAN CREW feat.CASSETTE VISION
   arranger: KREVA
   cd: toriiiiiico_cd
-  note: KICK THE CAN CREW feat. CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
+  note: KICK THE CAN CREW feat.CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
 
 toujou_song:
   artist: kickthecancrew_artist
@@ -784,7 +784,7 @@ takoage_song:
 
 juusho_song:
   artist: kickthecancrew_artist
-  name: 住所 feat. 岡村靖幸
+  name: 住所 feat.岡村靖幸
   lyricist: MCU & LITTLE & KREVA & 岡村靖幸
   composer: MCU & LITTLE & KREVA
   arranger: KREVA
@@ -802,7 +802,7 @@ keepitup_song:
 
 roots_song:
   artist: shimanomomoe_artist
-  name: Roots feat. Kick the Can Crew & INNOSENCE
+  name: Roots feat.Kick the Can Crew & INNOSENCE
   lyricist: SOHJIN, CHANNEL, LITTLE, MCU, KREVA & 嶋野百恵
   composer: KREVA & 嶋野百恵
   arranger: KREVA
@@ -838,7 +838,7 @@ iianbee_song:
 
 fgspot_song:
   artist: eastend_artist
-  name: FGスポット feat. KICK THE CAN CREW
+  name: FGスポット feat.KICK THE CAN CREW
   lyricist: UNKNOWN
   composer: UNKNOWN
   arranger: EAST END
@@ -1154,7 +1154,7 @@ kuchimotoniemi_song:
 
 kurebaiinoni_song:
   artist: kreva_artist
-  name: くればいいのに feat. 草野マサムネ from SPITZ[Single Edit]
+  name: くればいいのに feat.草野マサムネ from SPITZ[Single Edit]
   lyricist: KREVA & 草野マサムネ
   composer: KREVA
   arranger: KREVA
@@ -1361,7 +1361,7 @@ rhythm_song:
 
 synchro_song:
   artist: kreva_artist
-  name: シンクロ feat. 古内東子
+  name: シンクロ feat.古内東子
   lyricist: KREVA & 古内東子
   composer: KREVA
   arranger: KREVA
@@ -1388,7 +1388,7 @@ ace_song:
 
 chuubansen_song:
   artist: kreva_artist
-  name: 中盤戦 feat. Mummy-D
+  name: 中盤戦 feat.Mummy-D
   lyricist: KREVA & Mummy-D
   composer: KREVA
   arranger: KREVA
@@ -1433,7 +1433,7 @@ kamo_song:
 
 tarareba_song:
   artist: kreva_artist
-  name: たられば feat. SONOMI
+  name: たられば feat.SONOMI
   lyricist: KREVA & SONOMI
   composer: KREVA
   arranger: KREVA
@@ -1496,7 +1496,7 @@ cmonletsgo_song:
 
 macar_song:
   artist: kreva_artist
-  name: マカー GB-mix feat. AKLO, L-VOKAL(BETTER HALVES)
+  name: マカー GB-mix feat.AKLO, L-VOKAL(BETTER HALVES)
   lyricist: KREVA & AKLO & L-VOKAL
   composer: KREVA & AKLO & L-VOKAL
   arranger: KREVA
@@ -1523,7 +1523,7 @@ tankyushin_song:
 
 hahiheho_song:
   artist: kreva_artist
-  name: ハヒヘホ feat. SHINGO★西成
+  name: ハヒヘホ feat.SHINGO★西成
   lyricist: KREVA & SHINGO★西成
   composer: KREVA & SHINGO★西成
   arranger: KREVA
@@ -1541,7 +1541,7 @@ ohyeah_song:
 
 nonono_song:
   artist: kreva_artist
-  name: NO NO NO feat. SONOMI
+  name: NO NO NO feat.SONOMI
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
@@ -1577,7 +1577,7 @@ kijun_song:
 
 shinkirou_song:
   artist: kreva_artist
-  name: 蜃気楼 feat. 三浦大知
+  name: 蜃気楼 feat.三浦大知
   lyricist: KREVA & 三浦大知
   composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
   arranger: KREVA
@@ -1613,7 +1613,7 @@ hotsummerdays_song:
 
 bitansansyndrome_song:
   artist: kreva_artist
-  name: 微炭酸シンドローム feat. 阿部真央
+  name: 微炭酸シンドローム feat.阿部真央
   lyricist: KREVA & 阿部真央
   composer: 熊井吾郎 & KREVA
   arranger: KREVA
@@ -1811,7 +1811,7 @@ ibasho_song:
 
 omoidenomukougawa_song:
   artist: kreva_artist
-  name: 想い出の向こう側 feat. AKLO
+  name: 想い出の向こう側 feat.AKLO
   lyricist: KREVA & AKLO
   composer: KREVA
   arranger: KREVA
@@ -1829,7 +1829,7 @@ freshmode_song:
 
 sanzan_song:
   artist: kreva_artist
-  name: Sanzan feat. 増田有華
+  name: Sanzan feat.増田有華
   lyricist: KREVA & 増田有華
   composer: KREVA
   arranger: KREVA
@@ -1991,7 +1991,7 @@ mrcompact_song:
 # ワックマン
 wackman_song:
   artist: little_artist
-  name: ワックマン feat. Mummy-D
+  name: ワックマン feat.Mummy-D
   lyricist: Mummy-D & LITTLE
   composer: DJ OASIS
   arranger: DJ OASIS
@@ -2021,9 +2021,29 @@ fujuniseikouyuu_song:
 # 不純異性交遊Part2
 fujuniseikouyuupart2_song:
   artist: little_artist
-  name: 不純異性交遊Part.2 feat. INNOSENCE
+  name: 不純異性交遊Part.2 feat.INNOSENCE
   lyricist: LITTLE & INNOSENCE
   composer: DJ TATSUTA
   arranger: DJ TATSUTA
   cd: mrcompact_cd
   note: 
+
+# WAR ZONE
+warzone_song:
+  artist: little_artist
+  name: WAR ZONE feat.童子-T
+  lyricist: LITTLE & INNOSENCE
+  composer: DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: mrcompact_cd
+  note: 
+
+# 西TOKYO TRIBE
+nishitokyotribe_song:
+  artist: little_artist
+  name: 西TOKYO TRIBE feat.FREGRANCE
+  lyricist: LITTLE & FREGRANCE
+  composer: DJ BASS
+  arranger: DJ BASS
+  cd: mrcompact_cd
+  note: FRAGRANCEが正式なユニット名と思われるが歌詞カードではFREGRANCEとクレジットされている。FRAGRANCEの歌い分けが間違ってるかも。

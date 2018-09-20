@@ -150,6 +150,9 @@ okamurayasuyuki:
 dohzi-t:
   name: 童子-T
 
+dohzi-t?:
+  name: 童子-T?
+
 voice:
   name: VOICE
 
@@ -159,8 +162,17 @@ littlekrevacuezeromcuvoicesohjinchannel:
 dohzi-t?little:
   name: 童子-T? & LITTLE
 
-dohzi-t?:
-  name: 童子-T?
+littledohzi-t:
+  name: LITTLE & 童子-T
+
+fragrance:
+  name: AKTICK & GUCHI(FRAGRANCE)
+
+aktick:
+  name: AKTICK(FRAGRANCE)
+
+guchi:
+  name: GUCHI(FRAGRANCE)
 
 unknown:
   name: ？？？
