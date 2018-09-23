@@ -2046,4 +2046,14 @@ nishitokyotribe_song:
   composer: DJ BASS
   arranger: DJ BASS
   cd: mrcompact_cd
-  note: FRAGRANCEが正式なユニット名と思われるが歌詞カードではFREGRANCEとクレジットされている。FRAGRANCEの歌い分けが間違ってるかも。
+  note: 正式なユニット名はFRAGRANCEと思われるが歌詞カードではFREGRANCEとクレジットされている。FRAGRANCEの歌い分けが間違ってるかも。
+
+# BE-BOP NEW SCHOOL
+bebopnewschool_song:
+  artist: little_artist
+  name: BE-BOP NEW SCHOOL feat.GANXSTA D-X, FREGRANCE, オチ
+  lyricist: LITTLE, GANXSTA D-X, FREGRANCE & オチ
+  composer: DJ SHUHO
+  arranger: DJ SHUHO
+  cd: mrcompact_cd
+  note: LITTLE以外の歌い分け曖昧。正式なユニット名はFRAGRANCEと思われるが歌詞カードではFREGRANCEとクレジットされている。

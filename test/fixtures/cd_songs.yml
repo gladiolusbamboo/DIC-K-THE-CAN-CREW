@@ -1271,7 +1271,12 @@ mrcompact_cd_warzone_song:
   song: warzone_song
 
 # 西TOKYO TRIBE
-mrcompact_cd_warzone_song:
+mrcompact_cd_nishitokyotribe_song:
   cd: mrcompact_cd
   song: nishitokyotribe_song
+
+# BE-BOP NEW SCHOOL
+mrcompact_cd_bebopnewschool_song:
+  cd: mrcompact_cd
+  song: bebopnewschool_song
 

@@ -168,11 +168,23 @@ littledohzi-t:
 fragrance:
   name: AKTICK & GUCHI(FRAGRANCE)
 
+fragrance?:
+  name: FRAGRANCE(AKTICK & GUCHI)?
+
 aktick:
   name: AKTICK(FRAGRANCE)
 
 guchi:
   name: GUCHI(FRAGRANCE)
+
+ochi?:
+  name: オチ?
+
+ganxstad-x?:
+  name: GANXSTA D-X?
+
+littleganxstadxfragranceochi:
+  name: LITTLE, GANXSTA D-X, FRAGRANCE & オチ
 
 unknown:
   name: ？？？
