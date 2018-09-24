@@ -1236,6 +1236,10 @@ childplay_cd_childplay_song:
   cd: childplay_cd
   song: childplay_song
 
+childplay_cd_rescue_song:
+  cd: childplay_cd
+  song: rescue_song
+
 childplay_cd_dogfood_song:
   cd: childplay_cd
   song: dogfood_song
@@ -1251,7 +1255,7 @@ mrcompact_cd_mrcompact_song:
   song: wackman_song
 
 # ライムライト
-mrcompact_cd_mrcompact_song:
+mrcompact_cd_rhymelight_song:
   cd: mrcompact_cd
   song: rhymelight_song
 
@@ -1270,6 +1274,11 @@ mrcompact_cd_warzone_song:
   cd: mrcompact_cd
   song: warzone_song
 
+# レスキュー~LAST TAKE~
+mrcompact_cd_rescue_song:
+  cd: mrcompact_cd
+  song: rescue_song
+
 # 西TOKYO TRIBE
 mrcompact_cd_nishitokyotribe_song:
   cd: mrcompact_cd
@@ -1279,4 +1288,14 @@ mrcompact_cd_nishitokyotribe_song:
 mrcompact_cd_bebopnewschool_song:
   cd: mrcompact_cd
   song: bebopnewschool_song
+
+# いいの
+mrcompact_cd_iino_song:
+  cd: mrcompact_cd
+  song: iino_song
+
+# 中央自由WAY
+mrcompact_cd_chuuoujiyuuway_song:
+  cd: mrcompact_cd
+  song: chuuoujiyuuway_song
 

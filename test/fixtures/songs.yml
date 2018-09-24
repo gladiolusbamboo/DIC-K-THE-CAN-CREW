@@ -2057,3 +2057,13 @@ bebopnewschool_song:
   arranger: DJ SHUHO
   cd: mrcompact_cd
   note: LITTLE以外の歌い分け曖昧。正式なユニット名はFRAGRANCEと思われるが歌詞カードではFREGRANCEとクレジットされている。
+
+# 中央自由WAY
+chuuoujiyuuway_song:
+  artist: little_artist
+  name: 中央自由WAY feat.meg
+  lyricist: LITTLE
+  composer: Mr.Drunk
+  arranger: Mr.Drunk
+  cd: mrcompact_cd
+  note: 
