@@ -1250,7 +1250,7 @@ mrcompact_cd_mrcompact_song:
   song: mrcompact_song
 
 # ワックマン
-mrcompact_cd_mrcompact_song:
+mrcompact_cd_wackman_song:
   cd: mrcompact_cd
   song: wackman_song
 
@@ -1299,3 +1299,7 @@ mrcompact_cd_chuuoujiyuuway_song:
   cd: mrcompact_cd
   song: chuuoujiyuuway_song
 
+# I SING, I SAY
+isingisay_cd_isingisay_song:
+  cd: isingisay_cd
+  song: isingisay_song

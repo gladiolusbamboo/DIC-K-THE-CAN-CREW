@@ -268,3 +268,7 @@ childplay_cd:
 mrcompact_cd:
   name: Mr.COMPACT
   released_at: 2001-12-05
+
+isingisay_cd:
+  name: I SING, I SAY
+  released_at: 2004-07-21

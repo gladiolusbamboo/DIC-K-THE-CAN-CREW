@@ -2067,3 +2067,13 @@ chuuoujiyuuway_song:
   arranger: Mr.Drunk
   cd: mrcompact_cd
   note: 
+
+# I SING, I SAY
+isingisay_song:
+  artist: little_artist
+  name: I SING, I SAY
+  lyricist: LITTLE
+  composer: LITTLE & DJ FUMIYA
+  arranger: DJ FUMIYA
+  cd: isingisay_cd
+  note: 
