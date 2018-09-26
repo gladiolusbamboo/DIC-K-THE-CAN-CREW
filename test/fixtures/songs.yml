@@ -2077,3 +2077,13 @@ isingisay_song:
   arranger: DJ FUMIYA
   cd: isingisay_cd
   note: 
+
+# サバーバリアン
+suburbarian_song:
+  artist: little_artist
+  name: サバーバリアン feat.Loop Junktion
+  lyricist: LITTLE & 山仁(Loop Junktion)
+  composer: LITTLE & Loop Junktion
+  arranger: Loop Junktion
+  cd: isingisay_cd
+  note: 

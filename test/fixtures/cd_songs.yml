@@ -1303,3 +1303,9 @@ mrcompact_cd_chuuoujiyuuway_song:
 isingisay_cd_isingisay_song:
   cd: isingisay_cd
   song: isingisay_song
+
+# サバーバリアン
+isingisay_cd_suburbarian_song:
+  cd: isingisay_cd
+  song: suburbarian_song
+
