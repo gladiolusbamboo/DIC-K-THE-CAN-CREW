@@ -1309,3 +1309,8 @@ isingisay_cd_suburbarian_song:
   cd: isingisay_cd
   song: suburbarian_song
 
+# 踏み上がり
+isingisay_cd_fumiagari_song:
+  cd: isingisay_cd
+  song: fumiagari_song
+

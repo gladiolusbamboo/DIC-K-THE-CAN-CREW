@@ -2087,3 +2087,13 @@ suburbarian_song:
   arranger: Loop Junktion
   cd: isingisay_cd
   note: 
+
+# 踏み上がり
+fumiagari_song:
+  artist: little_artist
+  name: 踏み上がり feat.BOLT, SKIPP, YOSHI
+  lyricist: LITTLE, BOLT, SKIPP & YOSHI THE INGASKI
+  composer: DJ ISO, LITTLE, BOLT, SKIPP & YOSHI THE INGASKI
+  arranger: DJ ISO
+  cd: isingisay_cd
+  note: 
