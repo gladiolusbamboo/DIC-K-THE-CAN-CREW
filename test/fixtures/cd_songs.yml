@@ -1314,3 +1314,9 @@ isingisay_cd_fumiagari_song:
   cd: isingisay_cd
   song: fumiagari_song
 
+# 聖者が街にやってくる
+seijagamachiniyattekuru_cd_seijagamachiniyattekuru_song:
+  cd: seijagamachiniyattekuru_cd
+  song: seijagamachiniyattekuru_song
+
+

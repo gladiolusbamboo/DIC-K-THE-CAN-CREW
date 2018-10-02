@@ -2097,3 +2097,14 @@ fumiagari_song:
   arranger: DJ ISO
   cd: isingisay_cd
   note: 
+
+# 聖者が街にやってくる
+seijagamachiniyattekuru_song:
+  artist: little_artist
+  name: 聖者が街にやってくる
+  lyricist: LITTLE(Japanese Lyrics)
+  composer: UNKNOWN
+  arranger: Shingo.S for 813 & DJ TAKADA
+  cd: seijagamachiniyattekuru_cd
+  note: 黒人霊歌として知られる「When the Saints Go Marching In」のカバー。原曲の作詞曲者不明。
+
