@@ -1319,4 +1319,11 @@ seijagamachiniyattekuru_cd_seijagamachiniyattekuru_song:
   cd: seijagamachiniyattekuru_cd
   song: seijagamachiniyattekuru_song
 
+seijagamachiniyattekuru_cd_juunigatsu_song:
+  cd: seijagamachiniyattekuru_cd
+  song: juunigatsu_song
+
+seijagamachiniyattekuru_cd_iino_song:
+  cd: seijagamachiniyattekuru_cd
+  song: iino_song
 

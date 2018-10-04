@@ -2106,5 +2106,15 @@ seijagamachiniyattekuru_song:
   composer: UNKNOWN
   arranger: Shingo.S for 813 & DJ TAKADA
   cd: seijagamachiniyattekuru_cd
-  note: 黒人霊歌として知られる「When the Saints Go Marching In」のカバー。原曲の作詞曲者不明。
+  note: 黒人霊歌「When the Saints Go Marching In」のカバー。原曲の作詞曲者不明。
+
+# 12月
+juunigatsu_song:
+  artist: little_artist
+  name: 12月
+  lyricist: LITTLE & Iz
+  composer: DJ PMX & LITTLE
+  arranger: DJ PMX for DS455
+  cd: seijagamachiniyattekuru_cd
+  note: 
 
