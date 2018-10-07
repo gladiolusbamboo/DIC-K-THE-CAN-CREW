@@ -2118,3 +2118,12 @@ juunigatsu_song:
   cd: seijagamachiniyattekuru_cd
   note: 
 
+# はつ恋の
+hatsukoino_song:
+  artist: little_artist
+  name: はつ恋の~What's Going On~ feat.トータス松本
+  lyricist: LITTLE & トータス松本
+  composer: ROCK-Tee, LITTLE & トータス松本
+  arranger: ROCK-Tee
+  cd: hatsukoino_cd
+  note: 

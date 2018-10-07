@@ -190,7 +190,7 @@ yamazin:
   name: 山仁(Loop Junktion)
 
 littleyamazin:
-  name: LITTLE & 山仁(Loop Junktion)
+  name: LITTLE & 山仁
 
 skipp:
   name: SKIPP(INDEMORAL)
@@ -206,6 +206,12 @@ littleboltskippyoshitheingasaki:
 
 littleiz:
   name: LITTLE & Iz
+
+tortoisematsumoto:
+  name: トータス松本(ウルフルズ)
+
+littletortoisematsumoto:
+  name: LITTLE & トータス松本
 
 unknown:
   name: ？？？

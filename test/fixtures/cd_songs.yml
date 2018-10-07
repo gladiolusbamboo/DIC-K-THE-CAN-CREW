@@ -1327,3 +1327,7 @@ seijagamachiniyattekuru_cd_iino_song:
   cd: seijagamachiniyattekuru_cd
   song: iino_song
 
+# はつ恋の
+hatsukoino_cd_hatsukoino_song:
+  cd: hatsukoino_cd
+  song: hatsukoino_song
