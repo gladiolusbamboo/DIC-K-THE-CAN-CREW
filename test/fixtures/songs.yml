@@ -2127,3 +2127,13 @@ hatsukoino_song:
   arranger: ROCK-Tee
   cd: hatsukoino_cd
   note: 
+
+# LITTLE(曲名)
+little_song:
+  artist: little_artist
+  name: LITTLE
+  lyricist: LITTLE
+  composer: DJ TATSUTA & LITTLE
+  arranger: DJ TATSUTA
+  cd: life_cd
+  note: 

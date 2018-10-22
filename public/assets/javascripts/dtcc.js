@@ -32,6 +32,7 @@ function getYouTubeID() {
   youtubeIDLength = [
     // KICK THE CAN CREW
     'wFKvOPQyVL0', // 千％
+    'eCfRRm-yyMY', // 住所
 
     // KREVA
     '7-HEkkTSI6k', // 希望の炎
@@ -61,12 +62,16 @@ function getYouTubeID() {
     '9Z4dkqUmL3E', // トランキライザー
     'B9kV2qFpDEc', // 全速力
     'x0Pcn_OoKzs', // Under The Moon
+    'lrfr0be9lH4', // 存在感    
 
     // LITTLE
     'SMnCLqst-Ao', // 愛はある
     'DyyshApgQp8', // Beach Sun Girl feat. Una
     '80ps2jHpmME', // and you...
     '_HYjzw-fpvg', // FUNKY ウーロンハイ
+
+    // MCU
+    'x7OJBt54wXI', // ファミスタエボリューション    
 
     // UL
     'rZGu3a6Vz4o', // 「Boys&Gentlemen」Trailer
