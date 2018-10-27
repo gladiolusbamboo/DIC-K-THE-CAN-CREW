@@ -1336,3 +1336,15 @@ hatsukoino_cd_hatsukoino_song:
 life_cd_little_song:
   cd: life_cd
   song: little_song
+
+life_cd_unkoshit_song:
+  cd: life_cd
+  song: unkoshit_song
+
+life_cd_rapgasuki_song:
+  cd: life_cd
+  song: rapgasuki_song
+
+life_cd_chiisanashimadesukoyakani_song:
+  cd: life_cd
+  song: chiisanashimadesukoyakani_song

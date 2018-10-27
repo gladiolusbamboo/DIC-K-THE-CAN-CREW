@@ -2137,3 +2137,33 @@ little_song:
   arranger: DJ TATSUTA
   cd: life_cd
   note: 
+
+# UNKO SHIT !
+unkoshit_song:
+  artist: little_artist
+  name: UNKO SHIT !
+  lyricist: LITTLE
+  composer: T.Takeuchi & D.Sakama, LITTLE
+  arranger: マボロシ
+  cd: life_cd
+  note: 
+
+# RAPが好き
+rapgasuki_song:
+  artist: little_artist
+  name: RAPが好き
+  lyricist: LITTLE
+  composer: DJ TATSUTA & LITTLE
+  arranger: DJ TATSUTA
+  cd: life_cd
+  note: 
+
+# 小さな島で健やかに
+chiisanashimadesukoyakani_song:
+  artist: little_artist
+  name: 小さな島で健やかに
+  lyricist: LITTLE
+  composer: KANG DONG & LITTLE
+  arranger: KANG DONG
+  cd: life_cd
+  note: 
