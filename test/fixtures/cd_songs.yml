@@ -1348,3 +1348,7 @@ life_cd_rapgasuki_song:
 life_cd_chiisanashimadesukoyakani_song:
   cd: life_cd
   song: chiisanashimadesukoyakani_song
+
+life_cd_odorasoca_song:
+  cd: life_cd
+  song: odorasoca_song
