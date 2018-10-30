@@ -1352,3 +1352,7 @@ life_cd_chiisanashimadesukoyakani_song:
 life_cd_odorasoca_song:
   cd: life_cd
   song: odorasoca_song
+
+life_cd_aimaboroshiyumekoiemaki_song:
+  cd: life_cd
+  song: aimaboroshiyumekoiemaki_song

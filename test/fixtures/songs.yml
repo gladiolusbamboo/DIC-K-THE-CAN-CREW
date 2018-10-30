@@ -2177,3 +2177,13 @@ odorasoca_song:
   arranger: M.KAMISHIRO
   cd: life_cd
   note: 
+
+# 愛幻夢恋絵巻
+aimaboroshiyumekoiemaki_song:
+  artist: little_artist
+  name: 愛幻夢恋絵巻
+  lyricist: LITTLE
+  composer: KOHEI JAPAN & LITTLE
+  arranger: KOHEI JAPAN
+  cd: life_cd
+  note: 
