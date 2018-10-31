@@ -1356,3 +1356,8 @@ life_cd_odorasoca_song:
 life_cd_aimaboroshiyumekoiemaki_song:
   cd: life_cd
   song: aimaboroshiyumekoiemaki_song
+
+life_cd_youthyouth_song:
+  cd: life_cd
+  song: youthyouth_song
+
