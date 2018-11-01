@@ -1361,3 +1361,7 @@ life_cd_youthyouth_song:
   cd: life_cd
   song: youthyouth_song
 
+life_cd_hardkouha_song:
+  cd: life_cd
+  song: hardkouha_song
+
