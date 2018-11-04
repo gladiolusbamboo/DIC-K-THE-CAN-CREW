@@ -1365,3 +1365,7 @@ life_cd_hardkouha_song:
   cd: life_cd
   song: hardkouha_song
 
+life_cd_iloveyoumissmicrophone_song:
+  cd: life_cd
+  song: iloveyoumissmicrophone_song
+

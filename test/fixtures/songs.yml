@@ -2198,13 +2198,23 @@ youthyouth_song:
   cd: life_cd
   note: 
 
-# Youth & Youth
+# HARD硬派
 hardkouha_song:
   artist: little_artist
   name: HARD硬派 Part 2 feat.ZINGI
   lyricist: LITTLE, Mar, 童子-T, Guy & MC仁義
   composer: G.M-KAZ & DJ-BASS
   arranger: ZINGI
+  cd: life_cd
+  note: 
+
+# I love you miss microphone
+iloveyoumissmicrophone_song:
+  artist: little_artist
+  name: I love you miss microphone feat.DJ KAORI
+  lyricist: LITTLE & DJ KAORI
+  composer: DJ KAORI & LITTLE
+  arranger: DJ KAORI
   cd: life_cd
   note: 
 
