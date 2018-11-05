@@ -1337,6 +1337,14 @@ life_cd_little_song:
   cd: life_cd
   song: little_song
 
+life_cd_isingisay_song:
+  cd: life_cd
+  song: isingisay_song
+
+life_cd_hatsukoino_song:
+  cd: life_cd
+  song: hatsukoino_song
+
 life_cd_unkoshit_song:
   cd: life_cd
   song: unkoshit_song
@@ -1365,7 +1373,14 @@ life_cd_hardkouha_song:
   cd: life_cd
   song: hardkouha_song
 
+life_cd_seijagamachiniyattekuru_song:
+  cd: life_cd
+  song: seijagamachiniyattekuru_song
+
 life_cd_iloveyoumissmicrophone_song:
   cd: life_cd
   song: iloveyoumissmicrophone_song
 
+life_cd_lifelinebaby_song:
+  cd: life_cd
+  song: lifelinebaby_song
