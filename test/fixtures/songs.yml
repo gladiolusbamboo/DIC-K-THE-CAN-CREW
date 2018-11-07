@@ -2228,4 +2228,14 @@ lifelinebaby_song:
   cd: life_cd
   note: 
 
+# ワンマンショウ
+onemanshow_song:
+  artist: little_artist
+  name: ワンマンショウ
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: LITTLE
+  cd: onemanshow_cd
+  note: 
+
 

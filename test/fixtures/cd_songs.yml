@@ -1384,3 +1384,8 @@ life_cd_iloveyoumissmicrophone_song:
 life_cd_lifelinebaby_song:
   cd: life_cd
   song: lifelinebaby_song
+
+# ワンマンショウ
+onemanshow_cd_onemanshow_song:
+  cd: onemanshow_cd
+  song: onemanshow_song
