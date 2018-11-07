@@ -2238,4 +2238,24 @@ onemanshow_song:
   cd: onemanshow_cd
   note: 
 
+# アゲイン
+again_song:
+  artist: little_artist
+  name: アゲイン
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: LITTLE
+  cd: onemanshow_cd
+  note: 
+
+# ごあいさつ
+goaisatsu_song:
+  artist: little_artist
+  name: ごあいさつ
+  lyricist: LITTLE
+  composer: LITTLE/Roberts
+  arranger: LITTLE
+  cd: onemanshow_cd
+  note: 
+
 

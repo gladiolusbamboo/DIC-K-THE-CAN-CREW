@@ -1389,3 +1389,14 @@ life_cd_lifelinebaby_song:
 onemanshow_cd_onemanshow_song:
   cd: onemanshow_cd
   song: onemanshow_song
+
+# アゲイン
+onemanshow_cd_again_song:
+  cd: onemanshow_cd
+  song: again_song
+
+# ごあいさつ
+onemanshow_cd_goaisatsu_song:
+  cd: onemanshow_cd
+  song: goaisatsu_song
+
