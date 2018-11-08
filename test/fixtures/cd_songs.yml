@@ -1404,3 +1404,12 @@ onemanshow_cd_goaisatsu_song:
 yumenosei_cd_yumenosei_song:
   cd: yumenosei_cd
   song: yumenosei_song
+
+yumenosei_cd_micmansoul_song:
+  cd: yumenosei_cd
+  song: micmansoul_song
+
+yumenosei_cd_joyride_song:
+  cd: yumenosei_cd
+  song: joyride_song
+

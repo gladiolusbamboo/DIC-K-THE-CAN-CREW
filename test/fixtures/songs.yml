@@ -2264,8 +2264,26 @@ yumenosei_song:
   name: 夢のせい
   lyricist: LITTLE
   composer: LITTLE
-  arranger: LITTLE
+  arranger: NAOKI-T
   cd: yumenosei_cd
   note: 
 
+# MIC MAN SOUL
+micmansoul_song:
+  artist: little_artist
+  name: MIC MAN SOUL feat.Q-RIPPER from MADHAND
+  lyricist: LITTLE & Q-RIPPER from MADHAND
+  composer: LITTLE & Q-RIPPER from MADHAND
+  arranger: DIORI a.k.a. D-ORIGINU
+  cd: yumenosei_cd
+  note: 
 
+# &JOYRIDE
+joyride_song:
+  artist: little_artist
+  name: "& JOYRIDE"
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: TAICHI MASTER
+  cd: yumenosei_cd
+  note: 
