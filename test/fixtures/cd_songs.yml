@@ -1400,3 +1400,7 @@ onemanshow_cd_goaisatsu_song:
   cd: onemanshow_cd
   song: goaisatsu_song
 
+# 夢のせい
+yumenosei_cd_yumenosei_song:
+  cd: yumenosei_cd
+  song: yumenosei_song

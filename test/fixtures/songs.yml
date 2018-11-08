@@ -2258,4 +2258,14 @@ goaisatsu_song:
   cd: onemanshow_cd
   note: 
 
+# 夢のせい
+yumenosei_song:
+  artist: little_artist
+  name: 夢のせい
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: LITTLE
+  cd: yumenosei_cd
+  note: 
+
 

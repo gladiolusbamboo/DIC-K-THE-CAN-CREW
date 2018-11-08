@@ -288,3 +288,7 @@ life_cd:
 onemanshow_cd:
   name: ワンマンショウ
   released_at: 2007-07-18
+
+yumenosei_cd:
+  name: 夢のせい
+  released_at: 2007-10-10
