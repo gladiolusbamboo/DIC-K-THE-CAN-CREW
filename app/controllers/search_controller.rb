@@ -185,6 +185,7 @@ class SearchController < ApplicationController
   # スコアの高い検索データを取得する
   def get_high_score_search_logs(searchtype_sym)
     searchtype = get_search_type(searchtype_sym)
+    beforeDay = DateTime.now - 90;
 
     # 検索内容の重複排除のためサブクエリを使用している
     SearchLog.find_by_sql("
@@ -200,6 +201,7 @@ class SearchController < ApplicationController
       WHERE 
         a.searchtype = '#{searchtype}'
         AND a.hit_song_count > 0
+        AND created_at > '#{beforeDay}'
         AND NOT EXISTS
         (
           SELECT	id
@@ -220,9 +222,12 @@ class SearchController < ApplicationController
   def get_popular_search_logs(searchtype_sym)
     searchtype = get_search_type(searchtype_sym)
 
+    beforeDay = DateTime.now - 90;
+
     popular_search_logs = SearchLog.group(:searchtype, :searchword)
                                     .where(searchtype: searchtype)
                                     .where('hit_song_count > 0')
+                                    .where("created_at > ?", beforeDay)
                                     .order('count_all desc')
                                     .limit(15)
                                     .count
