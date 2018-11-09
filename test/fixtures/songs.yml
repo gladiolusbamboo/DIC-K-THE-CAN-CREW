@@ -2287,3 +2287,13 @@ joyride_song:
   arranger: TAICHI MASTER
   cd: yumenosei_cd
   note: 
+
+# カルマ
+karma_song:
+  artist: little_artist
+  name: KARMA feat.BIG RON
+  lyricist: LITTLE & BIG RON
+  composer: LITTLE & Nao'ymt
+  arranger: Nao'ymt
+  cd: yesrhymedentity_cd
+  note: 

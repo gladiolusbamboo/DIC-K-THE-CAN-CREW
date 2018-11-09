@@ -1413,3 +1413,8 @@ yumenosei_cd_joyride_song:
   cd: yumenosei_cd
   song: joyride_song
 
+# YES RHYME DENTITY
+yesrhymedentity_cd_karma_song:
+  cd: yesrhymedentity_cd
+  song: karma_song
+

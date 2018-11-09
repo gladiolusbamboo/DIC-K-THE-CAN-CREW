@@ -292,3 +292,7 @@ onemanshow_cd:
 yumenosei_cd:
   name: 夢のせい
   released_at: 2007-10-10
+
+yesrhymedentity_cd:
+  name: '"YES"rhyme-dentity'
+  released_at: 2008-05-07
