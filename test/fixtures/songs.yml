@@ -926,7 +926,7 @@ funkyglamorous_song:
   cd: shinjinkreva_cd
   note: 
 
-standbyme_song:
+standbyme_kreva_song:
   artist: kreva_artist
   name: スタンドバイミー feat.KANA from THC!!
   lyricist: KREVA
@@ -2297,3 +2297,55 @@ karma_song:
   arranger: Nao'ymt
   cd: yesrhymedentity_cd
   note: 
+
+# Gradation
+gradation_song:
+  artist: little_artist
+  name: Gradation feat.MICRO, SMALLEST, SHOGO
+  lyricist: Gamnie Kenneth, Huff Leon A, LITTLE, MICRO, SMALLEST & SHOGO
+  composer: Gamnie Kenneth, Huff Leon A, LITTLE, MICRO, SMALLEST, SHOGO & Mr.Drunk
+  arranger: Mr.Drunk
+  cd: yesrhymedentity_cd
+  note: 
+
+# Sing Sing Sing
+singsingsing_song:
+  artist: little_artist
+  name: Sing Sing Sing
+  lyricist: Prima Louis & LITTLE
+  composer: Prima Louis & LITTLE
+  arranger: 熊井吾郎
+  cd: yesrhymedentity_cd
+  note: 
+
+# Stand by me
+standbyme_little_song:
+  artist: little_artist
+  name: Stand by me
+  lyricist: LITTLE
+  composer: LITTLE & DJ FUMIYA
+  arranger: DJ FUMIYA
+  cd: yesrhymedentity_cd
+  note: 
+
+# Very Special
+veryspecial_song:
+  artist: little_artist
+  name: Very Special
+  lyricist: LITTLE
+  composer: LITTLE & Nao'ymt
+  arranger: Nao'ymt
+  cd: yesrhymedentity_cd
+  note: 
+
+# Very Special
+freestyledanjo_song:
+  artist: little_artist
+  name: FREE STYLE 男女 feat.COMA-CHI
+  lyricist: LITTLE & COMA-CHI
+  composer: LITTLE & Mitsu the Beats
+  arranger: Mitsu the Beats
+  cd: yesrhymedentity_cd
+  note: 
+
+

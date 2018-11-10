@@ -620,9 +620,9 @@ shinjinkreva_cd_funkyglamorous_song:
   cd: shinjinkreva_cd
   song: funkyglamorous_song
 
-shinjinkreva_cd_standbyme_song:
+shinjinkreva_cd_standbyme_kreva_song:
   cd: shinjinkreva_cd
-  song: standbyme_song
+  song: standbyme_kreva_song
 
 shinjinkreva_cd_warwarzone_song:
   cd: shinjinkreva_cd
@@ -1417,4 +1417,24 @@ yumenosei_cd_joyride_song:
 yesrhymedentity_cd_karma_song:
   cd: yesrhymedentity_cd
   song: karma_song
+
+yesrhymedentity_cd_gradation_song:
+  cd: yesrhymedentity_cd
+  song: gradation_song
+
+yesrhymedentity_cd_singsingsing_song:
+  cd: yesrhymedentity_cd
+  song: singsingsing_song
+
+yesrhymedentity_cd_standbyme_little_song:
+  cd: yesrhymedentity_cd
+  song: standbyme_little_song
+
+yesrhymedentity_cd_veryspecial_song:
+  cd: yesrhymedentity_cd
+  song: veryspecial_song
+
+yesrhymedentity_cd_freestyledanjo_song:
+  cd: yesrhymedentity_cd
+  song: freestyledanjo_song
 

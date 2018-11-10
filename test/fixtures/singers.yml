@@ -249,6 +249,21 @@ bigron:
 littlebigron:
   name: LITTLE & BIG RON
 
+micro:
+  name: MICRO(HOME MADE 家族)
+
+shogo:
+  name: SHOGO(175R)
+
+smallest:
+  name: SMALLEST(トリカブト)
+
+comachi:
+  name: COMA-CHI
+
+littlecomachi:
+  name: LITTLE & COMA-CHI
+
 unknown:
   name: ？？？
 
