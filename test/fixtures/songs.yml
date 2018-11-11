@@ -2348,4 +2348,32 @@ freestyledanjo_song:
   cd: yesrhymedentity_cd
   note: 
 
+# 恋のクロスフェーダー
+koinocrossfader_song:
+  artist: little_artist
+  name: 恋のクロスフェーダー
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: Mr.Drunk
+  cd: yesrhymedentity_cd
+  note: 
 
+# 彼方
+kanata_song:
+  artist: little_artist
+  name: 彼方
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: NAOKI-T
+  cd: yesrhymedentity_cd
+  note: 
+
+# 楽
+raku_song:
+  artist: little_artist
+  name: 楽 feat.Metis
+  lyricist: LITTLE & Metis
+  composer: LITTLE & Metis
+  arranger: TAICHI MASTER
+  cd: yesrhymedentity_cd
+  note: 

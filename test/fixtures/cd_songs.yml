@@ -1438,3 +1438,15 @@ yesrhymedentity_cd_freestyledanjo_song:
   cd: yesrhymedentity_cd
   song: freestyledanjo_song
 
+yesrhymedentity_cd_koinocrossfader_song:
+  cd: yesrhymedentity_cd
+  song: koinocrossfader_song
+
+yesrhymedentity_cd_kanata_song:
+  cd: yesrhymedentity_cd
+  song: kanata_song
+
+yesrhymedentity_cd_raku_song:
+  cd: yesrhymedentity_cd
+  song: raku_song
+

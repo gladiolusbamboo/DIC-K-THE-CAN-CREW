@@ -264,6 +264,9 @@ comachi:
 littlecomachi:
   name: LITTLE & COMA-CHI
 
+metis:
+  name: Metis
+
 unknown:
   name: ？？？
 
