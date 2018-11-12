@@ -32,6 +32,10 @@ kankeri01_cd:
   name: カンケリ01/LIFELINE
   released_at: 2001-09-27
 
+wildflowers_cd:
+  name: Wild Flowers
+  released_at: 2001-03-07
+
 greatesthits_cd:
   name: GREATEST HITS
   released_at: 2001-10-17
@@ -296,3 +300,12 @@ yumenosei_cd:
 yesrhymedentity_cd:
   name: '"YES"rhyme-dentity'
   released_at: 2008-05-07
+
+akalititle1_cd:
+  name: "アカリタイトル1"
+  released_at: 2014-02-12
+
+# その他
+wildflowers_cd:
+  name: Wild Flowers
+  released_at: 2001-03-07

@@ -7717,3 +7717,7 @@ h5.description{
 .section{
     padding: 30px 0
 }
+
+p.note{
+    font-size: 10px
+}

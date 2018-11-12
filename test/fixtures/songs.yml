@@ -5,7 +5,7 @@ takaoni_song:
   artist: kickthecancrew_artist
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: UNKNOWN
+  arranger: KREVA & ROCK-Tee
   cd: takaoni_cd
 
 kankeri_song:
@@ -13,7 +13,7 @@ kankeri_song:
   name: カンケリ
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: UNKNOWN
+  arranger: KREVA & ROCK-Tee
   cd: takaoni_cd
 
 downbylaw_song:
@@ -21,7 +21,7 @@ downbylaw_song:
   name: Down by Law(feat.CRAZY-A)
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: younganimal_cd
   note: 「ダウン バイ ロー」表記の場合あり
 
@@ -30,7 +30,7 @@ takaoni2000_song:
   name: タカオニ2000
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: younganimal_cd
   note: 
 
@@ -39,7 +39,7 @@ oneforthewhattwoforthewhopart2_song:
   name: one for the what, two for the who_Part2
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: younganimal_cd
   note: 
 
@@ -48,7 +48,7 @@ shakunetsubutoukai_song:
   name: 灼熱舞踏会
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: younganimal_cd
   note: 
 
@@ -57,16 +57,16 @@ goodtime_song:
   name: GOOD TIME!
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: goodtime_cd
-  note: 
+  note: GREATEST HITSにはver.2001として収録
 
 updownbicycle_song:
   artist: kickthecancrew_artist
   name: UP DOWN BICYCLE
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: goodtime_cd
   note: 
 
@@ -74,35 +74,26 @@ utopia_song:
   artist: kickthecancrew_artist
   name: ユートピア
   lyricist: KICK THE CAN CREW
-  composer: KREVA
-  arranger: KREVA
+  composer: KREVA & Dan Siegel
+  arranger: KICK THE CAN CREW
   cd: goodtime_cd
-  note: 
-
-call_song:
-  artist: kickthecancrew_artist
-  name: Call & …
-  lyricist: (Instrumental)
-  composer: KREVA
-  arranger: KREVA
-  cd: youngking_cd
-  note: 
+  note: GREATEST HITSにはver.2001として収録
 
 kickoff_song:
   artist: kickthecancrew_artist
   name: KICK OFF
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
-  note: 
+  note: Al「VITALIZER」に収録されている「キックOFF」とは別曲
 
 megacityrunning_song:
   artist: kickthecancrew_artist
   name: Megacityrunning
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
   note: 
 
@@ -111,16 +102,16 @@ whydidi_song:
   name: Why did I?
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
-  note: 
+  note: GREATEST HITSにはremixバージョンとして収録
 
 partyover_song:
   artist: kickthecancrew_artist
   name: PARTYOVER
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
   note: 
 
@@ -129,43 +120,25 @@ xamount_song:
   name: X-amount
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
-  note: 
-
-tabibito_song:
-  artist: kickthecancrew_artist
-  name: X-amount
-  lyricist: (Instrumental)
-  composer: KREVA
-  arranger: KREVA
-  cd: youngking_cd
-  note: 
+  note: GREATEST HITSにはver.2001として収録
 
 elnino_song:
   artist: kickthecancrew_artist
   name: エルニーニョ
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
-  note: 
+  note: GREATEST HITSにはver.2001として収録
 
 unitedrivers_song:
   artist: kickthecancrew_artist
   name: united rivers
   lyricist: KICK THE CAN CREW
   composer: KREVA
-  arranger: KREVA
-  cd: youngking_cd
-  note: 
-
-kawatoumigaawasarutokoro_song:
-  artist: kickthecancrew_artist
-  name: 河と海が合わさるところ
-  lyricist: KICK THE CAN CREW
-  composer: KREVA
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: youngking_cd
   note: 
 
@@ -174,18 +147,9 @@ kyoukaraashita_song:
   name: 今日から明日
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
-  arranger: KREVA
+  arranger: KICK THE CAN CREW
   cd: kyoukaraashita_cd
-  note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ
-
-kyoukaraashita_kana_song:
-  artist: kickthecancrew_artist
-  name: 今日カラ明日
-  lyricist: KICK THE CAN CREW
-  composer: KICK THE CAN CREW
-  arranger: UNKNOWN
-  cd: kyoukaraashita_cd
-  note: 「今日から明日」の別バージョンで歌詞は同じ
+  note: 「今日カラ明日」はこの曲の別バージョンで歌詞は同じ。Sg「今日から明日」およびAl「GREATEST HITS」にそれぞれ両バージョンを収録。
 
 superoriginal_song:
   artist: kickthecancrew_artist
@@ -194,16 +158,7 @@ superoriginal_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: superoriginal_cd
-  note: 
-
-firereconstructionofsuperoriginal_song:
-  artist: kickthecancrew_artist
-  name: Fire!(re-construction of スーパーオリジナル)
-  lyricist: KICK THE CAN CREW
-  composer: KICK THE CAN CREW
-  arranger: UNKNOWN
-  cd: superoriginal_cd
-  note: 
+  note: メジャーデビューシングル表題曲。C/Wの「Fire!～」はこの曲のリミックス。
 
 itsunarouba_song:
   artist: kickthecancrew_artist
@@ -230,7 +185,7 @@ kankeri01_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: kankeri01_cd
-  note: 
+  note: Al「VITALIZER」には同じ歌詞の曲が「カンケリ02」として収録
 
 lifeline_song:
   artist: kickthecancrew_artist
@@ -256,8 +211,8 @@ colorvariation_song:
   lyricist: CMJK & KICK THE CAN CREW
   composer: CMJK & KICK THE CAN CREW
   arranger: CMJK
-  cd: greatesthits_cd
-  note: 
+  cd: wildflowers_cd
+  note: 初出はCMJKプロデュースのコンピレーション・アルバム「Wild Flowers」
 
 microphonenotheme_song:
   artist: kickthecancrew_artist
@@ -265,24 +220,24 @@ microphonenotheme_song:
   lyricist: CMJK & KICK THE CAN CREW
   composer: CMJK & KICK THE CAN CREW
   arranger: CMJK
-  cd: greatesthits_cd
-  note: 
+  cd: wildflowers_cd
+  note: 初出はCMJKプロデュースのコンピレーション・アルバム「Wild Flowers」
 
 oneforthewhattwoforthewho_song:
   artist: kickthecancrew_artist
-  name: one for the what,two for the who
+  name: one for the what,two for the who [ver.2001]
   lyricist: KICK THE CAN CREW
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: greatesthits_cd
-  note: 
+  note: 同タイトル3部作のPart1にあたる。オリジナルバージョンが収録されている作品があるのかは不明（情報求む！）
 
 christmaseverap_song:
   artist: kickthecancrew_artist
   name: クリスマス・イブRap
-  lyricist: 山下達郎 / KICK THE CAN CREW
+  lyricist: 山下達郎 & KICK THE CAN CREW
   composer: 山下達郎
-  arranger: UNKNOWN
+  arranger: KREVA
   cd: christmaseverap_cd
   note: 
 
@@ -293,7 +248,7 @@ marche_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: marche_cd
-  note: 
+  note: Sg「ONEWAY」にはC/Wとして"ROCK-Tee's mo'raw-funk remix"および"Live at ZEPP OSAKA, 24 DEC 2001"バージョンが収録
 
 cmoneverybody_song:
   artist: kickthecancrew_artist
@@ -302,13 +257,13 @@ cmoneverybody_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: marche_cd
-  note: 
+  note: Al「VITALIZER」には(Remix) feat.INNOSENCEとしてINNOSENCEを加えたバージョンが収録
 
 thethemeofkick_song:
   artist: kickthecancrew_artist
   name: THE THEME OF "KICK"
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -320,22 +275,22 @@ oneway_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: vitalizer_cd
-  note: 
+  note: Al「VITALIZER」リリース後にシングルカット
 
 kickoff_kana_song:
   artist: kickthecancrew_artist
   name: キックOFF
   lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  composer: KICK THE CAN CREW
   arranger: KREVA
   cd: vitalizer_cd
-  note: 
+  note: Al「YOUNG KING」に収録されている「KICK OFF」とは別曲。Sg「sayonara sayonara」には(DJ TATSUTA remix)として収録
 
 vitalizer_song:
   artist: kickthecancrew_artist
   name: VITALIZER
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -343,8 +298,8 @@ vitalizer_song:
 oneforthewhattwoforthewhopartiii_song:
   artist: kickthecancrew_artist
   name: ONE FOR THE WHAT, TWO FOR THE WHO PART.III
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -352,9 +307,9 @@ oneforthewhattwoforthewhopartiii_song:
 
 whatchaname_song:
   artist: kickthecancrew_artist
-  name: ?WHATCHANAME?
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  name: "?WHATCHANAME?"
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -362,8 +317,8 @@ whatchaname_song:
 mikoshirockers_song:
   artist: kickthecancrew_artist
   name: 神輿ロッカーズ feat.RHYMESTER
-  lyricist: KICK THE CAN CREW & RHYMESTER
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -371,8 +326,8 @@ mikoshirockers_song:
 hands_song:
   artist: kickthecancrew_artist
   name: HANDS
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -384,7 +339,7 @@ sayonarasayonara_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: sayonarasayonara_cd
-  note: 
+  note: Sg「アンバランス」には「サヨナラサヨナラ(イーゼ)」としてCUEZEROを加えた別歌詞バージョンが収録
 
 bed_song:
   artist: kickthecancrew_artist
@@ -429,7 +384,7 @@ toriiiiiico_song:
   composer: KICK THE CAN CREW feat.CASSETTE VISION
   arranger: KREVA
   cd: toriiiiiico_cd
-  note: KICK THE CAN CREW feat.CASSETTE VISION名義。Sg盤ではCUEZEROは「C.U.E ZERO」表記。Sg歌詞カードのSOHJIN VERSE1およびKREVA VERSE2に誤植（不足）あり。
+  note: KICK THE CAN CREW feat.CASSETTE VISION名義。SgではCUEZEROは「C.U.E ZERO」表記
 
 toujou_song:
   artist: kickthecancrew_artist
@@ -2236,7 +2191,7 @@ onemanshow_song:
   composer: LITTLE
   arranger: LITTLE
   cd: onemanshow_cd
-  note: 
+  note: '「"YES"rhyme-dentity」にはalbum ver.として収録'
 
 # アゲイン
 again_song:
@@ -2376,4 +2331,34 @@ raku_song:
   composer: LITTLE & Metis
   arranger: TAICHI MASTER
   cd: yesrhymedentity_cd
+  note: 
+
+# 足跡の中を旅してる
+ashiatononakawotabishiteru_song:
+  artist: little_artist
+  name: 足跡の中を旅してる feat. CUEZERO, 童子-T, Mummy-D
+  lyricist: LITTLE, CUEZERO, 童子-T & Mummy-D
+  composer: LITTLE, CUEZERO, 童子-T & Mummy-D
+  arranger: BUZZER BEATS
+  cd: yesrhymedentity_cd
+  note: 
+
+# Yes!!
+yes_song:
+  artist: little_artist
+  name: Yes!! ~a raison d'tre~
+  lyricist: Joyce Roger, Randazzo Teddy, Pike Victoria & LITTLE
+  composer: Joyce Roger, Randazzo Teddy, Pike Victoria & LITTLE
+  arranger: BUZZER BEATS
+  cd: yesrhymedentity_cd
+  note: 
+
+# all need is MUSIC
+allneedismusic_song:
+  artist: little_artist
+  name: all need is MUSIC
+  lyricist: LITTLE
+  composer: LITTLE & TAICHI MASTER
+  arranger: TAICHI MASTER
+  cd: akalititle1_cd
   note: 

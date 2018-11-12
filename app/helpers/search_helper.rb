@@ -414,6 +414,11 @@ module SearchHelper
             concat_fade_hr()
 
             concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
+
+            if info_arr[0].song.note != nil
+              concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
+            end
+
           end)
         end
       end
@@ -476,9 +481,9 @@ module SearchHelper
     # 曲のクレジット情報をconcatする
     def concat_song_credit_info(song_info)
       concat(content_tag(:ul) do
-        concat(content_tag(:li, '作詞：' + song_info.lyricist))
-        concat(content_tag(:li, '作曲：' + song_info.composer))
-        concat(content_tag(:li, '編曲：' + song_info.arranger))
+        concat(content_tag(:li, 'Words : ' + song_info.lyricist))
+        concat(content_tag(:li, 'Music : ' + song_info.composer))
+        concat(content_tag(:li, 'Produce : ' + song_info.arranger))
       end)
     end
     

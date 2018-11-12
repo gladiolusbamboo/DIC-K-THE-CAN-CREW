@@ -120,6 +120,14 @@ kankeri01_cd_lifeline_song:
   cd: kankeri01_cd
   song: lifeline_song
 
+wildflowers_cd_colorvariation_song:
+  cd: wildflowers_cd
+  song: colorvariation_song
+
+wildflowers_cd_microphonenotheme_song:
+  cd: wildflowers_cd
+  song: microphonenotheme_song
+
 greatesthits_cd_downbylaw_song:
   cd: greatesthits_cd
   song: downbylaw_song
@@ -1449,4 +1457,24 @@ yesrhymedentity_cd_kanata_song:
 yesrhymedentity_cd_raku_song:
   cd: yesrhymedentity_cd
   song: raku_song
+
+yesrhymedentity_cd_onemanshow_song:
+  cd: yesrhymedentity_cd
+  song: onemanshow_song
+
+yesrhymedentity_cd_yumenosei_song:
+  cd: yesrhymedentity_cd
+  song: yumenosei_song
+
+yesrhymedentity_cd_ashiatononakawotabishiteru_song:
+  cd: yesrhymedentity_cd
+  song: ashiatononakawotabishiteru_song
+
+yesrhymedentity_cd_yes_song:
+  cd: yesrhymedentity_cd
+  song: yes_song
+
+akalititle1_cd_allneedismusic_song:
+  cd: akalititle1_cd
+  song: allneedismusic_song
 
