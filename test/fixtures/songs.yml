@@ -339,7 +339,7 @@ sayonarasayonara_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: sayonarasayonara_cd
-  note: Sg「アンバランス」には「サヨナラサヨナラ(イーゼ)」としてCUEZEROを加えた別歌詞バージョンが収録
+  note: Sg「アンバランス」には「サヨナラサヨナラ(イーゼ)」としてCUEZEROを加えた完全別歌詞バージョンがC/Wに収録。Al「magic number」にはfeat.CUE ZEROとして、オリジナルバージョンにCUEZEROパートを加えたバージョンを収録。CUEZEROバースは「サヨナラサヨナラ（イーゼ）」のものと同じ
 
 bed_song:
   artist: kickthecancrew_artist
@@ -389,8 +389,8 @@ toriiiiiico_song:
 toujou_song:
   artist: kickthecancrew_artist
   name: 登場
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -398,8 +398,8 @@ toujou_song:
 refresh_song:
   artist: kickthecancrew_artist
   name: RE-FRESH
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -407,17 +407,17 @@ refresh_song:
 stress_song:
   artist: kickthecancrew_artist
   name: ストレス
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
-  arranger: KREVA
+  lyricist: UNCREDITED
+  composer: UNCREDITED
+  arranger: DJ TATSUTA
   cd: magicnumber_cd
-  note:
+  note: "DJ TATSUYAプロデュースと歌詞カードにクレジットされているが誤植と思われる"
 
 mamasaid_song:
   artist: kickthecancrew_artist
   name: mama said ～ハタラキッパ～
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -425,17 +425,17 @@ mamasaid_song:
 nanika_song:
   artist: kickthecancrew_artist
   name: ナニカ
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
-  note:
+  note: イントロにラーメンズのコント音声をサンプリングとして使用
 
 movingman_song:
   artist: kickthecancrew_artist
   name: movingman
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -443,17 +443,17 @@ movingman_song:
 cancan_song:
   artist: kickthecancrew_artist
   name: CAN-CAN
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
-  arranger: KREVA
+  lyricist: UNCREDITED
+  composer: UNCREDITED
+  arranger: DJ TATSUTA
   cd: magicnumber_cd
-  note:
+  note: "DJ TATSUYAプロデュースと歌詞カードにクレジットされているが誤植と思われる"
 
 elements_song:
   artist: kickthecancrew_artist
   name: E.L.E.M.E.N.T.S
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -461,8 +461,8 @@ elements_song:
 lonelyone_song:
   artist: kickthecancrew_artist
   name: LONELY ONE
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -470,8 +470,8 @@ lonelyone_song:
 magicnumber_song:
   artist: kickthecancrew_artist
   name: magic number
-  lyricist: KICK THE CAN CREW
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -2360,5 +2360,35 @@ allneedismusic_song:
   lyricist: LITTLE
   composer: LITTLE & TAICHI MASTER
   arranger: TAICHI MASTER
+  cd: akalititle1_cd
+  note: 
+
+# FUNKYウーロンハイ
+funkywulonghigh_song:
+  artist: little_artist
+  name: FUNKY ウーロンハイ
+  lyricist: 池田貴史, 永積タカシ & LITTLE
+  composer: 池田貴史, 永積タカシ, LITTLE & TAICHI MASTER
+  arranger: TAICHI MASTER
+  cd: akalititle1_cd
+  note: 原曲はSUPER BUTTER DOGの「FUNKYウーロン茶」
+
+# おれたちの進化論
+oretachinoshinkaron_song:
+  artist: little_artist
+  name: おれたちの進化論
+  lyricist: LITTLE
+  composer: LITTLE & Hyrakane303
+  arranger: Hyrakane303
+  cd: akalititle1_cd
+  note: 
+
+# おれたちのイマジン
+oretachinoimagine_song:
+  artist: little_artist
+  name: おれたちのイマジン feat.浜崎貴司
+  lyricist: LITTLE & 浜崎貴司
+  composer: LITTLE, ヨースケ@HOME & 浜崎貴司
+  arranger: Hyrakane303
   cd: akalititle1_cd
   note: 

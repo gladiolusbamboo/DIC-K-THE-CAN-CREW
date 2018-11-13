@@ -1478,3 +1478,15 @@ akalititle1_cd_allneedismusic_song:
   cd: akalititle1_cd
   song: allneedismusic_song
 
+akalititle1_cd_funkywulonghigh_song:
+  cd: akalititle1_cd
+  song: funkywulonghigh_song
+
+akalititle1_cd_oretachinoshinkaron_song:
+  cd: akalititle1_cd
+  song: oretachinoshinkaron_song
+
+akalititle1_cd_oretachinoimagine_song:
+  cd: akalititle1_cd
+  song: oretachinoimagine_song
+
