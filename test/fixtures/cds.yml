@@ -305,6 +305,10 @@ akalititle1_cd:
   name: "アカリタイトル1"
   released_at: 2014-02-12
 
+akalititle2_cd:
+  name: "アカリタイトル2"
+  released_at: 2015-08-12
+
 # その他
 wildflowers_cd:
   name: Wild Flowers

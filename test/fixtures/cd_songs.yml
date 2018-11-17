@@ -288,6 +288,10 @@ unbalance_cd_unbalance_song:
   cd: unbalance_cd
   song: unbalance_song
 
+unbalance_cd_sayonarasayonara_song:
+  cd: unbalance_cd
+  song: sayonarasayonara_song
+
 chikyuublues337_cd_chikyuublues337_song:
   cd: chikyuublues337_cd
   song: chikyuublues337_song
@@ -368,6 +372,10 @@ sagacontinue_cd_break3_song:
   cd: sagacontinue_cd
   song: break3_song
 
+sagacontinue_cd_mikoshirockers_song:
+  cd: sagacontinue_cd
+  song: mikoshirockers_song
+
 goodmusic_sg_cd_goodmusic_song:
   cd: goodmusic_sg_cd
   song: goodmusic_song
@@ -375,6 +383,10 @@ goodmusic_sg_cd_goodmusic_song:
 goodmusic_sg_cd_jiyuutime_song:
   cd: goodmusic_sg_cd
   song: jiyuutime_song
+
+goodmusic_sg_cd_sagacontinue_song:
+  cd: goodmusic_sg_cd
+  song: sagacontinue_song
 
 puncsunzennofunk_cd_puncsunzennofunk_song:
   cd: puncsunzennofunk_cd
@@ -384,9 +396,17 @@ puncsunzennofunk_cd_doita_song:
   cd: puncsunzennofunk_cd
   song: doita_song
 
+puncsunzennofunk_cd_goodmusic_song:
+  cd: puncsunzennofunk_cd
+  song: goodmusic_song
+
 navi_cd_navi_song:
   cd: navi_cd
   song: navi_song
+
+navi_cd_yure_song:
+  cd: navi_cd
+  song: yure_song
 
 bestalbum20012003_cd_stepintheday_song:
   cd: bestalbum20012003_cd
@@ -447,10 +467,6 @@ bestalbum20012003_cd_toriiiiiico_song:
 bestalbum20012003_cd_magicnumber_song:
   cd: bestalbum20012003_cd
   song: magicnumber_song
-
-navi_cd_yure_song:
-  cd: navi_cd
-  song: yure_song
 
 nounaivacation_cd_nounaivacation_song:
   cd: nounaivacation_cd
@@ -1489,4 +1505,52 @@ akalititle1_cd_oretachinoshinkaron_song:
 akalititle1_cd_oretachinoimagine_song:
   cd: akalititle1_cd
   song: oretachinoimagine_song
+
+akalititle1_cd_ittaizentai_song:
+  cd: akalititle1_cd
+  song: ittaizentai_song
+
+akalititle1_cd_dontworrybehappygolucky_song:
+  cd: akalititle1_cd
+  song: dontworrybehappygolucky_song
+
+akalititle1_cd_andyou_song:
+  cd: akalititle1_cd
+  song: andyou_song
+
+akalititle1_cd_guerrillagouu_song:
+  cd: akalititle1_cd
+  song: guerrillagouu_song
+
+akalititle1_cd_aihaaru_song:
+  cd: akalititle1_cd
+  song: aihaaru_song
+
+akalititle2_cd_barbaroi_song:
+  cd: akalititle2_cd
+  song: barbaroi_song
+
+akalititle2_cd_badboybushi_song:
+  cd: akalititle2_cd
+  song: badboybushi_song
+
+akalititle2_cd_beachsungirl_song:
+  cd: akalititle2_cd
+  song: beachsungirl_song
+
+akalititle2_cd_shichigatsunokurage_song:
+  cd: akalititle2_cd
+  song: shichigatsunokurage_song
+
+akalititle2_cd_tenohira_song:
+  cd: akalititle2_cd
+  song: tenohira_song
+
+akalititle2_cd_checkitramen_song:
+  cd: akalititle2_cd
+  song: checkitramen_song
+
+akalititle2_cd_aidearu_song:
+  cd: akalititle2_cd
+  song: aidearu_song
 

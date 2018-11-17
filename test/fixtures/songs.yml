@@ -289,8 +289,8 @@ kickoff_kana_song:
 vitalizer_song:
   artist: kickthecancrew_artist
   name: VITALIZER
-  lyricist: UNCREDITED
-  composer: UNCREDITED
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
   arranger: KREVA
   cd: vitalizer_cd
   note: 
@@ -317,11 +317,11 @@ whatchaname_song:
 mikoshirockers_song:
   artist: kickthecancrew_artist
   name: 神輿ロッカーズ feat.RHYMESTER
-  lyricist: UNCREDITED
-  composer: UNCREDITED
+  lyricist: KICK THE CAN CREW & 宇多丸, MUMMY-D
+  composer: KICK THE CAN CREW & 宇多丸, MUMMY-D
   arranger: KREVA
   cd: vitalizer_cd
-  note: 
+  note: Sg「性コンティニュー」には(live)バージョンとして収録
 
 hands_song:
   artist: kickthecancrew_artist
@@ -339,7 +339,7 @@ sayonarasayonara_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: sayonarasayonara_cd
-  note: Sg「アンバランス」には「サヨナラサヨナラ(イーゼ)」としてCUEZEROを加えた完全別歌詞バージョンがC/Wに収録。Al「magic number」にはfeat.CUE ZEROとして、オリジナルバージョンにCUEZEROパートを加えたバージョンを収録。CUEZEROバースは「サヨナラサヨナラ（イーゼ）」のものと同じ
+  note: Sg「アンバランス」には「サヨナラサヨナラ(イーゼ)」としてCUEZEROを加えた完全別歌詞バージョンがC/Wとして収録。Al「magic number」にはfeat.CUE ZEROとして、オリジナルバージョンにCUEZEROパートを加えたバージョンを収録。CUEZEROバースは「サヨナラサヨナラ（イーゼ）」のものと同じ
 
 bed_song:
   artist: kickthecancrew_artist
@@ -378,7 +378,7 @@ djdjforradio_song:
   note: 
 
 toriiiiiico_song:
-  artist: kickthecancrew_artist
+  artist: kickthecancrewfeatcassettevision_artist
   name: TORIIIIIICO!
   lyricist: KICK THE CAN CREW feat.CASSETTE VISION
   composer: KICK THE CAN CREW feat.CASSETTE VISION
@@ -411,7 +411,7 @@ stress_song:
   composer: UNCREDITED
   arranger: DJ TATSUTA
   cd: magicnumber_cd
-  note: "DJ TATSUYAプロデュースと歌詞カードにクレジットされているが誤植と思われる"
+  note: "DJ TATSUYAプロデュースとクレジットされているがDJ TATSUTAの誤植と思われる"
 
 mamasaid_song:
   artist: kickthecancrew_artist
@@ -447,7 +447,7 @@ cancan_song:
   composer: UNCREDITED
   arranger: DJ TATSUTA
   cd: magicnumber_cd
-  note: "DJ TATSUYAプロデュースと歌詞カードにクレジットされているが誤植と思われる"
+  note: "DJ TATSUYAプロデュースとクレジットされているがDJ TATSUTAの誤植と思われる"
 
 elements_song:
   artist: kickthecancrew_artist
@@ -470,8 +470,8 @@ lonelyone_song:
 magicnumber_song:
   artist: kickthecancrew_artist
   name: magic number
-  lyricist: UNCREDITED
-  composer: UNCREDITED
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
   arranger: KREVA
   cd: magicnumber_cd
   note:
@@ -480,10 +480,10 @@ sagacontinue_song:
   artist: kickthecancrew_artist
   name: 性コンティニュー
   lyricist: KICK THE CAN CREW
-  composer: KICK THE CAN CREW & DJ TATSUTA
+  composer: KICK THE CAN CREW, DJ TATSUTA & JACO PASTORIUS
   arranger: 顔PASSブラザーズ
   cd: sagacontinue_cd
-  note:
+  note: Sg「GOOD MUSIC」には(live)バージョンとして収録
 
 break3_song:
   artist: kickthecancrew_artist
@@ -501,7 +501,7 @@ goodmusic_song:
   composer: KICK THE CAN CREW & DJ TATSUTA
   arranger: KREVA
   cd: goodmusic_sg_cd
-  note: 同一タイトルのSgとAlがリリースされている。
+  note: 同一タイトルのSgとAlがリリースされている。Sg「パンク寸前のFUNK」には(live)バージョンとして収録
 
 jiyuutime_song:
   artist: kickthecancrew_artist
@@ -510,7 +510,7 @@ jiyuutime_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: goodmusic_sg_cd
-  note: 
+  note: 初出はSg「GOOD MUSIC」のC/W。Al「GOOD MUSIC」には(album edit)として収録
 
 puncsunzennofunk_song:
   artist: kickthecancrew_artist
@@ -564,7 +564,7 @@ nounaivacation_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: nounaivacation_cd
-  note: 
+  note: Al「GOOD MUSIC」には(album edit)として収録
 
 opening_song:
   artist: kickthecancrew_artist
@@ -591,7 +591,7 @@ mission1_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: goodmusic_al_cd
-  note: 
+  note: KREVAソロ + HOOK
 
 allnightlong_song:
   artist: kickthecancrew_artist
@@ -618,16 +618,16 @@ mission2_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: goodmusic_al_cd
-  note: 
+  note: LITTLEソロ + HOOK
 
 likethisgood_song:
   artist: kickthecancrew_artist
   name: LIKE THIS (GOOD!)
-  lyricist: UNKNOWN
+  lyricist: UNCREDITED
   composer: KREVA
   arranger: KREVA
   cd: goodmusic_al_cd
-  note: 
+  note: インストゥルメンタル曲
 
 mission3_song:
   artist: kickthecancrew_artist
@@ -636,7 +636,7 @@ mission3_song:
   composer: KICK THE CAN CREW
   arranger: KREVA
   cd: goodmusic_al_cd
-  note: 
+  note: MCUソロ + HOOK
 
 moshimo_song:
   artist: kickthecancrew_artist
@@ -2391,4 +2391,124 @@ oretachinoimagine_song:
   composer: LITTLE, ヨースケ@HOME & 浜崎貴司
   arranger: Hyrakane303
   cd: akalititle1_cd
+  note: 
+
+# いったいぜんたい
+ittaizentai_song:
+  artist: little_artist
+  name: いったいぜんたい
+  lyricist: LITTLE
+  composer: LITTLE & DJ ISO
+  arranger: DJ ISO
+  cd: akalititle1_cd
+  note: 
+
+# Don't worry Be happy Go lucky
+dontworrybehappygolucky_song:
+  artist: little_artist
+  name: いったいぜんたい
+  lyricist: LITTLE
+  composer: LITTLE & Hyrakane303
+  arranger: Hyrakane303
+  cd: akalititle1_cd
+  note: 
+
+# and you…
+andyou_song:
+  artist: little_artist
+  name: and you...
+  lyricist: LITTLE
+  composer: LITTLE & Tha Under Stars(副島ショーゴ&今泉タカシ)
+  arranger: Tha Under Stars(副島ショーゴ&今泉タカシ)
+  cd: akalititle1_cd
+  note: 
+
+# ゲリラ豪雨
+guerrillagouu_song:
+  artist: little_artist
+  name: ゲリラ豪雨 feat.SHUN
+  lyricist: LITTLE & SHUN
+  composer: LITTLE & Tha Under Stars(副島ショーゴ&今泉タカシ)
+  arranger: Tha Under Stars(副島ショーゴ&今泉タカシ)
+  cd: akalititle1_cd
+  note: 
+
+# 愛はある
+aihaaru_song:
+  artist: little_artist
+  name: 愛はある
+  lyricist: LITTLE
+  composer: LITTLE & Shingo.S
+  arranger: Shingo.S
+  cd: akalititle1_cd
+  note: 
+
+# バルバロイ
+barbaroi_song:
+  artist: little_artist
+  name: バルバロイ
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: 千晴 & Toshihiro Takita
+  cd: akalititle2_cd
+  note: 
+
+# Bad Boy 武士
+badboybushi_song:
+  artist: little_artist
+  name: Bad Boy 武士
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: SHOGO
+  cd: akalititle2_cd
+  note: 
+
+# Beach Sun Girl
+beachsungirl_song:
+  artist: little_artist
+  name: Beach Sun Girl feat.Una
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: Mitsuyuki Miyake
+  cd: akalititle2_cd
+  note: 
+
+# 七月の海月
+shichigatsunokurage_song:
+  artist: little_artist
+  name: 七月の海月
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: SHOGO
+  cd: akalititle2_cd
+  note: 
+
+# tenohira
+tenohira_song:
+  artist: little_artist
+  name: tenohira
+  lyricist: MCU & Masataka Kitaura
+  composer: MCU & Masataka Kitaura
+  arranger: MCU & Masataka Kitaura
+  cd: akalititle2_cd
+  note: 
+
+# Check It 拉麺
+checkitramen_song:
+  artist: little_artist
+  name: Check It 拉麺
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: TAICHI MASTER
+  cd: akalititle2_cd
+  note: 
+
+# アイデアル
+aidearu_song:
+  artist: little_artist
+  name: アイデアル
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: T.U.S.(副島ショーゴ&今泉タカシ)
+  cd: akalititle2_cd
   note: 
