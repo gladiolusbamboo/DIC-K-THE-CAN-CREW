@@ -1554,3 +1554,15 @@ akalititle2_cd_aidearu_song:
   cd: akalititle2_cd
   song: aidearu_song
 
+akalititle2_cd_ohayoukaraoyasumi_song:
+  cd: akalititle2_cd
+  song: ohayoukaraoyasumi_song
+
+akalititle2_cd_generationr_song:
+  cd: akalititle2_cd
+  song: generationr_song
+
+akalititle2_cd_dramaturgy_song:
+  cd: akalititle2_cd
+  song: dramaturgy_song
+

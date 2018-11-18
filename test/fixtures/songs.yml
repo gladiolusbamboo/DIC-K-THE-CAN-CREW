@@ -2512,3 +2512,33 @@ aidearu_song:
   arranger: T.U.S.(副島ショーゴ&今泉タカシ)
   cd: akalititle2_cd
   note: 
+
+# おはよう～おやすみ
+ohayoukaraoyasumi_song:
+  artist: little_artist
+  name: おはよう～おやすみ feat. SONOMI
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: Shingo.S
+  cd: akalititle2_cd
+  note: 
+
+# Generation R feat.SIMON JAP, MISTA O.K.I
+generationr_song:
+  artist: little_artist
+  name: Generation R feat.SIMON JAP, MISTA O.K.I
+  lyricist: LITTLE, SIMON JAP & MISTA O.K.I
+  composer: LITTLE, SIMON JAP & MISTA O.K.I
+  arranger: SHOGO
+  cd: akalititle2_cd
+  note: 
+
+# ドラマツルギー
+dramaturgy_song:
+  artist: little_artist
+  name: ドラマツルギー
+  lyricist: LITTLE
+  composer: LITTLE
+  arranger: MAST
+  cd: akalititle2_cd
+  note: 
