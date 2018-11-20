@@ -277,7 +277,7 @@ littlehamazakitakashi:
   name: LITTLE & 浜崎貴司
 
 hamazakitakashi:
-  name: 浜崎貴司
+  name: 浜崎貴司(FLYING KIDS)
 
 shun:
   name: SHUN
@@ -296,6 +296,12 @@ simonjap:
 
 mistaoki:
   name: MISTA O.K.I
+
+mcuhamazakitakashi:
+  name: MCU & 浜崎貴司（マツリルカ）
+
+hiranoichirou:
+  name: 平野一郎(CHABA)
 
 unknown:
   name: ？？？

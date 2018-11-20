@@ -2542,3 +2542,23 @@ dramaturgy_song:
   arranger: MAST
   cd: akalititle2_cd
   note: 
+
+# 幸せであるように
+shiawasedearuyouni_song:
+  artist: mcufeathamazakitakashi_artist
+  name: 幸せであるように
+  lyricist: UNCREDITED
+  composer: UNCREDITED
+  arranger: O'Zey's
+  cd: shiawasedearuyouni_cd
+  note: FLYING KIDSの曲のカバー
+
+# 僕はぬけがらだけおいてきたよ
+bokuhanukegaradakeoitekitayo_song:
+  artist: mcufeatchaba_artist
+  name: 僕はぬけがらだけおいてきたよ
+  lyricist: UNCREDITED
+  composer: UNCREDITED
+  arranger: O'Zey's
+  cd: shiawasedearuyouni_cd
+  note: THE BOOMの曲のカバー

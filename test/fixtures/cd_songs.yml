@@ -1566,3 +1566,11 @@ akalititle2_cd_dramaturgy_song:
   cd: akalititle2_cd
   song: dramaturgy_song
 
+# 幸せであるように
+shiawasedearuyouni_cd_shiawasedearuyouni_song:
+  cd: shiawasedearuyouni_cd
+  song: shiawasedearuyouni_song
+
+shiawasedearuyouni_cd_bokuhanukegaradakeoitekitayo_song:
+  cd: shiawasedearuyouni_cd
+  song: bokuhanukegaradakeoitekitayo_song
