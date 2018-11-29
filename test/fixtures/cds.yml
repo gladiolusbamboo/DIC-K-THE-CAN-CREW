@@ -314,6 +314,18 @@ shiawasedearuyouni_cd:
   name: "幸せであるように"
   released_at: 2002-10-23
 
+surfrider_cd:
+  name: "サーフライダー"
+  released_at: 2004-07-28
+
+arigatou_cd:
+  name: "ありがとう"
+  released_at: 2005-03-09
+
+apeacetimemcu_cd:
+  name: "A Peacetime MCU"
+  released_at: 2005-09-28
+
 # その他
 wildflowers_cd:
   name: Wild Flowers

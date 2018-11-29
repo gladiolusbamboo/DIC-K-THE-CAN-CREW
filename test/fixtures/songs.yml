@@ -2562,3 +2562,123 @@ bokuhanukegaradakeoitekitayo_song:
   arranger: O'Zey's
   cd: shiawasedearuyouni_cd
   note: THE BOOMの曲のカバー
+
+# サーフライダー
+surfrider_song:
+  artist: mcufeathamazakitakashi_artist
+  name: サーフライダー
+  lyricist: MCU & 浜崎貴司
+  composer: MCU & 浜崎貴司
+  arranger: 浜崎貴司
+  cd: surfrider_cd
+  note: 
+
+# 6月の未完成
+6gatsunomikansei_song:
+  artist: mcufeathamazakitakashi_artist
+  name: 6月の未完成
+  lyricist: MCU & 浜崎貴司
+  composer: MCU & 浜崎貴司
+  arranger: 浜崎貴司
+  cd: surfrider_cd
+  note: 
+
+# ありがとう
+arigatou_song:
+  artist: mcufeatmiyazawakazufumi_artist
+  name: ありがとう
+  lyricist: MCU & 宮沢和史
+  composer: MCU, 宮沢和史 & ヤマヒロ
+  arranger: 宮沢和史
+  cd: arigatou_cd
+  note: 
+
+# ACT ON MY STYLE
+actonmystyle_song:
+  artist: mcufeatratheruniqueandkawakamijirou_artist
+  name: ACT ON MY STYLE
+  lyricist: MCU, RATHER UNIQUE & 川上次郎
+  composer: MCU, RATHER UNIQUE & 川上次郎
+  arranger: 川上次郎
+  cd: arigatou_cd
+  note: RATHER UNIQUEのUSA、MAKIDAI、AKIRAは現EXILEのメンバー
+
+# U'S PROFILE
+usprofile_song:
+  artist: mcufeattakuya_artist
+  name: U'S PROFILE
+  lyricist: MCU & TAKUYA
+  composer: MCU & TAKUYA
+  arranger: TAKUYA
+  cd: apeacetimemcu_cd
+  note: 
+
+# ビカビカ
+bikabika_song:
+  artist: mcufeattheatrebrook_artist
+  name: ビカビカ
+  lyricist: MCU & 佐藤泰司
+  composer: MCU & 佐藤泰司
+  arranger: 佐藤泰司
+  cd: apeacetimemcu_cd
+  note: 
+
+# クレイジービーンズ
+crazybeans_song:
+  artist: mcufeatjetki_artist
+  name: クレイジービーンズ
+  lyricist: MCU & 宮田ジェット
+  composer: MCU & akkinジェット
+  arranger: ジェット機
+  cd: apeacetimemcu_cd
+  note: ジェット機の宮田ジェットは現JUN SKY WALKER(S)、川西JETは現ユニコーンのメンバー
+
+# いいわけ
+iiwake_song:
+  artist: mcufeatryoji_artist
+  name: いいわけ
+  lyricist: MCU & Ryoji
+  composer: MCU & Ryoji
+  arranger: Ryoji
+  cd: apeacetimemcu_cd
+  note: 
+
+# マイクチェック1
+miccheck1_song:
+  artist: mcufeatwada_artist
+  name: マイクチェック1
+  lyricist: MCU & WADA
+  composer: MCU & WADA
+  arranger: MCU
+  cd: apeacetimemcu_cd
+  note: 
+
+# マイクチェック2
+miccheck2_song:
+  artist: mcufeattsuboi_artist
+  name: マイクチェック2
+  lyricist: MCU & TSUBOI
+  composer: MCU & TSUBOI
+  arranger: MCU
+  cd: apeacetimemcu_cd
+  note: 
+
+# しし座のA型
+shishizanoagata_song:
+  artist: mcufeatkoheijapan_artist
+  name: しし座のA型
+  lyricist: MCU & KOHEI JAPAN
+  composer: MCU & KOHEI JAPAN
+  arranger: MCU
+  cd: apeacetimemcu_cd
+  note: 
+
+# SALTSCATTER
+saltscatter_song:
+  artist: mcufeatelmalo_artist
+  name: SALT SCATTER
+  lyricist: MCU & 柚木隆一郎
+  composer: MCU & 柚木隆一郎
+  arranger: 柚木隆一郎
+  cd: apeacetimemcu_cd
+  note: 小山田圭吾がDr.で参加

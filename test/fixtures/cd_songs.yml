@@ -1574,3 +1574,54 @@ shiawasedearuyouni_cd_shiawasedearuyouni_song:
 shiawasedearuyouni_cd_bokuhanukegaradakeoitekitayo_song:
   cd: shiawasedearuyouni_cd
   song: bokuhanukegaradakeoitekitayo_song
+
+# サーフライダー
+surfrider_cd_surfrider_song:
+  cd: surfrider_cd
+  song: surfrider_song
+
+surfrider_cd_6gatsunomikansei_song:
+  cd: surfrider_cd
+  song: 6gatsunomikansei_song
+
+# ありがとう
+arigatou_cd_arigatou_song:
+  cd: arigatou_cd
+  song: arigatou_song
+
+arigatou_cd_actonmystyle_song:
+  cd: arigatou_cd
+  song: actonmystyle_song
+
+# A Peacetime MCU
+apeacetimemcu_cd_usprofile_song:
+  cd: apeacetimemcu_cd
+  song: usprofile_song
+
+apeacetimemcu_cd_bikabika_song:
+  cd: apeacetimemcu_cd
+  song: bikabika_song
+
+apeacetimemcu_cd_crazybeans_song:
+  cd: apeacetimemcu_cd
+  song: crazybeans_song
+
+apeacetimemcu_cd_iiwake_song:
+  cd: apeacetimemcu_cd
+  song: iiwake_song
+
+apeacetimemcu_cd_miccheck1_song:
+  cd: apeacetimemcu_cd
+  song: miccheck1_song
+
+apeacetimemcu_cd_miccheck2_song:
+  cd: apeacetimemcu_cd
+  song: miccheck2_song
+
+apeacetimemcu_cd_shishizanoagata_song:
+  cd: apeacetimemcu_cd
+  song: shishizanoagata_song
+
+apeacetimemcu_cd_saltscatter_song:
+  cd: apeacetimemcu_cd
+  song: saltscatter_song
