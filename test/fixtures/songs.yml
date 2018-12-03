@@ -1,5 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# タカオニ
 takaoni_song:
   name: タカオニ
   artist: kickthecancrew_artist
@@ -8,6 +9,7 @@ takaoni_song:
   arranger: KREVA & ROCK-Tee
   cd: takaoni_cd
 
+# カンケリ
 kankeri_song:
   artist: kickthecancrew_artist
   name: カンケリ
@@ -16,6 +18,7 @@ kankeri_song:
   arranger: KREVA & ROCK-Tee
   cd: takaoni_cd
 
+# Down By Low
 downbylaw_song:
   artist: kickthecancrew_artist
   name: Down by Law(feat.CRAZY-A)
@@ -225,12 +228,12 @@ microphonenotheme_song:
 
 oneforthewhattwoforthewho_song:
   artist: kickthecancrew_artist
-  name: one for the what,two for the who [ver.2001]
+  name: one for the what,two for the who
   lyricist: KICK THE CAN CREW
-  composer: KICK THE CAN CREW
+  composer: KREVA
   arranger: KREVA
-  cd: greatesthits_cd
-  note: 同タイトル3部作のPart1にあたる。オリジナルバージョンが収録されている作品があるのかは不明（情報求む！）
+  cd: breakaudiodynamite_cd
+  note: 初出はコンピレーションアルバム「Break Audio Dynamite」。Al「GREATEST HITS」には(ver.2001) として収録
 
 christmaseverap_song:
   artist: kickthecancrew_artist
@@ -740,8 +743,8 @@ takoage_song:
 juusho_song:
   artist: kickthecancrew_artist
   name: 住所 feat.岡村靖幸
-  lyricist: MCU & LITTLE & KREVA & 岡村靖幸
-  composer: MCU & LITTLE & KREVA
+  lyricist: KICK THE CAN CREW & 岡村靖幸
+  composer: KICK THE CAN CREW
   arranger: KREVA
   cd: juusho_cd
   note: 
@@ -749,8 +752,8 @@ juusho_song:
 keepitup_song:
   artist: kickthecancrew_artist
   name: Keep It Up
-  lyricist: MCU & LITTLE & KREVA
-  composer: MCU & LITTLE & KREVA
+  lyricist: KICK THE CAN CREW
+  composer: KICK THE CAN CREW
   arranger: KREVA
   cd: juusho_cd
   note: 
@@ -758,7 +761,7 @@ keepitup_song:
 roots_song:
   artist: shimanomomoe_artist
   name: Roots feat.Kick the Can Crew & INNOSENCE
-  lyricist: SOHJIN, CHANNEL, LITTLE, MCU, KREVA & 嶋野百恵
+  lyricist: KICK THE CAN CREW, INNOSENCE & 嶋野百恵
   composer: KREVA & 嶋野百恵
   arranger: KREVA
   cd: roots_cd
@@ -771,7 +774,7 @@ u_song:
   composer: Edward "Eddie F" Ferell, Darren Lighty, TAKAKO, Belewa Muhammad, Clifton Lighty, KICK THE CAN CREW
   arranger: Edward "Eddie F" Ferell, Darren Lighty, TAKAKO, Belewa Muhammad, Clifton Lighty, KICK THE CAN CREW
   cd: angel_cd
-  note: 
+  note: オリジナルはDOUBLE 6th Sg「U」。KICK THE CAN CREWが参加しているバージョン(KREVA REMIX)はDOUBLE 7th Sg「Angel」のC/W、およびDOUBLEのアルバム「THE BEST COLLABORATIONS」に収録されている
 
 10balls2_song:
   artist: rhymester_artist
@@ -2551,7 +2554,7 @@ shiawasedearuyouni_song:
   composer: UNCREDITED
   arranger: O'Zey's
   cd: shiawasedearuyouni_cd
-  note: FLYING KIDSの曲のカバー
+  note: FLYING KIDSの曲のカバー。「A Peacetime MCU」には(同級生remix)として収録
 
 # 僕はぬけがらだけおいてきたよ
 bokuhanukegaradakeoitekitayo_song:
@@ -2682,3 +2685,73 @@ saltscatter_song:
   arranger: 柚木隆一郎
   cd: apeacetimemcu_cd
   note: 小山田圭吾がDr.で参加
+
+# NO DESTINATION
+nodestination_song:
+  artist: mcufeatmorishigejuichi_artist
+  name: NO DESTINATION
+  lyricist: MCU & 森重樹一
+  composer: MCU & 森重樹一
+  arranger: 森重樹一
+  cd: apeacetimemcu_cd
+  note: 
+
+# B.A.M.O.R.A.
+bamora_song:
+  artist: mcufeat175r_artist
+  name: B.A.M.O.R.A.
+  lyricist: MCU & SHOGO
+  composer: MCU & SHOGO
+  arranger: 175R
+  cd: apeacetimemcu_cd
+  note: 
+
+# 陽の光を浴びて
+hinohikariwoabite_song:
+  artist: mcufeattakanohiroshi_artist
+  name: 陽の光を浴びて
+  lyricist: MCU & 高野寛
+  composer: MCU & 高野寛
+  arranger: 高野寛
+  cd: apeacetimemcu_cd
+  note: 
+
+# 影踏み
+kagefumi_song:
+  artist: mcufeatchaba_artist
+  name: 影踏み
+  lyricist: MCU & CHABA
+  composer: MCU & CHABA
+  arranger: MCU
+  cd: apeacetimemcu_cd
+  note: 
+
+# トワイライトタイム
+twilighttime_song:
+  artist: mcu_artist
+  name: トワイライトタイム
+  lyricist: MCU
+  composer: CMJK
+  arranger: MCU & CMJK
+  cd: mcuinwonderlandep_cd
+  note: 
+
+# Recollection
+recollection_song:
+  artist: mcu_artist
+  name: Recollection
+  lyricist: MCU
+  composer: CMJK
+  arranger: MCU & CMJK
+  cd: mcuinwonderlandep_cd
+  note: 
+
+# 手のひら re-birth
+tenohirarebirth_song:
+  artist: mcu_artist
+  name: 手のひら re-birth
+  lyricist: MCU
+  composer: MCU & CMJK
+  arranger: MCU & CMJK
+  cd: mcuinwonderlandep_cd
+  note: 

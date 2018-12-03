@@ -112,6 +112,10 @@ juusho_cd:
   name: 住所 feat. 岡村靖幸
   released_at: 2018-08-29
 
+breakaudiodynamite_cd:
+  name: Break Audio Dynamite
+  released_at: 2000-02-19
+
 roots_cd:
   name: Roots
   released_at: 2000-06-21
@@ -325,6 +329,10 @@ arigatou_cd:
 apeacetimemcu_cd:
   name: "A Peacetime MCU"
   released_at: 2005-09-28
+
+mcuinwonderlandep_cd:
+  name: "MCU in WONDERLAND e.p."
+  released_at: 2006-05-17
 
 # その他
 wildflowers_cd:

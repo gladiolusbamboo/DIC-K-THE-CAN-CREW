@@ -27,6 +27,9 @@ kreva_artist:
 little_artist:
   name: LITTLE
 
+mcu_artist:
+  name: MCU
+
 mcufeathamazakitakashi_artist:
   name: MCU feat.浜崎貴司
 
@@ -63,3 +66,14 @@ mcufeatkoheijapan_artist:
 mcufeatelmalo_artist:
   name: MCU feat.EL-MALO
 
+mcufeatmorishigejuichi_artist:
+  name: MCU feat.森重樹一
+
+mcufeat175r_artist:
+  name: MCU feat.175R
+
+mcufeattakanohiroshi_artist:
+  name: MCU feat.高野寛
+
+mcufeatchaba_artist:
+  name: MCU feat.CHABA

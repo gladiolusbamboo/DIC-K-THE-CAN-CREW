@@ -36,10 +36,6 @@ goodtime_cd_utopia_song:
   cd: goodtime_cd
   song: utopia_song
 
-youngking_cd_call_song:
-  cd: youngking_cd
-  song: call_song
-
 youngking_cd_kickoff_song:
   cd: youngking_cd
   song: kickoff_song
@@ -68,10 +64,6 @@ youngking_cd_xamount_song:
   cd: youngking_cd
   song: xamount_song
 
-youngking_cd_tabibito_song:
-  cd: youngking_cd
-  song: tabibito_song
-
 youngking_cd_elnino_song:
   cd: youngking_cd
   song: elnino_song
@@ -79,10 +71,6 @@ youngking_cd_elnino_song:
 youngking_cd_unitedrivers_song:
   cd: youngking_cd
   song: unitedrivers_song
-
-youngking_cd_kawatoumigaawasarutokoro_song:
-  cd: youngking_cd
-  song: kawatoumigaawasarutokoro_song
 
 youngking_cd_takaoni2000_song:
   cd: youngking_cd
@@ -92,17 +80,9 @@ kyoukaraashita_cd_kyoukaraashita_song:
   cd: kyoukaraashita_cd
   song: kyoukaraashita_song
 
-kyoukaraashita_cd_kyoukaraashita_kana_song:
-  cd: kyoukaraashita_cd
-  song: kyoukaraashita_kana_song
-
 superoriginal_cd_superoriginal_song:
   cd: superoriginal_cd
   song: superoriginal_song
-
-superoriginal_cd_firereconstructionofsuperoriginal_song:
-  cd: superoriginal_cd
-  song: firereconstructionofsuperoriginal_song
 
 itsunarouba_cd_itsunarouba_song:
   cd: itsunarouba_cd
@@ -163,10 +143,6 @@ greatesthits_cd_utopia_song:
 greatesthits_cd_xamount_song:
   cd: greatesthits_cd
   song: xamount_song
-
-greatesthits_cd_kyoukaraashita_kana_song:
-  cd: greatesthits_cd
-  song: kyoukaraashita_kana_song
 
 greatesthits_cd_shakunetsubutoukai_song:
   cd: greatesthits_cd
@@ -535,6 +511,10 @@ goodmusic_al_cd_puncsunzennofunk_song:
 goodmusic_al_cd_moshimo_song:
   cd: goodmusic_al_cd
   song: moshimo_song
+
+breakaudiodynamite_cd_oneforthewhattwoforthewho_song:
+  cd: breakaudiodynamite_cd
+  song: oneforthewhattwoforthewho_song
 
 kick_cd_zeninshuugou_song:
   cd: kick_cd
@@ -1606,6 +1586,10 @@ apeacetimemcu_cd_crazybeans_song:
   cd: apeacetimemcu_cd
   song: crazybeans_song
 
+apeacetimemcu_cd_surfrider_song:
+  cd: apeacetimemcu_cd
+  song: surfrider_song
+
 apeacetimemcu_cd_iiwake_song:
   cd: apeacetimemcu_cd
   song: iiwake_song
@@ -1625,3 +1609,41 @@ apeacetimemcu_cd_shishizanoagata_song:
 apeacetimemcu_cd_saltscatter_song:
   cd: apeacetimemcu_cd
   song: saltscatter_song
+
+apeacetimemcu_cd_nodestination_song:
+  cd: apeacetimemcu_cd
+  song: nodestination_song
+
+apeacetimemcu_cd_bamora_song:
+  cd: apeacetimemcu_cd
+  song: bamora_song
+
+apeacetimemcu_cd_hinohikariwoabite_song:
+  cd: apeacetimemcu_cd
+  song: hinohikariwoabite_song
+
+apeacetimemcu_cd_arigatou_song:
+  cd: apeacetimemcu_cd
+  song: arigatou_song
+
+apeacetimemcu_cd_kagefumi_song:
+  cd: apeacetimemcu_cd
+  song: kagefumi_song
+
+apeacetimemcu_cd_shiawasedearuyouni_song:
+  cd: apeacetimemcu_cd
+  song: shiawasedearuyouni_song
+
+# MCU in WONDERLANG e.p
+mcuinwonderlandep_cd_twilighttime_song:
+  cd: mcuinwonderlandep_cd
+  song: twilighttime_song
+
+mcuinwonderlandep_cd_recollection_song:
+  cd: mcuinwonderlandep_cd
+  song: recollection_song
+
+mcuinwonderlandep_cd_tenohirarebirth_song:
+  cd: mcuinwonderlandep_cd
+  song: tenohirarebirth_song
+

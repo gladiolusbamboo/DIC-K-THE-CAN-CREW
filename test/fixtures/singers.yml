@@ -106,7 +106,7 @@ ng-head:
   name: NG-HEAD
 
 wada:
-  name: WADA
+  name: WADA(アルファ)
 
 dabo:
   name: DABO
@@ -337,7 +337,7 @@ mcutsuboi:
   name: MCU & TSUBOI
 
 tsuboi:
-  name: TSUBOI
+  name: TSUBOI(アルファ)
 
 mcukoheijapan:
   name: MCU & KOHEI JAPAN
@@ -347,6 +347,24 @@ koheijapan:
 
 mcuyunokiryuuichirou:
   name: MCU & 柚木隆一郎(EL-MALO)
+
+morishigejuichi:
+  name: 森重樹一(ZIGGY)
+
+shogo:
+  name: SHOGO(175R)
+
+takanohiroshi:
+  name: 高野寛
+
+kashimashizuka:
+  name: 鹿嶋静(CHABA)
+
+higadaisuke:
+  name: 比嘉大祐(CHABA)
+
+mcuhiranoichiroukashimashizukahigadaisuke:
+  name: MCU & CHABA
 
 unknown:
   name: ？？？
