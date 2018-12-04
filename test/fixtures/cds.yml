@@ -334,6 +334,10 @@ mcuinwonderlandep_cd:
   name: "MCU in WONDERLAND e.p."
   released_at: 2006-05-17
 
+nukumori_cd:
+  name: "nukumori"
+  released_at: 2006-11-22
+
 # その他
 wildflowers_cd:
   name: Wild Flowers

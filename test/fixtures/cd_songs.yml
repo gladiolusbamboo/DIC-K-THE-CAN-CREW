@@ -736,9 +736,17 @@ theshow_cd_theshow_song:
   cd: theshow_cd
   song: theshow_song
 
+theshow_cd_haveaniceday_song:
+  cd: theshow_cd
+  song: haveaniceday_song
+
 aggressibu_cd_aggressibu_song:
   cd: aggressibu_cd
   song: aggressibu_song
+
+aggressibu_cd_theshow_song:
+  cd: aggressibu_cd
+  song: theshow_song
 
 aggressibu_cd_kuchimotoniemi_song:
   cd: aggressibu_cd
@@ -1646,4 +1654,21 @@ mcuinwonderlandep_cd_recollection_song:
 mcuinwonderlandep_cd_tenohirarebirth_song:
   cd: mcuinwonderlandep_cd
   song: tenohirarebirth_song
+
+mcuinwonderlandep_cd_funkyjet_song:
+  cd: mcuinwonderlandep_cd
+  song: funkyjet_song
+
+# nukumori
+nukumori_cd_nukumori_song:
+  cd: nukumori_cd
+  song: nukumori_song
+
+nukumori_cd_thissong_song:
+  cd: nukumori_cd
+  song: thissong_song
+
+nukumori_cd_thissong_song:
+  cd: nukumori_cd
+  song: surfrider_song
 

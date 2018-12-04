@@ -792,7 +792,7 @@ iianbee_song:
   composer: 宮沢和史 + KICK THE CAN CREW
   arranger: Monoaural
   cd: konomachinodokokani_cd
-  note: 
+  note: オリジナルはTHE BOOM 5th Al「FACELESS MAN」に収録されている同名曲。KICK THE CAN CREWが参加しているバージョン(monoaural mix)の初出はTHE BOOM 27th Sg「この街のどこかに」のC/W
 
 fgspot_song:
   artist: eastend_artist
@@ -810,7 +810,7 @@ kibounohonoo_song:
   composer: KREVA
   arranger: KREVA
   cd: kibounohonoo_cd
-  note: 
+  note: インディーズ(BUGER INN RECORDS)からのリリース
 
 neiro_song:
   artist: kreva_artist
@@ -837,7 +837,7 @@ hitorijanainoyo_song:
   composer: KREVA & SONOMI
   arranger: KREVA
   cd: hitorijanainoyo_cd
-  note: 
+  note: Al「新人クレバ」には<Album Version>として収録
 
 kotobanidekinai_song:
   artist: kreva_artist
@@ -859,7 +859,7 @@ dandadan_song:
 
 araratakeyouhome_song:
   artist: kreva_artist
-  name: あ・ら・ら TAKE YOU HOME
+  name: あ・ら・ら・TAKE YOU HOME
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
@@ -904,7 +904,7 @@ warwarzone_song:
 
 youaretheno1heydj_song:
   artist: kreva_artist
-  name: You are the No.1(Hey,DJ)feat.BONNIE PINK
+  name: You are the No.1<Hey,DJ> feat.BONNIE PINK
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
@@ -968,8 +968,8 @@ start_song:
 imasara2step_song:
   artist: kreva_artist
   name: いまさら2step
-  lyricist: KREVA
-  composer: KREVA
+  lyricist: KREVA & SONOMI
+  composer: KREVA & SONOMI
   arranger: KREVA
   cd: start_cd
   note: 
@@ -990,7 +990,7 @@ kokumintekigyouji_song:
   composer: EVIS BEATS
   arranger: KREVA
   cd: kokumintekigyouji_cd
-  note: 
+  note: モーツァルトの「アイネ・クライネ・ナハトムジーク」をサンプリング
 
 happy_song:
   artist: kreva_artist
@@ -1041,7 +1041,7 @@ namidatomareyo_song:
 edogawarockon_song:
   artist: kreva_artist
   name: 江戸川ロックオン feat.CUEZERO, WADA
-  lyricist: KREVA & CUEZERO & WADA
+  lyricist: KREVA, CUEZERO & WADA
   composer: KREVA
   arranger: KREVA
   cd: aijibunhaku_cd
@@ -1059,7 +1059,7 @@ kurayaminonavigator_song:
 treatment_song:
   artist: kreva_artist
   name: トリートメント feat.DABO, CUEZERO
-  lyricist: KREVA & DABO & CUEZERO
+  lyricist: KREVA, DABO & CUEZERO
   composer: KREVA
   arranger: KREVA
   cd: aijibunhaku_cd
@@ -1078,10 +1078,10 @@ haveaniceday_song:
   artist: kreva_artist
   name: Have a nice day!
   lyricist: KREVA
-  composer: KREVA & 千晴
+  composer: KREVA
   arranger: ストレスFREE
   cd: haveaniceday_cd
-  note: 
+  note: Sg「THE SHOW」には-Live Ver.-として収録
 
 theshow_song:
   artist: kreva_artist
@@ -1090,16 +1090,16 @@ theshow_song:
   composer: KREVA
   arranger: KREVA
   cd: theshow_cd
-  note: 
+  note: Sg「アグレッシ部」には-熊井吾郎Remix-として収録。Al「よろしくお願いします」にはオリジナルバージョンと-熊井吾郎Remix-がともに収録
 
 aggressibu_song:
   artist: kreva_artist
   name: アグレッシ部
-  lyricist: KREVA & Smith Michael Larry
-  composer: KREVA & Smith Michael Larry
+  lyricist: KREVA
+  composer: KREVA
   arranger: KREVA
   cd: aggressibu_cd
-  note: 
+  note: Al「よろしくお願いします」のクレジットは作詞・作曲「KREVA & Smith Michael Larry」。またAl「よろしくお願いします」にはオリジナルバージョンとKOHEI JAPANとSHINGO☆西成をゲストに迎えた(Remix)バージョンがともに収録
 
 kuchimotoniemi_song:
   artist: kreva_artist
@@ -1112,8 +1112,8 @@ kuchimotoniemi_song:
 
 kurebaiinoni_song:
   artist: kreva_artist
-  name: くればいいのに feat.草野マサムネ from SPITZ[Single Edit]
-  lyricist: KREVA & 草野マサムネ
+  name: くればいいのに feat.草野マサムネ from SPITZ [Single Edit]
+  lyricist: KREVA & 草野正宗
   composer: KREVA
   arranger: KREVA
   cd: kurebaiinoni_cd
@@ -1177,8 +1177,8 @@ kyoudakedeii_song:
   artist: kreva_artist
   name: 今日だけでいい feat.SONOMI & ALI-KICK
   lyricist: KREVA & SONOMI
-  composer: ALI-KICK & KREVA & SONOMI
-  arranger: ALI-KICK
+  composer: ALI-KICK, KREVA & SONOMI
+  arranger: ALI-KICK(Romancrew)
   cd: yoroshikuonegaishimasu_cd
   note: 
 
@@ -1204,7 +1204,7 @@ sweetsweetmemories_song:
   artist: kreva_artist
   name: SWEET SWEET メモリーズ feat.SONOMI
   lyricist: KREVA & SONOMI
-  composer: KREVA & SONOMI & Barry Norman Leng & May Simon
+  composer: KREVA, SONOMI, Barry Norman Leng & May Simon
   arranger: KREVA
   cd: yoroshikuonegaishimasu_cd
   note: 
@@ -2554,7 +2554,7 @@ shiawasedearuyouni_song:
   composer: UNCREDITED
   arranger: O'Zey's
   cd: shiawasedearuyouni_cd
-  note: FLYING KIDSの曲のカバー。「A Peacetime MCU」には(同級生remix)として収録
+  note: FLYING KIDSの曲のカバー。Al「A Peacetime MCU」には(同級生remix)として収録
 
 # 僕はぬけがらだけおいてきたよ
 bokuhanukegaradakeoitekitayo_song:
@@ -2574,7 +2574,7 @@ surfrider_song:
   composer: MCU & 浜崎貴司
   arranger: 浜崎貴司
   cd: surfrider_cd
-  note: 
+  note: Sg「nukumori」には(TAICHI MASTER 33FUNK MIX)として収録
 
 # 6月の未完成
 6gatsunomikansei_song:
@@ -2754,4 +2754,33 @@ tenohirarebirth_song:
   composer: MCU & CMJK
   arranger: MCU & CMJK
   cd: mcuinwonderlandep_cd
+  note: 
+
+# FUNKY JET
+funkyjet_song:
+  artist: mcu_artist
+  name: FUNKY JET
+  lyricist: MCU
+  composer: MCU
+  arranger: MCU & CMJK
+  cd: mcuinwonderlandep_cd
+  note: 
+
+# nukumori
+nukumori_song:
+  artist: mcu_artist
+  name: nukumori
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: 北浦正尚
+  cd: nukumori_cd
+  note: 北浦正尚
+
+thissong_song:
+  artist: mcu_artist
+  name: nukumori
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: 北浦正尚
+  cd: nukumori_cd
   note: 
