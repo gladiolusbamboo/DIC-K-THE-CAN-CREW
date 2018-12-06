@@ -882,7 +882,7 @@ funkyglamorous_song:
   composer: KREVA & Mummy-D
   arranger: KREVA
   cd: shinjinkreva_cd
-  note: 
+  note: Al「新人クレバ」リリース後にシングルカット
 
 standbyme_kreva_song:
   artist: kreva_artist
@@ -1081,7 +1081,7 @@ haveaniceday_song:
   composer: KREVA
   arranger: ストレスFREE
   cd: haveaniceday_cd
-  note: Sg「THE SHOW」には-Live Ver.-として収録
+  note: Sg「THE SHOW」には-Live Ver.-として収録。Sg「OH YEAH」には-2012 Re-Mix-として収録
 
 theshow_song:
   artist: kreva_artist
@@ -1225,14 +1225,14 @@ akasatanahamayarawawon_song:
   composer: KREVA
   arranger: KREVA
   cd: krevanobestban_cd
-  note: 
+  note: Al「クレバのベスト盤」ボーナストラック。Sg「Na Na Na」には-2012 Re-Mix-として収録
 
 seikou_song:
   artist: kreva_artist
   name: 成功
   lyricist: KREVA
   composer: KREVA
-  arranger: KREVA & さかいゆう
+  arranger: KREVA
   cd: ao_cd
   note: 
 
@@ -1269,17 +1269,17 @@ shunkanspeechless_song:
   lyricist: KREVA
   composer: KREVA
   arranger: KREVA
-  cd: aka_cd
+  cd: aka_kreva_cd
   note: 
 
 kiminimunekyunuwakinavacance_song:
   artist: kreva_artist
   name: 君に、胸キュン。-浮気なヴァカンス-
   lyricist: 松本隆
-  composer: 細野晴臣 & 高橋幸宏 & 坂本龍一
+  composer: 細野晴臣, 高橋幸宏 & 坂本龍一
   arranger: KREVA
-  cd: aka_cd
-  note: 
+  cd: aka_kreva_cd
+  note: イエロー・マジック・オーケストラ(YMO)のカバー
 
 kiss_song:
   artist: kreva_artist
@@ -1378,7 +1378,7 @@ michinakimichi_song:
   composer: KREVA
   arranger: KREVA
   cd: oasys_cd
-  note: 
+  note: Al「OASYS」に収録されている「Reprise ～道なき道～」は同歌詞
 
 kamo_song:
   artist: kreva_artist
@@ -1414,7 +1414,7 @@ electroearthtracks_song:
   composer: 福井隆史
   arranger: KREVA
   cd: oasys_cd
-  note: 
+  note: YOUNG PUNCHのカバー
 
 changingsame_song:
   artist: kreva_artist
@@ -1432,7 +1432,7 @@ idome_song:
   composer: KREVA
   arranger: KREVA
   cd: idome_cd
-  note: 
+  note: Sg「挑め」のC/WとしてMCUとLITTLEが参加したバージョンが「挑め Remix feat.MCU & LITTLE」として収録
 
 bestendank_song:
   artist: kreva_artist
@@ -1455,8 +1455,8 @@ cmonletsgo_song:
 macar_song:
   artist: kreva_artist
   name: マカー GB-mix feat.AKLO, L-VOKAL(BETTER HALVES)
-  lyricist: KREVA & AKLO & L-VOKAL
-  composer: KREVA & AKLO & L-VOKAL
+  lyricist: KREVA, AKLO & L-VOKAL
+  composer: KREVA, AKLO & L-VOKAL
   arranger: KREVA
   cd: cmonletsgo_cd
   note: 
@@ -1465,7 +1465,7 @@ kilakila_song:
   artist: kreva_artist
   name: KILA KILA
   lyricist: KREVA
-  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  composer: "'MAJOR MUSIC a.k.a. Bastiany & HirOshima' & KREVA"
   arranger: KREVA
   cd: kilakila_cd
   note: 
@@ -1477,7 +1477,7 @@ tankyushin_song:
   composer: KREVA
   arranger: KREVA
   cd: kilakila_cd
-  note: 
+  note: Al「GO」に収録されている「探究心」はほぼ同歌詞
 
 hahiheho_song:
   artist: kreva_artist
@@ -1486,42 +1486,6 @@ hahiheho_song:
   composer: KREVA & SHINGO★西成
   arranger: KREVA
   cd: kilakila_cd
-  note: 
-
-ohyeah_song:
-  artist: kreva_artist
-  name: OH YEAH
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: ohyeah_cd
-  note: 
-
-nonono_song:
-  artist: kreva_artist
-  name: NO NO NO feat.SONOMI
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: ohyeah_cd
-  note: 
-
-nanana_song:
-  artist: kreva_artist
-  name: Na Na Na
-  lyricist: KREVA
-  composer: KREVA
-  arranger: KREVA
-  cd: nanana_cd
-  note: 
-
-nomoremrniceguy_song:
-  artist: kreva_artist
-  name: No More Mr. NiceGuy
-  lyricist: KREVA & KEN THE 390 & AKLO
-  composer: 熊井吾郎 & KREVA & KEN THE 390 & AKLO
-  arranger: KREVA
-  cd: nanana_cd
   note: 
 
 kijun_song:
@@ -1537,7 +1501,7 @@ shinkirou_song:
   artist: kreva_artist
   name: 蜃気楼 feat.三浦大知
   lyricist: KREVA & 三浦大知
-  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  composer: "'MAJOR MUSIC a.k.a. Bastiany & HirOshima' & KREVA"
   arranger: KREVA
   cd: go_cd
   note: 
@@ -1582,7 +1546,7 @@ partyhaizuko_song:
   artist: kreva_artist
   name: パーティーはIZUKO?
   lyricist: KREVA
-  composer: MAJOR MUSIC a.k.a. Bastiany & HirOshima, KREVA
+  composer: "'MAJOR MUSIC a.k.a. Bastiany & HirOshima' & KREVA"
   arranger: KREVA
   cd: go_cd
   note: 
@@ -1677,6 +1641,42 @@ link_song:
   cd: go_cd
   note: 
 
+ohyeah_song:
+  artist: kreva_artist
+  name: OH YEAH
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: ohyeah_cd
+  note: 
+
+nonono_song:
+  artist: kreva_artist
+  name: NO NO NO feat.SONOMI
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: ohyeah_cd
+  note: 
+
+nanana_song:
+  artist: kreva_artist
+  name: Na Na Na
+  lyricist: KREVA
+  composer: KREVA
+  arranger: KREVA
+  cd: nanana_cd
+  note: 
+
+nomoremrniceguy_song:
+  artist: kreva_artist
+  name: No More Mr. NiceGuy
+  lyricist: KREVA, KEN THE 390 & AKLO
+  composer: 熊井吾郎, KREVA, KEN THE 390 & AKLO
+  arranger: KREVA
+  cd: nanana_cd
+  note: 
+
 beshi_song:
   artist: kreva_artist
   name: BESHI
@@ -1700,7 +1700,7 @@ tranquilizer_song:
   name: トランキライザー
   lyricist: KREVA
   composer: KREVA
-  arranger: KREVA
+  arranger: UNCREDITED
   cd: tranquilizer_cd
   note: 
 
@@ -1709,7 +1709,7 @@ inabikari_song:
   name: 稲光
   lyricist: KREVA
   composer: 熊井吾郎 & KREVA
-  arranger: UNKNOWN
+  arranger: UNCREDITED
   cd: tranquilizer_cd
   note: 
 
@@ -1839,6 +1839,7 @@ kiminimuchuu_song:
   cd: usotobonnou_cd
   note: 
 
+# 存在感
 sonzaikan_song:
   artist: kreva_artist
   name: 存在感
@@ -1881,10 +1882,10 @@ iino_song:
   artist: little_artist
   name: いいの
   lyricist: LITTLE
-  composer: ROCK TEE, KREVA
-  arranger: ROCK TEE, KREVA
+  composer: ROCK TEE & KREVA
+  arranger: ROCK TEE & KREVA
   cd: iino_cd
-  note: 
+  note: Al「Mr.COMPACT」には"feat.坂本美雨"として新たなリリックに坂本美雨を迎えたバージョンを収録。また同アルバムに収録されている「剣と楯」はこの曲をサンプリング・再構成したもの（リリックは新たなもの）。Sg「聖者が街にやってくる」には"いいの 2004"として収録
 
 # ジゴロメン
 gigolomen_song:
@@ -1894,7 +1895,7 @@ gigolomen_song:
   composer: ROCK TEE
   arranger: ROCK TEE
   cd: iino_cd
-  note: VERSE1に誤植あり。×抜け出せる→○抜けられる
+  note: 
 
 # レスキュー
 rescue_song:
@@ -1904,13 +1905,13 @@ rescue_song:
   composer: DJ BASS
   arranger: DJ BASS
   cd: iino_cd
-  note:
+  note: Sg「CHILD PLAY」にはスケボーキングのSHIGEOを迎えた"BLUESBREAKER MIX"として収録。Al「Mr.COMPACT」には別トラックのLITTLEソロバージョンが~LAST TAKE~として収録
 
 # ハンティングワールド
 huntingworld_song:
   artist: little_artist
   name: ハンティング・ワールド(featuring CASSETE VISION)
-  lyricist: LITTLE, KREVA, CUE, MCU, VOICE, SOHJIN, CHANNEL
+  lyricist: LITTLE, KREVA, CUE, MCU, VOICE, SOHJIN & CHANNEL
   composer: KREVA
   arranger: KREVA
   cd: iino_cd
@@ -1921,8 +1922,8 @@ childplay_song:
   artist: little_artist
   name: CHILD PLAY
   lyricist: LITTLE
-  composer: Mr.Drunk(Rhymester)
-  arranger: Mr.Drunk(Rhymester)
+  composer: Mr.Drunk
+  arranger: Mr.Drunk from RHYMESTER
   cd: childplay_cd
   note: 歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。
 
@@ -1934,7 +1935,7 @@ dogfood_song:
   composer: DJ BASS
   arranger: DJ BASS
   cd: childplay_cd
-  note: HOOKは童子-T?歌詞カードに未クレジットのため、不明。　歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。
+  note: HOOKは童子-T。歌詞カードにはクレジットなし。　歌詞カードに誤植多数あり。基本的に修正せずに歌詞データを入力しています。
 
 # Mr.Compact
 mrcompact_song:
@@ -1990,9 +1991,9 @@ fujuniseikouyuupart2_song:
 warzone_song:
   artist: little_artist
   name: WAR ZONE feat.童子-T
-  lyricist: LITTLE & INNOSENCE
-  composer: DJ TATSUTA
-  arranger: DJ TATSUTA
+  lyricist: LITTLE & 童子-T
+  composer: GM-KAZ
+  arranger: GM-KAZ
   cd: mrcompact_cd
   note: 
 
@@ -2061,10 +2062,10 @@ seijagamachiniyattekuru_song:
   artist: little_artist
   name: 聖者が街にやってくる
   lyricist: LITTLE(Japanese Lyrics)
-  composer: UNKNOWN
+  composer: UNCREDITED
   arranger: Shingo.S for 813 & DJ TAKADA
   cd: seijagamachiniyattekuru_cd
-  note: 黒人霊歌「When the Saints Go Marching In」のカバー。原曲の作詞曲者不明。
+  note: 黒人霊歌「When the Saints Go Marching In」のカバー。原曲の作詞曲者不明。Sg「初恋の~What's Going On~ feat.トータス松本」には(DJ SUZUKI Remix)として収録
 
 # 12月
 juunigatsu_song:
@@ -2084,7 +2085,7 @@ hatsukoino_song:
   composer: ROCK-Tee, LITTLE & トータス松本
   arranger: ROCK-Tee
   cd: hatsukoino_cd
-  note: 
+  note: 同SgのC/Wとして別トラックの(Ver.2.0)が収録
 
 # LITTLE(曲名)
 little_song:
@@ -2101,7 +2102,7 @@ unkoshit_song:
   artist: little_artist
   name: UNKO SHIT !
   lyricist: LITTLE
-  composer: T.Takeuchi & D.Sakama, LITTLE
+  composer: T.Takeuchi, D.Sakama & LITTLE
   arranger: マボロシ
   cd: life_cd
   note: 
@@ -2766,6 +2767,16 @@ funkyjet_song:
   cd: mcuinwonderlandep_cd
   note: 
 
+# シーサイド・ばいばい
+seasidebyebye_song:
+  artist: kisarazucatseyefeatmcu_artist
+  name: シーサイド・ばいばい
+  lyricist: MCU & 宮藤官九郎
+  composer: MCU & CMJK
+  arranger: CMJK
+  cd: seasidebyebye_cd
+  note: Al「A.K.A」にはMCUバースのリリックが異なる"MCU ver."として収録
+
 # nukumori
 nukumori_song:
   artist: mcu_artist
@@ -2774,13 +2785,64 @@ nukumori_song:
   composer: MCU & 北浦正尚
   arranger: 北浦正尚
   cd: nukumori_cd
-  note: 北浦正尚
+  note: Sg「omoide」には"nukumori bossa re-work"として収録
 
+# this song
 thissong_song:
   artist: mcu_artist
-  name: nukumori
+  name: this song
   lyricist: MCU
   composer: MCU & 北浦正尚
   arranger: 北浦正尚
   cd: nukumori_cd
+  note: 
+
+# omoide
+omoide_song:
+  artist: mcu_artist
+  name: omoide
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: MCU & 北浦正尚
+  cd: omoide_cd
+  note: Sg「サヨナラ」にはLOW JACK remixとして収録
+
+# wonderful
+wonderful_song:
+  artist: mcu_artist
+  name: wonderful
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: MCU & 北浦正尚
+  cd: omoide_cd
+  note: 
+
+# サヨナラ
+sayonara_song:
+  artist: mcu_artist
+  name: サヨナラ
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: NAOKI-T
+  cd: sayonara_cd
+  note: 
+
+# DEAR
+dear_song:
+  artist: mcu_artist
+  name: DEAR
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: MCU & 北浦正尚
+  cd: sayonara_cd
+  note: 
+
+# BURN
+burn_song:
+  artist: mcu_artist
+  name: BURN feat.TAS from MADHAND, TSUBOI, KOHEI JAPAN, 童子-T
+  lyricist: MCU, TAS, TSUBOI, KOHEI SAKAMA, 童子-T 
+  composer: DJ TATSUTA
+  arranger: MCU
+  cd: aka_mcu_cd
   note: 

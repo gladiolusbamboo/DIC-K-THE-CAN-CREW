@@ -652,6 +652,10 @@ shinjinkreva_cd_babydancer_song:
   cd: shinjinkreva_cd
   song: babydancer_song
 
+funkyglamorous_cd_funkyglamorous_song:
+  cd: funkyglamorous_cd
+  song: funkyglamorous_song
+
 issaigassai_cd_issaigassai_song:
   cd: issaigassai_cd
   song: issaigassai_song
@@ -904,12 +908,12 @@ ao_cd_sosexy_song:
   cd: ao_cd
   song: sosexy_song
 
-aka_cd_shunkanspeechless_song:
-  cd: aka_cd
+aka_kreva_cd_shunkanspeechless_song:
+  cd: aka_kreva_cd
   song: shunkanspeechless_song
 
-aka_cd_kiminimunekyunuwakinavacance_song:
-  cd: aka_cd
+aka_kreva_cd_kiminimunekyunuwakinavacance_song:
+  cd: aka_kreva_cd
   song: kiminimunekyunuwakinavacance_song
 
 shinzou_cd_kiss_song:
@@ -1077,6 +1081,10 @@ ohyeah_cd_nonono_song:
   cd: ohyeah_cd
   song: nonono_song
 
+ohyeah_cd_haveaniceday_song:
+  cd: ohyeah_cd
+  song: haveaniceday_song
+
 nanana_cd_nanana_song:
   cd: nanana_cd
   song: nanana_song
@@ -1084,6 +1092,10 @@ nanana_cd_nanana_song:
 nanana_cd_nomoremrniceguy_song:
   cd: nanana_cd
   song: nomoremrniceguy_song
+
+nanana_cd_akasatanahamayarawawon_song:
+  cd: nanana_cd
+  song: akasatanahamayarawawon_song
 
 oujanokyuujitsu_cd_oujanokyuujitsu_song:
   cd: oujanokyuujitsu_cd
@@ -1343,6 +1355,10 @@ seijagamachiniyattekuru_cd_iino_song:
 hatsukoino_cd_hatsukoino_song:
   cd: hatsukoino_cd
   song: hatsukoino_song
+
+hatsukoino_cd_seijagamachiniyattekuru_song:
+  cd: hatsukoino_cd
+  song: seijagamachiniyattekuru_song
 
 # LIFE
 life_cd_little_song:
@@ -1668,7 +1684,42 @@ nukumori_cd_thissong_song:
   cd: nukumori_cd
   song: thissong_song
 
-nukumori_cd_thissong_song:
+nukumori_cd_surfrider_song:
   cd: nukumori_cd
   song: surfrider_song
 
+# omoide
+omoide_cd_omoide_song:
+  cd: omoide_cd
+  song: omoide_song
+
+omoide_cd_wonderful_song:
+  cd: omoide_cd
+  song: wonderful_song
+
+omoide_cd_nukumori_song:
+  cd: omoide_cd
+  song: nukumori_song
+
+# サヨナラ
+sayonara_cd_sayonara_song:
+  cd: sayonara_cd
+  song: sayonara_song
+
+sayonara_cd_dear_song:
+  cd: sayonara_cd
+  song: dear_song
+
+sayonara_cd_omoide_song:
+  cd: sayonara_cd
+  song: omoide_song
+
+# シーサイド・ばいばい
+seasidebyebye_cd_seasidebyebye_song:
+  cd: seasidebyebye_cd
+  song: seasidebyebye_song
+
+# A.K.A
+aka_mcu_cd_burn_song:
+  cd: aka_mcu_cd
+  song: burn_song

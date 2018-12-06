@@ -150,17 +150,11 @@ okamurayasuyuki:
 dohzi-t:
   name: 童子-T
 
-dohzi-t?:
-  name: 童子-T?
-
 voice:
   name: VOICE
 
 littlekrevacuezeromcuvoicesohjinchannel:
   name: LITTLE, KREVA, MCU, CUEZERO, SOHJIN, CHANNEL & VOICE ?
-
-dohzi-t?little:
-  name: 童子-T? & LITTLE
 
 littledohzi-t:
   name: LITTLE & 童子-T
@@ -365,6 +359,21 @@ higadaisuke:
 
 mcuhiranoichiroukashimashizukahigadaisuke:
   name: MCU & CHABA
+
+ricca:
+  name: RICCA
+
+kisarazucatseye:
+  name: 木更津キャッツアイ
+
+mcukisarazucatseye:
+  name: MCU & 木更津キャッツアイ
+
+tas:
+  name: TAS(MADHAND)
+
+mcutastsuboikoheijapandohzit:
+  name: MCU, TAS, TSUBOI, KOHEI JAPAN & 童子-T
 
 unknown:
   name: ？？？
