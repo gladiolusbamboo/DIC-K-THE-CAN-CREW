@@ -2193,7 +2193,7 @@ onemanshow_song:
   name: ワンマンショウ
   lyricist: LITTLE
   composer: LITTLE
-  arranger: LITTLE
+  arranger: NAOKI-T
   cd: onemanshow_cd
   note: '「"YES"rhyme-dentity」にはalbum ver.として収録'
 
@@ -2203,7 +2203,7 @@ again_song:
   name: アゲイン
   lyricist: LITTLE
   composer: LITTLE
-  arranger: LITTLE
+  arranger: TAICHI MASTER
   cd: onemanshow_cd
   note: 
 
@@ -2213,7 +2213,7 @@ goaisatsu_song:
   name: ごあいさつ
   lyricist: LITTLE
   composer: LITTLE/Roberts
-  arranger: LITTLE
+  arranger: e-mura for RUB-A-DUB MARKET
   cd: onemanshow_cd
   note: 
 
@@ -2275,7 +2275,7 @@ singsingsing_song:
   composer: Prima Louis & LITTLE
   arranger: 熊井吾郎
   cd: yesrhymedentity_cd
-  note: 
+  note: 原曲はルイ・プリマのジャズ・スタンダード
 
 # Stand by me
 standbyme_little_song:
@@ -2297,7 +2297,7 @@ veryspecial_song:
   cd: yesrhymedentity_cd
   note: 
 
-# Very Special
+# FREE STYLE 男女
 freestyledanjo_song:
   artist: little_artist
   name: FREE STYLE 男女 feat.COMA-CHI
@@ -2393,7 +2393,7 @@ oretachinoimagine_song:
   name: おれたちのイマジン feat.浜崎貴司
   lyricist: LITTLE & 浜崎貴司
   composer: LITTLE, ヨースケ@HOME & 浜崎貴司
-  arranger: Hyrakane303
+  arranger: ヨースケ@HOME
   cd: akalititle1_cd
   note: 
 
@@ -2825,7 +2825,7 @@ sayonara_song:
   composer: MCU & 北浦正尚
   arranger: NAOKI-T
   cd: sayonara_cd
-  note: 
+  note: Al「A.K.A」にはalbum extended ver.として収録
 
 # DEAR
 dear_song:
@@ -2845,4 +2845,94 @@ burn_song:
   composer: DJ TATSUTA
   arranger: MCU
   cd: aka_mcu_cd
+  note: 
+
+# SUGAMO-B 弐
+sugamobni_song:
+  artist: mcu_artist
+  name: SUGAMO-B 弐 feat.Q
+  lyricist: MCU & Q 
+  composer: DJ TATSUTA
+  arranger: MCU
+  cd: aka_mcu_cd
+  note: 
+
+# A re-present BMG
+arepresentbmg_song:
+  artist: mcu_artist
+  name: A re-present BMG feat. MCK
+  lyricist: MCU
+  composer: MCU
+  arranger: MCU
+  cd: aka_mcu_cd
+  note: ラップをしているMCKとは当時BMG JAPAN副社長であった軽部重信
+
+# SUMMER CARNAVAL
+summercarnaval_song:
+  artist: mcu_artist
+  name: SUMMER CARNAVAL
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: 北浦正尚
+  cd: aka_mcu_cd
+  note: 
+
+# 1973
+1973_song:
+  artist: mcu_artist
+  name: 1973
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: 北浦正尚
+  cd: aka_mcu_cd
+  note: Additional RapとしてDJ TATSUTA、TAICHI MASTERらがクレジットされている
+
+# Hey Johnny
+heyjohnny_song:
+  artist: mcu_artist
+  name: Hey Johnny
+  lyricist: MCU
+  composer: Anny-K
+  arranger: Anny-K
+  cd: aka_mcu_cd
+  note: 
+
+# HERO
+hero_song:
+  artist: mcu_artist
+  name: HERO
+  lyricist: MCU
+  composer: MCU & 北浦正尚
+  arranger: 北浦正尚
+  cd: aka_mcu_cd
+  note: 
+
+# Under My Martial Law
+undermymartiallaw_song:
+  artist: mcu_artist
+  name: Under My Martial Law feat.デーモン小暮閣下
+  lyricist: MCU, H.E.Demon Kogure & 北浦正尚
+  composer: MCU, H.E.Demon Kogure & 北浦正尚
+  arranger: 北浦正尚
+  cd: aka_mcu_cd
+  note: 
+
+# A.K.A～僕がいればいいと想う～
+akabokugairebaiitoomou_song:
+  artist: mcu_artist
+  name: A.K.A～僕がいればいいと想う～
+  lyricist: MCU
+  composer: MCU
+  arranger: 北浦正尚
+  cd: aka_mcu_cd
+  note: 
+
+# SUPERSTAR
+superstar_song:
+  artist: mcu_artist
+  name: SUPERSTAR
+  lyricist: MCU
+  composer: MCU, TAICHI MASTER & DJ TATSUTA
+  arranger: DJ TATSUTA & TAICHI MASTER
+  cd: superstar_cd
   note: 

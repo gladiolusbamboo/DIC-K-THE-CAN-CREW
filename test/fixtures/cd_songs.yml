@@ -1723,3 +1723,55 @@ seasidebyebye_cd_seasidebyebye_song:
 aka_mcu_cd_burn_song:
   cd: aka_mcu_cd
   song: burn_song
+
+aka_mcu_cd_seasidebyebye_song:
+  cd: aka_mcu_cd
+  song: seasidebyebye_song
+
+aka_mcu_cd_sugamobni_song:
+  cd: aka_mcu_cd
+  song: sugamobni_song
+
+aka_mcu_cd_arepresentbmg_song:
+  cd: aka_mcu_cd
+  song: arepresentbmg_song
+
+aka_mcu_cd_summercarnaval_song:
+  cd: aka_mcu_cd
+  song: summercarnaval_song
+
+aka_mcu_cd_omoide_song:
+  cd: aka_mcu_cd
+  song: omoide_song
+
+aka_mcu_cd_nukumori_song:
+  cd: aka_mcu_cd
+  song: nukumori_song
+
+aka_mcu_cd_sayonara_song:
+  cd: aka_mcu_cd
+  song: sayonara_song
+
+aka_mcu_cd_1973_song:
+  cd: aka_mcu_cd
+  song: 1973_song
+
+aka_mcu_cd_heyjohnny_song:
+  cd: aka_mcu_cd
+  song: heyjohnny_song
+
+aka_mcu_cd_hero_song:
+  cd: aka_mcu_cd
+  song: hero_song
+
+aka_mcu_cd_undermymartiallaw_song:
+  cd: aka_mcu_cd
+  song: undermymartiallaw_song
+
+aka_mcu_cd_akabokugairebaiitoomou_song:
+  cd: aka_mcu_cd
+  song: akabokugairebaiitoomou_song
+
+superstar_cd_superstar_song:
+  cd: superstar_cd
+  song: superstar_song

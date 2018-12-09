@@ -358,6 +358,9 @@ aka_mcu_cd:
   name: "A.K.A"
   released_at: 2007-06-20
 
+superstar_cd:
+  name: SUPERSTAR
+  released_at: 2009-01-21
 
 # その他
 wildflowers_cd:

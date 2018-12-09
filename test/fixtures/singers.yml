@@ -375,6 +375,24 @@ tas:
 mcutastsuboikoheijapandohzit:
   name: MCU, TAS, TSUBOI, KOHEI JAPAN & 童子-T
 
+mcuq:
+  name: MCU & Q
+
+q:
+  name: Q(ラッパ我リヤ)
+
+mck:
+  name: MCK
+
+mifuneseiichirotaichimastertakemuratsuyoshiabukawashinyakasayanosugichanyamamotomasamasayukikikudjtatsuta:
+  name: 'MIFUNE SEIICHIRO, TAICHI MASTER, TAKEMURA TSUYOSHI, ABUKAWA SHINYA, Kasaya-no-Sugichan, YAMAMOTO:MASA:MASAYUKI, KIKU & DJ TATSUTA'
+
+daemonkogurekakka:
+  name: デーモン小暮閣下
+
+mcudaemonkogurekakka:
+  name: MCU & デーモン小暮閣下
+
 unknown:
   name: ？？？
 
