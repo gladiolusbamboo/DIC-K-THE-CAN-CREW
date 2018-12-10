@@ -362,6 +362,10 @@ superstar_cd:
   name: SUPERSTAR
   released_at: 2009-01-21
 
+shuhari_cd:
+  name: SHU・HA・RI ~STILL LOVE~
+  released_at: 2009-03-11
+
 # その他
 wildflowers_cd:
   name: Wild Flowers

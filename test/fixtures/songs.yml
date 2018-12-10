@@ -2936,3 +2936,33 @@ superstar_song:
   arranger: DJ TATSUTA & TAICHI MASTER
   cd: superstar_cd
   note: 
+
+# マイクロフォンマスター
+microphonemaster_song:
+  artist: mcu_artist
+  name: マイクロフォンマスター
+  lyricist: MCU
+  composer: MCU, TAICHI MASTER & DJ TATSUTA
+  arranger: DJ TATSUTA & TAICHI MASTER
+  cd: superstar_cd
+  note: 
+
+# STILL LOVE
+stilllove_song:
+  artist: mcu_artist
+  name: STILL LOVE featuring TERU(GLAY)
+  lyricist: MCU & 北浦正尚
+  composer: MCU & 北浦正尚
+  arranger: MU/MS
+  cd: shuhari_cd
+  note: 
+
+# カエリミチ
+kaerimichi_song:
+  artist: mcu_artist
+  name: カエリミチ
+  lyricist: MCU & 北浦正尚
+  composer: MCU & 北浦正尚
+  arranger: MU/MS
+  cd: shuhari_cd
+  note: 

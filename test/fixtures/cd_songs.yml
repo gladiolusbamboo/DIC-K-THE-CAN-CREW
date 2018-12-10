@@ -1775,3 +1775,22 @@ aka_mcu_cd_akabokugairebaiitoomou_song:
 superstar_cd_superstar_song:
   cd: superstar_cd
   song: superstar_song
+
+superstar_cd_microphonemaster_song:
+  cd: superstar_cd
+  song: microphonemaster_song
+
+# SHU・HA・RI
+shuhari_cd_stilllove_song:
+  cd: shuhari_cd
+  song: stilllove_song
+
+shuhari_cd_superstar_song:
+  cd: shuhari_cd
+  song: superstar_song
+
+shuhari_cd_kaerimichi_song:
+  cd: shuhari_cd
+  song: kaerimichi_song
+
+
