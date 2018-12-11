@@ -779,9 +779,9 @@ u_song:
 10balls2_song:
   artist: rhymester_artist
   name: 10 Balls + 2 featuring Kick The Can Crew
-  lyricist: UNKNOWN
-  composer: UNKNOWN
-  arranger: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
+  arranger: UNCREDITED
   cd: uwasanoshinsou_cd
   note: 
 
@@ -797,8 +797,8 @@ iianbee_song:
 fgspot_song:
   artist: eastend_artist
   name: FGスポット feat.KICK THE CAN CREW
-  lyricist: UNKNOWN
-  composer: UNKNOWN
+  lyricist: UNCREDITED
+  composer: UNCREDITED
   arranger: EAST END
   cd: beginningoftheendless_cd
   note: 
@@ -925,7 +925,7 @@ babydancer_song:
   name: BABY DANCER
   lyricist: KREVA
   composer: K.Kamishiro & KREVA
-  arranger: UNKNOWN
+  arranger: UNCREDITED
   cd: shinjinkreva_cd
   note: 
 
@@ -2964,5 +2964,25 @@ kaerimichi_song:
   lyricist: MCU & 北浦正尚
   composer: MCU & 北浦正尚
   arranger: MU/MS
+  cd: shuhari_cd
+  note: 
+
+# 十中八九
+jicchuuhakku_song:
+  artist: mcu_artist
+  name: 十中八九
+  lyricist: MCU
+  composer: MCU & DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: shuhari_cd
+  note: 
+
+# FREE 3MC'S 1
+free3mcs1_song:
+  artist: mcu_artist
+  name: FREE 3MC'S 1
+  lyricist: MCU, CHANNEL & FORK
+  composer: MCU, CHANNEL & FORK
+  arranger: UNCREDITED
   cd: shuhari_cd
   note: 

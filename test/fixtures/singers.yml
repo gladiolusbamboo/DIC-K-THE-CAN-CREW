@@ -396,6 +396,9 @@ mcudaemonkogurekakka:
 teru:
   name: TERU(GLAY)
 
+fork:
+  name: FORK(ICE BAHN)
+
 unknown:
   name: ？？？
 

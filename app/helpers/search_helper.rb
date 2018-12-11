@@ -455,10 +455,18 @@ module SearchHelper
     # ランダムにカード背景画像URLを取得する
     def get_random_image_url
       # image_name
-      image_index =  rand(8)
+      image_index =  rand(1)
       case image_index
       when 0 then
-        image_name = 'lifestyle-1'
+#        image_name = 'takaoni_bg'
+#        image_name = 'downbylaw_bg'
+#        image_name = 'goodtime_bg'
+#        image_name = 'kyoukaraashita_bg'
+#        image_name = 'superoriginal_bg'
+#        image_name = 'itsunarouba_bg'
+#        image_name = 'kankeri01_bg'
+#        image_name = 'christmaseverap_bg'
+        image_name = 'marche_bg'
       when 1 then
         image_name = 'lifestyle-2'
       when 2 then

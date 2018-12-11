@@ -1793,4 +1793,11 @@ shuhari_cd_kaerimichi_song:
   cd: shuhari_cd
   song: kaerimichi_song
 
+shuhari_cd_jicchuuhakku_song:
+  cd: shuhari_cd
+  song: jicchuuhakku_song
+
+shuhari_cd_free3mcs1_song:
+  cd: shuhari_cd
+  song: free3mcs1_song
 
