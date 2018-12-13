@@ -1801,3 +1801,19 @@ shuhari_cd_free3mcs1_song:
   cd: shuhari_cd
   song: free3mcs1_song
 
+shuhari_cd_mic2hon_song:
+  cd: shuhari_cd
+  song: mic2hon_song
+
+shuhari_cd_ineedlove_song:
+  cd: shuhari_cd
+  song: ineedlove_song
+
+shuhari_cd_free3mcs2_song:
+  cd: shuhari_cd
+  song: free3mcs2_song
+
+shuhari_cd_goodenough_song:
+  cd: shuhari_cd
+  song: goodenough_song
+

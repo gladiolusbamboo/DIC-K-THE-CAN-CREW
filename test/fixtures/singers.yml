@@ -399,6 +399,24 @@ teru:
 fork:
   name: FORK(ICE BAHN)
 
+mcuchannelfork:
+  name: MCU, CHANNEL & FORK
+
+mactheseiko:
+  name: MAC THE SEIKO
+
+mcumactheseiko:
+  name: MCU & MAC THE SEIKO
+
+fourd:
+  name: FOURD
+
+shima:
+  name: SHIMA
+
+mcufourdshima:
+  name: MCU, FOURD & SHIMA
+
 unknown:
   name: ？？？
 

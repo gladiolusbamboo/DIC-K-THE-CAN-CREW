@@ -364,6 +364,9 @@ module SearchHelper
 
             concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
 
+            if info_arr[0].song.note != nil
+              concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
+            end
           end)
           concat_html_with_tag("div", '', "filter")
         end
@@ -391,6 +394,10 @@ module SearchHelper
             concat_fade_hr()
 
             concat(show_searchwords(params[:ruby_search], info_arr, @trimmed_search_word))
+
+            if info_arr[0].song.note != nil
+              concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
+            end
           end)
         end
       end
@@ -455,32 +462,48 @@ module SearchHelper
     # ランダムにカード背景画像URLを取得する
     def get_random_image_url
       # image_name
-      image_index =  rand(1)
+      image_index =  rand(20)
       case image_index
       when 0 then
-#        image_name = 'takaoni_bg'
-#        image_name = 'downbylaw_bg'
-#        image_name = 'goodtime_bg'
-#        image_name = 'kyoukaraashita_bg'
-#        image_name = 'superoriginal_bg'
-#        image_name = 'itsunarouba_bg'
-#        image_name = 'kankeri01_bg'
-#        image_name = 'christmaseverap_bg'
-        image_name = 'marche_bg'
+        image_name = 'takaoni_bg'
       when 1 then
-        image_name = 'lifestyle-2'
+        image_name = 'downbylaw_bg'
       when 2 then
-        image_name = 'lifestyle-3'
+        image_name = 'goodtime_bg'
       when 3 then
-        image_name = 'lifestyle-5'
+        image_name = 'kyoukaraashita_bg'
       when 4 then
-        image_name = 'lifestyle-6'
+        image_name = 'superoriginal_bg'
       when 5 then
-        image_name = 'lifestyle-7'
+        image_name = 'itsunarouba_bg'
       when 6 then
-        image_name = 'lifestyle-8'
+        image_name = 'kankeri01_bg'
       when 7 then
-        image_name = 'lifestyle-9'
+        image_name = 'christmaseverap_bg'
+      when 8 then
+        image_name = 'marche_bg'
+      when 9 then
+        image_name = 'oneway_bg'
+      when 10 then
+        image_name = 'sayonarasayonara_bg'
+      when 11 then
+        image_name = 'unbalance_bg'
+      when 12 then
+        image_name = 'chikyuublues_bg'
+      when 13 then
+        image_name = 'toriiiiiico_bg'
+      when 14 then
+        image_name = 'sagacontinue_bg'
+      when 15 then
+        image_name = 'goodmusic_bg'
+      when 16 then
+        image_name = 'puncsunzennofunk_bg'
+      when 17 then
+        image_name = 'navi_bg'
+      when 18 then
+        image_name = 'nounaivacation_bg'
+      when 19 then
+        image_name = 'juusho_bg'
       end
 
       "../../assets/img/#{image_name}.jpg"

@@ -2986,3 +2986,43 @@ free3mcs1_song:
   arranger: UNCREDITED
   cd: shuhari_cd
   note: 
+
+# マイク2本
+mic2hon_song:
+  artist: mcu_artist
+  name: マイク2本 featuring MAC THE SEIKO
+  lyricist: いとうせいこう & MCU
+  composer: ヤン富田, DJ TATSUTA & TAICHI MASTER
+  arranger: DJ TATSUTA & TAICHI MASTER
+  cd: shuhari_cd
+  note: MAC THE SEIKOは、いとうせいこうの別名義
+
+# I NEED LOVE
+ineedlove_song:
+  artist: mcu_artist
+  name: I NEED LOVE featuring KOHEI JAPAN
+  lyricist: MCU & KOHEI JAPAN
+  composer: MCU & DJ TATSUTA
+  arranger: DJ TATSUTA
+  cd: shuhari_cd
+  note: 
+
+# FREE 3MC'S
+free3mcs2_song:
+  artist: mcu_artist
+  name: FREE 3MC'S featuring FOURD, SHIMA
+  lyricist: MCU, FOURD & SHIMA
+  composer: MCU, FOURD & SHIMA
+  arranger: UNCREDITED
+  cd: shuhari_cd
+  note: 
+
+# グッドイナフ
+goodenough_song:
+  artist: mcu_artist
+  name: グッドイナフ
+  lyricist: Cyndi Lauper, Stephen Broughton Lunt & Arthur Willmore Stead (Re-words:MCU)
+  composer: Cyndi Lauper, Stephen Broughton Lunt & Arthur Willmore Stead
+  arranger: DJ TATSUTA
+  cd: shuhari_cd
+  note: 原曲はシンディ・ローパーの「The Goonies 'R' Good Enough」。Additional VoiceとしてTAICHI MASTERがクレジットされている
