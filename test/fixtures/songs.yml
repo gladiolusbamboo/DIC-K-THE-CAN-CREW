@@ -3026,3 +3026,33 @@ goodenough_song:
   arranger: DJ TATSUTA
   cd: shuhari_cd
   note: 原曲はシンディ・ローパーの「The Goonies 'R' Good Enough」。Additional VoiceとしてTAICHI MASTERがクレジットされている
+
+# 涙のtake a chance
+namidanotakeachance_song:
+  artist: mcu_artist
+  name: 涙のtake a chance
+  lyricist: 荒木とよひさ (Re-words:MCU)
+  composer: 福島邦子
+  arranger: TAICHI MASTER
+  cd: shuhari_cd
+  note: 原曲は風見慎吾（現・風見しんご）の同名曲。HOOKの歌唱はAdditional Vocalとしてクレジットされている村カワ基成？
+
+# JUMP少年
+jumpshounen_song:
+  artist: mcu_artist
+  name: JUMP少年
+  lyricist: MCU
+  composer: MCU & TAICHI MASTER
+  arranger: TAICHI MASTER
+  cd: shuhari_cd
+  note: 
+
+# HYOMA
+hyoma_song:
+  artist: mcu_artist
+  name: HYOMA
+  lyricist: MCU
+  composer: MCU & TAICHI MASTER
+  arranger: TAICHI MASTER
+  cd: shuhari_cd
+  note: 

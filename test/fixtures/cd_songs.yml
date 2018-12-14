@@ -1817,3 +1817,16 @@ shuhari_cd_goodenough_song:
   cd: shuhari_cd
   song: goodenough_song
 
+shuhari_cd_namidanotakeachance_song:
+  cd: shuhari_cd
+  song: namidanotakeachance_song
+
+shuhari_cd_jumpshounen_song:
+  cd: shuhari_cd
+  song: jumpshounen_song
+
+shuhari_cd_hyoma_song:
+  cd: shuhari_cd
+  song: hyoma_song
+
+

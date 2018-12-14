@@ -417,6 +417,12 @@ shima:
 mcufourdshima:
   name: MCU, FOURD & SHIMA
 
+murakawamotonari:
+  name: 村カワ基成？
+
+mcumurakawamotonari:
+  name: MCU & 村カワ基成？
+
 unknown:
   name: ？？？
 
