@@ -1829,4 +1829,75 @@ shuhari_cd_hyoma_song:
   cd: shuhari_cd
   song: hyoma_song
 
+givmegivmenightfever_cd_givmegivmenightfever_song:
+  cd: givmegivmenightfever_cd
+  song: givmegivmenightfever_song
 
+givmegivmenightfever_cd_christmasforu_song:
+  cd: givmegivmenightfever_cd
+  song: christmasforu_song
+
+givmegivmenightfever_cd_lovenavi_song:
+  cd: givmegivmenightfever_cd
+  song: lovenavi_song
+
+# BEST OF MCU
+bestofmcu_cd_iiwake_song:
+  cd: bestofmcu_cd
+  song: iiwake_song
+
+bestofmcu_cd_stilllove_song:
+  cd: bestofmcu_cd
+  song: stilllove_song
+
+bestofmcu_cd_seasidebyebye_song:
+  cd: bestofmcu_cd
+  song: seasidebyebye_song
+
+bestofmcu_cd_nukumori_song:
+  cd: bestofmcu_cd
+  song: nukumori_song
+
+bestofmcu_cd_sayonara_song:
+  cd: bestofmcu_cd
+  song: sayonara_song
+
+bestofmcu_cd_omoide_song:
+  cd: bestofmcu_cd
+  song: omoide_song
+
+bestofmcu_cd_bamora_song:
+  cd: bestofmcu_cd
+  song: bamora_song
+
+bestofmcu_cd_surfrider_song:
+  cd: bestofmcu_cd
+  song: surfrider_song
+
+bestofmcu_cd_arigatou_song:
+  cd: bestofmcu_cd
+  song: arigatou_song
+
+bestofmcu_cd_mic2hon_song:
+  cd: bestofmcu_cd
+  song: mic2hon_song
+
+bestofmcu_cd_superstar_song:
+  cd: bestofmcu_cd
+  song: superstar_song
+
+bestofmcu_cd_recollection_song:
+  cd: bestofmcu_cd
+  song: recollection_song
+
+bestofmcu_cd_shiawasedearuyouni_song:
+  cd: bestofmcu_cd
+  song: shiawasedearuyouni_song
+
+bestofmcu_cd_givmegivmenightfever_song:
+  cd: bestofmcu_cd
+  song: givmegivmenightfever_song
+
+bestofmcu_cd_youshi_song:
+  cd: bestofmcu_cd
+  song: youshi_song

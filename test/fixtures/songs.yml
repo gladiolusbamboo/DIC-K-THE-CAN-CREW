@@ -3056,3 +3056,44 @@ hyoma_song:
   arranger: TAICHI MASTER
   cd: shuhari_cd
   note: 
+
+# ギミギミ・ナイトフィーバー
+givmegivmenightfever_song:
+  artist: mcu_artist
+  name: ギミギミ・ナイトフィーバー
+  lyricist: MCU
+  composer: MCU
+  arranger: MCU
+  cd: givmegivmenightfever_cd
+  note: Additional VocalとしてPLASMO'がクレジットされている
+
+# Christams for U
+christmasforu_song:
+  artist: mcu_artist
+  name: Christams for U
+  lyricist: MCU
+  composer: MCU
+  arranger: MCU
+  cd: givmegivmenightfever_cd
+  note: 
+
+# ラブナビ
+lovenavi_song:
+  artist: mcu_artist
+  name: ラブナビ
+  lyricist: MCU
+  composer: MCU
+  arranger: MCU
+  cd: givmegivmenightfever_cd
+  note: 
+
+# YOU詩
+youshi_song:
+  artist: mcu_artist
+  name: YOU詩
+  lyricist: MCU & 北浦正尚
+  composer: MCU & 北浦正尚
+  arranger: MCU
+  cd: givmegivmenightfever_cd
+  note: 
+

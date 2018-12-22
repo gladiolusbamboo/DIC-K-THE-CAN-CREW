@@ -251,6 +251,8 @@ class SearchController < ApplicationController
       # SearchLogを生成して
       @search_log = SearchLog.new(search_log_params)
 
+      logger.debug @search_log.to_s
+
       # DBに保存する
       @search_log.save!
 

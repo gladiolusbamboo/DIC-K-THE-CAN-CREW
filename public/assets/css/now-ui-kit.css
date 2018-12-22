@@ -7721,3 +7721,8 @@ h5.description{
 p.note{
     font-size: 10px
 }
+
+ul.lyric_urls {
+    font-size: 12px;
+    text-align: right;
+}

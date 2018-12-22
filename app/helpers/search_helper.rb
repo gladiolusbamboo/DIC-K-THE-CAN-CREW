@@ -41,6 +41,15 @@ module SearchHelper
     end
   end
 
+  # 歌詞掲載サイトへのリンク
+  def show_lyric_urls lyric_urls
+    concat(content_tag(:ul, class: 'lyric_urls') do
+      lyric_urls.each do |url|
+        concat(link_to('(歌詞掲載サイトへ)',url.url, target: '_blank'))
+      end
+    end)
+  end
+
   # SearchLogからsearchwordの最頻出曲を得る関数
   def get_most_appear_song_name_from_search_log search_log
     max = 0
@@ -367,6 +376,9 @@ module SearchHelper
             if info_arr[0].song.note != nil
               concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
             end
+
+            show_lyric_urls(info_arr[0].song.lyric_urls)
+
           end)
           concat_html_with_tag("div", '', "filter")
         end
@@ -398,6 +410,9 @@ module SearchHelper
             if info_arr[0].song.note != nil
               concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
             end
+
+            show_lyric_urls(info_arr[0].song.lyric_urls)
+
           end)
         end
       end
@@ -406,6 +421,7 @@ module SearchHelper
     # デフォルト白カード生成
     def generate_card_default(info_arr)
       content_tag(:div, class: "card-box col-md-4 col-sm-6 animated #{get_random_animation()}") do
+#      content_tag(:div, class: "card-box col-md-4 col-sm-6 animated fadeIn") do
         content_tag(:div, class: 'card') do
           concat(content_tag(:div, class: 'content') do
 
@@ -425,6 +441,8 @@ module SearchHelper
             if info_arr[0].song.note != nil
               concat_html_with_tag("p", "※" + info_arr[0].song.note.to_s, "note")
             end
+
+            show_lyric_urls(info_arr[0].song.lyric_urls)
 
           end)
         end

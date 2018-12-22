@@ -366,6 +366,14 @@ shuhari_cd:
   name: SHU・HA・RI ~STILL LOVE~
   released_at: 2009-03-11
 
+givmegivmenightfever_cd:
+  name: ギミギミ・ナイトフィーバー
+  released_at: 2009-12-02
+
+bestofmcu_cd:
+  name: BEST OF MCU
+  released_at: 2010-02-10
+
 # その他
 wildflowers_cd:
   name: Wild Flowers
