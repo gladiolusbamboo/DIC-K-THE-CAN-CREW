@@ -12,6 +12,9 @@
           <% else %>
           <p class="description">(ふりがな検索)</p>
           <% end %>
+          <a href="https://twitter.com/share?text=「<%= @trimmed_search_word %>」は<%= @hit_song_infos.length %>曲のKICK THE CAN CREW関係の曲の歌詞で使われています&url=<%= url_encode('https://dtcc.kankeli.net' + request.fullpath) %>" onClick="window.open(this.href, 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link nav-link">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </a>
         </div>
       </div>
       <!-- end card -->

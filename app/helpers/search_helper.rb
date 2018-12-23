@@ -1,5 +1,6 @@
 module SearchHelper
   include Utility
+  require 'cgi'
 
   # 検索結果の部分を表示する関数
   def show_searchwords is_ruby_search, info_arr, searchword
@@ -556,7 +557,10 @@ module SearchHelper
       concat(tag(:hr, class: 'fade-2'))
     end
     
-    
+    def url_encode(txt)
+      CGI.escape(txt)
+    end
+
 
     ####################################
     # これ以降のgenerate_cardは使わない  #
