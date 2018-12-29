@@ -1278,4 +1278,70 @@ module SearchHelper
         end
       end
     end
+
+    def generate_cd_view id, cd_type, title, date, cds_array
+      root = Nokogiri::HTML::DocumentFragment.parse('')
+      Nokogiri::HTML::Builder.with(root) do |t|
+        t.li do
+          t.h4 do
+            t.a "#{cd_type}「#{title}」(#{date})", href: "##{id}", "data-toggle": "collapse", class: "song-name-toggle"
+          end
+          t.div id: id, class: "collapse" do
+            cds_array.each do |cd|
+              t.table class: :table do
+                t.thead do
+                  t.tr do
+                    t.th "#{cd.disc_name}"
+                    t.th "曲名"
+                    t.th "検索対象"
+                    t.th "備考"
+                  end
+                end
+                t.tbody do
+                  cd.song_array.each_with_index do |song_data, index|
+                    t.tr do
+                      t.th index+1
+                      t.td song_data[0]
+                      t.td song_data[1]
+                      t.td song_data[2]
+                    end
+                  end
+                end  
+              end
+            end
+          end
+        end
+      end
+      root.to_html.html_safe
+    end
   end
+
+#   <li>
+#   <h4><a href="#takaoni" data-toggle="collapse" class="song-name-toggle">Sg「タカオニ/カンケリ」(1997-08-21)</a></h4>
+#   <div id="takaoni" class="collapse">
+#     <table class="table">
+#       <thead>
+#         <tr>
+#           <th>#</th>
+#           <th>曲名</th>
+#           <th>検索対象</th>
+#           <th>備考</th>
+#         </tr>
+#       </thead>
+#       <tbody>
+#         <tr>
+#           <th>1</th>
+#           <td>タカオニ</td>
+#           <td>○</td>
+#           <td></td>
+#         </tr>
+#         <tr>
+#           <th>2</th>
+#           <td>カンケリ</td>
+#           <td>○</td>
+#           <td></td>
+#         </tr>
+#       </tbody>
+#     </table>
+#   </div>
+# </li>

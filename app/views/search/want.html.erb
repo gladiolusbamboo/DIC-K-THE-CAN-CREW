@@ -1,423 +1,1898 @@
-        <div class="page-header page-header-small">
-            <div class="page-header-image" style="background-image: url('../../assets/img/jackets_collage.png');">
-            </div>
-            <div class="container">
-                <div class="content-center">
-                    <h1 class="title">KICK &amp; ソロ名義楽曲一覧</h1>
-                    <h5 class="title artists-link"><a href="#ktcc" class="artist-section-link">KICK THE CAN CREW</a> | <a href="#kreva" class="artist-section-link">KREVA</a> | <a href="#little" class="artist-section-link">LITTLE</a> | <a href="#mcu" class="artist-section-link">MCU</a> | <a href="#other" class="artist-section-link">OTHER</a></h5>
-                </div>
-            </div>
+<div class="page-header page-header-small">
+  <div class="page-header-image" style="background-image: url('../../assets/img/jackets_collage.png');">
+  </div>
+  <div class="container">
+    <div class="content-center">
+      <h1 class="title">KICK &amp; ソロ名義楽曲一覧</h1>
+      <h5 class="title artists-link"><a href="#ktcc" class="artist-section-link">KICK THE CAN CREW</a> | <a href="#kreva" class="artist-section-link">KREVA</a> | <a href="#little" class="artist-section-link">LITTLE</a> | <a href="#mcu" class="artist-section-link">MCU</a> | <a href="#other" class="artist-section-link">OTHER</a></h5>
+    </div>
+  </div>
+</div>
+<div class="section section-about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-center animated fadeIn">
+        <p class="description">
+          KICK THE CAN CREWおよび各メンバーがこれまでにリリースしたCDをまとめています。
+        </p>
+      </div>
+    </div>
+    <div class="separator separator-primary"></div>
+    <div class="row">
+      <div class="col-md-12 ml-auto mr-auto text-center">
+        <h3 class="title animated fadeIn" id="ktcc">KICK THE CAN CREW</h3>
+        <ul>
+          <%= generate_cd_view(
+                'takaoni', 
+                'Sg', 
+                'タカオニ / カンケリ', 
+                Date.new(1997, 8, 21), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [["タカオニ","○",""],
+                    ["カンケリ","○",""] ,
+                    ["タカオニ(INSTRUMENTAL)","",""], 
+                    ["カンケリ(INSTRUMENTAL)","",""]])
+                ]) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'younganimal', 
+                'Sg', 
+                'young animal e.p.', 
+                Date.new(2000, 7, 5), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [["Down by Law(feat.CRAZY-A)","○",""],
+                    ["タカオニ2000","○",""] ,
+                    ["one for the what,two for the who-part2","○",""], 
+                    ["灼熱舞踏会","○",""]])
+              ]) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'goodtime', 
+                'Sg', 
+                'GOOD TIME!', 
+                Date.new(2000, 8, 18), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [["GOOD TIME!","○",""],
+                    ["UP DOWN BICYCLE","○",""] ,
+                    ["ユートピア","○",""]])
+              ]) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'youngking', 
+                'Al', 
+                'YOUNG KING', 
+                Date.new(2000, 9, 13), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["Call…","","Instrumental"],
+                      ["KICK OFF","○",""] ,
+                      ["Megacityrunning","○",""],
+                      ["Why did I?","○",""],
+                      ["GOOD TIME!","○",""],
+                      ["PARTYOVER","○",""],
+                      ["ユートピア","○",""],
+                      ["X-amount","○",""],
+                      ["旅人","","Instrumental"],
+                      ["エルニーニョ","○",""],
+                      ["United rivers","○",""],
+                      ["河と海が合わさるところ","","Instrumental"],
+                      ["タカオニ2000","○",""]
+                    ]
+                  )
+                ]) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'kyoukarashita', 
+                'Sg', 
+                '今日から明日', 
+                Date.new(2001, 2, 21), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["今日から明日","○",""],
+                      ["今日カラ明日","△","「今日から明日」と同じ歌詞"] ,
+                      ["今日から明日(INSTRUMENT)","",""],
+                      ["今日カラ明日(INSTRUMENT)","",""],
+                    ]
+                  )
+                ]) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'superoriginal', 
+                'Sg', 
+                'スーパーオリジナル', 
+                Date.new(2001, 5, 23), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["スーパーオリジナル","○",""],
+                      ["Fire!-reconstruction of スーパーオリジナル","","Instrumental"] ,
+                      ["スーパーオリジナル(INSTRUMENT)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'itsunarouba', 
+                'Sg', 
+                'イツナロウバ', 
+                Date.new(2001, 7, 11), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["イツナロウバ","○",""],
+                      ["KA･RU･KU FICTION","○",""] ,
+                      ["イツナロウバ(INSTRUMENTAL)","",""],
+                      ["KA･RU･KU FICTION(INSTRUMENTAL)","",""] ,
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'kankeri01', 
+                'Sg', 
+                'カンケリ01 / LIFELINE', 
+                Date.new(2001, 9, 27), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["カンケリ01","○",""],
+                      ["LIFELINE","○",""] ,
+                      ["カンケリ01(INSTRUMENTAL)","",""],
+                      ["LIFELINE(INSTRUMENTAL)","",""] ,
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'greatesthits', 
+                'Al', 
+                'Greatest Hits', 
+                Date.new(2001, 10, 17), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["Down by Law","○",""],
+                      ["GOOD TIME!(ver.2001)","△","アレンジ"] ,
+                      ["3MCs+1DJ","○",""],
+                      ["Color Variation","○",""],
+                      ["one for the what,two for the who(ver.2001)","△","アレンジ"],
+                      ["one for the what,two for the who(part2)","○",""],
+                      ["ユートピア (ver.2001)","△","アレンジ"],
+                      ["X-amount(ver.2001)","△","アレンジ"],
+                      ["今日カラ明日","△","「今日から明日」と同じ歌詞"],
+                      ["灼熱舞踏会","○",""],
+                      ["Why Did I ?(remix)","△","アレンジ"],
+                      ["エルニーニョ(ver.2001)","△","アレンジ"],
+                      ["今日から明日","○",""],
+                      ["タカオニ2000","○",""],
+                      ["タカオニ","○",""],
+                      ["カンケリ","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'christmaseverap', 
+                'Sg', 
+                'クリスマス・イブRap', 
+                Date.new(2001, 11, 7), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["クリスマス・イブRap","○",""],
+                      ["クリスマス・イブRap(INSTRUMENTAL)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'marche', 
+                'Sg', 
+                'マルシェ', 
+                Date.new(2002, 1, 23), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["マルシェ","○",""],
+                      ["C'MON EVERYBODY","○",""],
+                      ["イツナロウバ　live at NAGOYA QUATTRO(3MCs+1DJ tour final)","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'vitalizer', 
+                'Al', 
+                'VITALIZER', 
+                Date.new(2002, 2, 14), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ['THE THEME OF "KICK"',"○",""],
+                      ["スーパーオリジナル","○",""],
+                      ["マルシェ","○",""],
+                      ["ONEWAY","○",""],
+                      ["キックOFF","○",""],
+                      ["C'MON EVERYBODY","○",""],
+                      ["イツナロウバ","○",""],
+                      ["One for the what,two for the who Part3","○",""],
+                      ["?WHATCHANAME?","○",""],
+                      ["LIFELINE","○",""],
+                      ["HANDS","○",""],
+                      ["VITALIZER","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'oneway', 
+                'Sg', 
+                'ONEWAY', 
+                Date.new(2002, 3, 13), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["ONEWAY","○",""],
+                      ["HANDS","○",""],
+                      ["マルシェROCK-Tee's mo'raw-funk remix","△","アレンジ"],
+                      ["マルシェLIVE at ZEPP OSAKA,24DEC2001","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'sayonarasayonara', 
+                'Sg', 
+                'sayonara sayonara', 
+                Date.new(2002, 5, 22),
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["sayonara sayonara","○",""],
+                      ["bed","○",""],
+                      ["KICK オフ(DJ TATSUTA remix)","△","アレンジ"],
+                      ["sayonara sayonara(instrumental)","",""],
+                      ["bed(instrumental)","",""],
+                      ["マルシェ(instrumental)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'unbalance', 
+                'Sg', 
+                'アンバランス', 
+                Date.new(2002, 8, 28),
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["アンバランス","○",""],
+                      ["サヨナラサヨナラ(イーゼ)feat.CUEZERO","△","アレンジ。HOOK以外別歌詞"],
+                      ["LIVE at 渋谷クアトロ,17 JUL.2002","","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'chikyuublues', 
+                'Sg', 
+                '地球ブルース～337～ / DJDJ[for RADIO]', 
+                Date.new(2002, 11, 7),
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["地球ブルース～337～","○",""],
+                      ["DJDJ[for RADIO]","○",""],
+                      ["地球ブルース～337～(instrumental)","",""],
+                      ["DJDJ[for RADIO](instrumental)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'toriiiiiico', 
+                'Sg', 
+                'TORIIIIIICO! feat. CASSETTE VISION', 
+                Date.new(2002, 11, 7),
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["TORIIIIIICO!","○",""],
+                      ["TORIIIIIICO!(instrumental)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'magicnumber', 
+                'Al', 
+                'magic number', 
+                Date.new(2003, 1, 1), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["登場","○",""],
+                      ["RE-FRESH","○",""],
+                      ["地球ブルース～337～","○",""],
+                      ["ストレス","○",""],
+                      ["mama said～ハタラキッパ～","○",""],
+                      ["アンバランス","○",""],
+                      ["movingman","○",""],
+                      ["DJDJ(for RADIO)","○",""],
+                      ["CAN-CAN","○",""],
+                      ["TORIIIIIICO! feat.CASSETTE VISION","○",""],
+                      ["E.L.E.M.E.N.T.S","○",""],
+                      ["LONELY ONE","○",""],
+                      ["sayonara sayonara(Album Edit)feat.CUE ZERO","△","アレンジ"],
+                      ["magic number","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'sagacontinue', 
+                'Sg', 
+                '性コンティニュー', 
+                Date.new(2003, 8, 6), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["性コンティニュー","○",""],
+                      ["BREAK 3","○",""],
+                      ["神輿ロッカーズ(live)feat.RHYMESTER","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'goodmusic_sg', 
+                'Sg', 
+                'GOOD MUSIC', 
+                Date.new(2003, 9, 10), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["GOOD MUSIC","○",""],
+                      ["自由TIME","○",""],
+                      ["性コンティニュー(LIVE)","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'puncsunzennofunk', 
+                'Sg', 
+                'パンク寸前のFUNK', 
+                Date.new(2003, 10, 16), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["パンク寸前のFUNK","○",""],
+                      ["D.O.I.T.A.","○",""],
+                      ["GOOD MUSIC(LIVE)","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'navi', 
+                'Sg', 
+                'ナビ / 揺れ', 
+                Date.new(2003, 11, 12), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["ナビ","○",""],
+                      ["揺れ","○",""],
+                      ["パンク寸前のFUNK(LIVE)","△","Live"],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'nounaivacation', 
+                'Sg', 
+                '脳内VACATION', 
+                Date.new(2003, 12, 10), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["脳内VACATION","○",""],
+                      ["脳内VACATION(instrumental)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'bestalbum20012003', 
+                'Al', 
+                'BEST ALBUM 2001-2003', 
+                Date.new(2003, 11, 19), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["STEP IN THE DAY","○",""],
+                      ["スーパーオリジナル","○",""],
+                      ["イツナロウバ","○",""],
+                      ["カンケリ01","○",""],
+                      ["LIFELINE","○",""],
+                      ["クリスマス・イブ Rap","○",""],
+                      ["マルシェ","○",""],
+                      ["ONEWAY","○",""],
+                      ["VITALIZER","○",""],
+                      ["sayonara sayonara","○",""],
+                      ["アンバランス","○",""],
+                      ["地球ブルース～337～","○",""],
+                      ["DJDJ[for RADIO]","○",""],
+                      ["TORIIIIIICO!","○",""],
+                      ["magic number","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'goodmusic_al', 
+                'Al', 
+                'GOOD MUSIC', 
+                Date.new(2004, 1, 1), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["OPENING","○",""],
+                      ["性コンティニュー","○",""],
+                      ["パレード","○",""],
+                      ["MISSION 1","○",""],
+                      ["脳内VACATION(album edit)","△","アレンジ"],
+                      ["ALL NIGHT LONG","○",""],
+                      ["裏表","○",""],
+                      ["揺れ","○",""],
+                      ["MISSION 2","○",""],
+                      ["自由TIME(album edit)","△","アレンジ"],
+                      ["ナビ","○",""],
+                      ["LIKE THIS(GOOD!)","○",""],
+                      ["GOOD MUSIC","○",""],
+                      ["MISSION 3","○",""],
+                      ["パンク寸前のFUNK","○",""],
+                      ["もしも","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'kick', 
+                'Al', 
+                'KICK!', 
+                Date.new(2017, 8, 30), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["全員集合","○",""],
+                      ["千％","○",""],
+                      ["今もSing-along","○",""],
+                      ["SummerSpot","○",""],
+                      ["なんでもないDays","○",""],
+                      ["完全チェンジTHEワールド","○",""],
+                      ["また戻っておいで","○",""],
+                      ["また波を見てる","○",""],
+                      ["I Hope You Miss Me a Little","○",""],
+                      ["タコアゲ","○",""],
+                    ]
+                  )
+                ]
+          ) %>
+          <hr class="fade-2">
+          <%= generate_cd_view(
+                'juusho', 
+                'Sg', 
+                '住所 feat.岡村靖幸', 
+                Date.new(2018, 8, 29), 
+                [
+                  CdData.new(
+                    "Disc1",
+                    [
+                      ["住所 feat.岡村靖幸","○",""],
+                      ["Keep It Up","○",""],
+                      ["住所 feat.岡村靖幸(Inst.)","",""],
+                      ["Keep It Up(Inst.)","",""],
+                    ]
+                  )
+                ]
+          ) %>
+
+         </ul>
+      </div>
+    </div>
+    <div class="separator separator-primary"></div>
+    <div class="row">
+      <div class="col-md-12 ml-auto mr-auto text-center">
+        <h3 class="title animated fadeIn" id="kreva">KREVA</h3>
+          <ul>
+            <%= generate_cd_view(
+              'kibounohonoo', 
+              'Sg', 
+              '希望の炎', 
+              Date.new(2004, 6, 18), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["希望の炎","○",""],
+                    ["'1st album SELF LINERNOTES' (CD-EXTRA)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'neiro', 
+              'Sg', 
+              '音色', 
+              Date.new(2004, 9, 8), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["音色","○",""],
+                    ["音色Remix","△","アレンジ"] ,
+                    ["コントロール","○",""] ,
+                    ["音色(Inst.)","",""],
+                    ["音色Remix(Inst.)","",""] ,
+                    ["コントロール(Inst.)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'hitorijanainoyo', 
+              'Sg', 
+              'ひとりじゃないのよ Single Version', 
+              Date.new(2004, 10, 20), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["ひとりじゃないのよ Single Version","○",""],
+                    ["コトバにできない","○",""] ,
+                    ["ひとりじゃないのよ Remix","△","アレンジ"] ,
+                    ["ひとりじゃないのよ Single Version Instrumental","",""],
+                    ["コトバにできない Instrumental","",""] ,
+                    ["ひとりじゃないのよ Remix Instrumental","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'shinjinkreva', 
+              'Al', 
+              "新人クレバ", 
+              Date.new(2004, 11, 3), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["Dr.K","","歌詞非掲載"],
+                    ["DAN DA DAN feat.CUEZERO","○",""],
+                    ["音色","○",""],
+                    ["あ･ら･らTake you home","○",""],
+                    ["お祭りクレバ","○",""],
+                    ["ファンキーグラマラス feat.Mummy-D","○",""],
+                    ["スタンド･バイ･ミー feat.KANA","○",""],
+                    ["Skit/Dr.K診療所","","歌詞非掲載"],
+                    ["WAR WAR ZONE feat.CUEZERO","○",""],
+                    ["You are the No.1 (Hey DJ) feat.BONNIE PINK","○",""],
+                    ["You know we rule feat.NG HEAD","○",""],
+                    ["希望の炎","○",""],
+                    ["ひとりじゃないのよ feat.SONOMI (Album Version)","△","アレンジ"],
+                    ["Baby Dancer Home Grown Remix (Bonus Track)","△","アレンジ"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'funkyglomorous', 
+              'Sg', 
+              'ファンキーグラマラス', 
+              Date.new(2005, 1, 13), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["ファンキーグラマラス feat.Mummy-D","○",""],
+                    ["ファンキーグラマラス Part2 マボロシ feat.KREVA＜Dr.K Remix＞","","歌詞データ未入力"] ,
+                    ["ファンキーグラマラス feat.Mummy-D＜ROCK-Tee's Funk-Tank Freak Show Remix＞","△","アレンジ"] ,
+                    ["ファンキーグラマラス feat.Mummy-D Inst.","",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'issaigassai', 
+              'Sg', 
+              'イッサイガッサイ', 
+              Date.new(2005, 6, 15), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["イッサイガッサイ","○",""],
+                    ["KRAZY BOY,KRAZY GIRL","○",""] ,
+                    ["all day,all night","○",""] ,
+                    ["イッサイガッサイ Instrumental","",""],
+                    ["KRAZY BOY,KRAZY GIRL Instrumental","",""] ,
+                    ["all day,all night Instrumental","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'start', 
+              'Sg', 
+              'スタート', 
+              Date.new(2005, 9, 8), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["スタート","○",""],
+                    ["いまさら2step","○",""] ,
+                    ["I was a fool","○",""] ,
+                    ["スタート(Instrumental)","",""],
+                    ["いまさら2step(Instrumental)","",""] ,
+                    ["I was a fool(Instrumental)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'kokumintekigyouji', 
+              'Sg', 
+              '国民的行事', 
+              Date.new(2005, 12, 7), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["国民的行事","○",""],
+                    ["Practice Session feat.SONOMI","","歌詞非掲載"] ,
+                    ["国民的行事(Instrumental)","",""] ,
+                    ["Practice Session feat.SONOMI(Instrumental)","",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">           
+            <%= generate_cd_view(
+              'aijibunhaku', 
+              'Al', 
+              "愛・自分博", 
+              Date.new(2006, 2, 1), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["H.A.P.P.Y","○",""],
+                    ["国民的行事","○",""],
+                    ["It's for you","○",""],
+                    ["いいと思う","○",""],
+                    ["island life feat.SONOMI","○",""],
+                    ["イッサイガッサイ","○",""],
+                    ["涙止まれよ feat.SONOMI","○",""],
+                    ["江戸川ロックオン","○",""],
+                    ["暗闇のナビゲイラ","○",""],
+                    ["トリートメント feat.DABO,CUEZERO","○",""],
+                    ["スタート","○",""],
+                    ["My Life","○",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'haveaniceday', 
+              'Sg', 
+              'Have a nice day!', 
+              Date.new(2006, 8, 2), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["Have a nice day!","○",""],
+                    ["Have a nice day! (Re-Mix)","△","アレンジ"] ,
+                    ["今夜はブギー・バック","","歌詞非掲載"] ,
+                    ["Have a nice day!(Instrumental)","",""],
+                    ["次回予告1","",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'theshow', 
+              'Sg', 
+              'THE SHOW', 
+              Date.new(2006, 11, 1), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["THE SHOW","○",""],
+                    ["Have a nice day! -Live Ver.-","△","Live"] ,
+                    ["THE SHOW -Inst.-","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'aggressibu', 
+              'Sg', 
+              'アグレッシ部', 
+              Date.new(2007, 3, 14), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["アグレッシ部","○",""],
+                    ["THE SHOW(熊井吾郎Remix)","△","アレンジ"] ,
+                    ["口元に笑み","○",""] ,
+                    ["アグレッシ部(Inst.)","",""],
+                    ["THE SHOW(熊井吾郎Remix Inst.)","",""] ,
+                    ["口元に笑み(Inst.)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'bestofmixcdno1', 
+              'Al', 
+              "BEST of MIXCD NO.1", 
+              Date.new(2007, 3, 14), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["INTRO","","Instrumental"],
+                    ["イッサイガッサイ","△","アレンジ"],
+                    ["My Life","△","アレンジ"],
+                    ["island life","△","アレンジ"],
+                    ["希望の炎","△","アレンジ"],
+                    ["You are the No.1(Hey DJ)","△","アレンジ"],
+                    ["Have a nice day!(Remix)","△","アレンジ"],
+                    ["all day,all night","△","アレンジ"],
+                    ["Practice Session","","歌詞非掲載"],
+                    ["THE SHOW","△","アレンジ"],
+                    ["暗闇のナビゲイラ","△","アレンジ"],
+                    ["音色","△","アレンジ"],
+                    ["ひとりじゃないのよ Remix","△","アレンジ"],
+                    ["涙止まれよ","△","アレンジ"],
+                    ["I was a fool BEAT","","Instrumental"],
+                    ["It's for you","△","アレンジ"],
+                    ["OUTRO","","Instrumental"],
+                  ]
+                ),
+                CdData.new(
+                  "Disc2",
+                  [
+                    ["My Life","","Instrumental"],
+                    ["island life","","Instrumental"],
+                    ["希望の炎","","Instrumental"],
+                    ["You are the No.1 (Hey DJ)","","Instrumental"],
+                    ["Have a nice day！(Remix)","","Instrumental"],
+                    ["Practice Session","","Instrumental"],
+                    ["暗闇のナビゲイラ","","Instrumental"],
+                    ["涙止まれよ","","Instrumental"],
+                    ["It's for you","","Instrumental"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'kurebaiinoni', 
+              'Sg', 
+              'くればいいのに feat.草野マサムネ from SPITZ (Single Edit)', 
+              Date.new(2007, 6, 20), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["くればいいのにfeat.草野マサムネ from SPITZ (Single Edit)","○",""],
+                    ["くればいいのにfeat.草野マサムネ from SPITZ (Single Edit Inst.)","",""] ,
+                    ["JUMP ON IT","○",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'yoroshikuonegaishimasu', 
+              'Al', 
+              "よろしくお願いします", 
+              Date.new(2007, 9, 5), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["ストロングスタイル","○",""],
+                    ["THE SHOW","○",""],
+                    ["YOU DON'T STOP!!","○",""],
+                    ["揺さぶるブルー","○",""],
+                    ["ビコーズ","○",""],
+                    ["You are my sunshine feat.千晴","○",""],
+                    ["今日だけでいい feat.SONOMI & ALI-KICK","○",""],
+                    ["ため息はCO2","○",""],
+                    ["くればいいのに feat.草野マサムネ from SPITZ(ALBUM VERSION)","△","アレンジ"],
+                    ["東西南北脳内回想録","○",""],
+                    ["SWEET SWEET メモリーズ feat.SONOMI","○",""],
+                    ["アグレッシ部","○",""],
+                    ["終わりたくないオーワラナイ","○",""],
+                    ["THE SHOW (熊井吾郎Remix)","△","アレンジ"],
+                    ["Have a nice day!","○",""],
+                    ["アグレッシ部 (Remix) feat.KOHEI JAPAN & SHINGO☆西成","△","アレンジ。HOOK以外別歌詞"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'strongstyle', 
+              'Sg', 
+              'ストロングスタイル', 
+              Date.new(2007, 10, 3), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["ストロングスタイル","○",""],
+                    ["ビコーズ","○",""] ,
+                    ["ストロングスタイル(Inst.)","",""],
+                    ["ビコーズ(Inst.)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'ao', 
+              'Sg', 
+              '青', 
+              Date.new(2009, 3, 18), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["成功","○",""],
+                    ["I Wanna Know You","○",""] ,
+                    ["生まれてきてありがとう(feat.さかいゆう)","○",""],
+                    ["So Sexy","○",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'krevanobestban', 
+              'Al', 
+              "クレバのベスト盤", 
+              Date.new(2008, 3, 19), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["ストロングスタイル","○",""],
+                    ["ビコーズ","○",""],
+                    ["くればいいのにfeat.草野マサムネ from SPITZ (Single Edit)","○",""],
+                    ["アグレッシ部","○",""],
+                    ["THE SHOW","○",""],
+                    ["Have a nice day!","○",""],
+                    ["H.A.P.P.Y","○",""],
+                    ["It's for you","○",""],
+                    ["国民的行事","○",""],
+                    ["スタート","○",""],
+                    ["イッサイガッサイ","○",""],
+                    ["ファンキーグラマラス feat.Mummy-D from Rhymester/マボロシ","○",""],
+                    ["ひとりじゃないのよ feat.SONOMI","○",""],
+                    ["音色","○",""],
+                    ["希望の炎","○",""],
+                    ["あかさたなはまやらわをん","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'aka_kreva', 
+              'Sg', 
+              '赤', 
+              Date.new(2009, 7, 8), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["瞬間speechless","○",""],
+                    ["君に、胸キュン。-浮気なヴァカンス-","○",""] ,
+                    ["瞬間speechless(inst)","",""],
+                    ["君に、胸キュン。-浮気なヴァカンス-(Inst.)","",""] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'shinzou', 
+              'Al', 
+              "心臓", 
+              Date.new(2009, 9, 4), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["K.I.S.S.","○",""],
+                    ["瞬間speechless","○",""],
+                    ["これがFall In Love","○",""],
+                    ["Tears In My Eyes","○",""],
+                    ["リズム","○",""],
+                    ["シンクロ feat.古内東子","○",""],
+                    ["Tonight","○",""],
+                    ["心臓","","歌詞非掲載"],
+                    ["ACE","○",""],
+                    ["成功","○",""],
+                    ["中盤戦 feat.Mummy-D","○",""],
+                    ["I Wanna Know You","○",""],
+                    ["キャラメルポップコーン feat.将絢 from Romancrew","○",""],
+                    ["生まれてきてありがとう feat.さかいゆう","○",""],
+                    ["この先どうなる?","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'oasys', 
+              'Al', 
+              "OASYS", 
+              Date.new(2010, 9, 15), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["道なき道","○",""],
+                    ["かも","○",""],
+                    ["たられば feat SONOMI","○",""],
+                    ["最終回","○",""],
+                    ["エレクトロ・アース・トラックス","○",""],
+                    ["Oasys","","Instrumental"],
+                    ["Changing Same","○",""],
+                    ["Reprise ～道なき道～","△","「道なき道」と同歌詞"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'idome', 
+              'Sg', 
+              '挑め', 
+              Date.new(2011, 2, 16), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["挑め","○",""],
+                    ["ベステンダンク","○",""] ,
+                    ["挑め Remix feat. MCU & LITTLE","△","アレンジ。HOOK以外別歌詞"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'cmonletsgo', 
+              'Sg', 
+              "C'mon, Let's go", 
+              Date.new(2011, 5, 11), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["C'mon, Let's go","○",""],
+                    ["マカー GB-mix feat.AKLO,L-VOKAL(BETTER HALVES)","○",""] ,
+                    ["C'mon, Let's go(Inst.)","",""],
+                    ["C'mon, Let's go(with hook)","",""],
+                    ["C'mon, Let's go(Acappella)","△","ボーカルパートのみ"],
+                    ["マカー GB-mix feat.AKLO,L-VOKAL(BETTER HALVES)(Inst.)","",""],
+                    ["マカー GB-mix feat.AKLO,L-VOKAL(BETTER HALVES)(Acappella)","△","ボーカルパートのみ"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'tankyushin', 
+              'Sg', 
+              "Tan-Kyu-Shin / KILA KILA", 
+              Date.new(2011, 7, 20), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["Tan-Kyu-Shin","○",""],
+                    ["KILA KILA","○",""] ,
+                    ["Tan-Kyu-Shin(Inst.)","",""],
+                    ["Tan-Kyu-Shin(アニメver)","△","アレンジ"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'kilakila', 
+              'Sg', 
+              "KILA KILA / Tan-Kyu-Shin", 
+              Date.new(2011, 7, 20), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["KILA KILA","○",""] ,
+                    ["Tan-Kyu-Shin","○",""],
+                    ["ハヒヘホ feat. SHINGO★西成","○",""],
+                    ["KILA KILA(Inst.)","",""] ,
+                    ["KILA KILA(with hook)","",""] ,
+                    ["KILA KILA(Acappella)","△","ボーカルパートのみ"] ,
+                    ["ハヒヘホ feat. SHINGO★西成(Inst.)","",""],
+                    ["ハヒヘホ feat. SHINGO★西成(Acappella)","△","ボーカルパートのみ"],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'go', 
+              'Al', 
+              "GO", 
+              Date.new(2011, 9, 8), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["基準","○",""],
+                    ["挑め","○",""],
+                    ["KILA KILA","○",""],
+                    ["蜃気楼 feat. 三浦大知","○",""],
+                    ["呪文","○",""],
+                    ["runnin' runnin'","○",""],
+                    ["HOT SUMMER DAYS","○",""],
+                    ["微炭酸シンドローム feat. 阿部真央","○",""],
+                    ["パーティーはIZUKO?","○",""],
+                    ["C'mon, Let's go","○",""],
+                    ["EGAO","○",""],
+                    ["探究心","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'bestofmixcdno2', 
+              'Al', 
+              "BEST of MIXCD NO.2", 
+              Date.new(2012, 2, 22), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["かも","△","アレンジ"],
+                    ["シンクロ","△","アレンジ"],
+                    ["道なき道","△","アレンジ"],
+                    ["runnin‘runnin’","△","アレンジ"],
+                    ["くればいいのに","△","アレンジ"],
+                    ["HOT SUMMER DAYS","△","アレンジ"],
+                    ["I Wanna Know You","△","アレンジ"],
+                    ["探究心","△","アレンジ"],
+                    ["キャラメルポップコーン","△","アレンジ"],
+                    ["たられば","△","アレンジ"],
+                    ["Changing Same","△","アレンジ"],
+                    ["成功","△","アレンジ"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'nanana', 
+              'Sg', 
+              "Na Na Na", 
+              Date.new(2012, 9, 5), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["Na Na Na","○",""] ,
+                    ["No More Mr. NiceGuy feat. KEN THE 390, AKLO","○",""],
+                    ["Na Na Na(inst.)","",""],
+                    ["No More Mr. NiceGuy feat. KEN THE 390, AKLO(inst.)","",""] ,
+                    ["Na Na Na(Acappella)","△","ボーカルパートのみ"] ,
+                    ["No More Mr. NiceGuy feat. KEN THE 390, AKLO(Acappella)","△","ボーカルパートのみ"] ,
+                    ["あかさたなはまやらわをん-2012 Re-Mix-","△","アレンジ"] ,
+                    ["あかさたなはまやらわをん-2012 Re-Mix-(inst.)","",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'oujanokyuujitsu', 
+              'Sg', 
+              "王者の休日", 
+              Date.new(2013, 1, 16), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["王者の休日","○",""] ,
+                    ["No More Mr. NiceGuy Remix feat. KEN THE 390, AKLO, 坂本美雨","△","アレンジ"],
+                    ["王者の休日(Inst.)","",""],
+                    ["王者の休日(Acappella)","△","ボーカルパートのみ"] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'spaceinstrumentals', 
+              'Al', 
+              "SPACE Instrumentals", 
+              Date.new(2013, 2, 20), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["space4space 1","","Instrumental"],
+                    ["SPACE","","Instrumental"],
+                    ["Feel It In The Air","","Instrumental"],
+                    ["ma chèrie’","","Instrumental"],
+                    ["王者の休日","","Instrumental"],
+                    ["space4space 2","","Instrumental"],
+                    ["俺は Do It Like This","","Instrumental"],
+                    ["調理場","","Instrumental"],
+                    ["言ってなカッタカナ?","","Instrumental"],
+                    ["OH YEAH","","Instrumental"],
+                    ["space4space 3","","Instrumental"],
+                    ["Space Dancer","","Instrumental"],
+                    ["Link","","Instrumental"],
+                    ["space4space 4","","Instrumental"],
+                    ["Na Na Na","","Instrumental"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'space', 
+              'Al', 
+              "SPACE", 
+              Date.new(2013, 2, 27), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["space4space 1","","Instrumental"],
+                    ["SPACE","○",""],
+                    ["Feel It In The Air","○",""],
+                    ["ma chèrie’","○",""],
+                    ["王者の休日","○",""],
+                    ["space4space 2","","Instrumental"],
+                    ["俺は Do It Like This","○",""],
+                    ["調理場","○",""],
+                    ["言ってなカッタカナ?","○",""],
+                    ["OH YEAH","○",""],
+                    ["space4space 3","","Instrumental"],
+                    ["Space Dancer","○",""],
+                    ["Link","○",""],
+                    ["space4space 4","","Instrumental"],
+                    ["Na Na Na","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'beshi', 
+              'Sg', 
+              "BESHI", 
+              Date.new(2013, 8, 28), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["BESHI","○",""] ,
+                    ["世界の中心","○",""],
+                    ["BESHI(Inst.)","",""],
+                    ["BESHI(Acappella)","△","ボーカルパートのみ"] ,
+                    ["世界の中心(Inst.)","",""],
+                    ["世界の中心(Acappella)","△","ボーカルパートのみ"] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'livealbumspacetour', 
+              'Al', 
+              "LIVE ALBUM SPACE TOUR", 
+              Date.new(2013, 12, 4), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["space4space 1","","Instrumental"],
+                    ["SPACE","△","Live"],
+                    ["Feel It In The Air","△","Live"],
+                    ["基準","△","Live"],
+                    ["ストロングスタイル","△","Live"],
+                    ["俺は Do It Like This","△","Live"],
+                    ["I REP","","歌詞データ未入力"],
+                    ["調理場","△","Live"],
+                    ["言ってなカッタカナ?","△","Live"],
+                    ["OH YEAH","△","Live"],
+                    ["space4space 3","","Instrumental"],
+                    ["I Wanna Know You","△","Live"],
+                    ["瞬間speechless","△","Live"],
+                    ["EGAO","△","Live"],
+                    ["ma chèrie’","△","Live"],
+                    ["スタート","△","Live"],
+                    ["音色","△","Live"],
+                  ]
+                ),
+                CdData.new(
+                  "Disc2",
+                  [
+                    ["イッサイガッサイ","△","Live"],
+                    ["ひとりじゃないのよ feat. SONOMI","△","Live"],
+                    ["遠くまで feat. KREVA","","歌詞データ未入力"],
+                    ["成功","△","Live"],
+                    ["C'mon, Let's go","△","Live"],
+                    ["Changing Same","△","Live"],
+                    ["Link","△","Live"],
+                    ["アグレッシ部","△","Live"],
+                    ["KILA KILA","△","Live"],
+                    ["space4space 4","","Instrumental"],
+                    ["Na Na Na","△","Live"],
+                    ["王者の休日","△","Live"],
+                    ["BESHI","△","Live"],
+                    ["あかさたなはまやらわをん","△","Live"],
+                    ["Space Dancer","△","Live"],
+                    ["Have a nice day","△","Live"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'tranquilizer', 
+              'Sg', 
+              "トランキライザー", 
+              Date.new(2014, 2, 5), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["トランキライザー","○",""] ,
+                    ["稲光","○",""],
+                    ["トランキライザー(Inst.)","",""],
+                    ["稲光(Inst.)","",""],
+                    ["トランキライザー(Acappella)","△","ボーカルパートのみ"] ,
+                    ["稲光(Acappella)","△","ボーカルパートのみ"] ,
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'kx', 
+              'Al', 
+              "KX", 
+              Date.new(2014, 6, 18), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["全速力 feat.三浦大知","","歌詞データ未入力"],
+                    ["トランキライザー","○",""],
+                    ["BESHI","○",""],
+                    ["王者の休日","○",""],
+                    ["Na Na Na","○",""],
+                    ["OH YEAH","○",""],
+                    ["基準","○",""],
+                    ["KILA KILA","○",""],
+                    ["言ってなカッタカナ?","○",""],
+                    ["OH YEAH","○",""],
+                    ["C'mon, Let's go","○",""],
+                    ["挑め","○",""],
+                    ["かも","○",""],
+                    ["瞬間speechless","○",""],
+                    ["生まれてきてありがとう feat.さかいゆう","○",""],
+                    ["I Wanna Know You","○",""],
+                    ["成功","○",""],
+                  ]
+                ),
+                CdData.new(
+                  "Disc2",
+                  [
+                    ["ストロングスタイル","○",""],
+                    ["ビコーズ","○",""],
+                    ["くればいいのに feat.草野マサムネ from SPITZ","○",""],
+                    ["THE SHOW","○",""],
+                    ["Have a nice day!","○",""],
+                    ["It's for you","○",""],
+                    ["国民的行事","○",""],
+                    ["スタート","○",""],
+                    ["イッサイガッサイ","○",""],
+                    ["ファンキーグラマラス feat.Mummy-D","○",""],
+                    ["ひとりじゃないのよ feat.SONOMI","○",""],
+                    ["音色","○",""],
+                    ["希望の炎","○",""],
+                    ["Revolution","","歌詞データ未入力"],
+                  ]
+                ),
+                CdData.new(
+                  "Disc3",
+                  [
+                    ["微炭酸シンドローム feat.阿部真央","○",""],
+                    ["EGAO","○",""],
+                    ["Changing Same","○",""],
+                    ["たられば feat.SONOMI","○",""],
+                    ["シンクロ feat.古内東子","○",""],
+                    ["中盤戦 feat.Mummy-D","○",""],
+                    ["裏切り御免 [KREVA BEAT REMIX]","","歌詞データ未入力"],
+                    ["今夜はブギー・バック","","歌詞データ未入力"],
+                    ["DAN DA DAN feat.CUEZERO","○",""],
+                    ["You are the No.1 (Hey DJ) feat.BONNIE PINK","○",""],
+                  ]
+                ),
+                CdData.new(
+                  "Disc4",
+                  [
+                    ["ひかり","","歌詞データ未入力"],
+                    ["Nothing","","歌詞データ未入力"],
+                    ["目を閉じれば無数の星","","歌詞データ未入力"],
+                    ["忘れずにいたいもの","","歌詞データ未入力"],
+                    ["夏サマサマ feat.千晴（Roughmix）","","歌詞データ未入力"],
+                    ["ハッピーメリークリスマス(Demo)","","歌詞データ未入力"],
+                    ["908 FESTIVAL 2012 オープニングテーマ","","Instrumental"],
+                    ["908 FESTIVAL 2013 オープニングテーマ","","Instrumental"],
+                    ["space4space 5（Demo）","","Instrumental"],
+                    ["BESHI ?Band Recording Ver.- take8（Roughmix）","△","アレンジ"],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'underthemoon', 
+              'Sg', 
+              "Under The Moon", 
+              Date.new(2015, 2, 25), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["Under The Moon","○",""] ,
+                    ["これでよければいくらでも","○",""],
+                    ["47都道府県ラップ","○",""],
+                    ["Under The Moon(Inst.)","",""],
+                    ["これでよければいくらでも(Inst.)","",""],
+                    ["47都道府県ラップ(Inst.)","",""],
+                  ]
+                )
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'usotobonnou', 
+              'Al', 
+              "嘘と煩悩", 
+              Date.new(2017, 2, 1), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["嘘と煩悩","○",""],
+                    ["神の領域","○",""],
+                    ["居場所","○",""],
+                    ["想い出の向こう側 feat. AKLO","○",""],
+                    ["FRESH MODE","○",""],
+                    ["Sanzan feat. 増田有華","○",""],
+                    ["ってかもう","○",""],
+                    ["あえてそこ (攻め込む)","○",""],
+                    ["タビカサナル","○",""],
+                    ["もう逢いたくて","○",""],
+                    ["君に夢中","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+            <hr class="fade-2">
+            <%= generate_cd_view(
+              'sonzaikan', 
+              'Al', 
+              "存在感", 
+              Date.new(2018, 8, 22), 
+              [
+                CdData.new(
+                  "Disc1",
+                  [
+                    ["INTRO","","Instrumental"],
+                    ["存在感","○",""],
+                    ["俺の好きは狭い","○",""],
+                    ["健康","○",""],
+                    ["百人一瞬","○",""],
+                  ]
+                ),
+              ]
+            ) %>
+
+
+         </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% if false %>
+          <ul>
+            <li class="animated fadeIn">
+              Sg「タカオニ/カンケリ」(1997-08-21)<br>
+              タカオニ / カンケリ
+            </li>
+            <hr class="fade-2">
+            <li class="animated fadeIn">
+              Sg「young animal e.p.」(2000-07-05)<br>
+              Down by Law(feat.CRAZY-A) / タカオニ2000 / one for the what,two for the who_part2 / 灼熱舞踏会
+            </li>
+            <hr class="fade-2">
+            <li class="animated fadeIn">
+              Sg「GOOD TIME!」(2000-08-18)<br>
+              GOOD TIME! / UP DOWN BICYCLE / ユートピア
+            </li>
+            <hr class="fade-2">
+            <li class="animated fadeIn">
+              Al「YOUNG KING」(2000-09-13)<br>
+              Call &amp; …(※Instrumental) / KICK OFF(※キックOFFとは別曲) / Megacityrunning / Why did I? / PARTYOVER / X-amount / 旅人(※Instrumental) / エルニーニョ / united rivers / 河と海が合わさるところ
+            </li>
+            <hr class="fade-2">
+            <li class="animated fadeIn">
+              Sg「今日から明日」(2001-02-21)<br>
+              今日から明日 / 今日カラ明日（※今日から明日と同歌詞）
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「スーパーオリジナル」(2001-05-23)<br>
+              スーパーオリジナル / Fire!(re-construction of スーパーオリジナル)
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「イツナロウバ」(2001-07-11)<br>
+              イツナロウバ / KA･RU･KU FICTION
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「カンケリ01/LIFELINE」(2001-09-27)<br>
+              カンケリ01 / LIFELINE
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「GREATEST HITS」(2001-10-17)<br>
+              3MCs + 1DJ / Color Variation / マイクロフォンのテーマ
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「クリスマス・イブRap」(2001-11-07)<br>
+              クリスマス・イブRap
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「マルシェ」(2002-01-23)<br>
+              マルシェ / C'MON EVERYBODY
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「VITALIZER」(2002-02-14)<br>
+              THE THEME OF "KICK" / カンケリ02(※カンケリ01と同歌詞) / キックOFF(※KICK OFFとは別曲) / VITALIZER / ONE FOR THE WHAT,TWO FOR THE WHO PART.III / ?WHATCHANAME? / 神輿ロッカーズ feat.RHYMESTER / HANDS
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「ONEWAY」(2002-03-13)<br>
+              ONEWAY
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「sayonara sayonara」(2002-05-22)<br>
+              sayonara sayonara / bed<br>
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「アンバランス」(2002-08-28)<br>
+              アンバランス
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「地球ブルース～337～/DJDJ[for RADIO]」(2002-11-07)<br>
+              地球ブルース～337～ / DJDJ[for RADIO]
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「TORIIIIIICO!」(2002-12-11)<br>
+              TORIIIIIICO! feat.CASSETTE VISION
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「magic number」(2003-01-01)<br>
+              登場 / RE-FRESH / ストレス / mama said ～ハタラキッパ～ / ナニカ / movingman / CAN-CAN / E.L.E.M.E.N.T.S / LONELY ONE / magic number
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「性コンティニュー」(2003-08-06)<br>
+              性コンティニュー / BREAK 3
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「GOOD MUSIC」(2003-09-10)<br>
+              GOOD MUSIC / 自由TIME
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「パンク寸前のFUNK」(2003-10-16)<br>
+              パンク寸前のFUNK / D.O.I.T.A.
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「ナビ/揺れ」(2003-11-12)<br>
+              ナビ / 揺れ
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「BEST ALBUM 2001-2003」(2003-11-19)<br>
+              STEP IN THE DAY
+            </li>
+            <hr class="fade-2">
+            <li>
+              Sg「脳内VACATION」(2003-12-10)<br>
+              脳内VACATION
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「GOOD MUSIC」(2004-01-01)<br>
+              OPENING / パレード / MISSION 1 / ALL NIGHT LONG / 裏表 / MISSION 2 / LIKE THIS (GOOD!)(※Instrumental) / MISSION 3 / もしも
+            </li>
+            <hr class="fade-2">
+            <li>
+              Al「KICK!」(2017-08-30)<br>
+              全員集合 / 千％ / 今もSing-along / SummerSpot / なんでもないDays / 完全チェンジTHEワールド / また戻っておいで / また波を見てる / I Hope You Miss Me a Little / タコアゲ
+            </li>
+            <div class="separator"></div>
+            <h5>他アーティスト参加作品(KICK THE CAN CREW)</h5>
+            <div class="separator"></div>
+            <li>
+              嶋野百恵 Al「Roots」(2000-06-21)<br>
+              Roots feat. Kick the Can Crew &amp; INNOSENCE
+            </li>
+            <hr class="fade-2">
+            <li>
+              DOUBLE Sg「Angel」(2000-11-22)<br>
+              U 〜KREVA REMIX〜 featuring KICK THE CAN CREW
+            </li>
+            <hr class="fade-2">
+            <li>
+              Rhymester Al「ウワサの真相」(2001-12-19)<br>
+              10 Balls+2 featuring Kick The Can Crew
+            </li>
+            <hr class="fade-2">
+            <li id="kreva">
+              THE BOOM Sg「この街のどこかに」(2002-06-05)<br>
+              いいあんべえ(monoaural mix) featuring KICK THE CAN CREW
+            </li>
+            <hr class="fade-2">
+            <li>
+              EAST END Al「Beginning of the Endless」(2003-09-24)<br>
+              FGスポット feat. KICK THE CAN CREW
+            </li>
+            <hr class="fade-2">
+            <li>
+              RHYMESTER Al「HEAT ISLAND」(2006-03-08)<br>
+              ウィークエンド・シャッフル feat. MCU, RYO-Z, KREVA, CUEZERO, CHANNEL, KOHEI JAPAN, SU, LITTLE, ILMARI, GAKU-MC, SONOMI, PES, K.I.N, 童子-T
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="separator separator-primary"></div>
+    <div class="row scroll-animations">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2 class="title animated">KREVA</h2>
+            <ul>
+              <li class="animated">
+                Sg「希望の炎」(2004-06-18)<br>
+                希望の炎
+              </li>
+              <hr class="fade-2">
+              <li class="animated">
+                Sg「音色」(2004-09-08)<br>
+                音色 / コントロール
+              </li>
+              <hr class="fade-2">
+              <li class="animated">
+                Sg「ひとりじゃないのよ」(2004-10-20)<br>
+                ひとりじゃないのよ Single Version / コトバにできない
+              </li>
+              <hr class="fade-2">
+              <li class="animated">
+                Al「新人クレバ」(2004-11-03)<br>
+                Dr.K(※歌詞非掲載) / DAN DA DAN feat.CUEZERO / 音色 / あ･ら･ら・Take you home / お祭りクレバ / ファンキーグラマラス feat.Mummy-D from RHYMESTER / スタンド・バイ・ミー feat.KANA from THC!! / Skit/Dr.K診療所(※スキット。歌詞非掲載) / WAR WAR ZONE feat.CUEZERO / You are the No.1(Hey DJ) feat.BONNIE PINK / You know we rule feat.NG HEAD / Baby Dancer
+              </li>
+              <hr class="fade-2">
+              <li class="animated">
+                Sg「ファンキーグラマラス」(2005-01-13)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「イッサイガッサイ」(2005-06-15)<br>
+                イッサイガッサイ / KRAZY BOY, KRAZY GIRL / all day, all night
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「スタート」(2005-09-08)<br>
+                スタート / いまさら2step / I was a fool
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「国民的行事」(2005-12-07)<br>
+                国民的行事 / Practice Session feat.SONOMI(※歌詞非掲載)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「愛・自分博」(2006-02-01)<br>
+                H.A.P.P.Y / It's for you / いいと思う / island life feat.SONOMI / 涙止まれよ feat.SONOMI / 江戸川ロックオン feat.CUEZERO,WADA / 暗闇のナビゲイラ / トリートメント feat.DABO,CUEZERO / My Life
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「Have a nice day!」(2006-08-02)<br>
+                Have a nice day! / 今夜はブギー・バック(※歌詞非掲載)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「THE SHOW」(2006-11-01)<br>
+                THE SHOW
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「アグレッシ部」(2007-03-14)<br>
+                アグレッシ部 / 口元に笑み
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「BEST of MIXCD NO.1」(2007-03-14)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「くればいいのに feat. 草野マサムネ from SPITZ(Single Edit)」(2007-06-20)<br>
+                くればいいのに feat. 草野マサムネ from SPITZ(Single Edit) / JUMP ON IT
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「よろしくお願いします」(2007-09-05)<br>
+                ストロングスタイル / YOU DON'T STOP!! / 揺さぶるブルー / ビコーズ / You are my sunshine feat.千晴 / 今日だけでいい feat.SONOMI &amp; ALI-KICK / ため息はCO2 / 東西南北脳内回想録 / SWEET SWEET メモリーズ feat.SONOMI / 終わりたくないオーワラナイ
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「ストロングスタイル」(2007-10-03)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「クレバのベスト盤」(2008-03-19)<br>
+                あかさたなはまやらわをん
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「青」(2009-03-18)<br>
+                成功 / I Wanna Know You / 生まれてきてありがとう(feat.さかいゆう) /So Sexy
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「赤」(2009-07-08)<br>
+                瞬間speechless / 君に、胸キュン。-浮気なヴァカンス-
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「心臓」(2009-09-08)<br>
+                K.I.S.S. / これがFall In Love / Tears In My Eyes / リズム / シンクロ feat. 古内東子 / Tonight / 心臓(※歌詞非掲載) / ACE / 中盤戦 feat.Mummy-D / キャラメルポップコーン feat.将絢 from Romancrew / この先どうなる？
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「OASYS」(2010-09-15)<br>
+                道なき道 / かも / たられば feat. SONOMI / 最終回 / エレクトロ・アース・トラックス / Oasys(※Instrumental) / Changing Same / Reprise ～道なき道～(※道なき道と同歌詞)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「挑め」(2011-02-16)<br>
+                挑め / ベステンダンク
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「EGAO」(2011-03-30)<br>
+                EGAO
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「C'mon, Let's go」(2011-05-11)<br>
+                C'mon, Let's go / マカー GB-mix feat.AKLO,L-VOKAL(BETTER HALVES)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「Tan-Kyu-Shin / KILA KILA」(2011-07-20)<br>
+                Tan-Kyu-Shin / KILA KILA / ハヒヘホ feat. SHINGO★西成
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「GO」(2011-09-08)<br>
+                基準 / 蜃気楼 feat. 三浦大知 / 呪文 / runnin' runnin' / HOT SUMMER DAYS / 微炭酸シンドローム feat. 阿部真央 / パーティーはIZUKO? / 探究心(※Tan-Kyu-Shinとほぼ同歌詞)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「ひかり」(2012-01-18)<br>
+                ひかり
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「BEST OF MIXCD NO.2」(2012-02-22)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「OH YEAH」(2012-06-20)<br>
+                OH YEAH / NO NO NO feat. SONOMI
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「Na Na Na」(2012-09-05)<br>
+                Na Na Na / No More Mr. NiceGuy feat. KEN THE 390, AKLO
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「王者の休日」(2013-01-16)<br>
+                王者の休日 / No More Mr. NiceGuy Remix feat. KEN THE 390, AKLO, 坂本美雨
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「SPACE Instrumentals」(2013-02-20)
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「SPACE」(2013-02-27)<br>
+                space4space 1 / SPACE / Feel It In The Air / ma chèrie' / space4space 2 / 俺は Do It Like This / 調理場 / 言ってなカッタカナ？ / space4space 3 / Space Dancer / Link / space4space 4 
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「BESHI」(2013-08-28)<br>
+                BESHI / 世界の中心
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「LIVE ALBUMSPACE TOUR」(2013-12-04)<br>
+                I REP / 遠くまで feat. KREVA
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「トランキライザー」(2014-02-05)<br>
+                トランキライザー / 稲光
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「KX」(2014-06-18)<br>
+                全速力 feat.三浦大知 / Revolution / 裏切り御免 [KREVA BEAT REMIX] / Nothing / 目を閉じれば無数の星 / 忘れずにいたいもの / 夏サマサマ feat.千晴（Roughmix） / ハッピーメリークリスマス（Demo） / 908 FESTIVAL 2012 オープニングテーマ / 908 FESTIVAL 2013 オープニングテーマ / space4space 5（Demo） / BESHI -Band Recording Ver.- take8（Roughmix）
+              </li>
+              <hr class="fade-2">
+              <li>
+                Sg「Under The Moon」(2015-02-25)<br>
+                Under The Moon / これでよければいくらでも / 47都道府県ラップ
+              </li>
+              <hr class="fade-2">
+              <li>
+                Al「嘘と煩悩」(2017-02-01)<br>
+                嘘と煩悩 / 神の領域 / 居場所 / 想い出の向こう側 feat. AKLO / FRESH MODE / Sanzan feat. 増田有華 / ってかもう / あえてそこ (攻め込む) / タビカサナル / もう逢いたくて / 君に夢中
+              </li>
+              <div class="separator"></div>
+              <h5>他アーティスト参加作品(KICK THE CAN CREW)</h5>
+              <div class="separator"></div>
+              <li>
+                嶋野百恵 Al「Roots」(2000-06-21)<br>
+                Roots feat.KICK THE CAN CREW &amp; INNOSENCE
+              </li>
+              <hr class="fade-2">
+              <li>
+                DOUBLE Sg「Angel」(2000-11-22)<br>
+                U 〜KREVA REMIX〜 featuring KICK THE CAN CREW
+              </li>
+              <hr class="fade-2">
+              <li>
+                Rhymester Al「ウワサの真相」(2001-12-19)<br>
+                10 Balls+2 featuring Kick The Can Crew
+              </li>
+              <hr class="fade-2">
+              <li>
+                THE BOOM Sg「この街のどこかに」(2002-06-05)<br>
+                いいあんべえ(monoaural mix) featuring KICK THE CAN CREW
+              </li>
+              <hr class="fade-2">
+              <li>
+                EAST END Al「Beginning of the Endless」(2003-09-24)<br>
+                FGスポット feat. KICK THE CAN CREW
+              </li>
+              <hr class="fade-2">
+              <li>
+                RHYMESTER Al「HEAT ISLAND」(2006-03-08)<br>
+                ウィークエンド・シャッフル feat. MCU, RYO-Z, KREVA, CUEZERO, CHANNEL, KOHEI JAPAN, SU, LITTLE, ILMARI, GAKU-MC, SONOMI, PES, K.I.N, 童子-T
+              </li>
+            </ul>
         </div>
-        <div class="section section-about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center animated fadeIn">
-                        <p class="description">
-                          KICK THE CAN CREWおよび各メンバーが参加している楽曲をまとめています。(CD発売日順に初出曲のみ記載。Remixなどは基本的にオリジナルバージョンのみ記載)
-                        </p>
-                        <p class="description" id="ktcc">
-                          管理人が把握できていない楽曲や歌詞（赤字）の情報などお持ちの方がいらっしゃいましたら、管理人までご連絡いただけますと大変ありがたいです。<br>
-                          よろしくお願いいたします。
-                        </p>
-                    </div>
-                </div>
-                <div class="separator separator-primary"></div>
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title animated fadeInLeft">KICK THE CAN CREW</h2>
-                        <ul>
-                          <li class="animated fadeInLeft">
-                            Sg「タカオニ/カンケリ」(1997-08-21)<br>
-                            タカオニ / カンケリ
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated fadeInLeft">
-                            Sg「young animal e.p.」(2000-07-05)<br>
-                            Down by Law(feat.CRAZY-A) / タカオニ2000 / one for the what,two for the who_part2 / 灼熱舞踏会
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated fadeInLeft">
-                            Sg「GOOD TIME!」(2000-08-18)<br>
-                            GOOD TIME! / UP DOWN BICYCLE / ユートピア
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated fadeInLeft">
-                            Al「YOUNG KING」(2000-09-13)<br>
-                            Call &amp; …(※Instrumental) / KICK OFF(※キックOFFとは別曲) / Megacityrunning / Why did I? / PARTYOVER / X-amount / 旅人(※Instrumental) / エルニーニョ / united rivers / 河と海が合わさるところ
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated fadeInLeft">
-                            Sg「今日から明日」(2001-02-21)<br>
-                            今日から明日 / 今日カラ明日（※今日から明日と同歌詞）
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「スーパーオリジナル」(2001-05-23)<br>
-                            スーパーオリジナル / Fire!(re-construction of スーパーオリジナル)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「イツナロウバ」(2001-07-11)<br>
-                            イツナロウバ / KA･RU･KU FICTION
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「カンケリ01/LIFELINE」(2001-09-27)<br>
-                            カンケリ01 / LIFELINE
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「GREATEST HITS」(2001-10-17)<br>
-                            3MCs + 1DJ / Color Variation / マイクロフォンのテーマ
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「クリスマス・イブRap」(2001-11-07)<br>
-                            クリスマス・イブRap
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「マルシェ」(2002-01-23)<br>
-                            マルシェ / C'MON EVERYBODY
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「VITALIZER」(2002-02-14)<br>
-                            THE THEME OF "KICK" / カンケリ02(※カンケリ01と同歌詞) / キックOFF(※KICK OFFとは別曲) / VITALIZER / ONE FOR THE WHAT,TWO FOR THE WHO PART.III / ?WHATCHANAME? / 神輿ロッカーズ feat.RHYMESTER / HANDS
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「ONEWAY」(2002-03-13)<br>
-                            ONEWAY
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「sayonara sayonara」(2002-05-22)<br>
-                            sayonara sayonara / bed<br>
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「アンバランス」(2002-08-28)<br>
-                            アンバランス
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「地球ブルース～337～/DJDJ[for RADIO]」(2002-11-07)<br>
-                            地球ブルース～337～ / DJDJ[for RADIO]
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「TORIIIIIICO!」(2002-12-11)<br>
-                            TORIIIIIICO! feat.CASSETTE VISION
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「magic number」(2003-01-01)<br>
-                            登場 / RE-FRESH / ストレス / mama said ～ハタラキッパ～ / ナニカ / movingman / CAN-CAN / E.L.E.M.E.N.T.S / LONELY ONE / magic number
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「性コンティニュー」(2003-08-06)<br>
-                            性コンティニュー / BREAK 3
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「GOOD MUSIC」(2003-09-10)<br>
-                            GOOD MUSIC / 自由TIME
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「パンク寸前のFUNK」(2003-10-16)<br>
-                            パンク寸前のFUNK / D.O.I.T.A.
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「ナビ/揺れ」(2003-11-12)<br>
-                            ナビ / 揺れ
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「BEST ALBUM 2001-2003」(2003-11-19)<br>
-                            STEP IN THE DAY
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「脳内VACATION」(2003-12-10)<br>
-                            脳内VACATION
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「GOOD MUSIC」(2004-01-01)<br>
-                            OPENING / パレード / MISSION 1 / ALL NIGHT LONG / 裏表 / MISSION 2 / LIKE THIS (GOOD!)(※Instrumental) / MISSION 3 / もしも
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「KICK!」(2017-08-30)<br>
-                            全員集合 / 千％ / 今もSing-along / SummerSpot / なんでもないDays / 完全チェンジTHEワールド / また戻っておいで / また波を見てる / I Hope You Miss Me a Little / タコアゲ
-                          </li>
-                          <div class="separator"></div>
-                          <h5>他アーティスト参加作品(KICK THE CAN CREW)</h5>
-                          <div class="separator"></div>
-                          <li>
-                            嶋野百恵 Al「Roots」(2000-06-21)<br>
-                            Roots feat. Kick the Can Crew &amp; INNOSENCE
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            DOUBLE Sg「Angel」(2000-11-22)<br>
-                            U 〜KREVA REMIX〜 featuring KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Rhymester Al「ウワサの真相」(2001-12-19)<br>
-                            10 Balls+2 featuring Kick The Can Crew
-                          </li>
-                          <hr class="fade-2">
-                          <li id="kreva">
-                            THE BOOM Sg「この街のどこかに」(2002-06-05)<br>
-                            いいあんべえ(monoaural mix) featuring KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            EAST END Al「Beginning of the Endless」(2003-09-24)<br>
-                            FGスポット feat. KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            RHYMESTER Al「HEAT ISLAND」(2006-03-08)<br>
-                            ウィークエンド・シャッフル feat. MCU, RYO-Z, KREVA, CUEZERO, CHANNEL, KOHEI JAPAN, SU, LITTLE, ILMARI, GAKU-MC, SONOMI, PES, K.I.N, 童子-T
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="separator separator-primary"></div>
-                <div class="row scroll-animations">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title animated">KREVA</h2>
-                        <ul>
-                          <li class="animated">
-                            Sg「希望の炎」(2004-06-18)<br>
-                            希望の炎
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated">
-                            Sg「音色」(2004-09-08)<br>
-                            音色 / コントロール
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated">
-                            Sg「ひとりじゃないのよ」(2004-10-20)<br>
-                            ひとりじゃないのよ Single Version / コトバにできない
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated">
-                            Al「新人クレバ」(2004-11-03)<br>
-                            Dr.K(※歌詞非掲載) / DAN DA DAN feat.CUEZERO / 音色 / あ･ら･ら・Take you home / お祭りクレバ / ファンキーグラマラス feat.Mummy-D from RHYMESTER / スタンド・バイ・ミー feat.KANA from THC!! / Skit/Dr.K診療所(※スキット。歌詞非掲載) / WAR WAR ZONE feat.CUEZERO / You are the No.1(Hey DJ) feat.BONNIE PINK / You know we rule feat.NG HEAD / Baby Dancer
-                          </li>
-                          <hr class="fade-2">
-                          <li class="animated">
-                            Sg「ファンキーグラマラス」(2005-01-13)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「イッサイガッサイ」(2005-06-15)<br>
-                            イッサイガッサイ / KRAZY BOY, KRAZY GIRL / all day, all night
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「スタート」(2005-09-08)<br>
-                            スタート / いまさら2step / I was a fool
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「国民的行事」(2005-12-07)<br>
-                            国民的行事 / Practice Session feat.SONOMI(※歌詞非掲載)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「愛・自分博」(2006-02-01)<br>
-                            H.A.P.P.Y / It's for you / いいと思う / island life feat.SONOMI / 涙止まれよ feat.SONOMI / 江戸川ロックオン feat.CUEZERO,WADA / 暗闇のナビゲイラ / トリートメント feat.DABO,CUEZERO / My Life
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「Have a nice day!」(2006-08-02)<br>
-                            Have a nice day! / 今夜はブギー・バック(※歌詞非掲載)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「THE SHOW」(2006-11-01)<br>
-                            THE SHOW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「アグレッシ部」(2007-03-14)<br>
-                            アグレッシ部 / 口元に笑み
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「BEST of MIXCD NO.1」(2007-03-14)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「くればいいのに feat. 草野マサムネ from SPITZ(Single Edit)」(2007-06-20)<br>
-                            くればいいのに feat. 草野マサムネ from SPITZ(Single Edit) / JUMP ON IT
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「よろしくお願いします」(2007-09-05)<br>
-                            ストロングスタイル / YOU DON'T STOP!! / 揺さぶるブルー / ビコーズ / You are my sunshine feat.千晴 / 今日だけでいい feat.SONOMI &amp; ALI-KICK / ため息はCO2 / 東西南北脳内回想録 / SWEET SWEET メモリーズ feat.SONOMI / 終わりたくないオーワラナイ
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「ストロングスタイル」(2007-10-03)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「クレバのベスト盤」(2008-03-19)<br>
-                            あかさたなはまやらわをん
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「青」(2009-03-18)<br>
-                            成功 / I Wanna Know You / 生まれてきてありがとう(feat.さかいゆう) /So Sexy
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「赤」(2009-07-08)<br>
-                            瞬間speechless / 君に、胸キュン。-浮気なヴァカンス-
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「心臓」(2009-09-08)<br>
-                            K.I.S.S. / これがFall In Love / Tears In My Eyes / リズム / シンクロ feat. 古内東子 / Tonight / 心臓(※歌詞非掲載) / ACE / 中盤戦 feat.Mummy-D / キャラメルポップコーン feat.将絢 from Romancrew / この先どうなる？
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「OASYS」(2010-09-15)<br>
-                            道なき道 / かも / たられば feat. SONOMI / 最終回 / エレクトロ・アース・トラックス / Oasys(※Instrumental) / Changing Same / Reprise ～道なき道～(※道なき道と同歌詞)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「挑め」(2011-02-16)<br>
-                            挑め / ベステンダンク
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「EGAO」(2011-03-30)<br>
-                            EGAO
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「C'mon, Let's go」(2011-05-11)<br>
-                            C'mon, Let's go / マカー GB-mix feat.AKLO,L-VOKAL(BETTER HALVES)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「Tan-Kyu-Shin / KILA KILA」(2011-07-20)<br>
-                            Tan-Kyu-Shin / KILA KILA / ハヒヘホ feat. SHINGO★西成
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「GO」(2011-09-08)<br>
-                            基準 / 蜃気楼 feat. 三浦大知 / 呪文 / runnin' runnin' / HOT SUMMER DAYS / 微炭酸シンドローム feat. 阿部真央 / パーティーはIZUKO? / 探究心(※Tan-Kyu-Shinとほぼ同歌詞)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「ひかり」(2012-01-18)<br>
-                            ひかり
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「BEST OF MIXCD NO.2」(2012-02-22)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「OH YEAH」(2012-06-20)<br>
-                            OH YEAH / NO NO NO feat. SONOMI
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「Na Na Na」(2012-09-05)<br>
-                            Na Na Na / No More Mr. NiceGuy feat. KEN THE 390, AKLO
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「王者の休日」(2013-01-16)<br>
-                            王者の休日 / No More Mr. NiceGuy Remix feat. KEN THE 390, AKLO, 坂本美雨
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「SPACE Instrumentals」(2013-02-20)
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「SPACE」(2013-02-27)<br>
-                            space4space 1 / SPACE / Feel It In The Air / ma chèrie' / space4space 2 / 俺は Do It Like This / 調理場 / 言ってなカッタカナ？ / space4space 3 / Space Dancer / Link / space4space 4 
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「BESHI」(2013-08-28)<br>
-                            BESHI / 世界の中心
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「LIVE ALBUMSPACE TOUR」(2013-12-04)<br>
-                            I REP / 遠くまで feat. KREVA
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「トランキライザー」(2014-02-05)<br>
-                            トランキライザー / 稲光
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「KX」(2014-06-18)<br>
-                            全速力 feat.三浦大知 / Revolution / 裏切り御免 [KREVA BEAT REMIX] / Nothing / 目を閉じれば無数の星 / 忘れずにいたいもの / 夏サマサマ feat.千晴（Roughmix） / ハッピーメリークリスマス（Demo） / 908 FESTIVAL 2012 オープニングテーマ / 908 FESTIVAL 2013 オープニングテーマ / space4space 5（Demo） / BESHI -Band Recording Ver.- take8（Roughmix）
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Sg「Under The Moon」(2015-02-25)<br>
-                            Under The Moon / これでよければいくらでも / 47都道府県ラップ
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Al「嘘と煩悩」(2017-02-01)<br>
-                            嘘と煩悩 / 神の領域 / 居場所 / 想い出の向こう側 feat. AKLO / FRESH MODE / Sanzan feat. 増田有華 / ってかもう / あえてそこ (攻め込む) / タビカサナル / もう逢いたくて / 君に夢中
-                          </li>
-                          <div class="separator"></div>
-                          <h5>他アーティスト参加作品(KICK THE CAN CREW)</h5>
-                          <div class="separator"></div>
-                          <li>
-                            嶋野百恵 Al「Roots」(2000-06-21)<br>
-                            Roots feat.KICK THE CAN CREW &amp; INNOSENCE
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            DOUBLE Sg「Angel」(2000-11-22)<br>
-                            U 〜KREVA REMIX〜 featuring KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            Rhymester Al「ウワサの真相」(2001-12-19)<br>
-                            10 Balls+2 featuring Kick The Can Crew
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            THE BOOM Sg「この街のどこかに」(2002-06-05)<br>
-                            いいあんべえ(monoaural mix) featuring KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            EAST END Al「Beginning of the Endless」(2003-09-24)<br>
-                            FGスポット feat. KICK THE CAN CREW
-                          </li>
-                          <hr class="fade-2">
-                          <li>
-                            RHYMESTER Al「HEAT ISLAND」(2006-03-08)<br>
-                            ウィークエンド・シャッフル feat. MCU, RYO-Z, KREVA, CUEZERO, CHANNEL, KOHEI JAPAN, SU, LITTLE, ILMARI, GAKU-MC, SONOMI, PES, K.I.N, 童子-T
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+  </div>
+</div>
+<% end %>

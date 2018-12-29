@@ -7689,6 +7689,17 @@ hr.fade-2 {
     text-decoration: none;
   }
 
+  a.song-name-toggle {
+    font-size: 20px;
+    padding: 0 0.5em;
+    color: white;
+  }
+  .song-name-toggle:focus,
+  .song-name-toggle:hover{
+    color: #fa7a50;
+    text-decoration: none;
+  }
+
   ul{
     padding: 0;
   }
