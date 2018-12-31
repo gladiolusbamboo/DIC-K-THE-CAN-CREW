@@ -1285,6 +1285,11 @@ module SearchHelper
         t.li do
           t.h4 do
             t.a "#{cd_type}「#{title}」(#{date})", href: "##{id}", "data-toggle": "collapse", class: "song-name-toggle"
+            t.div do
+              t.a href: "##{id}", "data-toggle": "collapse" do
+                t.img src: "/assets/img/#{id}_jacket.jpg", alt: "#{id} jacket"
+              end
+            end
           end
           t.div id: id, class: "collapse" do
             cds_array.each do |cd|
