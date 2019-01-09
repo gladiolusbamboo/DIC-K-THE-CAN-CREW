@@ -1,3 +1,0 @@
-Artist.seed(
-  { name: 'UL' },
-)
