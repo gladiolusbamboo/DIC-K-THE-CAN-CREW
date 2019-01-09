@@ -69,3 +69,6 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 # New Relic（監視・計測）
 gem 'newrelic_rpm'
+
+# データ投入用
+gem 'seed-fu'
