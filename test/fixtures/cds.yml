@@ -374,6 +374,12 @@ bestofmcu_cd:
   name: BEST OF MCU
   released_at: 2010-02-10
 
+# UL
+ultrap_cd:
+  name: ULTRAP
+  released_at: 2014-03-05
+
+
 # その他
 wildflowers_cd:
   name: Wild Flowers
