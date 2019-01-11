@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+verse:
+  name: VERSE
+
+hook:
+  name: HOOK
+
+bridge:
+  name: BRIDGE
+
+other:
+  name: OTHER

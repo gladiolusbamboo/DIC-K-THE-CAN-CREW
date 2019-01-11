@@ -1,0 +1,434 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+kreva:
+  name: KREVA
+  is_kick: true
+
+mcu:
+  name: MCU
+  is_kick: true
+
+little:
+  name: LITTLE
+  is_kick: true
+
+kickthecancrew:
+  name: KICK THE CAN CREW
+  is_kick: true
+
+crazy-a:
+  name: CRAZY-A
+  is_kick: false
+
+kickthecancrewcasettevision:
+  name: KICK THE CAN CREW & CASSETTE VISION
+  is_kick: true
+
+sohjin:
+  name: SOHJIN
+  is_kick: false
+
+channel:
+  name: CHANNEL
+  is_kick: false
+
+cuezero:
+  name: CUEZERO
+  is_kick: false
+
+sanae:
+  name: SANAE
+
+megumi:
+  name: 真城めぐみ(ヒックスヴィル)
+
+shuho:
+  name: SHUHO
+
+kickthecancrewrhymester:
+  name: KICK THE CAN CREW & RHYMESTER
+
+mummy-d:
+  name: Mummy-D(RHYMESTER)
+
+utamaru:
+  name: 宇多丸(RHYMESTER)
+
+kreva?:
+  name: KREVA?
+
+shimanomomoe:
+  name: 嶋野百恵
+
+kickthecancrewinnosence:
+  name: KICK THE CAN CREW & INNOSENCE
+
+double:
+  name: DOUBLE
+
+miyazawakazufumi:
+  name: 宮沢和史(THE BOOM)
+
+gaku-mc:
+  name: GAKU-MC(EAST END)
+
+kickthecancreweastend:
+  name: KICK THE CAN CREW & EAST END
+
+chiharu:
+  name: 千晴
+
+sonomi:
+  name: SONOMI
+
+krevasonomi:
+  name: KREVA & SONOMI
+
+ooyakana:
+  name: 大屋夏南
+
+kusanomasamune:
+  name: 草野マサムネ(スピッツ)
+
+krevamummy-d:
+  name: KREVA & Mummy-D
+
+kana:
+  name: KANA(THC!!)
+
+krevacuezero:
+  name: KREVA & CUEZERO
+
+bonniepink:
+  name: BONNIE PINK
+
+ng-head:
+  name: NG-HEAD
+
+wada:
+  name: WADA(アルファ)
+
+dabo:
+  name: DABO
+
+furuuchitouko:
+  name: 古内東子
+
+shoken:
+  name: 将絢(Romancrew)
+
+sakaiyuu:
+  name: さかいゆう
+
+abemao:
+  name: 阿部真央
+
+miuradaichi:
+  name: 三浦大知
+
+aklo:
+  name: AKLO
+
+masudayuka:
+  name: 増田有華
+
+l-vokal:
+  name: L-VOKAL
+
+shingonishinari:
+  name: SHINGO★西成
+
+kenthe390:
+  name: KEN THE 390
+
+kickthecancrewokamurayasuyuki:
+  name: KICK THE CAN CREW & 岡村靖幸
+
+okamurayasuyuki:
+  name: 岡村靖幸
+
+dohzi-t:
+  name: 童子-T
+
+voice:
+  name: VOICE
+
+littlekrevacuezeromcuvoicesohjinchannel:
+  name: LITTLE, KREVA, MCU, CUEZERO, SOHJIN, CHANNEL & VOICE ?
+
+littledohzi-t:
+  name: LITTLE & 童子-T
+
+fragrance:
+  name: AKTICK & GUCHI(FRAGRANCE)
+
+fragrance?:
+  name: FRAGRANCE(AKTICK & GUCHI)?
+
+aktick:
+  name: AKTICK(FRAGRANCE)
+
+guchi:
+  name: GUCHI(FRAGRANCE)
+
+ochi?:
+  name: オチ?
+
+ganxstad-x?:
+  name: GANXSTA D-X?
+
+littleganxstadxfragranceochi:
+  name: LITTLE, GANXSTA D-X, FRAGRANCE & オチ
+
+yamazin:
+  name: 山仁(Loop Junktion)
+
+littleyamazin:
+  name: LITTLE & 山仁
+
+skipp:
+  name: SKIPP(INDEMORAL)
+
+bolt:
+  name: BOLT
+
+yoshi:
+  name: YOSHI(餓鬼レンジャー)
+
+littleboltskippyoshitheingasaki:
+  name: LITTLE, BOLT, SKIPP & YOSHI
+
+littleiz:
+  name: LITTLE & Iz
+
+tortoisematsumoto:
+  name: トータス松本(ウルフルズ)
+
+littletortoisematsumoto:
+  name: LITTLE & トータス松本
+
+littlecornhead:
+  name: LITTLE & CORN HEAD
+
+keyco:
+  name: Keyco
+
+cornhead:
+  name: CORN HEAD
+
+mar:
+  name: Mar(ZINGI)
+
+guy:
+  name: Guy(ZINGI)
+
+mczingi:
+  name: MC仁義(ZINGI)
+
+littlezingi:
+  name: LITTLE & ZINGI
+
+djkaori:
+  name: DJ KAORI
+
+qripper:
+  name: Q-RIPPER(MADHAND)
+
+littleqripper:
+  name: LITTLE & Q-RIPPER
+
+bigron:
+  name: BIG RON
+
+littlebigron:
+  name: LITTLE & BIG RON
+
+micro:
+  name: MICRO(HOME MADE 家族)
+
+shogo:
+  name: SHOGO(175R)
+
+smallest:
+  name: SMALLEST(トリカブト)
+
+comachi:
+  name: COMA-CHI
+
+littlecomachi:
+  name: LITTLE & COMA-CHI
+
+metis:
+  name: Metis
+
+littlecuezerodohzi-tmummy-d:
+  name: LITTLE, CUEZERO, 童子-T & Mummy-D
+
+littleyohsukeathome?:
+  name: LITTLE & ヨースケ@HOME?
+
+littlehamazakitakashi:
+  name: LITTLE & 浜崎貴司
+
+hamazakitakashi:
+  name: 浜崎貴司(FLYING KIDS)
+
+shun:
+  name: SHUN
+
+tokine:
+  name: TOKINE
+
+una:
+  name: Una
+
+littleuna:
+  name: LITTLE & Una
+
+simonjap:
+  name: SIMON JAP
+
+mistaoki:
+  name: MISTA O.K.I
+
+mcuhamazakitakashi:
+  name: MCU & 浜崎貴司（マツリルカ）
+
+hiranoichirou:
+  name: 平野一郎(CHABA)
+
+miyazawakazufumi:
+  name: 宮沢和史(THE BOOM)
+
+kawakamijirou:
+  name: 川上次郎(KUSU KUSU)
+
+usa:
+  name: USA(RATHER UNIQUE)
+
+makidai:
+  name: MAKIDAI(RATHER UNIQUE)
+
+satoutaiji:
+  name: 佐藤タイジ(THEATRE BROOK)
+
+mcusatoutaiji:
+  name: MCU & 佐藤タイジ
+
+mcumiyatajet:
+  name: MCU & 宮田ジェット
+
+miyatajet:
+  name: 宮田ジェット(ジェット機)
+
+ryoji:
+  name: Ryoji（ケツメイシ）
+
+mcuwada:
+  name: MCU & WADA
+
+mcutsuboi:
+  name: MCU & TSUBOI
+
+tsuboi:
+  name: TSUBOI(アルファ)
+
+mcukoheijapan:
+  name: MCU & KOHEI JAPAN
+
+koheijapan:
+  name: KOHEI JAPAN
+
+mcuyunokiryuuichirou:
+  name: MCU & 柚木隆一郎(EL-MALO)
+
+morishigejuichi:
+  name: 森重樹一(ZIGGY)
+
+shogo:
+  name: SHOGO(175R)
+
+takanohiroshi:
+  name: 高野寛
+
+kashimashizuka:
+  name: 鹿嶋静(CHABA)
+
+higadaisuke:
+  name: 比嘉大祐(CHABA)
+
+mcuhiranoichiroukashimashizukahigadaisuke:
+  name: MCU & CHABA
+
+ricca:
+  name: RICCA
+
+kisarazucatseye:
+  name: 木更津キャッツアイ
+
+mcukisarazucatseye:
+  name: MCU & 木更津キャッツアイ
+
+tas:
+  name: TAS(MADHAND)
+
+mcutastsuboikoheijapandohzit:
+  name: MCU, TAS, TSUBOI, KOHEI JAPAN & 童子-T
+
+mcuq:
+  name: MCU & Q
+
+q:
+  name: Q(ラッパ我リヤ)
+
+mck:
+  name: MCK
+
+mifuneseiichirotaichimastertakemuratsuyoshiabukawashinyakasayanosugichanyamamotomasamasayukikikudjtatsuta:
+  name: 'MIFUNE SEIICHIRO, TAICHI MASTER, TAKEMURA TSUYOSHI, ABUKAWA SHINYA, Kasaya-no-Sugichan, YAMAMOTO:MASA:MASAYUKI, KIKU & DJ TATSUTA'
+
+daemonkogurekakka:
+  name: デーモン小暮閣下
+
+mcudaemonkogurekakka:
+  name: MCU & デーモン小暮閣下
+
+teru:
+  name: TERU(GLAY)
+
+fork:
+  name: FORK(ICE BAHN)
+
+mcuchannelfork:
+  name: MCU, CHANNEL & FORK
+
+mactheseiko:
+  name: MAC THE SEIKO
+
+mcumactheseiko:
+  name: MCU & MAC THE SEIKO
+
+fourd:
+  name: FOURD
+
+shima:
+  name: SHIMA
+
+mcufourdshima:
+  name: MCU, FOURD & SHIMA
+
+murakawamotonari:
+  name: 村カワ基成？
+
+mcumurakawamotonari:
+  name: MCU & 村カワ基成？
+
+plasmo:
+  name: PLASMO'?
+
+mcuplasmoyukikoiga:
+  name: MCU, PLASMO' & Yukiko Iga
+
+unknown:
+  name: ？？？
+

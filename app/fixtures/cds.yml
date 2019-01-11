@@ -1,0 +1,386 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+takaoni_cd:
+  name: タカオニ/カンケリ
+  released_at: 1999-08-20
+
+younganimal_cd:
+  name: young animal e.p.
+  released_at: 2000-07-05
+
+goodtime_cd:
+  name: GOOD TIME!
+  released_at: 2000-08-18
+
+youngking_cd:
+  name: YOUNG KING
+  released_at: 2000-09-13
+
+kyoukaraashita_cd:
+  name: 今日から明日
+  released_at: 2001-02-21
+
+superoriginal_cd:
+  name: スーパーオリジナル
+  released_at: 2001-05-23
+
+itsunarouba_cd:
+  name: イツナロウバ
+  released_at: 2001-07-11
+
+kankeri01_cd:
+  name: カンケリ01/LIFELINE
+  released_at: 2001-09-27
+
+wildflowers_cd:
+  name: Wild Flowers
+  released_at: 2001-03-07
+
+greatesthits_cd:
+  name: GREATEST HITS
+  released_at: 2001-10-17
+
+christmaseverap_cd:
+  name: クリスマス・イブRap
+  released_at: 2001-11-07
+
+marche_cd:
+  name: マルシェ
+  released_at: 2002-01-23
+
+vitalizer_cd:
+  name: VITALIZER
+  released_at: 2002-02-14
+
+oneway_cd:
+  name: ONEWAY
+  released_at: 2002-03-13
+
+sayonarasayonara_cd:
+  name: sayonara sayonara
+  released_at: 2002-05-22
+
+unbalance_cd:
+  name: アンバランス
+  released_at: 2002-08-28
+
+chikyuublues337_cd:
+  name: 地球ブルース～337～/DJDJ [for RADIO]
+  released_at: 2002-11-07
+
+toriiiiiico_cd:
+  name: TORIIIIIICO!
+  released_at: 2002-12-11
+
+magicnumber_cd:
+  name: magic number
+  released_at: 2003-01-01
+
+sagacontinue_cd:
+  name: 性コンティニュー
+  released_at: 2003-08-06
+
+goodmusic_sg_cd:
+  name: GOOD MUSIC(シングル)
+  released_at: 2003-09-10
+
+puncsunzennofunk_cd:
+  name: パンク寸前のFUNK
+  released_at: 2003-10-16
+
+navi_cd:
+  name: ナビ/揺れ
+  released_at: 2003-11-12
+
+bestalbum20012003_cd:
+  name: BEST ALBUM 2001-2003
+  released_at: 2003-11-19
+
+nounaivacation_cd:
+  name: 脳内VACATION
+  released_at: 2003-12-10
+
+goodmusic_al_cd:
+  name: GOOD MUSIC(アルバム)
+  released_at: 2004-01-01
+
+kick_cd:
+  name: KICK!
+  released_at: 2017-08-30
+
+juusho_cd:
+  name: 住所 feat. 岡村靖幸
+  released_at: 2018-08-29
+
+breakaudiodynamite_cd:
+  name: Break Audio Dynamite
+  released_at: 2000-02-19
+
+roots_cd:
+  name: Roots
+  released_at: 2000-06-21
+
+angel_cd:
+  name: Angel
+  released_at: 2000-11-22
+
+uwasanoshinsou_cd:
+  name: ウワサの真相
+  released_at: 2001-12-19
+
+konomachinodokokani_cd:
+  name: この街のどこかに/さとうきび畑
+  released_at: 2002-06-05
+
+beginningoftheendless_cd:
+  name: Beginning of the Endless
+  released_at: 2003-09-24
+
+kibounohonoo_cd:
+  name: 希望の炎
+  released_at: 2004-06-18
+
+neiro_cd:
+  name: 音色
+  released_at: 2004-09-08
+
+hitorijanainoyo_cd:
+  name: ひとりじゃないのよ
+  released_at: 2004-10-20
+
+shinjinkreva_cd:
+  name: 新人クレバ
+  released_at: 2004-11-03
+
+funkyglamorous_cd:
+  name: ファンキーグラマラス feat.Mummy-D(マボロシ/Rhymester)
+  released_at: 2005-01-13
+
+issaigassai_cd:
+  name: イッサイガッサイ
+  released_at: 2005-06-15
+
+start_cd:
+  name: スタート
+  released_at: 2005-09-08
+
+kokumintekigyouji_cd:
+  name: 国民的行事
+  released_at: 2005-12-07
+
+aijibunhaku_cd:
+  name: 愛・自分博
+  released_at: 2006-02-01
+
+haveaniceday_cd:
+  name: Have a nice day!
+  released_at: 2006-08-02
+
+theshow_cd:
+  name: THE SHOW
+  released_at: 2006-11-01
+
+aggressibu_cd:
+  name: アグレッシ部
+  released_at: 2007-03-14
+
+kurebaiinoni_cd:
+  name: くればいいのに feat. 草野マサムネ from SPITZ[Single Edit]
+  released_at: 2007-06-20
+
+yoroshikuonegaishimasu_cd:
+  name: よろしくお願いします
+  released_at: 2007-09-05
+
+strongstyle_cd:
+  name: ストロングスタイル
+  released_at: 2007-10-03
+
+krevanobestban_cd:
+  name: クレバのベスト盤
+  released_at: 2008-03-19
+
+ao_cd:
+  name: 青
+  released_at: 2009-03-18
+
+aka_kreva_cd:
+  name: 赤
+  released_at: 2009-07-08
+
+shinzou_cd:
+  name: 心臓
+  released_at: 2009-09-08
+
+oasys_cd:
+  name: OASYS
+  released_at: 2010-09-15
+
+idome_cd:
+  name: 挑め
+  released_at: 2011-02-16
+
+cmonletsgo_cd:
+  name: C'mon, Let's go
+  released_at: 2011-05-11
+
+kilakila_cd:
+  name: KILA KILA / Tan-Kyu-Shin
+  released_at: 2011-07-20
+
+go_cd:
+  name: GO
+  released_at: 2011-09-08
+
+ohyeah_cd:
+  name: OH YEAH
+  released_at: 2012-06-20
+
+nanana_cd:
+  name: Na Na Na
+  released_at: 2012-09-05
+
+oujanokyuujitsu_cd:
+  name: 王者の休日
+  released_at: 2013-01-16
+
+space_cd:
+  name: SPACE
+  released_at: 2013-02-27
+
+beshi_cd:
+  name: BESHI
+  released_at: 2013-08-28
+
+tranquilizer_cd:
+  name: トランキライザー
+  released_at: 2014-02-05
+
+underthemoon_cd:
+  name: Under The Moon
+  released_at: 2015-02-25
+
+usotobonnou_cd:
+  name: 嘘と煩悩
+  released_at: 2017-02-01
+
+sonzaikan_cd:
+  name: 存在感
+  released_at: 2018-08-22
+
+# LITTLE
+iino_cd:
+  name: いいの
+  released_at: 1998-11-15
+
+childplay_cd:
+  name: CHILD PLAY
+  released_at: 2000-03-29
+
+mrcompact_cd:
+  name: Mr.COMPACT
+  released_at: 2001-12-05
+
+isingisay_cd:
+  name: I SING, I SAY
+  released_at: 2004-07-21
+
+seijagamachiniyattekuru_cd:
+  name: 聖者が街にやってくる
+  released_at: 2004-11-24
+
+hatsukoino_cd:
+  name: はつ恋の~What's Going on~ feat.トータス松本
+  released_at: 2005-05-18
+
+life_cd:
+  name: LIFE
+  released_at: 2005-06-22
+
+onemanshow_cd:
+  name: ワンマンショウ
+  released_at: 2007-07-18
+
+yumenosei_cd:
+  name: 夢のせい
+  released_at: 2007-10-10
+
+yesrhymedentity_cd:
+  name: '"YES"rhyme-dentity'
+  released_at: 2008-05-07
+
+akalititle1_cd:
+  name: "アカリタイトル1"
+  released_at: 2014-02-12
+
+akalititle2_cd:
+  name: "アカリタイトル2"
+  released_at: 2015-08-12
+
+# MCU
+shiawasedearuyouni_cd:
+  name: "幸せであるように"
+  released_at: 2002-10-23
+
+surfrider_cd:
+  name: "サーフライダー"
+  released_at: 2004-07-28
+
+arigatou_cd:
+  name: "ありがとう"
+  released_at: 2005-03-09
+
+apeacetimemcu_cd:
+  name: "A Peacetime MCU"
+  released_at: 2005-09-28
+
+mcuinwonderlandep_cd:
+  name: "MCU in WONDERLAND e.p."
+  released_at: 2006-05-17
+
+seasidebyebye_cd:
+  name: "シーサイド・ばいばい"
+  released_at: 2006-10-25
+
+nukumori_cd:
+  name: "nukumori"
+  released_at: 2006-11-22
+
+omoide_cd:
+  name: "omoide"
+  released_at: 2007-03-21
+
+sayonara_cd:
+  name: "サヨナラ"
+  released_at: 2007-05-23
+
+aka_mcu_cd:
+  name: "A.K.A"
+  released_at: 2007-06-20
+
+superstar_cd:
+  name: SUPERSTAR
+  released_at: 2009-01-21
+
+shuhari_cd:
+  name: SHU・HA・RI ~STILL LOVE~
+  released_at: 2009-03-11
+
+givmegivmenightfever_cd:
+  name: ギミギミ・ナイトフィーバー
+  released_at: 2009-12-02
+
+bestofmcu_cd:
+  name: BEST OF MCU
+  released_at: 2010-02-10
+
+# UL
+ultrap_cd:
+  name: ULTRAP
+  released_at: 2014-03-05
+
+
+# その他
+wildflowers_cd:
+  name: Wild Flowers
+  released_at: 2001-03-07
