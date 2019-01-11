@@ -17,6 +17,7 @@ module Dickthecancrew
     # -- all .rb files in that directory are automatically loaded.
     # config.autoload_paths += %W(#{config.root}/lib #{config.root}/lib)
     config.paths.add 'lib', eager_load: true
+    config.fixture_path = "#{::Rails.root}/fixtures"
   end
 end
 
