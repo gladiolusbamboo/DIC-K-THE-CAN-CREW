@@ -3098,11 +3098,11 @@ youshi_song:
   note: 
 
 # UL-TRAP
-ul-trap_song:
-  artist: ul_artist
-  name: UL-TRAP
-  lyricist: MCU & LITTLE
-  composer: MCU, LITTLE & KREVA
-  arranger: KREVA
-  cd: ultrap_cd
-  note: 
+# ul-trap_song:
+#   artist: ul_artist
+#   name: UL-TRAP
+#   lyricist: MCU & LITTLE
+#   composer: MCU, LITTLE & KREVA
+#   arranger: KREVA
+#   cd: ultrap_cd
+#   note: 
