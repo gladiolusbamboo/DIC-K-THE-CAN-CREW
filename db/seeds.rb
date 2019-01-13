@@ -15,3 +15,6 @@ Cd.create(
     released_at: '2014-03-07'
 )
 
+LyricUrl.create(
+    url: 'https://www.utamap.com/showkasi.php?surl=k-140305-145'
+)
