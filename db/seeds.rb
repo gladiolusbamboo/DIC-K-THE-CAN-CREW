@@ -39,3 +39,11 @@ CdSong.create(
     song_id: song.id
 )
 
+LyricUrlSong.create(
+    lyric_url_id: lyrUrl.id,
+    song_id: song.id
+)
+
+
+
+
