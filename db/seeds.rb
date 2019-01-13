@@ -23,6 +23,7 @@ LyricUrl.create(
     lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id
 )
 
+song =
 Song.create(
     lyric_url_id: lyrUrl.id,
     name: 'UL-TRAP',
@@ -32,3 +33,9 @@ Song.create(
     cd_id: cd.id,
     artist_id: artist.id
 )
+
+CdSong.create(
+    cd_id: cd.id,
+    song_id: song.id
+)
+
