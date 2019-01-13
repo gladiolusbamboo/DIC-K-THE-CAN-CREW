@@ -9,3 +9,9 @@
 Artist.create(
     name: '三浦大知'
 )
+
+Cd.create(
+    name: 'ULTRAP',
+    released_at: '2014-03-07'
+)
+
