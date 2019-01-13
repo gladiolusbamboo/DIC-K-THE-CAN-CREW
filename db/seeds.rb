@@ -16,5 +16,6 @@ Cd.create(
 )
 
 LyricUrl.create(
-    url: 'https://www.utamap.com/showkasi.php?surl=k-140305-145'
+    url: 'https://www.utamap.com/showkasi.php?surl=k-140305-145',
+    lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id
 )
