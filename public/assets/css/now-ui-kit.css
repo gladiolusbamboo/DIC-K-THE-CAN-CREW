@@ -3203,7 +3203,7 @@ h5,
 .h5 {
     font-size: 1.57em;
     line-height: 1.4em;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 h6,
@@ -7737,3 +7737,8 @@ ul.lyric_urls {
     font-size: 12px;
     text-align: right;
 }
+
+li.cd-info {
+    margin-bottom: 5px;
+}
+  

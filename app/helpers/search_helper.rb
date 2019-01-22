@@ -541,8 +541,17 @@ module SearchHelper
     def concat_recorded_cd_info(cds_info)
       concat(content_tag(:h5, '収録CD'))
       concat(content_tag(:ul) do
-        cds_info.each do |cd|
-          concat(content_tag(:li, cd.name + ' (' + cd.released_at.to_s + ')'))
+        cds_info.each do |cd|          
+          concat(content_tag(:li, class: 'cd-info') do
+            if cd.img_name
+              concat(content_tag(:a, href: "./want##{cd.img_name}_link",) do
+                concat(content_tag(:div, cd.name + ' (' + cd.released_at.to_s + ')'))
+                concat(tag(:img, src: "/assets/img/#{cd.img_name}_jacket.jpg", width: 40, height: 40))
+              end)
+            else
+              concat(content_tag(:div, cd.name + ' (' + cd.released_at.to_s + ')'))
+            end
+          end)
         end
       end)
     end
@@ -1282,9 +1291,9 @@ module SearchHelper
     def generate_cd_view id, cd_type, title, date, cds_array
       root = Nokogiri::HTML::DocumentFragment.parse('')
       Nokogiri::HTML::Builder.with(root) do |t|
-        t.li do
+        t.li id: "#{id}_link" do
           t.h4 do
-            t.a "#{cd_type}「#{title}」(#{date})", href: "##{id}", "data-toggle": "collapse", class: "song-name-toggle"
+            t.a "#{cd_type}「#{title}」(#{date})", href: "##{id}", "data-toggle": "collapse", class: "song-name-toggle" 
             t.div do
               t.a href: "##{id}", "data-toggle": "collapse" do
                 t.img src: "/assets/img/#{id}_jacket.jpg", alt: "#{id} jacket"
