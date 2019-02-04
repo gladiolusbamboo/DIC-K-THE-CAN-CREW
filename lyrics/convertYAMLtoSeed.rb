@@ -6,8 +6,6 @@ yaml_filename = "./" + song_key + ".yml"
 
 yaml_data = open(yaml_filename, 'r') { |f| YAML.load(f) }
 
-
-
 File.open("./" + song_key + "_seed.rb", "w") do |f| 
   f.puts("artist_name =    ''")
   f.puts("lyricUrl_url =   ''")
@@ -56,9 +54,9 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
     f.puts("  singer_id: singer.id,")
     f.puts("  lyric_type_id: lyrict_type.id,")
     f.puts("  part_lyric_order: #{val['part_lyric_order']},")
-    f.puts("  lyric: '#{val['lyric']}',")
+    f.puts("  lyric: '#{val['lyric'].gsub("'","\\\\'")}',")
     f.puts("  ruby: '#{val['ruby']}',")
-    f.puts("  lyric_with_ruby: '#{val['lyric_with_ruby']}',")
+    f.puts("  lyric_with_ruby: '#{val['lyric_with_ruby'].gsub("'","\\\\'")}',")
     f.puts("  lyric_order: #{val['lyric_order']},")
     f.puts(")")  
     f.puts("")
