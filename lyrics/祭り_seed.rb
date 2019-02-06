@@ -1,11 +1,11 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-140305-149'
-cd_name =        'ULTRAP'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
 cd_released_at = ''
-song_name =      '祭り feat.TSUBOI(アルファ)'
-song_lyricist =  'MCU, LITTLE & TSUBOI'
-song_composer =  'MCU, LITTLE, TSUBOI & KREVA'
-song_arranger =  'KREVA'
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
@@ -58,7 +58,7 @@ Lyric.create(
   lyric_order: 2,
 )
 
-singer = Singer.find_by(name: 'TSUBOI(アルファ)')
+singer = Singer.find_by(name: 'TSUBOI')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -123,7 +123,7 @@ Lyric.create(
   lyric_order: 7,
 )
 
-singer = Singer.find_by(name: 'TSUBOI(アルファ)')
+singer = Singer.find_by(name: 'TSUBOI')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -136,7 +136,7 @@ Lyric.create(
   lyric_order: 8,
 )
 
-singer = Singer.find_by(name: 'TSUBOI(アルファ)')
+singer = Singer.find_by(name: 'TSUBOI')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
@@ -149,7 +149,7 @@ Lyric.create(
   lyric_order: 9,
 )
 
-singer = Singer.find_by(name: 'TSUBOI(アルファ)')
+singer = Singer.find_by(name: 'TSUBOI')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
