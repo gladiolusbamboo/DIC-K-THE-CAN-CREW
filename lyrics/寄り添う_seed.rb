@@ -1,11 +1,11 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-140305-152'
-cd_name =        'ULTRAP'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
 cd_released_at = ''
-song_name =      '寄り添う'
-song_lyricist =  'MCU & LITTLE'
-song_composer =  'MCU, LITTLE & KREVA'
-song_arranger =  'KREVA'
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
