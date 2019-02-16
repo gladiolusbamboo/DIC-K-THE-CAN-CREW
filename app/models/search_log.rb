@@ -6,7 +6,7 @@ class SearchLog < ApplicationRecord
   validates :searchword,
     length: {
       minimum: 1, maximum: 20,
-      too_short: '20文字以内のフレーズを入力してください',
+      too_short: '有効なフレーズが入力されていません',
       too_long: '20文字以内のフレーズを入力してください'
     },
     format: { 
