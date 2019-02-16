@@ -4,7 +4,7 @@
   <div class="container">
     <div class="content-center">
       <h1 class="title">KICK &amp; ソロ名義楽曲一覧</h1>
-      <h5 class="title artists-link"><a href="#ktcc" class="artist-section-link">KICK THE CAN CREW</a> | <a href="#kreva" class="artist-section-link">KREVA</a> | <a href="#little" class="artist-section-link">LITTLE</a> | <a href="#mcu" class="artist-section-link">MCU</a> | <a href="#other" class="artist-section-link">OTHER</a></h5>
+      <h5 class="title artists-link"><a href="#ktcc" class="artist-section-link">KICK THE CAN CREW</a> | <a href="#kreva" class="artist-section-link">KREVA</a> | <a href="#little" class="artist-section-link">LITTLE</a> | <a href="#mcu" class="artist-section-link">MCU</a> | <a href="#ul" class="artist-section-link">UL</a> | <a href="#other" class="artist-section-link">OTHER</a></h5>
     </div>
   </div>
 </div>
@@ -1982,6 +1982,37 @@
                   ["幸せであるように","○",""],
                   ["ギミギミ・ナイトフィーバー","○",""],
                   ["YOU詩","○",""],
+                ]
+              )
+          ]) %>
+        </ul>
+      </div>
+    </div>
+    <div class="separator separator-primary"></div>
+    <div class="row">
+      <div class="col-md-12 ml-auto mr-auto text-center">
+        <h3 class="title animated fadeIn" id="ul">UL</h3>
+        <ul>
+          <%= generate_cd_view(
+            'ultrap', 
+            'Sg', 
+            'ULTRAP', 
+            Date.new(2014, 3, 5), 
+            [
+              CdData.new(
+                "Disc1",
+                [
+                  ["UL-TRAP","○",""],
+                  ["ULTRA-P","○",""],
+                  ["La vie én Rose","○",""],
+                  ["夏歌詩","○",""],
+                  ["祭り feat.TSUBOI(アルファ)","○",""],
+                  ["STEP BY STEP","○",""],
+                  ["夢の中へ","○",""],
+                  ["寄り添う","○",""],
+                  ["HOME TOWN","○",""],
+                  ["By Blow Bye Bye Blow","○",""],
+                  ["La La Like a Love Song","○",""],
                 ]
               )
           ]) %>
