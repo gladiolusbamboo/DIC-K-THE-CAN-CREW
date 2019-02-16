@@ -25,6 +25,7 @@ function onYouTubeIframeAPIReady() {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
     }
+
   });
 }
 
@@ -54,7 +55,7 @@ function getYouTubeID() {
     'Pt676ytVCQ0', // かも
     'KGXwgfixOjo', // 挑め
     '4y1MOoYrXXM', // C'mon, Let's go
-    'IViueTs20II', // KILA KILA
+    'd_boAZjfk9o', // KILA KILA
     '0HM9TuoHkTQ', // 基準
     '2oMCy5hqhxA', // OH YEAH
     'fXgAOhURDpo', // 王者の休日
@@ -82,8 +83,6 @@ function getYouTubeID() {
   ];
 
   const randomInteger = Math.floor(Math.random() * youtubeIDLength.length);
-
-  console.log(youtubeIDLength[randomInteger]);
 
   return youtubeIDLength[randomInteger];
 }
