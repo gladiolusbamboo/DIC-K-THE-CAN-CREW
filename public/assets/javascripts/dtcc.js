@@ -83,6 +83,8 @@ function getYouTubeID() {
 
   const randomInteger = Math.floor(Math.random() * youtubeIDLength.length);
 
+  console.log(youtubeIDLength[randomInteger]);
+
   return youtubeIDLength[randomInteger];
 }
 // 動画の準備完了後の動作
