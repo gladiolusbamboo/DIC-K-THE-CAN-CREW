@@ -3221,7 +3221,7 @@ p {
 p.description {
     font-size: 1.14em;
 }
-
+ 
 .title {
     font-weight: 700;
 }
@@ -7741,4 +7741,12 @@ ul.lyric_urls {
 li.cd-info {
     margin-bottom: 5px;
 }
-  
+
+h6.search_song_sum
+{
+    margin-bottom: .2rem
+}
+
+.search_song_sum{
+    font-size: 16px;
+}

@@ -30,6 +30,13 @@ class SearchController < ApplicationController
     # 重複排除のSQLが複雑なため関数化
     @highscore_search_logs_character = get_high_score_search_logs(:character)
     @highscore_search_logs_ruby = get_high_score_search_logs(:ruby)   
+
+    @ktcc_sum = Song.joins(:artist).where("artists.name = 'KICK THE CAN CREW'").count
+    @kreva_sum = Song.joins(:artist).where("artists.name = 'KREVA'").count
+    @mcu_sum = Song.joins(:artist).where("artists.name = 'MCU'").count
+    @little_sum = Song.joins(:artist).where("artists.name = 'LITTLE'").count
+    @ul_sum = Song.joins(:artist).where("artists.name = 'UL'").count
+    @other_sum = Song.all.count - @ktcc_sum - @kreva_sum - @mcu_sum - @little_sum - @ul_sum
   end
 
   def result

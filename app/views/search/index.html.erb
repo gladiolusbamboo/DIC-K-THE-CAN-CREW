@@ -6,6 +6,8 @@
           <h3 class="title">DIC THE CAN CREW</h3>
           <h5 class="title">- 缶蹴り関係検索アプリ -</h3>
           <h5 class="description">KICK THE CAN CREWおよび各メンバー(LITTLE、KREVA、MCU)が参加している楽曲の全文検索ができます</h5>
+          <h6 class="search_song_sum">《現在の検索対象曲数》</h6>
+          <p class="search_song_sum">KICK THE CAN CREW : <%= @ktcc_sum %>曲　KREVA : <%= @kreva_sum %>曲<br>LITTLE : <%= @little_sum %>曲　MCU : <%= @mcu_sum %>曲　UL : <%= @ul_sum %>曲　その他 : <%= @other_sum %>曲</p>
         </div>
         <div class="text-center col-md-12 col-lg-8">
           <%# リダイレクトでエラーが送られてきた時の処理 %>
