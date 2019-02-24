@@ -1,17 +1,12 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-150430-116'
-cd_name =        'Boys&Gentlemen'
-cd_released_at = '2015-04-29'
-song_name =      '馬ッ鹿者 feat.増子直純(怒髪天)'
-song_lyricist =  'MCU, LITTLE & 増子直純(怒髪天)'
-song_composer =  'MCU, LITTLE, 上原子友康(怒髪天) & ALI-KICK'
-song_arranger =  'ALI-KICK'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note =           '歌詞カードではHOOKの歌詞が「馬鹿ッ者」表記（誤植？そのまま入力しています）'
-
-Singer.create(
-    name: '増子直純'
-)
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
@@ -26,8 +21,7 @@ song = Song.create(
   composer: song_composer,
   arranger: song_arranger,
   cd_id: cd.id,
-  artist_id: artist.id,
-  note: note
+  artist_id: artist.id
 )
 LyricUrlSong.create(
   lyric_url_id: lyricUrl.id,
@@ -38,7 +32,7 @@ CdSong.create(
   song_id: song.id
 )
 
-singer = Singer.find_by(name: '増子直純')
+singer = Singer.find_by(name: 'MASUKONAOZUMI')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
@@ -64,7 +58,7 @@ Lyric.create(
   lyric_order: 2,
 )
 
-singer = Singer.find_by(name: '増子直純')
+singer = Singer.find_by(name: 'MASUKONAOZUMI')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -90,7 +84,7 @@ Lyric.create(
   lyric_order: 4,
 )
 
-singer = Singer.find_by(name: '増子直純')
+singer = Singer.find_by(name: 'MASUKONAOZUMI')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
@@ -116,7 +110,7 @@ Lyric.create(
   lyric_order: 6,
 )
 
-singer = Singer.find_by(name: '増子直純')
+singer = Singer.find_by(name: 'MASUKONAOZUMI')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -155,7 +149,7 @@ Lyric.create(
   lyric_order: 9,
 )
 
-singer = Singer.find_by(name: '増子直純')
+singer = Singer.find_by(name: 'MASUKONAOZUMI')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
