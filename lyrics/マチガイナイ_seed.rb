@@ -1,21 +1,12 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-150430-117'
-cd_name =        'Boys&Gentlemen'
-cd_released_at = '2015-04-29'
-song_name =      'マチガイナイ feat.Full Of Harmony'
-song_lyricist =  'MCU, LITTLE & YUTAKA'
-song_composer =  'MCU, LITTLE, 熊井吾郎 & YUTAKA'
-song_arranger =  '熊井吾郎'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note =           ''
-
-Singer.create(
-    name: 'Full Of Harmony'
-)
-
-Singer.create(
-    name: 'UL & Full Of Harmony'
-)
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
@@ -32,12 +23,10 @@ song = Song.create(
   cd_id: cd.id,
   artist_id: artist.id
 )
-
 LyricUrlSong.create(
   lyric_url_id: lyricUrl.id,
   song_id: song.id
 )
-
 CdSong.create(
   cd_id: cd.id,
   song_id: song.id
@@ -56,7 +45,7 @@ Lyric.create(
   lyric_order: 1,
 )
 
-singer = Singer.find_by(name: 'Full Of Harmony')
+singer = Singer.find_by(name: 'FULLOFHARMONY')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -82,7 +71,7 @@ Lyric.create(
   lyric_order: 3,
 )
 
-singer = Singer.find_by(name: 'Full Of Harmony')
+singer = Singer.find_by(name: 'FULLOFHARMONY')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -95,7 +84,7 @@ Lyric.create(
   lyric_order: 4,
 )
 
-singer = Singer.find_by(name: 'UL & Full Of Harmony')
+singer = Singer.find_by(name: 'ULFULLOFHARMONY')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
