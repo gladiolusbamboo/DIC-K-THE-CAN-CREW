@@ -31,6 +31,8 @@ function onYouTubeIframeAPIReady() {
 
 function getYouTubeID() {
   youtubeIDLength = [
+    'zKaNPmIMzps', // 音色 ～2019 Ver.～
+
     // KICK THE CAN CREW
     'wFKvOPQyVL0', // 千％
     'eCfRRm-yyMY', // 住所
