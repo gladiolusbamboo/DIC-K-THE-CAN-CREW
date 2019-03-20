@@ -31,7 +31,6 @@ function onYouTubeIframeAPIReady() {
 
 function getYouTubeID() {
   youtubeIDLength = [
-    'zKaNPmIMzps', // 音色 ～2019 Ver.～
 
     // KICK THE CAN CREW
     'wFKvOPQyVL0', // 千％
@@ -66,6 +65,7 @@ function getYouTubeID() {
     'B9kV2qFpDEc', // 全速力
     'x0Pcn_OoKzs', // Under The Moon
     'lrfr0be9lH4', // 存在感    
+    'zKaNPmIMzps', // 音色 ～2019 Ver.～
 
     // LITTLE
     'SMnCLqst-Ao', // 愛はある
