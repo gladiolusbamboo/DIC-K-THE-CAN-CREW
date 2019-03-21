@@ -1,13 +1,12 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-150430-119'
-cd_name =        'Boys&Gentlemen'
-cd_released_at = '2015-04-29'
-song_name =      'バブルワンサゲン'
-song_lyricist =  'MCU, LITTLE ,TWERK \'EM ALL & Maximizor'
-song_composer =  'MCU, LITTLE ,TWERK \'EM ALL & Maximizor'
-song_arranger =  'TWERK \'EM ALL'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note =           ''
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
