@@ -1,13 +1,12 @@
-artist_name =    'UL'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=k-150430-122'
-cd_name =        'Boys&Gentlemen'
-cd_released_at = '2015-04-29'
-song_name =      '真ッ赤ニナル迄 SHOGO Remix'
-song_lyricist =  'MCU & LITTLE'
-song_composer =  'MCU, LITTLE & SHOGO'
-song_arranger =  'UNCREDITED'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note =           'タイトルの元ネタはMUROの「真ッ黒ニナル迄」'
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
@@ -22,8 +21,7 @@ song = Song.create(
   composer: song_composer,
   arranger: song_arranger,
   cd_id: cd.id,
-  artist_id: artist.id,
-  note: note
+  artist_id: artist.id
 )
 LyricUrlSong.create(
   lyric_url_id: lyricUrl.id,
