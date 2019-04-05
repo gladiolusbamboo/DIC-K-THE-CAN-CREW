@@ -1,5 +1,5 @@
 artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   nil
+lyricUrl_url =   ''
 cd_name =        '切り札のカード'
 cd_released_at = '1997-04-01'
 song_name =      '切り札のカード'
@@ -16,7 +16,7 @@ Singer.create(
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
 
-if lyricUrl_url 
+if lyricUrl_url
   lyricUrl = LyricUrl.create(
     url: lyricUrl_url,
     lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id
@@ -24,7 +24,7 @@ if lyricUrl_url
 end
 
 song = Song.create(
-  lyric_url_id: lyricUrl ? lyricUrl.id : nil,
+  lyric_url_id: lyricUrl.id,
   name: song_name,
   lyricist: song_lyricist,
   composer: song_composer,
@@ -44,7 +44,7 @@ CdSong.create(
   song_id: song.id
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST')
+singer = Singer.find_by(name: 'BYPHARTHEDOPEST')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -70,7 +70,7 @@ Lyric.create(
   lyric_order: 2,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST')
+singer = Singer.find_by(name: 'BYPHARTHEDOPEST')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -96,7 +96,7 @@ Lyric.create(
   lyric_order: 4,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST')
+singer = Singer.find_by(name: 'BYPHARTHEDOPEST')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -109,7 +109,7 @@ Lyric.create(
   lyric_order: 5,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST')
+singer = Singer.find_by(name: 'BYPHARTHEDOPEST')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -122,7 +122,7 @@ Lyric.create(
   lyric_order: 6,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST')
+singer = Singer.find_by(name: 'BYPHARTHEDOPEST')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
