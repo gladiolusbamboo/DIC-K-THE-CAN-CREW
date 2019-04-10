@@ -21,12 +21,16 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
 
   f.puts("artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)")
   f.puts("cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)")
-  f.puts("lyricUrl = LyricUrl.create(")
-  f.puts("  url: lyricUrl_url,")
-  f.puts("  lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id")
-  f.puts(")")
+  f.puts("")
+  f.puts("if lyricUrl_url")
+  f.puts("  lyricUrl = LyricUrl.create(")
+  f.puts("    url: lyricUrl_url,")
+  f.puts("    lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id")
+  f.puts("  )")
+  f.puts("end")
+  f.puts("")
   f.puts("song = Song.create(")
-  f.puts("  lyric_url_id: lyricUrl.id,")
+  f.puts("  lyric_url_id: lyricUrl ? lyricUrl.id : nil,")
   f.puts("  name: song_name,")
   f.puts("  lyricist: song_lyricist,")
   f.puts("  composer: song_composer,")
@@ -34,10 +38,12 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
   f.puts("  cd_id: cd.id,")
   f.puts("  artist_id: artist.id")
   f.puts(")")
-  f.puts("LyricUrlSong.create(")
-  f.puts("  lyric_url_id: lyricUrl.id,")
-  f.puts("  song_id: song.id")
-  f.puts(")")
+  f.puts("if lyricUrl")
+  f.puts("  LyricUrlSong.create(")
+  f.puts("    lyric_url_id: lyricUrl.id,")
+  f.puts("    song_id: song.id")
+  f.puts("  )")
+  f.puts("end")
   f.puts("CdSong.create(")
   f.puts("  cd_id: cd.id,")
   f.puts("  song_id: song.id")
@@ -47,7 +53,11 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
 
   yaml_data.each do | data |
     val = data[1]
-    f.puts("singer = Singer.find_by(name: '#{val['singer'].upcase}')")
+    sngr = val['singer']
+    if sngr == 'bypharthedopest'
+      sngr = 'by phar the dopest'
+    end
+    f.puts("singer = Singer.find_by(name: '#{sngr.upcase}')")
     f.puts("lyrict_type = LyricType.find_by(name: '#{val['lyric_type'].upcase}')")    
     f.puts("Lyric.create(")
     f.puts("  song_id: song.id,")
