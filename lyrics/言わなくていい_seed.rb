@@ -1,11 +1,11 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   nil
-cd_name =        'BY PHAR THE DOPEST'
-cd_released_at = '1998-06-18'
-song_name =      '言わなくていい'
-song_lyricist =  'UNCREDITED'
-song_composer =  'UNCREDITED'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
