@@ -110,7 +110,7 @@ Lyric.create(
   lyric_order: 5,
 )
 
-singer = Singer.find_by(name: '宇多丸(RHYMESTER)')
+singer = Singer.find_by(name: '宇多丸')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,

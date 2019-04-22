@@ -16,6 +16,7 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
   f.puts("song_composer =  ''")
   f.puts("song_arranger =  ''")
   f.puts("cds_name = []")
+  f.puts("note          = ''")
 
   f.puts("")
 
@@ -36,7 +37,8 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
   f.puts("  composer: song_composer,")
   f.puts("  arranger: song_arranger,")
   f.puts("  cd_id: cd.id,")
-  f.puts("  artist_id: artist.id")
+  f.puts("  artist_id: artist.id,")
+  f.puts("  note: note")
   f.puts(")")
   f.puts("if lyricUrl")
   f.puts("  LyricUrlSong.create(")
@@ -55,9 +57,14 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
     val = data[1]
     sngr = val['singer']
     if sngr == 'bypharthedopest'
-      sngr = 'by phar the dopest'
+      f.puts("singer = Singer.find_by(name: 'BY PHAR THE DOPEST')")
+    elsif sngr == 'bypharthedopestutamaru'
+      f.puts("singer = Singer.find_by(name: 'BY PHAR THE DOPEST & 宇多丸')")
+    elsif sngr == 'utamaru'
+      f.puts("singer = Singer.find_by(name: '宇多丸(RHYMESTER)')")
+    else
+      f.puts("singer = Singer.find_by(name: '#{sngr.upcase}')")
     end
-    f.puts("singer = Singer.find_by(name: '#{sngr.upcase}')")
     f.puts("lyrict_type = LyricType.find_by(name: '#{val['lyric_type'].upcase}')")    
     f.puts("Lyric.create(")
     f.puts("  song_id: song.id,")
