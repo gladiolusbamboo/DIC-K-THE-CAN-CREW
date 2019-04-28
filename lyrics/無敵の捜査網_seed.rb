@@ -1,21 +1,16 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   nil
-cd_name =        'BY PHAR THE DOPEST'
-cd_released_at = '1998-06-18'
-song_name =      '無敵の捜査網'
-song_lyricist =  'UNCREDITED'
-song_composer =  'UNCREDITED'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note = 'INNOSENCEがfeaturing.として参加。CUEZERO不参加？　歌詞カードに誤植が複数ありますが、そのまま入力しています'
+note          = ''
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
-
-Singer.create(
-  name: 'BY PHAR THE DOPEST & INNOSENCE',
-  is_kick: false
-)
 
 if lyricUrl_url
   lyricUrl = LyricUrl.create(
@@ -58,7 +53,7 @@ Lyric.create(
   lyric_order: 1,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST & INNOSENCE')
+singer = Singer.find_by(name: 'BYPHARTHEDOPESTINNOSENCE')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -84,7 +79,7 @@ Lyric.create(
   lyric_order: 3,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST & INNOSENCE')
+singer = Singer.find_by(name: 'BYPHARTHEDOPESTINNOSENCE')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -110,7 +105,7 @@ Lyric.create(
   lyric_order: 5,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST & INNOSENCE')
+singer = Singer.find_by(name: 'BYPHARTHEDOPESTINNOSENCE')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -123,7 +118,7 @@ Lyric.create(
   lyric_order: 6,
 )
 
-singer = Singer.find_by(name: 'BY PHAR THE DOPEST & INNOSENCE')
+singer = Singer.find_by(name: 'BYPHARTHEDOPESTINNOSENCE')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
