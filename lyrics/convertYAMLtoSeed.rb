@@ -16,7 +16,7 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
   f.puts("song_composer =  ''")
   f.puts("song_arranger =  ''")
   f.puts("cds_name = []")
-  f.puts("note          = ''")
+  f.puts("note          = nil")
 
   f.puts("")
 

@@ -1,13 +1,13 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   nil
-cd_name =        'BY PHAR THE DOPEST'
-cd_released_at = '1998-06-18'
-song_name =      'ある意味規則的な生活の中の贅沢'
-song_lyricist =  'UNCREDITED'
-song_composer =  'UNCREDITED'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note          = nil
+note          = ''
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
