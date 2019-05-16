@@ -184,7 +184,7 @@
                     <% @highscore_search_logs_ruby.each_with_index do |log, i| %>
                       <tr>
                         <td><%= (i+1).to_s %>.</td>
-                        <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, searchtype: log.searchtype %></td>
+                        <td><%= link_to log.searchword, action: :result, 'search_log[searchword]': log.searchword, ruby_search: 'ふりがな検索' %></td>
                         <td><%= log.hit_song_count %></td>
                         <td><%= log.score %></td>
                         <td><%= get_most_appear_song_name_from_search_log(log) %><%= log.hit_song_count > 1 ? ' etc.' : '' %></td>
