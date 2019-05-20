@@ -1,13 +1,13 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=B19896'
-cd_name =        '恥じゃない'
-cd_released_at = '2006-12-06'
-song_name =      '恥じゃない'
-song_lyricist =  'BY PHAR THE DOPEST'
-song_composer =  'BY PHAR THE DOPEST & RANDY EDELMAN'
-song_arranger =  'BY PHAR THE DOPEST'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note          = "元ネタはRandy EdelmanのIsn\'t It A Shame"
+note          = nil
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
