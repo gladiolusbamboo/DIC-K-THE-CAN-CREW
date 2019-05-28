@@ -1,11 +1,11 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=B19898'
-cd_name =        '恥じゃない'
-cd_released_at = '2006-12-06'
-song_name =      '階段'
-song_lyricist =  'BY PHAR THE DOPEST'
-song_composer =  'BY PHAR THE DOPEST & ROCK-Tee'
-song_arranger =  'ROCK-Tee'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
