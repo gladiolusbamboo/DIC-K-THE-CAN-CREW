@@ -546,7 +546,7 @@ module SearchHelper
             if cd.img_name
               concat(content_tag(:a, href: "./want##{cd.img_name}_link",) do
                 concat(content_tag(:div, cd.name + ' (' + cd.released_at.to_s + ')'))
-                concat(tag(:img, src: "/assets/img/#{cd.img_name}_jacket.jpg", width: 40, height: 40))
+                concat(tag(:img, src: "/assets/img/#{cd.img_name}_jacket.jpg", width: 40))
               end)
             else
               concat(content_tag(:div, cd.name + ' (' + cd.released_at.to_s + ')'))
