@@ -7,3 +7,14 @@ ME,みー
 KNOW,のう
 HOP,ほっぷ
 HEY,へい
+JUST,じゃすと
+ABOUT,あばうと
+TALK,とーく
+LIKE,らいく
+DANGER,でんじゃー
+GIVE,ぎぶ
+WANT,うぉんと
+NEED,にーど
+I,あい
+HOO,ほー
+LOVE,らぶ

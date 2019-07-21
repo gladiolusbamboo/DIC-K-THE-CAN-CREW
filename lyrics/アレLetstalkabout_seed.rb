@@ -1,11 +1,11 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=B20389'
-cd_name =        'だからどうした!'
-cd_released_at = '2006-12-31'
-song_name =      'アレ! ～Let\'s talk about～'
-song_lyricist =  'BY PHAR THE DOPEST'
-song_composer =  'BY PHAR THE DOPEST'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
@@ -118,12 +118,7 @@ Lyric.create(
   lyric_order: 6,
 )
 
-Singer.create(
-  name: 'エステティックス',
-  is_kick: false
-)
-
-singer = Singer.find_by(name: 'エステティックス')
+singer = Singer.find_by(name: 'ESTHETICS')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
