@@ -1,13 +1,13 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=B20391'
-cd_name =        'だからどうした!'
-cd_released_at = '2006-12-31'
-song_name =      'やるぞやるぞとは聞いてはいたけどそれ以上にやる feat.BLAST RAMPAGE'
-song_lyricist =  'BY PHAR THE DOPEST, 千晴& FU-JI'
-song_composer =  'BY PHAR THE DOPEST'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note          = 'BLAST RAMPAGEは千晴とFU-JIのユニット'
+note          = nil
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
@@ -53,7 +53,7 @@ Lyric.create(
   lyric_order: 1,
 )
 
-singer = Singer.find_by(name: '千晴')
+singer = Singer.find_by(name: 'CHIHARU')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -103,11 +103,6 @@ Lyric.create(
   ruby: 'やるぞやるぞとはきいてはいたけどそれいじょうにやるまちがいない',
   lyric_with_ruby: 'やるぞやるぞとは\{聞い,きい\}てはいたけどそれ\{以上,いじょう\}にやる\{!,\}\{ ,\}\{間違い,まちがい\}ない\{!,\}\{ ,\}',
   lyric_order: 5,
-)
-
-Singer.create(
-  name: 'FU-JI',
-  is_kick: false
 )
 
 singer = Singer.find_by(name: 'FU-JI')
