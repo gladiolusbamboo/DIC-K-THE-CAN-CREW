@@ -1,11 +1,11 @@
-artist_name =    'BY PHAR THE DOPEST'
-lyricUrl_url =   'https://www.utamap.com/showkasi.php?surl=B20392'
-cd_name =        'だからどうした!'
-cd_released_at = '2006-12-31'
-song_name =      '安全運転'
-song_lyricist =  'BY PHAR THE DOPEST'
-song_composer =  'BY PHAR THE DOPEST'
-song_arranger =  'Mr.Drunk'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
