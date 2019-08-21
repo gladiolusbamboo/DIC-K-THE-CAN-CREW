@@ -62,6 +62,8 @@ File.open("./" + song_key + "_seed.rb", "w") do |f|
       f.puts("singer = Singer.find_by(name: 'BY PHAR THE DOPEST & 宇多丸')")
     elsif sngr == 'utamaru'
       f.puts("singer = Singer.find_by(name: '宇多丸(RHYMESTER)')")
+    elsif sngr == 'radicalfreaks'
+      f.puts("singer = Singer.find_by(name: 'Radical Freaks')")
     else
       f.puts("singer = Singer.find_by(name: '#{sngr.upcase}')")
     end

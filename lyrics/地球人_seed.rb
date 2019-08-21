@@ -1,11 +1,11 @@
-artist_name =    'Radical Freaks'
-lyricUrl_url =   nil
-cd_name =        '地球人?'
-cd_released_at = '1997-04-01'
-song_name =      '地球人?'
-song_lyricist =  'MCU & VOICE'
-song_composer =  'DJ TATSUTA'
-song_arranger =  'DJ TATSUTA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
@@ -53,12 +53,7 @@ Lyric.create(
   lyric_order: 1,
 )
 
-Singer.create(
-  name: 'Radical Freaks',
-  is_kick: false
-)
-
-singer = Singer.find_by(name: 'Radical Freaks')
+singer = Singer.find_by(name: 'RADICALFREAKS')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -84,7 +79,7 @@ Lyric.create(
   lyric_order: 3,
 )
 
-singer = Singer.find_by(name: 'Radical Freaks')
+singer = Singer.find_by(name: 'RADICALFREAKS')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
