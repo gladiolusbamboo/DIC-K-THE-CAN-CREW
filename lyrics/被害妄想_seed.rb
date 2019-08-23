@@ -1,11 +1,11 @@
-artist_name =    'Radical Freaks'
-lyricUrl_url =   nil
-cd_name =        '地球人?'
-cd_released_at = '1997-04-01'
-song_name =      '被害妄想'
-song_lyricist =  'MCU & VOICE'
-song_composer =  'DJ TATSUTA'
-song_arranger =  'Radical Freaks'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
