@@ -40,12 +40,7 @@ CdSong.create(
   song_id: song.id
 )
 
-Singer.create(
-  name: 'アスタラビスタ',
-  is_kick: false
-)
-
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -58,7 +53,7 @@ Lyric.create(
   lyric_order: 1,
 )
 
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -71,7 +66,7 @@ Lyric.create(
   lyric_order: 2,
 )
 
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
@@ -84,7 +79,7 @@ Lyric.create(
   lyric_order: 3,
 )
 
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
@@ -97,7 +92,7 @@ Lyric.create(
   lyric_order: 4,
 )
 
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'OTHER')
 Lyric.create(
   song_id: song.id,
@@ -110,7 +105,7 @@ Lyric.create(
   lyric_order: 5,
 )
 
-singer = Singer.find_by(name: 'アスタラビスタ')
+singer = Singer.find_by(name: 'HASTALAVISTA')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
