@@ -2,10 +2,10 @@ artist_name =    'アスタラビスタ'
 lyricUrl_url =   nil
 cd_name =        'ヤバスタ'
 cd_released_at = '2014-03-26'
-song_name =      'シンコパティーン'
+song_name =      'seis amigos'
 song_lyricist =  'アスタラビスタ'
 song_composer =  'アスタラビスタ'
-song_arranger =  'MASSATTACK'
+song_arranger =  'DJ ISO'
 cds_name = []
 note          = 'LITTLE以外の歌い分け省略'
 
