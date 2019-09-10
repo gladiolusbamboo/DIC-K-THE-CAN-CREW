@@ -33,6 +33,7 @@ function getYouTubeID() {
   youtubeIDLength = [
 
     // KICK THE CAN CREW
+    /*
     'wFKvOPQyVL0', // 千％
     'eCfRRm-yyMY', // 住所
 
@@ -66,7 +67,10 @@ function getYouTubeID() {
     'x0Pcn_OoKzs', // Under The Moon
     'lrfr0be9lH4', // 存在感    
     'zKaNPmIMzps', // 音色 ～2019 Ver.～
+    */
+    'HzZFYLm2VVE', // 敵がいない国
 
+    /*
     // LITTLE
     'SMnCLqst-Ao', // 愛はある
     'DyyshApgQp8', // Beach Sun Girl feat. Una
@@ -82,6 +86,7 @@ function getYouTubeID() {
     'fsPH4S4Ylw4', // 「One Mic / アリとキリギリス」【LIVE映像】
     '6pVI56OjA1M', // La La Like a Love Song
     '3hebZ8jMKh8', // アルバム「ULTRAP」ダイジェストMV【4曲mix】
+    */
   ];
 
   const randomInteger = Math.floor(Math.random() * youtubeIDLength.length);
