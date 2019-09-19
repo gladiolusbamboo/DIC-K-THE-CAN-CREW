@@ -1,11 +1,11 @@
-artist_name =    'KREVA'
-lyricUrl_url =   nil
-cd_name =        'AFTERMIXTAPE'
-cd_released_at = '2019-09-18'
-song_name =      'One feat.JQ from Nulbarich'
-song_lyricist =  'KREVA & Jeremy Quartus'
-song_composer =  'KREVA & Jeremy Quartus'
-song_arranger =  'KREVA & Jeremy Quartus'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
@@ -18,11 +18,6 @@ if lyricUrl_url
     lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id
   )
 end
-
-Singer.create(
-  name: 'JQ(Nulbarich)',
-  is_kick: false
-)
 
 song = Song.create(
   lyric_url_id: lyricUrl ? lyricUrl.id : nil,
@@ -45,7 +40,7 @@ CdSong.create(
   song_id: song.id
 )
 
-singer = Singer.find_by(name: 'JQ(Nulbarich)')
+singer = Singer.find_by(name: 'JQ')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -71,7 +66,7 @@ Lyric.create(
   lyric_order: 2,
 )
 
-singer = Singer.find_by(name: 'JQ(Nulbarich)')
+singer = Singer.find_by(name: 'JQ')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -97,7 +92,7 @@ Lyric.create(
   lyric_order: 4,
 )
 
-singer = Singer.find_by(name: 'JQ(Nulbarich)')
+singer = Singer.find_by(name: 'JQ')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
@@ -123,7 +118,7 @@ Lyric.create(
   lyric_order: 6,
 )
 
-singer = Singer.find_by(name: 'JQ(Nulbarich)')
+singer = Singer.find_by(name: 'JQ')
 lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
