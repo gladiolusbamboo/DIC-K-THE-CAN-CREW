@@ -368,7 +368,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat_recorded_cd_info(info_arr[0].song.cds)
+            concat_recorded_cd_info(info_arr[0].song.cds.order(released_at: :asc))
 
             concat_fade_hr()
 
@@ -402,7 +402,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat_recorded_cd_info(info_arr[0].song.cds)
+            concat_recorded_cd_info(info_arr[0].song.cds.order(released_at: :asc))
 
             concat_fade_hr()
 
@@ -433,7 +433,7 @@ module SearchHelper
 
             concat_fade_hr()
 
-            concat_recorded_cd_info(info_arr[0].song.cds)
+            concat_recorded_cd_info(info_arr[0].song.cds.order(released_at: :asc))
 
             concat_fade_hr()
 
