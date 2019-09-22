@@ -1,11 +1,11 @@
-artist_name =    'KREVA'
-lyricUrl_url =   nil
-cd_name =        'AFTERMIXTAPE'
-cd_released_at = '2019-09-18'
-song_name =      'アイソレーター'
-song_lyricist =  'KREVA'
-song_composer =  'KREVA'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
