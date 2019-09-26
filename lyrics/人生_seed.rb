@@ -145,12 +145,12 @@ Lyric.create(
 )
 
 singer = Singer.find_by(name: 'KREVA')
-lyrict_type = LyricType.find_by(name: 'VERSE')
+lyrict_type = LyricType.find_by(name: 'HOOK')
 Lyric.create(
   song_id: song.id,
   singer_id: singer.id,
   lyric_type_id: lyrict_type.id,
-  part_lyric_order: 3,
+  part_lyric_order: 4,
   lyric: 'だって続くParty常に人生バラ色それは難しいねでもやり遂げようこのチームでやれることやれるだけやって生きていくぜ',
   ruby: 'だってつづくぱーてぃーつねにじんせいばらいろそれはむずかしいねでもやりとげようこのちーむでやれることやれるだけやっていきていくぜ',
   lyric_with_ruby: 'だって\{続く,つづく\}\{Party,ぱーてぃー\}\{ ,\}\{常に,つねに\}\{人生,じんせい\}\{バラ,ばら\}\{色,いろ\}\{ ,\}それは\{難しい,むずかしい\}ね\{ ,\}でも\{やり遂げよ,やりとげよ\}う\{ ,\}この\{チーム,ちーむ\}で\{ ,\}やれることやれるだけやって\{生き,いき\}ていくぜ\{ ,\}',
