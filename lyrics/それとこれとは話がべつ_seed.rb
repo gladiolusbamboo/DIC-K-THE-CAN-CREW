@@ -1,11 +1,11 @@
-artist_name =    'KREVA'
-lyricUrl_url =   nil
-cd_name =        'AFTERMIXTAPE'
-cd_released_at = '2019-09-18'
-song_name =      'それとこれとは話がべつ!'
-song_lyricist =  '宇多丸, 小林賢太郎 & KREVA'
-song_composer =  'KREVA'
-song_arranger =  'KREVA'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
 note          = nil
 
@@ -18,11 +18,6 @@ if lyricUrl_url
     lyric_website_id: LyricWebsite.find_by(name: 'うたまっぷ').id
   )
 end
-
-Singer.create(
-  name: '小林賢太郎',
-  is_kick: false
-)
 
 song = Song.create(
   lyric_url_id: lyricUrl ? lyricUrl.id : nil,
@@ -110,7 +105,7 @@ Lyric.create(
   lyric_order: 5,
 )
 
-singer = Singer.find_by(name: '小林賢太郎')
+singer = Singer.find_by(name: 'KOBAYASHIKENTAROU')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
