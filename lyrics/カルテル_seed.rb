@@ -1,13 +1,13 @@
-artist_name =    'アスタラビスタ'
-lyricUrl_url =   nil
-cd_name =        'ヤバスタ'
-cd_released_at = '2014-03-26'
-song_name =      'カルテル[amigo edit]'
-song_lyricist =  'アスタラビスタ'
-song_composer =  'アスタラビスタ'
-song_arranger =  'DJ ISO'
+artist_name =    ''
+lyricUrl_url =   ''
+cd_name =        ''
+cd_released_at = ''
+song_name =      ''
+song_lyricist =  ''
+song_composer =  ''
+song_arranger =  ''
 cds_name = []
-note          = 'LITTLE以外の歌い分け省略'
+note          = nil
 
 artist = Artist.find_by(name: artist_name) || Artist.create(name: artist_name)
 cd = Cd.find_by(name: cd_name) || Cd.create(name: cd_name, released_at: cd_released_at)
@@ -79,7 +79,7 @@ Lyric.create(
   lyric_order: 3,
 )
 
-singer = Singer.find_by(name: 'LITTLE')
+singer = Singer.find_by(name: 'アスタラビスタ')
 lyrict_type = LyricType.find_by(name: 'VERSE')
 Lyric.create(
   song_id: song.id,
